@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using Guna.UI2.WinForms;
 using Microsoft.Win32;
+using RegistryConfiguration;
 
 namespace Advanced_Lock.Forms
 {
@@ -25,8 +26,9 @@ namespace Advanced_Lock.Forms
         {
             this.BackColor = Darkmode.DarkMode[2];
             this.ForeColor = Color.White;
-            Submit_BTN.FillColor = Darkmode.DarkMode[0];
-            Guna2Panel[] PL = { DarkModePanel, SwitchLangPanel,Sound_Panel,Notifi_Panel, Password_Panel };
+            Submit_BTN.FillColor = Darkmode.DarkMode[4];
+            CheckConfig_BTN.FillColor = Darkmode.DarkMode[4];
+            Guna2Panel[] PL = { DarkModePanel, SwitchLangPanel,Sound_Panel,Notifi_Panel, Password_Panel, Config_Panel };
             for (int i = 0; i < PL.Length; i++)
             {
                 PL[i].FillColor = Darkmode.DarkMode[1];
@@ -66,7 +68,7 @@ namespace Advanced_Lock.Forms
                 try
                 {
                     RegistryKey regPass = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
-                    string pass = regPass.GetValue("pass").ToString();
+                    string pass = regPass.GetValue("pass","").ToString();
                     if (!string.IsNullOrEmpty(pass))
                     {
                         Box_password.Text = Encryption_Decryption.Encryption__Decryption__Text.Decryption(pass, "Adv@n3eD KeY!");
@@ -152,7 +154,7 @@ namespace Advanced_Lock.Forms
 
         private void timerOK_Tick(object sender, EventArgs e)
         {
-            TransitionOK.AddToQueue(OK_BTN, Guna.UI2.AnimatorNS.AnimateMode.Hide);
+            TransitionOK.Hide(OK_BTN);
             timerOK.Stop();
         }
 
@@ -182,6 +184,22 @@ namespace Advanced_Lock.Forms
                 regPass.SetValue("passEnabaled", "true", RegistryValueKind.String);
             }
         }
+
         /*--------- Pass Panel End ---------*/
+        /*--------- Config Panel Start ---------*/
+        private void CheckConfig_BTN_Click(object sender, EventArgs e)
+        {
+            if (!new LockRegistry().CheckRegistery())
+            {
+                new LockRegistry().CreateRegistery();
+                Notif("The configuration was checked and all problems were fixed", "پیکربندی برسی شد و تمامی مشکلات رفع شد");
+            }
+            else
+            {
+                Notif("There is no problem in configuring the software", "مشکلی در پیکربندی نرم‌افزار وجود ندارد");
+            }
+        }
+        /*--------- Config Panel End ---------*/
+
     }
 }

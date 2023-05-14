@@ -4,14 +4,13 @@ using System.Diagnostics;
 using System.IO;
 using System.Reflection;
 
-namespace Lock_Registry
+namespace RegistryConfiguration
 {
     public class LockRegistry
     {
         private static RegistryKey reg;
         private static string App_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe";
         private static string Icon_Loc = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";
-        private static string strCmdText = "/c taskkill /f /im explorer.exe";
 
         static void Main()
         {

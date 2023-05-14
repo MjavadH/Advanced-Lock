@@ -13,7 +13,6 @@ using Advanced_Lock.Properties;
 using static Advanced_Lock.Class.Colers;
 using System.IO;
 using Advanced_Lock.Forms;
-using Lock_Registry;
 
 namespace Advanced_Lock
 {
@@ -113,27 +112,28 @@ namespace Advanced_Lock
         }
         private void MenuAnimation_Tick(object sender, EventArgs e)
         {
-            if (MenuBTN.Checked)
+            switch (MenuBTN.Checked)
             {
-                if (MainMenu.Width > 49)
-                {
-                    MainMenu.Width -= 9;
-                }
-                else
-                {
-                    MenuAnimation.Stop();
-                }
-            }
-            else if (!MenuBTN.Checked)
-            {
-                if (MainMenu.Width < 126)
-                {
-                    MainMenu.Width += 9;
-                }
-                else
-                {
-                    MenuAnimation.Stop();
-                }
+                case true:
+                    if (MainMenu.Width > 49)
+                    {
+                        MainMenu.Width -= 9;
+                    }
+                    else
+                    {
+                        MenuAnimation.Stop();
+                    }
+                    break;
+                case false:
+                    if (MainMenu.Width < 126)
+                    {
+                        MainMenu.Width += 9;
+                    }
+                    else
+                    {
+                        MenuAnimation.Stop();
+                    }
+                    break;
             }
         }
         private void Menu_BTN_CheckedChanged(object sender, EventArgs e)
@@ -250,7 +250,6 @@ namespace Advanced_Lock
         private void RefreshBTN_Click(object sender, EventArgs e)
         {
             HistoryRefresh();
-            label1.Text = new LockRegistry().CheckRegistery().ToString();
         }
         /*------ Delete All ------*/
         private void DeleteAll_BTN_Click(object sender, EventArgs e)
@@ -300,13 +299,6 @@ namespace Advanced_Lock
         {
             new AboutBox().ShowDialog();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            new LockRegistry().CreateRegistery();
-        }
-
-
         /*------ Menu2 End ------*/
         /*--------- Menus End ---------*/
     }

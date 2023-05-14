@@ -174,7 +174,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DarkModePanel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <metadata name="TransitionOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
@@ -226,7 +226,7 @@
     <value>155, 78</value>
   </data>
   <data name="DarkModePic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="DarkModePic.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -243,9 +243,6 @@
   <data name="&gt;&gt;DarkModePic.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="TransitionOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 17</value>
-  </metadata>
   <data name="DarkMode_Toggle.Location" type="System.Drawing.Point, System.Drawing">
     <value>48, 115</value>
   </data>
@@ -526,7 +523,7 @@
     <value>155, 78</value>
   </data>
   <data name="LangPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="LangPic.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -598,7 +595,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Notifi_Panel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label_notifi.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -646,7 +643,7 @@
     <value>155, 78</value>
   </data>
   <data name="NotifiPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="NotifiPic.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -739,7 +736,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Sound_Panel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label_Sound.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -787,7 +784,7 @@
     <value>155, 78</value>
   </data>
   <data name="SoundPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="SoundPic.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -916,7 +913,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Password_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="OK_BTN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1092,40 +1089,151 @@
   <metadata name="TransitionOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>104, 17</value>
   </metadata>
-  <data name="animation3.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation3.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation2.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation3.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation2.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="animation3.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation2.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAgD8L
 </value>
   </data>
-  <data name="animation3.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="animation2.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
         dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
+  </data>
+  <data name="label_Config.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="label_Config.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label_Config.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 78</value>
+  </data>
+  <data name="label_Config.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 26</value>
+  </data>
+  <data name="label_Config.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_Config.Text" xml:space="preserve">
+    <value>Configuration</value>
+  </data>
+  <data name="label_Config.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label_Config.Name" xml:space="preserve">
+    <value>label_Config</value>
+  </data>
+  <data name="&gt;&gt;label_Config.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Config.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;label_Config.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="CheckConfig_BTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="CheckConfig_BTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>47, 110</value>
+  </data>
+  <data name="CheckConfig_BTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 36</value>
+  </data>
+  <data name="CheckConfig_BTN.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="CheckConfig_BTN.Text" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Name" xml:space="preserve">
+    <value>CheckConfig_BTN</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ConfigPic.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ConfigPic.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ConfigPic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ConfigPic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 78</value>
+  </data>
+  <data name="ConfigPic.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="ConfigPic.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Name" xml:space="preserve">
+    <value>ConfigPic</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Config_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 282</value>
+  </data>
+  <data name="Config_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 155</value>
+  </data>
+  <data name="Config_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Name" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

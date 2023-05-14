@@ -31,9 +31,9 @@ namespace Advanced_Lock
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advanced));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MenuAnimation = new System.Windows.Forms.Timer(this.components);
             this.FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MainMenu = new Guna.UI2.WinForms.Guna2Panel();
@@ -68,7 +68,6 @@ namespace Advanced_Lock
             this.DeleteAll_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteBTN = new Guna.UI2.WinForms.Guna2Button();
             this.RefreshBTN = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.MainMenu.SuspendLayout();
             this.TextPanel.SuspendLayout();
             this.FilePanel.SuspendLayout();
@@ -349,8 +348,8 @@ namespace Advanced_Lock
             this.History_DataTable.AllowUserToAddRows = false;
             this.History_DataTable.AllowUserToDeleteRows = false;
             this.History_DataTable.AllowUserToResizeRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
-            this.History_DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
+            this.History_DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.History_DataTable.AutoGenerateColumns = false;
             this.History_DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.History_DataTable.BackgroundColor = System.Drawing.Color.White;
@@ -358,14 +357,14 @@ namespace Advanced_Lock
             this.History_DataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.History_DataTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.History_DataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Vazir", 12F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.History_DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Vazir", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.History_DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             resources.ApplyResources(this.History_DataTable, "History_DataTable");
             this.History_DataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.History_DataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -374,14 +373,14 @@ namespace Advanced_Lock
             this.resultHistory});
             this.History_DataTable.DataMember = "History";
             this.History_DataTable.DataSource = this.dataSet1;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Vazir", 12F);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.History_DataTable.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Vazir", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.History_DataTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.History_DataTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.History_DataTable.EnableHeadersVisualStyles = false;
             this.History_DataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
@@ -437,7 +436,6 @@ namespace Advanced_Lock
             // 
             // Menu2
             // 
-            this.Menu2.Controls.Add(this.label1);
             this.Menu2.Controls.Add(this.infoBTN);
             this.Menu2.Controls.Add(this.LoadDataBTN);
             this.Menu2.Controls.Add(this.SaveDataBTN);
@@ -573,12 +571,6 @@ namespace Advanced_Lock
             this.RefreshBTN.ShadowDecoration.Parent = this.RefreshBTN;
             this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
             // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -598,7 +590,6 @@ namespace Advanced_Lock
             ((System.ComponentModel.ISupportInitialize)(this.HistoryTable)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.History_DataTable)).EndInit();
             this.Menu2.ResumeLayout(false);
-            this.Menu2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -638,7 +629,6 @@ namespace Advanced_Lock
         private System.Windows.Forms.DataGridViewTextBoxColumn yourChoseHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn resultHistory;
-        private System.Windows.Forms.Label label1;
     }
 }
 

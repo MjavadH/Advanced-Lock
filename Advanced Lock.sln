@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31613.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced Lock", "Advanced Lock\Advanced Lock.csproj", "{FBF584F0-E86B-427C-A4FE-25871A74AB48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lock_Registry", "Lock_Registry\Lock_Registry.csproj", "{26FEB7B1-1D53-4350-975E-02307092AA73}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistryConfiguration", "Lock_Registry\RegistryConfiguration.csproj", "{26FEB7B1-1D53-4350-975E-02307092AA73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

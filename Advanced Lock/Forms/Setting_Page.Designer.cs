@@ -30,7 +30,7 @@ namespace Advanced_Lock.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Page));
             this.DarkModePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.label_DarkM = new System.Windows.Forms.Label();
@@ -60,6 +60,10 @@ namespace Advanced_Lock.Forms
             this.password_Toggle = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.timerOK = new System.Windows.Forms.Timer(this.components);
             this.TransitionOK = new Guna.UI2.WinForms.Guna2Transition();
+            this.Config_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.label_Config = new System.Windows.Forms.Label();
+            this.CheckConfig_BTN = new Guna.UI2.WinForms.Guna2Button();
+            this.ConfigPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.DarkModePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DarkModePic)).BeginInit();
             this.SwitchLangPanel.SuspendLayout();
@@ -72,6 +76,8 @@ namespace Advanced_Lock.Forms
             this.Password_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OK_BTN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordPic)).BeginInit();
+            this.Config_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigPic)).BeginInit();
             this.SuspendLayout();
             // 
             // DarkModePanel
@@ -345,8 +351,7 @@ namespace Advanced_Lock.Forms
             // 
             // Submit_BTN
             // 
-            this.Submit_BTN.AutoRoundedCorners = true;
-            this.Submit_BTN.BorderRadius = 17;
+            this.Submit_BTN.BorderRadius = 10;
             this.Submit_BTN.CheckedState.Parent = this.Submit_BTN;
             this.Submit_BTN.CustomImages.Parent = this.Submit_BTN;
             this.TransitionOK.SetDecoration(this.Submit_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -438,28 +443,74 @@ namespace Advanced_Lock.Forms
             // 
             this.TransitionOK.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
             this.TransitionOK.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.TransitionOK.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.TransitionOK.DefaultAnimation = animation2;
+            // 
+            // Config_Panel
+            // 
+            this.Config_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Config_Panel.BorderRadius = 20;
+            this.Config_Panel.Controls.Add(this.label_Config);
+            this.Config_Panel.Controls.Add(this.CheckConfig_BTN);
+            this.Config_Panel.Controls.Add(this.ConfigPic);
+            this.TransitionOK.SetDecoration(this.Config_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Config_Panel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Config_Panel, "Config_Panel");
+            this.Config_Panel.Name = "Config_Panel";
+            this.Config_Panel.ShadowDecoration.BorderRadius = 20;
+            this.Config_Panel.ShadowDecoration.Depth = 8;
+            this.Config_Panel.ShadowDecoration.Enabled = true;
+            this.Config_Panel.ShadowDecoration.Parent = this.Config_Panel;
+            // 
+            // label_Config
+            // 
+            this.TransitionOK.SetDecoration(this.label_Config, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_Config, "label_Config");
+            this.label_Config.Name = "label_Config";
+            // 
+            // CheckConfig_BTN
+            // 
+            this.CheckConfig_BTN.BorderRadius = 10;
+            this.CheckConfig_BTN.CheckedState.Parent = this.CheckConfig_BTN;
+            this.CheckConfig_BTN.CustomImages.Parent = this.CheckConfig_BTN;
+            this.TransitionOK.SetDecoration(this.CheckConfig_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.CheckConfig_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.CheckConfig_BTN, "CheckConfig_BTN");
+            this.CheckConfig_BTN.ForeColor = System.Drawing.Color.White;
+            this.CheckConfig_BTN.HoverState.Parent = this.CheckConfig_BTN;
+            this.CheckConfig_BTN.Name = "CheckConfig_BTN";
+            this.CheckConfig_BTN.ShadowDecoration.Parent = this.CheckConfig_BTN;
+            this.CheckConfig_BTN.Click += new System.EventHandler(this.CheckConfig_BTN_Click);
+            // 
+            // ConfigPic
+            // 
+            this.TransitionOK.SetDecoration(this.ConfigPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.ConfigPic, "ConfigPic");
+            this.ConfigPic.Image = global::Advanced_Lock.Properties.Resources.icons8_administrative_tools_96px;
+            this.ConfigPic.Name = "ConfigPic";
+            this.ConfigPic.ShadowDecoration.Parent = this.ConfigPic;
+            this.ConfigPic.TabStop = false;
             // 
             // Setting_Page
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.SwitchLangPanel);
+            this.Controls.Add(this.Config_Panel);
             this.Controls.Add(this.Sound_Panel);
             this.Controls.Add(this.Password_Panel);
             this.Controls.Add(this.Notifi_Panel);
@@ -484,6 +535,8 @@ namespace Advanced_Lock.Forms
             this.Password_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OK_BTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordPic)).EndInit();
+            this.Config_Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigPic)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -518,5 +571,9 @@ namespace Advanced_Lock.Forms
         private System.Windows.Forms.PictureBox OK_BTN;
         private Guna.UI2.WinForms.Guna2Transition TransitionOK;
         private System.Windows.Forms.Timer timerOK;
+        private Guna.UI2.WinForms.Guna2Panel Config_Panel;
+        private System.Windows.Forms.Label label_Config;
+        private Guna.UI2.WinForms.Guna2PictureBox ConfigPic;
+        private Guna.UI2.WinForms.Guna2Button CheckConfig_BTN;
     }
 }

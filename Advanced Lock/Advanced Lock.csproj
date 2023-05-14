@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Forms\Notification.resx">
       <DependentUpon>Notification.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting_Page.fa-IR.resx">
+      <DependentUpon>Setting_Page.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Setting_Page.fa.resx">
       <DependentUpon>Setting_Page.cs</DependentUpon>
     </EmbeddedResource>
@@ -313,13 +316,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\icons8_administrative_tools_96px.png" />
     <None Include="Resources\Folder-Icon.ico" />
     <None Include="Resources\File-Icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Lock_Registry\Lock_Registry.csproj">
+    <ProjectReference Include="..\Lock_Registry\RegistryConfiguration.csproj">
       <Project>{26feb7b1-1d53-4350-975e-02307092aa73}</Project>
-      <Name>Lock_Registry</Name>
+      <Name>RegistryConfiguration</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
