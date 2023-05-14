@@ -13,6 +13,7 @@ using Advanced_Lock.Properties;
 using static Advanced_Lock.Class.Colers;
 using System.IO;
 using Advanced_Lock.Forms;
+using Lock_Registry;
 
 namespace Advanced_Lock
 {
@@ -47,9 +48,9 @@ namespace Advanced_Lock
         }
         public void HistoryRefresh()
         {
-            while (History_Procress.Rows.Count != 0)
+            while (History_DataTable.Rows.Count != 0)
             {
-                History_Procress.Rows.Remove(History_Procress.Rows[0]);
+                History_DataTable.Rows.Remove(History_DataTable.Rows[0]);
             }
             dataLoad();
         }
@@ -71,8 +72,8 @@ namespace Advanced_Lock
             this.BackColor = Darkmode.DarkMode[0];
             MainMenu.FillColor = Darkmode.DarkMode[0];
             Menu2.FillColor = Darkmode.DarkMode[0];
-            History_Procress.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
-            History_Procress.BackgroundColor = Color.FromArgb(16, 16, 17);
+            History_DataTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
+            History_DataTable.BackgroundColor = Color.FromArgb(16, 16, 17);
         }
         void Notif(string msg_en, string msg_fa)
         {
@@ -116,7 +117,7 @@ namespace Advanced_Lock
             {
                 if (MainMenu.Width > 49)
                 {
-                    MainMenu.Width -= 7;
+                    MainMenu.Width -= 9;
                 }
                 else
                 {
@@ -127,7 +128,7 @@ namespace Advanced_Lock
             {
                 if (MainMenu.Width < 126)
                 {
-                    MainMenu.Width += 7;
+                    MainMenu.Width += 9;
                 }
                 else
                 {
@@ -137,29 +138,18 @@ namespace Advanced_Lock
         }
         private void Menu_BTN_CheckedChanged(object sender, EventArgs e)
         {
-            if (FileBTN.Checked)
+            Guna2Button button = (Guna2Button)sender;
+            switch (button.Name)
             {
-                FilePanel.Visible = true;
-            }
-            else if (!FileBTN.Checked)
-            {
-                FilePanel.Visible = false;
-            }
-            if (FolderBTN.Checked)
-            {
-                FolderPanel.Visible = true;
-            }
-            else if (!FolderBTN.Checked)
-            {
-                FolderPanel.Visible = false;
-            }
-            if (TextBTN.Checked)
-            {
-                TextPanel.Visible = true;
-            }
-            else if (!TextBTN.Checked)
-            {
-                TextPanel.Visible = false;
+                case "FolderBTN":
+                    FolderPanel.Visible = FolderBTN.Checked;
+                    break;
+                case "FileBTN":
+                    FilePanel.Visible = FileBTN.Checked;
+                    break;
+                case "TextBTN":
+                    TextPanel.Visible = TextBTN.Checked;
+                    break;
             }
         }
 
@@ -249,13 +239,9 @@ namespace Advanced_Lock
         /*------ Delete ------*/
         private void DeleteBTN_Click(object sender, EventArgs e)
         {
-            if (History_Procress.Rows.Count == 0)
+            if (History_DataTable.Rows.Count != 0)
             {
-
-            }
-            else
-            {
-                History_Procress.Rows.Remove(History_Procress.CurrentRow);
+                History_DataTable.Rows.Remove(History_DataTable.CurrentRow);
             }
             dataSet1.WriteXml("History");
             File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
@@ -264,6 +250,7 @@ namespace Advanced_Lock
         private void RefreshBTN_Click(object sender, EventArgs e)
         {
             HistoryRefresh();
+            label1.Text = new LockRegistry().CheckRegistery().ToString();
         }
         /*------ Delete All ------*/
         private void DeleteAll_BTN_Click(object sender, EventArgs e)
@@ -312,6 +299,11 @@ namespace Advanced_Lock
         private void infoBTN_Click(object sender, EventArgs e)
         {
             new AboutBox().ShowDialog();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            new LockRegistry().CreateRegistery();
         }
 
 

@@ -117,191 +117,902 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="MenuAnimation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>7, 0</value>
+  </metadata>
+  <metadata name="FileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>135, 0</value>
+  </metadata>
+  <data name="FileDialog.Filter" xml:space="preserve">
+    <value>All file|*.*</value>
+  </data>
+  <data name="FileDialog.Title" xml:space="preserve">
+    <value>Open .Alo File</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainMenu.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Name" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Name" xml:space="preserve">
+    <value>TextBTN</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Name" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Name" xml:space="preserve">
+    <value>FileBTN</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Name" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;FolderBTN.Name" xml:space="preserve">
+    <value>FolderBTN</value>
+  </data>
+  <data name="&gt;&gt;FolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FolderBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FolderBTN.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.Name" xml:space="preserve">
+    <value>MenuBTN</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MainMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 488</value>
+  </data>
+  <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Name" xml:space="preserve">
+    <value>DTextBTN</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Parent" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Name" xml:space="preserve">
+    <value>ETextBTN</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Parent" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TextPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 356</value>
+  </data>
+  <data name="TextPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 88</value>
+  </data>
+  <data name="TextPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TextPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Name" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;TextPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DTextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DTextBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="DTextBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="DTextBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="DTextBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DTextBTN.Text" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Name" xml:space="preserve">
+    <value>DTextBTN</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.Parent" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;DTextBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ETextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ETextBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="ETextBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ETextBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="ETextBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="ETextBTN.Text" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Name" xml:space="preserve">
+    <value>ETextBTN</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.Parent" xml:space="preserve">
+    <value>TextPanel</value>
+  </data>
+  <data name="&gt;&gt;ETextBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="TextBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="TextBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 311</value>
+  </data>
+  <data name="TextBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="TextBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="TextBTN.Text" xml:space="preserve">
+    <value>Text</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Name" xml:space="preserve">
+    <value>TextBTN</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;TextBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Name" xml:space="preserve">
+    <value>DFileBTN</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Parent" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Name" xml:space="preserve">
+    <value>EFileBTN</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Parent" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FilePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="FilePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 223</value>
+  </data>
+  <data name="FilePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 88</value>
+  </data>
+  <data name="FilePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="FilePanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Name" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FilePanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DFileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DFileBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="DFileBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="DFileBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="DFileBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="DFileBTN.Text" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Name" xml:space="preserve">
+    <value>DFileBTN</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.Parent" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;DFileBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EFileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="EFileBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="EFileBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="EFileBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="EFileBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="EFileBTN.Text" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Name" xml:space="preserve">
+    <value>EFileBTN</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.Parent" xml:space="preserve">
+    <value>FilePanel</value>
+  </data>
+  <data name="&gt;&gt;EFileBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="FileBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="FileBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 178</value>
+  </data>
+  <data name="FileBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="FileBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="FileBTN.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Name" xml:space="preserve">
+    <value>FileBTN</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FileBTN.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Name" xml:space="preserve">
+    <value>DFolderBTN</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Parent" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.Name" xml:space="preserve">
+    <value>EFolderBTN</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.Parent" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="FolderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="FolderPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 90</value>
+  </data>
+  <data name="FolderPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 88</value>
+  </data>
+  <data name="FolderPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="FolderPanel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Name" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FolderPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DFolderBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="DFolderBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
+  <data name="DFolderBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 45</value>
+  </data>
+  <data name="DFolderBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 45</value>
+  </data>
+  <data name="DFolderBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DFolderBTN.Text" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Name" xml:space="preserve">
+    <value>DFolderBTN</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.Parent" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;DFolderBTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="EFolderBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="EFolderBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
+  </data>
   <data name="EFolderBTN.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
   <data name="EFolderBTN.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 45</value>
   </data>
+  <data name="EFolderBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="EFolderBTN.Text" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
   <data name="&gt;&gt;EFolderBTN.Name" xml:space="preserve">
     <value>EFolderBTN</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="&gt;&gt;EFolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.Parent" xml:space="preserve">
+    <value>FolderPanel</value>
+  </data>
+  <data name="&gt;&gt;EFolderBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="FolderBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
-  <data name="&gt;&gt;DeleteBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="TextBTN.Text" xml:space="preserve">
-    <value>Text</value>
-  </data>
-  <data name="&gt;&gt;FileBTN.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="TelegramBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="SaveDataBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 0</value>
-  </data>
-  <data name="EFileBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TextPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;History_Procress.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="FolderBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt, style=Bold</value>
   </data>
   <data name="FolderBTN.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 45</value>
   </data>
-  <data name="&gt;&gt;SettingBTN.Name" xml:space="preserve">
-    <value>SettingBTN</value>
-  </data>
-  <data name="ETextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="FileBTN.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
-  <data name="DeleteAll_BTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>533, 0</value>
-  </data>
-  <data name="&gt;&gt;HistoryTable.Name" xml:space="preserve">
-    <value>HistoryTable</value>
-  </data>
-  <data name="EFileBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;EFileBTN.Name" xml:space="preserve">
-    <value>EFileBTN</value>
-  </data>
-  <data name="FolderPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 88</value>
-  </data>
-  <data name="&gt;&gt;UserSelected_name_DS.Type" xml:space="preserve">
-    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TelegramBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;User_Result.Name" xml:space="preserve">
-    <value>User_Result</value>
-  </data>
-  <data name="MainMenu.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="FileBTN.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FolderBTN.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 45</value>
-  </data>
-  <data name="&gt;&gt;TextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="FolderBTN.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="DFolderBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="FolderBTN.Text" xml:space="preserve">
+    <value>Folder</value>
   </data>
-  <data name="&gt;&gt;DFileBTN.Parent" xml:space="preserve">
-    <value>FilePanel</value>
+  <data name="&gt;&gt;FolderBTN.Name" xml:space="preserve">
+    <value>FolderBTN</value>
   </data>
-  <data name="RefreshBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="&gt;&gt;FolderBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="DFolderBTN.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="&gt;&gt;FolderBTN.Parent" xml:space="preserve">
+    <value>MainMenu</value>
+  </data>
+  <data name="&gt;&gt;FolderBTN.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="MenuBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="MenuBTN.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt, style=Bold</value>
   </data>
-  <data name="FileDialog.Filter" xml:space="preserve">
-    <value>All file|*.*</value>
+  <data name="MenuBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="TextBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="SettingBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>486, 0</value>
-  </data>
-  <data name="EFileBTN.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MenuBTN.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 45</value>
   </data>
-  <data name="SettingBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="MenuBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="DTextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="MenuBTN.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.Name" xml:space="preserve">
+    <value>MenuBTN</value>
+  </data>
+  <data name="&gt;&gt;MenuBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MenuBTN.Parent" xml:space="preserve">
     <value>MainMenu</value>
   </data>
-  <data name="&gt;&gt;DFolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;MenuBTN.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;User_Result.Type" xml:space="preserve">
-    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <metadata name="dataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>227, 2</value>
+  </metadata>
+  <data name="History_DataTable.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>35</value>
   </data>
-  <data name="&gt;&gt;LoadDataBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  <data name="yourChoseHistory.HeaderText" xml:space="preserve">
+    <value>YourChose</value>
   </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 12pt</value>
+  <data name="passwordHistory.HeaderText" xml:space="preserve">
+    <value>Password</value>
   </data>
-  <data name="Menu2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="resultHistory.HeaderText" xml:space="preserve">
+    <value>Result</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Advanced Lock</value>
+  <data name="History_DataTable.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
-  <data name="&gt;&gt;FileBTN.Name" xml:space="preserve">
-    <value>FileBTN</value>
+  <data name="History_DataTable.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 0</value>
+  </data>
+  <data name="History_DataTable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>674, 452</value>
+  </data>
+  <data name="History_DataTable.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;History_DataTable.Name" xml:space="preserve">
+    <value>History_DataTable</value>
+  </data>
+  <data name="&gt;&gt;History_DataTable.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;History_DataTable.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;History_DataTable.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 0</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 26</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="infoBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="infoBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
   <data name="infoBTN.Location" type="System.Drawing.Point, System.Drawing">
     <value>345, 0</value>
   </data>
-  <data name="RefreshBTN.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="infoBTN.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 36</value>
   </data>
-  <data name="&gt;&gt;FolderPanel.ZOrder" xml:space="preserve">
+  <data name="infoBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;infoBTN.Name" xml:space="preserve">
+    <value>infoBTN</value>
+  </data>
+  <data name="&gt;&gt;infoBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;infoBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;infoBTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="LoadDataBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="LoadDataBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="LoadDataBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>392, 0</value>
+  </data>
+  <data name="LoadDataBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
+  </data>
+  <data name="LoadDataBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;LoadDataBTN.Name" xml:space="preserve">
+    <value>LoadDataBTN</value>
+  </data>
+  <data name="&gt;&gt;LoadDataBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;LoadDataBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;LoadDataBTN.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SaveDataBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="SaveDataBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="SaveDataBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 0</value>
+  </data>
+  <data name="SaveDataBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
+  </data>
+  <data name="SaveDataBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;SaveDataBTN.Name" xml:space="preserve">
+    <value>SaveDataBTN</value>
+  </data>
+  <data name="&gt;&gt;SaveDataBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;SaveDataBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;SaveDataBTN.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="TelegramBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="TelegramBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="TelegramBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="TelegramBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
+  </data>
+  <data name="TelegramBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;TelegramBTN.Name" xml:space="preserve">
+    <value>TelegramBTN</value>
+  </data>
+  <data name="&gt;&gt;TelegramBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TelegramBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;TelegramBTN.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="EFileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="SettingBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
   </data>
-  <data name="&gt;&gt;DTextBTN.Parent" xml:space="preserve">
-    <value>TextPanel</value>
+  <data name="SettingBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="FileBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 178</value>
+  <data name="SettingBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>486, 0</value>
   </data>
-  <data name="History_Procress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 0</value>
+  <data name="SettingBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
   </data>
-  <data name="&gt;&gt;MenuAnimation.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SettingBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="MainMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 488</value>
+  <data name="&gt;&gt;SettingBTN.Name" xml:space="preserve">
+    <value>SettingBTN</value>
   </data>
-  <data name="&gt;&gt;HistoryTable.Type" xml:space="preserve">
-    <value>System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;SettingBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Menu2.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;SettingBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
   </data>
-  <data name="FolderPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;SettingBTN.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="DeleteAll_BTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="DeleteAll_BTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DeleteAll_BTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>533, 0</value>
+  </data>
+  <data name="DeleteAll_BTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
+  </data>
+  <data name="DeleteAll_BTN.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DeleteAll_BTN.Name" xml:space="preserve">
+    <value>DeleteAll_BTN</value>
+  </data>
+  <data name="&gt;&gt;DeleteAll_BTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DeleteAll_BTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;DeleteAll_BTN.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="DeleteBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="DeleteBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="DeleteBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 0</value>
+  </data>
+  <data name="DeleteBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
+  </data>
+  <data name="DeleteBTN.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DeleteBTN.Name" xml:space="preserve">
+    <value>DeleteBTN</value>
+  </data>
+  <data name="&gt;&gt;DeleteBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DeleteBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;DeleteBTN.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="RefreshBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="RefreshBTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="RefreshBTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>627, 0</value>
+  </data>
+  <data name="RefreshBTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 36</value>
   </data>
   <data name="RefreshBTN.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;TextPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;RefreshBTN.Name" xml:space="preserve">
+    <value>RefreshBTN</value>
   </data>
-  <data name="DFileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;RefreshBTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;RefreshBTN.Parent" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;RefreshBTN.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Menu2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="Menu2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 452</value>
+  </data>
+  <data name="Menu2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>674, 36</value>
+  </data>
+  <data name="Menu2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;Menu2.Name" xml:space="preserve">
+    <value>Menu2</value>
+  </data>
+  <data name="&gt;&gt;Menu2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Menu2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Menu2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>34</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 488</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 12pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3108,607 +3819,79 @@
         RERERERERERERERERGLk/wPsNDvneFBU/gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="FileDialog.Title" xml:space="preserve">
-    <value>Open .Alo File</value>
-  </data>
-  <data name="DFolderBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;FileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="DFolderBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="&gt;&gt;FolderBTN.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;infoBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;MenuBTN.Name" xml:space="preserve">
-    <value>MenuBTN</value>
-  </data>
-  <data name="&gt;&gt;DFileBTN.Name" xml:space="preserve">
-    <value>DFileBTN</value>
-  </data>
-  <data name="&gt;&gt;LoadDataBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="History_Procress.ColumnHeadersHeight" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="&gt;&gt;DFileBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;yourChoseHistory.Name" xml:space="preserve">
-    <value>yourChoseHistory</value>
-  </data>
-  <data name="&gt;&gt;Menu2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SettingBTN.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;DTextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="FileBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="FolderBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="&gt;&gt;infoBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ETextBTN.Parent" xml:space="preserve">
-    <value>TextPanel</value>
-  </data>
-  <data name="&gt;&gt;FolderPanel.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="passwordHistory.HeaderText" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="MainMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DeleteBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="&gt;&gt;ETextBTN.Name" xml:space="preserve">
-    <value>ETextBTN</value>
-  </data>
-  <data name="&gt;&gt;UserSelected_password_DS.Name" xml:space="preserve">
-    <value>UserSelected_password_DS</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="MainMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;passwordHistory.Name" xml:space="preserve">
-    <value>passwordHistory</value>
-  </data>
-  <data name="&gt;&gt;SaveDataBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="&gt;&gt;DFolderBTN.Name" xml:space="preserve">
-    <value>DFolderBTN</value>
-  </data>
-  <data name="SettingBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;Menu2.Name" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="&gt;&gt;History_Procress.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DeleteAll_BTN.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Advanced</value>
-  </data>
-  <data name="ETextBTN.Text" xml:space="preserve">
-    <value>Encrypt</value>
-  </data>
-  <data name="RefreshBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="MenuBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;LoadDataBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="DeleteBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>580, 0</value>
-  </data>
-  <data name="EFileBTN.Text" xml:space="preserve">
-    <value>Encrypt</value>
-  </data>
-  <data name="&gt;&gt;FolderPanel.Name" xml:space="preserve">
-    <value>FolderPanel</value>
-  </data>
-  <data name="&gt;&gt;RefreshBTN.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="DTextBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="EFileBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;FolderBTN.Name" xml:space="preserve">
-    <value>FolderBTN</value>
-  </data>
-  <data name="DFileBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="DeleteBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="EFolderBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="MenuBTN.Text" xml:space="preserve">
-    <value>Menu</value>
-  </data>
-  <data name="&gt;&gt;passwordHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DeleteBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;RefreshBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ETextBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;History_Procress.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="yourChoseHistory.HeaderText" xml:space="preserve">
-    <value>YourChose</value>
-  </data>
-  <data name="DFileBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;TextBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;MenuAnimation.Name" xml:space="preserve">
-    <value>MenuAnimation</value>
-  </data>
-  <data name="&gt;&gt;FileDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FolderPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;FileBTN.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>816, 489</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
   </data>
-  <data name="&gt;&gt;FolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Advanced Lock</value>
   </data>
-  <data name="MenuBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;MenuAnimation.Name" xml:space="preserve">
+    <value>MenuAnimation</value>
   </data>
-  <data name="TextBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="EFolderBTN.Text" xml:space="preserve">
-    <value>Encrypt</value>
-  </data>
-  <data name="MenuBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="ETextBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TextPanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;EFolderBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DeleteAll_BTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="DTextBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;TextPanel.Name" xml:space="preserve">
-    <value>TextPanel</value>
-  </data>
-  <data name="&gt;&gt;DTextBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ETextBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="TextPanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TelegramBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;RefreshBTN.Name" xml:space="preserve">
-    <value>RefreshBTN</value>
-  </data>
-  <data name="FilePanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;History_Procress.Name" xml:space="preserve">
-    <value>History_Procress</value>
-  </data>
-  <data name="SaveDataBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Menu2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;MenuBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="FilePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 88</value>
-  </data>
-  <data name="&gt;&gt;SaveDataBTN.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;FilePanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="FolderPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 90</value>
+  <data name="&gt;&gt;MenuAnimation.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;FileDialog.Name" xml:space="preserve">
     <value>FileDialog</value>
   </data>
-  <data name="DeleteAll_BTN.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;EFileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="FileBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;DeleteBTN.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;DFolderBTN.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;SaveDataBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="DFileBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
-  </data>
-  <data name="SaveDataBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="TextPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 356</value>
-  </data>
-  <data name="&gt;&gt;EFolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="Menu2.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="Menu2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 36</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>816, 489</value>
-  </data>
-  <data name="LoadDataBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="ETextBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="LoadDataBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;DeleteBTN.Name" xml:space="preserve">
-    <value>DeleteBTN</value>
-  </data>
-  <data name="SettingBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="&gt;&gt;DTextBTN.Name" xml:space="preserve">
-    <value>DTextBTN</value>
-  </data>
-  <data name="DTextBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="&gt;&gt;infoBTN.Name" xml:space="preserve">
-    <value>infoBTN</value>
-  </data>
-  <data name="TextBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Name" xml:space="preserve">
-    <value>TelegramBTN</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;SaveDataBTN.Name" xml:space="preserve">
-    <value>SaveDataBTN</value>
-  </data>
-  <data name="&gt;&gt;FolderPanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;resultHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="FileBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DFolderBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
-  </data>
-  <data name="MenuBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;LoadDataBTN.Name" xml:space="preserve">
-    <value>LoadDataBTN</value>
-  </data>
-  <data name="&gt;&gt;EFolderBTN.Parent" xml:space="preserve">
-    <value>FolderPanel</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;UserSelected_name_DS.Name" xml:space="preserve">
-    <value>UserSelected_name_DS</value>
-  </data>
-  <data name="&gt;&gt;dataSet1.Type" xml:space="preserve">
-    <value>System.Data.DataSet, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="EFolderBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="SaveDataBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;FolderBTN.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="FilePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 223</value>
-  </data>
-  <data name="TextBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 311</value>
-  </data>
-  <data name="&gt;&gt;ETextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="LoadDataBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="SaveDataBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="TelegramBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;FilePanel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;TextPanel.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="MenuBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="FolderBTN.Text" xml:space="preserve">
-    <value>Folder</value>
-  </data>
-  <data name="&gt;&gt;RefreshBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="FolderBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;FilePanel.Name" xml:space="preserve">
-    <value>FilePanel</value>
-  </data>
-  <data name="&gt;&gt;TextBTN.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="TextBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;ETextBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;DFileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="resultHistory.HeaderText" xml:space="preserve">
-    <value>Result</value>
-  </data>
-  <data name="MainMenu.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="History_Procress.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;SettingBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="DeleteAll_BTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;DeleteAll_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;FilePanel.Parent" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="SettingBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Name" xml:space="preserve">
-    <value>MainMenu</value>
-  </data>
-  <data name="&gt;&gt;infoBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="DTextBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
-  </data>
-  <data name="History_Procress.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="FilePanel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Menu2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>126, 452</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>800, 488</value>
-  </data>
-  <data name="EFolderBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="FolderPanel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;EFileBTN.Parent" xml:space="preserve">
-    <value>FilePanel</value>
-  </data>
-  <data name="&gt;&gt;MenuBTN.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;UserSelected_password_DS.Type" xml:space="preserve">
-    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="DTextBTN.Text" xml:space="preserve">
-    <value>Decrypt</value>
-  </data>
-  <data name="&gt;&gt;EFileBTN.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="infoBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="FilePanel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;resultHistory.Name" xml:space="preserve">
-    <value>resultHistory</value>
-  </data>
-  <data name="LoadDataBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>392, 0</value>
-  </data>
-  <data name="&gt;&gt;DeleteAll_BTN.Name" xml:space="preserve">
-    <value>DeleteAll_BTN</value>
-  </data>
-  <data name="History_Procress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>674, 452</value>
-  </data>
-  <data name="TextPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="DFileBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 45</value>
-  </data>
-  <data name="LoadDataBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="DFileBTN.Text" xml:space="preserve">
-    <value>Decrypt</value>
-  </data>
-  <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TextBTN.Name" xml:space="preserve">
-    <value>TextBTN</value>
-  </data>
-  <data name="DeleteBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="&gt;&gt;DFolderBTN.Parent" xml:space="preserve">
-    <value>FolderPanel</value>
-  </data>
-  <data name="infoBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="DeleteAll_BTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="infoBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="infoBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;SettingBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="TelegramBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="DeleteBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="TextPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 88</value>
-  </data>
-  <data name="&gt;&gt;yourChoseHistory.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="RefreshBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>627, 0</value>
-  </data>
-  <data name="DFolderBTN.Text" xml:space="preserve">
-    <value>Decrypt</value>
-  </data>
-  <data name="&gt;&gt;DeleteAll_BTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
+  <data name="&gt;&gt;FileDialog.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;dataSet1.Name" xml:space="preserve">
     <value>dataSet1</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="FileDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>135, 0</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>34</value>
-  </metadata>
-  <metadata name="dataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>226, 3</value>
-  </metadata>
-  <metadata name="MenuAnimation.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>7, 0</value>
-  </metadata>
+  <data name="&gt;&gt;dataSet1.Type" xml:space="preserve">
+    <value>System.Data.DataSet, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HistoryTable.Name" xml:space="preserve">
+    <value>HistoryTable</value>
+  </data>
+  <data name="&gt;&gt;HistoryTable.Type" xml:space="preserve">
+    <value>System.Data.DataTable, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserSelected_name_DS.Name" xml:space="preserve">
+    <value>UserSelected_name_DS</value>
+  </data>
+  <data name="&gt;&gt;UserSelected_name_DS.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserSelected_password_DS.Name" xml:space="preserve">
+    <value>UserSelected_password_DS</value>
+  </data>
+  <data name="&gt;&gt;UserSelected_password_DS.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;User_Result.Name" xml:space="preserve">
+    <value>User_Result</value>
+  </data>
+  <data name="&gt;&gt;User_Result.Type" xml:space="preserve">
+    <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;yourChoseHistory.Name" xml:space="preserve">
+    <value>yourChoseHistory</value>
+  </data>
+  <data name="&gt;&gt;yourChoseHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;passwordHistory.Name" xml:space="preserve">
+    <value>passwordHistory</value>
+  </data>
+  <data name="&gt;&gt;passwordHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;resultHistory.Name" xml:space="preserve">
+    <value>resultHistory</value>
+  </data>
+  <data name="&gt;&gt;resultHistory.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Advanced</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

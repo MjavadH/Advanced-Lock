@@ -108,7 +108,6 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\Registery.cs" />
     <Compile Include="Forms\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -316,6 +315,12 @@
     <Content Include="Icon.ico" />
     <None Include="Resources\Folder-Icon.ico" />
     <None Include="Resources\File-Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lock_Registry\Lock_Registry.csproj">
+      <Project>{26feb7b1-1d53-4350-975e-02307092aa73}</Project>
+      <Name>Lock_Registry</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
