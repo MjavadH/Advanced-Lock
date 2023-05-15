@@ -117,13 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label_Config.Text" xml:space="preserve">
-    <value>بررسی پیکربندی</value>
-  </data>
-  <data name="CheckConfig_BTN.Text" xml:space="preserve">
-    <value>بررسی</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Password_User.IconRight" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAA0hJREFUaEPt
+        2LmLFEEUx/ExU/BA8R8wNlP2H9BEFG8NdI29wVs8EI9IRVmvSAMTwUxUvDJF1EBRE28RVBAxULxFPL8/
+        mILHmzc93b29rgP94AOzs/Ve1UxXVdd0o4466qijjjoqiGGYhl04j6d4hXdNeq339D+1UduhGPSYjJP4
+        hD8FfYRyJ+GfxyzcRTSwMu5gJgY8xuEiokFU4QLUx4DEfLxH1LG8geb4HqzCQixo0mu9txcapNpGNUR9
+        zEOlsQNRZ79xDeswvSDlKFc1otrbUUkcQtTBA6xHNLgi9EHuI+rjAPoVuuS+6A8cQTSY/lBN1fb9aUqW
+        ikXwxTQ/tyAaQLISZ/ACH5qe4zSWI8pJNiNaZ70oFBPxDbaIbkhLEXUss3EOv2DzLP3vLLQNRzVEfagv
+        m6exTECuGIFHsAW+YDWiDkWDL3JfuA3lRLVkDdSnzdGYNLaOcQw2UbvETkQdJZdgc/LQlhvVSrbBX82j
+        yIwe+KRTiDpINOf9Vqj5Pwdjm/Rt6yxk26ifTmtCRw2fozGGMQQ3YRPSQKLiiea0zxkNH3rvJWxbLeyo
+        ZqK1og3A5miMGmtLTIFtqG81zz7vB6UP3C50h7VtNbioprUB/gprrC1xGbaR7pJRQe8rbF7WQhsF21YL
+        NarpXYHN01hb4gZ8o6iY57fb4WgXI2Hb6sNHNb3rsHn6uyX0I8M20mXLc8bxUyjrWOynkNZLVNPaCD+F
+        pqIltDBuwTZ8hqybjvhF/BDRIh6Doot4LnxO20WsiLbRE4iKJyvgc9LupfWgaRMN5CeWIaqZ6APanMxt
+        NIVOgDZJl283og4SfxXy6HR/6YPPyXU61Tf2BDbxM/SDJOpINM30s9DmZNFRImtqroXf3R4j11FCMR7+
+        LKK/dUaJOpSqDnPaOHzf+gI1pkKxBLaI6Ki7CVHHSTpOa85/b9KayHOc3go9rfD9Lkap2A9fTIvvOGYg
+        GkQZqqXNIrp6+1A6tF0dhi8q91Dmt7Cno4K23qiPg2i7ZRaJrB/1V6FFFw2uHX3jOmf5O6xV2Y/6FJ0e
+        q7yGf6yigcqgP1ZJ0dUPtmxoG+zKR4s+uvbhro/o8fpbaJGLXv+Xj9frqKOOOuro5mg0/gImS6WTg4aS
+        PQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAkAEBAAAAEAIABoBAAAlgAAABgYAAABACAAiAkAAP4EAAAgIAAAAQAgAKgQAACGDgAAMDAAAAEA

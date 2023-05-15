@@ -117,165 +117,18 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
-    <value>progressBar</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ProgressBar, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;AlertBox.Name" xml:space="preserve">
-    <value>AlertBox</value>
-  </data>
-  <data name="&gt;&gt;AlertBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AlertBox.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;AlertBox.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Name" xml:space="preserve">
-    <value>Text_ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Password_User.Name" xml:space="preserve">
-    <value>Password_User</value>
-  </data>
-  <data name="&gt;&gt;Password_User.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Password_User.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Password_User.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;PasswordText.Name" xml:space="preserve">
-    <value>PasswordText</value>
-  </data>
-  <data name="&gt;&gt;PasswordText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PasswordText.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;PasswordText.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;Line.Name" xml:space="preserve">
-    <value>Line</value>
-  </data>
-  <data name="&gt;&gt;Line.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Line.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Line.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;UserSelected.Name" xml:space="preserve">
-    <value>UserSelected</value>
-  </data>
-  <data name="&gt;&gt;UserSelected.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;UserSelected.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;UserSelected.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PathText.Name" xml:space="preserve">
-    <value>PathText</value>
-  </data>
-  <data name="&gt;&gt;PathText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PathText.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;PathText.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;Cancel_BTN.Name" xml:space="preserve">
-    <value>Cancel_BTN</value>
-  </data>
-  <data name="&gt;&gt;Cancel_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Cancel_BTN.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Cancel_BTN.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;Progress_BTN.Name" xml:space="preserve">
-    <value>Progress_BTN</value>
-  </data>
-  <data name="&gt;&gt;Progress_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Progress_BTN.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Progress_BTN.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ED_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ED_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ED_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
-  </data>
-  <data name="ED_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>477, 395</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ED_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;ED_Panel.Name" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;ED_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ED_Panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ED_Panel.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="progressBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="progressBar.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 331</value>
   </data>
   <data name="progressBar.Size" type="System.Drawing.Size, System.Drawing">
     <value>469, 34</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="progressBar.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -320,57 +173,6 @@
   </data>
   <data name="&gt;&gt;AlertBox.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="&gt;&gt;Result_ED_Text.Name" xml:space="preserve">
-    <value>Result_ED_Text</value>
-  </data>
-  <data name="&gt;&gt;Result_ED_Text.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Result_ED_Text.Parent" xml:space="preserve">
-    <value>Text_ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Result_ED_Text.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ED_Text_Text.Name" xml:space="preserve">
-    <value>ED_Text_Text</value>
-  </data>
-  <data name="&gt;&gt;ED_Text_Text.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ED_Text_Text.Parent" xml:space="preserve">
-    <value>Text_ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;ED_Text_Text.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Text_ED_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Text_ED_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 172</value>
-  </data>
-  <data name="Text_ED_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 87</value>
-  </data>
-  <data name="Text_ED_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="Text_ED_Panel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Name" xml:space="preserve">
-    <value>Text_ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.Parent" xml:space="preserve">
-    <value>ED_Panel</value>
-  </data>
-  <data name="&gt;&gt;Text_ED_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="Result_ED_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -437,6 +239,33 @@
   </data>
   <data name="&gt;&gt;ED_Text_Text.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Text_ED_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Text_ED_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 172</value>
+  </data>
+  <data name="Text_ED_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 87</value>
+  </data>
+  <data name="Text_ED_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Text_ED_Panel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Text_ED_Panel.Name" xml:space="preserve">
+    <value>Text_ED_Panel</value>
+  </data>
+  <data name="&gt;&gt;Text_ED_Panel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Text_ED_Panel.Parent" xml:space="preserve">
+    <value>ED_Panel</value>
+  </data>
+  <data name="&gt;&gt;Text_ED_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="Password_User.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -661,6 +490,33 @@
   </data>
   <data name="&gt;&gt;Progress_BTN.ZOrder" xml:space="preserve">
     <value>9</value>
+  </data>
+  <data name="ED_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="ED_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ED_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="ED_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>477, 395</value>
+  </data>
+  <data name="ED_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;ED_Panel.Name" xml:space="preserve">
+    <value>ED_Panel</value>
+  </data>
+  <data name="&gt;&gt;ED_Panel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ED_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ED_Panel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="Background_EFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
