@@ -28,7 +28,7 @@ namespace Advanced_Lock.Forms
         {
             RegistryKey reg = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
 
-            string password = Encryption_Decryption.Encryption__Decryption__Text.Decryption(reg.GetValue("pass").ToString(), "Adv@n3eD KeY!");
+            string password = Encrypt_Decrypt.Encryption__Decryption__Text.Decryption(reg.GetValue("pass").ToString(), "Adv@n3eD KeY!");
             if (Box_password.Text == password)
             {
                 Settings.Default.Password_Enter = true;

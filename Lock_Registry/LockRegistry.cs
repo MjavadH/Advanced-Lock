@@ -2,9 +2,8 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Reflection;
 
-namespace RegistryConfiguration
+namespace Registry_Configuration
 {
     public class LockRegistry
     {

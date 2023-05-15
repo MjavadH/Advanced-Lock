@@ -30,7 +30,7 @@ namespace Advanced_Lock.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Page));
             this.DarkModePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.label_DarkM = new System.Windows.Forms.Label();
@@ -64,6 +64,7 @@ namespace Advanced_Lock.Forms
             this.label_Config = new System.Windows.Forms.Label();
             this.CheckConfig_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.ConfigPic = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Checked_BTN = new System.Windows.Forms.PictureBox();
             this.DarkModePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DarkModePic)).BeginInit();
             this.SwitchLangPanel.SuspendLayout();
@@ -78,6 +79,7 @@ namespace Advanced_Lock.Forms
             ((System.ComponentModel.ISupportInitialize)(this.PasswordPic)).BeginInit();
             this.Config_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Checked_BTN)).BeginInit();
             this.SuspendLayout();
             // 
             // DarkModePanel
@@ -443,27 +445,28 @@ namespace Advanced_Lock.Forms
             // 
             this.TransitionOK.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
             this.TransitionOK.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.TransitionOK.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.TransitionOK.DefaultAnimation = animation1;
             // 
             // Config_Panel
             // 
             this.Config_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Config_Panel.BorderRadius = 20;
+            this.Config_Panel.Controls.Add(this.Checked_BTN);
             this.Config_Panel.Controls.Add(this.label_Config);
             this.Config_Panel.Controls.Add(this.CheckConfig_BTN);
             this.Config_Panel.Controls.Add(this.ConfigPic);
@@ -505,6 +508,14 @@ namespace Advanced_Lock.Forms
             this.ConfigPic.ShadowDecoration.Parent = this.ConfigPic;
             this.ConfigPic.TabStop = false;
             // 
+            // Checked_BTN
+            // 
+            this.TransitionOK.SetDecoration(this.Checked_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Checked_BTN.Image = global::Advanced_Lock.Properties.Resources.icons8_ok_30px;
+            resources.ApplyResources(this.Checked_BTN, "Checked_BTN");
+            this.Checked_BTN.Name = "Checked_BTN";
+            this.Checked_BTN.TabStop = false;
+            // 
             // Setting_Page
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -536,7 +547,9 @@ namespace Advanced_Lock.Forms
             ((System.ComponentModel.ISupportInitialize)(this.OK_BTN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PasswordPic)).EndInit();
             this.Config_Panel.ResumeLayout(false);
+            this.Config_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Checked_BTN)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -575,5 +588,6 @@ namespace Advanced_Lock.Forms
         private System.Windows.Forms.Label label_Config;
         private Guna.UI2.WinForms.Guna2PictureBox ConfigPic;
         private Guna.UI2.WinForms.Guna2Button CheckConfig_BTN;
+        private System.Windows.Forms.PictureBox Checked_BTN;
     }
 }

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using Guna.UI2.WinForms;
 using Microsoft.Win32;
-using RegistryConfiguration;
+using Registry_Configuration;
 
 namespace Advanced_Lock.Forms
 {
@@ -71,7 +71,7 @@ namespace Advanced_Lock.Forms
                     string pass = regPass.GetValue("pass","").ToString();
                     if (!string.IsNullOrEmpty(pass))
                     {
-                        Box_password.Text = Encryption_Decryption.Encryption__Decryption__Text.Decryption(pass, "Adv@n3eD KeY!");
+                        Box_password.Text = Encrypt_Decrypt.Encryption__Decryption__Text.Decryption(pass, "Adv@n3eD KeY!");
                     }
                 }
                 catch (Exception)
@@ -134,7 +134,7 @@ namespace Advanced_Lock.Forms
         {
             if (!string.IsNullOrEmpty(Box_password.Text))
             {
-                string password = Encryption_Decryption.Encryption__Decryption__Text.Encryption(Box_password.Text, "Adv@n3eD KeY!");
+                string password = Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(Box_password.Text, "Adv@n3eD KeY!");
 
                 Registry.CurrentUser.CreateSubKey(@"SOFTWARE\AdvancedLock\password", RegistryKeyPermissionCheck.ReadWriteSubTree);
                 RegistryKey regPass = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
@@ -197,6 +197,7 @@ namespace Advanced_Lock.Forms
             else
             {
                 Notif("There is no problem in configuring the software", "مشکلی در پیکربندی نرم‌افزار وجود ندارد");
+                TransitionOK.ShowSync(Checked_BTN);
             }
         }
         /*--------- Config Panel End ---------*/

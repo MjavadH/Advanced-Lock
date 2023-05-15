@@ -74,10 +74,6 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Encrypt_Decrypt, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\source\repos\Encrypt_Decrypt\Encrypt_Decrypt\bin\Debug\Encrypt_Decrypt.dll</HintPath>
-    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>E:\Program\Library\Guna.UI2\Guna.UI2.dll</HintPath>
     </Reference>
@@ -321,6 +317,10 @@
     <None Include="Resources\File-Icon.ico" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Encrypt_Decrypt\Encrypt_Decrypt.csproj">
+      <Project>{0eb2d8b5-295f-46ff-b15d-195ffd34b543}</Project>
+      <Name>Encrypt_Decrypt</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Lock_Registry\RegistryConfiguration.csproj">
       <Project>{26feb7b1-1d53-4350-975e-02307092aa73}</Project>
       <Name>RegistryConfiguration</Name>

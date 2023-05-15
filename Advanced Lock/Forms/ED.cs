@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Encryption_Decryption;
+using Encrypt_Decrypt;
 using Advanced_Lock.Properties;
 using Advanced_Lock.Forms;
 using static Advanced_Lock.Class.Colers;
@@ -264,7 +264,6 @@ namespace Advanced_Lock
             string[] Results = { "Error", "incorect password", "not found file" };
             while (true)
             {
-                ProgressBar.Value = int.Parse(PV.ProgressV);
                 if (ProgressBar.Value > 99 || Result_Work == Results[0] || Result_Work == Results[1] || Result_Work == Results[2])
                 {
                     break;
@@ -276,7 +275,7 @@ namespace Advanced_Lock
         {
             if (backgroundProgress.IsBusy)
             {
-                backgroundProgress.CancelAsync();
+                //backgroundProgress.CancelAsync();
             }
             if (Background_EFile.IsBusy)
             {

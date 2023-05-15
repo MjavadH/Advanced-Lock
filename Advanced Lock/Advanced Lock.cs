@@ -29,16 +29,16 @@ namespace Advanced_Lock
             dataSet1.Tables[0].Rows.Add(choose, pass, result);
             dataSet1.AcceptChanges();
             dataSet1.WriteXml("History");
-            File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
+            File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
             
         }
         void dataLoad()
         {
             try
             {
-                File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Decryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
+                File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Decryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
                 dataSet1.ReadXml("History");
-                File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
+                File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
             }
             catch (Exception)
             {
@@ -244,7 +244,7 @@ namespace Advanced_Lock
                 History_DataTable.Rows.Remove(History_DataTable.CurrentRow);
             }
             dataSet1.WriteXml("History");
-            File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
+            File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
         }
         /*------ Refresh ------*/
         private void RefreshBTN_Click(object sender, EventArgs e)
@@ -256,7 +256,7 @@ namespace Advanced_Lock
         {
             dataSet1.Tables[0].Clear();
             dataSet1.WriteXml("History");
-            File.WriteAllText("History", Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
+            File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
             HistoryRefresh();
         }
         /*------ Setting ------*/
@@ -278,7 +278,7 @@ namespace Advanced_Lock
             if (exportD.ShowDialog() == DialogResult.OK)
             {
                 dataSet1.WriteXml(exportD.FileName);
-                File.WriteAllText(exportD.FileName, Encryption_Decryption.Encryption__Decryption__Text.Encryption(File.ReadAllText(exportD.FileName), "Adv@n3eD KeY!"));
+                File.WriteAllText(exportD.FileName, Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText(exportD.FileName), "Adv@n3eD KeY!"));
                 Notif("Export is done", "دیتا ها ذخیره شدند");
             }
         }
