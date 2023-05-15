@@ -32,7 +32,7 @@ namespace Advanced_Lock
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ED));
             this.ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.ProgressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
+            this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.AlertBox = new System.Windows.Forms.Label();
             this.Text_ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Result_ED_Text = new Guna.UI2.WinForms.Guna2TextBox();
@@ -53,7 +53,7 @@ namespace Advanced_Lock
             // 
             // ED_Panel
             // 
-            this.ED_Panel.Controls.Add(this.ProgressBar);
+            this.ED_Panel.Controls.Add(this.progressBar);
             this.ED_Panel.Controls.Add(this.AlertBox);
             this.ED_Panel.Controls.Add(this.Text_ED_Panel);
             this.ED_Panel.Controls.Add(this.Password_User);
@@ -67,14 +67,14 @@ namespace Advanced_Lock
             this.ED_Panel.Name = "ED_Panel";
             this.ED_Panel.ShadowDecoration.Parent = this.ED_Panel;
             // 
-            // ProgressBar
+            // progressBar
             // 
-            this.ProgressBar.BorderRadius = 5;
-            resources.ApplyResources(this.ProgressBar, "ProgressBar");
-            this.ProgressBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.ProgressBar.Name = "ProgressBar";
-            this.ProgressBar.ShadowDecoration.Parent = this.ProgressBar;
-            this.ProgressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.progressBar.BorderRadius = 5;
+            resources.ApplyResources(this.progressBar, "progressBar");
+            this.progressBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.progressBar.Name = "progressBar";
+            this.progressBar.ShadowDecoration.Parent = this.progressBar;
+            this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
             // AlertBox
             // 
@@ -271,7 +271,7 @@ namespace Advanced_Lock
         private System.Windows.Forms.Label AlertBox;
         private System.ComponentModel.BackgroundWorker Background_EFile;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
-        private Guna.UI2.WinForms.Guna2ProgressBar ProgressBar;
+        private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
         private System.ComponentModel.BackgroundWorker backgroundProgress;
     }
 }

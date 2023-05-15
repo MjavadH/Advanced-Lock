@@ -1,13 +1,11 @@
-﻿using System;
+﻿using Advanced_Lock.Forms;
+using Advanced_Lock.Properties;
+using Encrypt_Decrypt;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using Encrypt_Decrypt;
-using Advanced_Lock.Properties;
-using Advanced_Lock.Forms;
 using static Advanced_Lock.Class.Colers;
-using System.Reflection;
-using Microsoft.Win32;
 
 namespace Advanced_Lock
 {
@@ -41,7 +39,7 @@ namespace Advanced_Lock
             Password_User.FillColor = Darkmode.DarkMode[1];
             Result_ED_Text.FillColor = Darkmode.DarkMode[1];
         }
-        void Notif(string msg_en,string msg_fa)
+        void Notif(string msg_en, string msg_fa)
         {
             Notification frm = new Notification();
             if (Settings.Default.lan)
@@ -71,7 +69,7 @@ namespace Advanced_Lock
                 }
             }
         }
-        public void show_ED(string UserSelected,string type)
+        public void show_ED(string UserSelected, string type)
         {
             this.UserSelected.Text = UserSelected;
             /*Set Action*/
@@ -101,7 +99,7 @@ namespace Advanced_Lock
             {
                 action = enmAction.TextE;
                 this.UserSelected.ReadOnly = false;
-                ProgressBar.Visible = false;
+                progressBar.Visible = false;
                 Text_ED_Panel.Visible = true;
                 this.Text = "Encryption";
             }
@@ -109,7 +107,7 @@ namespace Advanced_Lock
             {
                 Text_ED_Panel.Visible = true;
                 this.UserSelected.ReadOnly = false;
-                ProgressBar.Visible = false;
+                progressBar.Visible = false;
                 action = enmAction.TextD;
                 this.Text = "Decryption";
             }
@@ -195,21 +193,20 @@ namespace Advanced_Lock
         {
             string Arg = e.Argument.ToString();
             backgroundProgress.RunWorkerAsync();
-            if (Arg == "Decrypt_File")
+            switch (Arg)
             {
-                Result_Work = Encryption__Decryption__File.Decryption(UserSelected.Text, Password_User.Text);
-            }
-            else if (Arg == "Encrypt_File")
-            {
-                Result_Work = Encryption__Decryption__File.Encryption(UserSelected.Text, Password_User.Text);
-            }
-            else if (Arg == "Encrypt_Folder")
-            {
-                Result_Work = Encryption__Decryption__Folder.Encryption(UserSelected.Text,Password_User.Text);
-            }
-            else if (Arg == "Decrypt_Folder")
-            {
-                Result_Work = Encryption__Decryption__Folder.Decryption(UserSelected.Text,Password_User.Text);
+                case "Decrypt_File":
+                    Result_Work = Encryption__Decryption__File.Decryption(UserSelected.Text, Password_User.Text);
+                    break;
+                case "Encrypt_File":
+                    Result_Work = Encryption__Decryption__File.Encryption(UserSelected.Text, Password_User.Text);
+                    break;
+                case "Encrypt_Folder":
+                    Result_Work = Encryption__Decryption__Folder.Encryption(UserSelected.Text, Password_User.Text);
+                    break;
+                case "Decrypt_Folder":
+                    Result_Work = Encryption__Decryption__Folder.Decryption(UserSelected.Text, Password_User.Text);
+                    break;
             }
         }
 
@@ -217,24 +214,24 @@ namespace Advanced_Lock
         {
             if (Result_Work == "Error")
             {
-                ProgressBar.ProgressColor = Color.FromArgb(255, 96, 96);
-                ProgressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
+                progressBar.ProgressColor = Color.FromArgb(255, 96, 96);
+                progressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
                 Cancel_BTN.Enabled = true;
                 Progress_BTN.Text = "Error!";
-                Notif("Error!","خطایی رخ داد!");
+                Notif("Error!", "خطایی رخ داد!");
             }
             else if (Result_Work == "incorect password")
             {
                 Cancel_BTN.Enabled = true;
                 Progress_BTN.Enabled = true;
                 Notif("incorect password", "گذرواژه اشتباه است");
-                ProgressBar.Value = 0;
+                progressBar.Value = 0;
             }
             else if (Result_Work == "not found file")
             {
                 Cancel_BTN.Enabled = true;
                 Notif("not found file", "فایل پیدا نشد");
-                ProgressBar.Value = 0;
+                progressBar.Value = 0;
             }
             else
             {
@@ -261,13 +258,9 @@ namespace Advanced_Lock
 
         private void backgroundProgress_DoWork(object sender, DoWorkEventArgs e)
         {
-            string[] Results = { "Error", "incorect password", "not found file" };
-            while (true)
+            while (string.IsNullOrEmpty(Result_Work))
             {
-                if (ProgressBar.Value > 99 || Result_Work == Results[0] || Result_Work == Results[1] || Result_Work == Results[2])
-                {
-                    break;
-                }
+                progressBar.Value = PV.ProgressBar;
             }
         }
 
@@ -275,7 +268,7 @@ namespace Advanced_Lock
         {
             if (backgroundProgress.IsBusy)
             {
-                //backgroundProgress.CancelAsync();
+                backgroundProgress.CancelAsync();
             }
             if (Background_EFile.IsBusy)
             {

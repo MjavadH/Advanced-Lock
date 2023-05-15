@@ -10,6 +10,11 @@ using Ionic.Zip;
 
 namespace Encrypt_Decrypt
 {
+    public class PV
+    {
+        public static int ProgressBar = 0;
+    };
+
     /*Encryption__Decryption__Text*/
     public class Encryption__Decryption__Text
     {
@@ -127,6 +132,7 @@ namespace Encrypt_Decrypt
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
                 byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
                 objMD5CryptoService.Clear();
+                PV.ProgressBar = 40;
                 using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
                 {
                     objTripleDESCryptoService.Key = securityKeyArray;
@@ -139,6 +145,7 @@ namespace Encrypt_Decrypt
                         objTripleDESCryptoService.Clear();
                         objTripleDESCryptoService.Dispose();
                         objCrytpoTransform.Dispose();
+                        PV.ProgressBar = 90;
                         if (isFolder)
                         {
                             string Fpath = path.Remove(path.Length - 3, 3);
