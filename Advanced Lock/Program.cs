@@ -21,18 +21,6 @@ namespace Advanced_Lock
         [STAThread]
         static void Main()
         {
-            if (Environment.GetCommandLineArgs().Length != 2)
-            {
-                try
-                {
-                    File.Open("Icons.icl", FileMode.Open);
-                }
-                catch (Exception)
-                {
-                    File.WriteAllBytes("Icons.icl", Resources.Icons);
-                }
-            }
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
@@ -55,7 +43,7 @@ namespace Advanced_Lock
                 Application.Run(new ED());
             }
             /*Open settheme if Setting(DarkModeCheck) empty*/
-            else if (string.IsNullOrEmpty(Settings.Default.DarkModeCheck))
+            else if (string.IsNullOrEmpty(Settings.Default.ThemeCheck))
             {
                 Application.Run(new Set_Theme());
             }

@@ -117,22 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>96, 284</value>
+    <value>0, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 29</value>
+    <value>268, 52</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Dark Mode</value>
+  </data>
+  <data name="label1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
@@ -141,25 +145,28 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>guna2Panel2</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 284</value>
+    <value>0, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>104, 29</value>
+    <value>268, 52</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Light Mode</value>
+  </data>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
@@ -168,20 +175,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>guna2Panel1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>0</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+    <value>Fill</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+    <value>0, 10</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>616, 46</value>
+    <value>379, 49</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -199,16 +205,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>$this</value>
+    <value>panel_Title</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
+  </data>
+  <data name="DarkMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 65</value>
+    <value>12, 116</value>
   </data>
   <data name="DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 180</value>
+    <value>268, 180</value>
   </data>
   <data name="DarkMode.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -226,16 +235,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DarkMode.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="LightMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="LightMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>334, 65</value>
+    <value>336, 116</value>
   </data>
   <data name="LightMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>270, 180</value>
+    <value>268, 180</value>
   </data>
   <data name="LightMode.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
@@ -253,6 +262,78 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LightMode.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel_Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, -10</value>
+  </data>
+  <data name="panel_Title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 10, 0, 0</value>
+  </data>
+  <data name="panel_Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 59</value>
+  </data>
+  <data name="panel_Title.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Name" xml:space="preserve">
+    <value>panel_Title</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 334</value>
+  </data>
+  <data name="guna2Panel1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 10</value>
+  </data>
+  <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 62</value>
+  </data>
+  <data name="guna2Panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Name" xml:space="preserve">
+    <value>guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 334</value>
+  </data>
+  <data name="guna2Panel2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 10</value>
+  </data>
+  <data name="guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 62</value>
+  </data>
+  <data name="guna2Panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel2.Name" xml:space="preserve">
+    <value>guna2Panel2</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;guna2Panel2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

@@ -50,12 +50,12 @@ namespace Advanced_Lock.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string DarkModeCheck {
+        public string ThemeCheck {
             get {
-                return ((string)(this["DarkModeCheck"]));
+                return ((string)(this["ThemeCheck"]));
             }
             set {
-                this["DarkModeCheck"] = value;
+                this["ThemeCheck"] = value;
             }
         }
         

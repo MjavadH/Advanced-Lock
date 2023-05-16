@@ -17,13 +17,13 @@ namespace Advanced_Lock
         }
         private void DarkModeBTN_Click(object sender, EventArgs e)
         {
-            Settings.Default.DarkModeCheck = "On";
+            Settings.Default.ThemeCheck = "On";
             Settings.Default.DarkMode = true;
             StartApp();
         }
         private void LightMode_BTN_Click(object sender, EventArgs e)
         {
-            Settings.Default.DarkModeCheck = "Off";
+            Settings.Default.ThemeCheck = "Off";
             Settings.Default.DarkMode = false;
             StartApp();
         }

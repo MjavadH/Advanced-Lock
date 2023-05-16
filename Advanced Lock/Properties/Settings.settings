@@ -8,7 +8,7 @@
     <Setting Name="History" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
-    <Setting Name="DarkModeCheck" Type="System.String" Scope="User">
+    <Setting Name="ThemeCheck" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="DarkMode" Type="System.Boolean" Scope="User">
