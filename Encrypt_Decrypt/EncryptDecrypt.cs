@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
+﻿using Ionic.Zip;
+using System;
+using System.Diagnostics;
 using System.IO;
-using System.IO.Compression;
-using Ionic.Zip;
+using System.Runtime.InteropServices;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace Encrypt_Decrypt
 {
-    public class PV
+    public class ProgressBar_Value
     {
-        public static int ProgressBar = 0;
+        public int MaxValue = 100;
+        public int Value = 0;
+    }
+    internal class I_O
+    {
+        public static byte[] toEncryptedArray;
+        public static byte[] toEncryptArray;
+        public static byte[] resultArray;
     };
 
     /*Encryption__Decryption__Text*/
@@ -128,11 +133,10 @@ namespace Encrypt_Decrypt
             try
             {
                 SecurityKeyF = password;
-                byte[] toEncryptedArray = File.ReadAllBytes(path);
+                I_O.toEncryptedArray = File.ReadAllBytes(path);
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
                 byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
                 objMD5CryptoService.Clear();
-                PV.ProgressBar = 40;
                 using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
                 {
                     objTripleDESCryptoService.Key = securityKeyArray;
@@ -140,21 +144,23 @@ namespace Encrypt_Decrypt
                     objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
                     using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
                     {
-
-                        byte[] resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
-                        objTripleDESCryptoService.Clear();
-                        objTripleDESCryptoService.Dispose();
-                        objCrytpoTransform.Dispose();
-                        PV.ProgressBar = 90;
+                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptedArray, 0, I_O.toEncryptedArray.Length);
+                        securityKeyArray.Initialize();
                         if (isFolder)
                         {
                             string Fpath = path.Remove(path.Length - 3, 3);
-                            File.WriteAllBytes(Fpath + "alf", resultArray);
-                            File.Delete(path);
+                            using (FileStream fs = File.Create(Fpath + "alf"))
+                            {
+                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                                File.Delete(path);
+                            }
                         }
                         else
                         {
-                            File.WriteAllBytes(path + ".alo", resultArray);
+                            using (FileStream fs = File.Create(path + ".alo"))
+                            {
+                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                            }
                         }
 
                         return "File Encrpted";
@@ -165,6 +171,10 @@ namespace Encrypt_Decrypt
             {
                 return "Error";
             }
+            finally
+            {
+                minimizeMemory();
+            }
         }
         private static string Decryption_method(string path, string password, bool isFolder)
         {
@@ -172,7 +182,7 @@ namespace Encrypt_Decrypt
             {
                 SecurityKeyF = password;
 
-                byte[] toEncryptArray = File.ReadAllBytes(path);
+                I_O.toEncryptArray = File.ReadAllBytes(path);
 
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
                 byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
@@ -186,18 +196,25 @@ namespace Encrypt_Decrypt
                     using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
                     {
 
-                        byte[] resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
-                        objTripleDESCryptoService.Clear();
-                        objCrytpoTransform.Dispose();
+                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptArray, 0, I_O.toEncryptArray.Length);
+                        securityKeyArray.Initialize();
                         if (isFolder)
                         {
+
                             string Fpath = path.Remove(path.Length - 3, 3) + "zip";
-                            File.WriteAllBytes(Fpath, resultArray);
+                            using (FileStream fs = File.Create(Fpath))
+                            {
+                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                                File.Delete(path);
+                            }
                             return Fpath;
                         }
                         else
                         {
-                            File.WriteAllBytes(path.Remove(path.Length - 3, 3), resultArray);
+                            using (FileStream fs = File.Create(path.Remove(path.Length - 3, 3)))
+                            {
+                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                            }
                         }
                         return "File Decrypted";
                     }
@@ -208,6 +225,11 @@ namespace Encrypt_Decrypt
             catch (Exception)
             {
                 return "incorect password";
+            }
+
+            finally
+            {
+                minimizeMemory();
             }
         }
         public static string Encryption(string filePath, string key, bool Folder = false)
@@ -234,6 +256,20 @@ namespace Encrypt_Decrypt
                 return "not found file";
             }
         }
+
+        private static void minimizeMemory()
+        {
+            I_O.resultArray.Initialize();
+            GC.Collect(GC.MaxGeneration);
+            GC.WaitForPendingFinalizers();
+            SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
+                (UIntPtr)0xFFFFFFFF, (UIntPtr)0xFFFFFFFF);
+        }
+
+        [DllImport("kernel32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool SetProcessWorkingSetSize(IntPtr process,
+            UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
     }
 
     /*Encryption__Decryption__Folder*/

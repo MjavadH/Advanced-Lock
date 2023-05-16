@@ -192,7 +192,7 @@ namespace Advanced_Lock
         private void Background_EFile_DoWork(object sender, DoWorkEventArgs e)
         {
             string Arg = e.Argument.ToString();
-            backgroundProgress.RunWorkerAsync();
+            backgroundProgress.RunWorkerAsync(Arg);
             switch (Arg)
             {
                 case "Decrypt_File":
@@ -260,7 +260,8 @@ namespace Advanced_Lock
         {
             while (string.IsNullOrEmpty(Result_Work))
             {
-                progressBar.Value = PV.ProgressBar;
+                progressBar.Maximum = new ProgressBar_Value().MaxValue;
+                progressBar.Value = new ProgressBar_Value().Value;
             }
         }
 

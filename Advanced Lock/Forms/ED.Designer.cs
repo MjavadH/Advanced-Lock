@@ -29,7 +29,6 @@ namespace Advanced_Lock
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ED));
             this.ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
@@ -45,7 +44,6 @@ namespace Advanced_Lock
             this.Cancel_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.Progress_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.Background_EFile = new System.ComponentModel.BackgroundWorker();
-            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.backgroundProgress = new System.ComponentModel.BackgroundWorker();
             this.ED_Panel.SuspendLayout();
             this.Text_ED_Panel.SuspendLayout();
@@ -270,7 +268,6 @@ namespace Advanced_Lock
         private System.Windows.Forms.Label ED_Text_Text;
         private System.Windows.Forms.Label AlertBox;
         private System.ComponentModel.BackgroundWorker Background_EFile;
-        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
         private System.ComponentModel.BackgroundWorker backgroundProgress;
     }

@@ -519,19 +519,16 @@
     <value>0</value>
   </data>
   <metadata name="Background_EFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="guna2ShadowForm1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>164, 17</value>
+    <value>18, 6</value>
   </metadata>
   <metadata name="backgroundProgress.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>328, 17</value>
+    <value>150, 3</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>57</value>
+    <value>30</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>477, 395</value>
@@ -3358,12 +3355,6 @@
   </data>
   <data name="&gt;&gt;Background_EFile.Type" xml:space="preserve">
     <value>System.ComponentModel.BackgroundWorker, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowForm1.Name" xml:space="preserve">
-    <value>guna2ShadowForm1</value>
-  </data>
-  <data name="&gt;&gt;guna2ShadowForm1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ShadowForm, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;backgroundProgress.Name" xml:space="preserve">
     <value>backgroundProgress</value>
