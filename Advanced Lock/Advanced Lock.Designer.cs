@@ -63,7 +63,6 @@ namespace Advanced_Lock
             this.infoBTN = new Guna.UI2.WinForms.Guna2Button();
             this.LoadDataBTN = new Guna.UI2.WinForms.Guna2Button();
             this.SaveDataBTN = new Guna.UI2.WinForms.Guna2Button();
-            this.TelegramBTN = new Guna.UI2.WinForms.Guna2Button();
             this.SettingBTN = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteAll_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteBTN = new Guna.UI2.WinForms.Guna2Button();
@@ -129,7 +128,6 @@ namespace Advanced_Lock
             this.DTextBTN.Name = "DTextBTN";
             this.DTextBTN.ShadowDecoration.Parent = this.DTextBTN;
             this.DTextBTN.Click += new System.EventHandler(this.Text_ED_Click);
-            this.DTextBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // ETextBTN
             // 
@@ -147,7 +145,6 @@ namespace Advanced_Lock
             this.ETextBTN.Name = "ETextBTN";
             this.ETextBTN.ShadowDecoration.Parent = this.ETextBTN;
             this.ETextBTN.Click += new System.EventHandler(this.Text_ED_Click);
-            this.ETextBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // TextBTN
             // 
@@ -166,7 +163,6 @@ namespace Advanced_Lock
             this.TextBTN.Name = "TextBTN";
             this.TextBTN.ShadowDecoration.Parent = this.TextBTN;
             this.TextBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
-            this.TextBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // FilePanel
             // 
@@ -192,7 +188,6 @@ namespace Advanced_Lock
             this.DFileBTN.Name = "DFileBTN";
             this.DFileBTN.ShadowDecoration.Parent = this.DFileBTN;
             this.DFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
-            this.DFileBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // EFileBTN
             // 
@@ -209,7 +204,6 @@ namespace Advanced_Lock
             this.EFileBTN.Name = "EFileBTN";
             this.EFileBTN.ShadowDecoration.Parent = this.EFileBTN;
             this.EFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
-            this.EFileBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // FileBTN
             // 
@@ -228,7 +222,6 @@ namespace Advanced_Lock
             this.FileBTN.Name = "FileBTN";
             this.FileBTN.ShadowDecoration.Parent = this.FileBTN;
             this.FileBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
-            this.FileBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // FolderPanel
             // 
@@ -254,7 +247,6 @@ namespace Advanced_Lock
             this.DFolderBTN.Name = "DFolderBTN";
             this.DFolderBTN.ShadowDecoration.Parent = this.DFolderBTN;
             this.DFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
-            this.DFolderBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // EFolderBTN
             // 
@@ -272,7 +264,6 @@ namespace Advanced_Lock
             this.EFolderBTN.Name = "EFolderBTN";
             this.EFolderBTN.ShadowDecoration.Parent = this.EFolderBTN;
             this.EFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
-            this.EFolderBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // FolderBTN
             // 
@@ -291,7 +282,6 @@ namespace Advanced_Lock
             this.FolderBTN.Name = "FolderBTN";
             this.FolderBTN.ShadowDecoration.Parent = this.FolderBTN;
             this.FolderBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
-            this.FolderBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // MenuBTN
             // 
@@ -310,7 +300,6 @@ namespace Advanced_Lock
             this.MenuBTN.Name = "MenuBTN";
             this.MenuBTN.ShadowDecoration.Parent = this.MenuBTN;
             this.MenuBTN.Click += new System.EventHandler(this.MenuBTN_Click);
-            this.MenuBTN.Resize += new System.EventHandler(this.MenuBTN_Resize);
             // 
             // dataSet1
             // 
@@ -439,7 +428,6 @@ namespace Advanced_Lock
             this.Menu2.Controls.Add(this.infoBTN);
             this.Menu2.Controls.Add(this.LoadDataBTN);
             this.Menu2.Controls.Add(this.SaveDataBTN);
-            this.Menu2.Controls.Add(this.TelegramBTN);
             this.Menu2.Controls.Add(this.SettingBTN);
             this.Menu2.Controls.Add(this.DeleteAll_BTN);
             this.Menu2.Controls.Add(this.DeleteBTN);
@@ -495,21 +483,6 @@ namespace Advanced_Lock
             this.SaveDataBTN.Name = "SaveDataBTN";
             this.SaveDataBTN.ShadowDecoration.Parent = this.SaveDataBTN;
             this.SaveDataBTN.Click += new System.EventHandler(this.SaveDataBTN_Click);
-            // 
-            // TelegramBTN
-            // 
-            this.TelegramBTN.CheckedState.Parent = this.TelegramBTN;
-            this.TelegramBTN.CustomImages.Parent = this.TelegramBTN;
-            resources.ApplyResources(this.TelegramBTN, "TelegramBTN");
-            this.TelegramBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
-            this.TelegramBTN.ForeColor = System.Drawing.Color.White;
-            this.TelegramBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
-            this.TelegramBTN.HoverState.Parent = this.TelegramBTN;
-            this.TelegramBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_telegram_app_48px_1;
-            this.TelegramBTN.ImageSize = new System.Drawing.Size(25, 25);
-            this.TelegramBTN.Name = "TelegramBTN";
-            this.TelegramBTN.ShadowDecoration.Parent = this.TelegramBTN;
-            this.TelegramBTN.Click += new System.EventHandler(this.TelegramBTN_Click);
             // 
             // SettingBTN
             // 
@@ -623,7 +596,6 @@ namespace Advanced_Lock
         private Guna.UI2.WinForms.Guna2Button DeleteAll_BTN;
         private Guna.UI2.WinForms.Guna2Button SettingBTN;
         private Guna.UI2.WinForms.Guna2Button infoBTN;
-        private Guna.UI2.WinForms.Guna2Button TelegramBTN;
         private Guna.UI2.WinForms.Guna2Button SaveDataBTN;
         private Guna.UI2.WinForms.Guna2Button LoadDataBTN;
         private System.Windows.Forms.DataGridViewTextBoxColumn yourChoseHistory;

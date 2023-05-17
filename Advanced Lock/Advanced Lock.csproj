@@ -150,6 +150,9 @@
     <Compile Include="Forms\Set_Theme.Designer.cs">
       <DependentUpon>Set_Theme.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\AboutBox.fa.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>

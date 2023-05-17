@@ -157,7 +157,7 @@
     <value>DTextBTN</value>
   </data>
   <data name="&gt;&gt;DTextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;DTextBTN.Parent" xml:space="preserve">
     <value>TextPanel</value>
@@ -187,7 +187,7 @@
     <value>ETextBTN</value>
   </data>
   <data name="&gt;&gt;ETextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;ETextBTN.Parent" xml:space="preserve">
     <value>TextPanel</value>
@@ -214,7 +214,7 @@
     <value>TextPanel</value>
   </data>
   <data name="&gt;&gt;TextPanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;TextPanel.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -244,7 +244,7 @@
     <value>TextBTN</value>
   </data>
   <data name="&gt;&gt;TextBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;TextBTN.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -274,7 +274,7 @@
     <value>DFileBTN</value>
   </data>
   <data name="&gt;&gt;DFileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;DFileBTN.Parent" xml:space="preserve">
     <value>FilePanel</value>
@@ -304,7 +304,7 @@
     <value>EFileBTN</value>
   </data>
   <data name="&gt;&gt;EFileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;EFileBTN.Parent" xml:space="preserve">
     <value>FilePanel</value>
@@ -331,7 +331,7 @@
     <value>FilePanel</value>
   </data>
   <data name="&gt;&gt;FilePanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;FilePanel.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -361,7 +361,7 @@
     <value>FileBTN</value>
   </data>
   <data name="&gt;&gt;FileBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;FileBTN.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -391,7 +391,7 @@
     <value>DFolderBTN</value>
   </data>
   <data name="&gt;&gt;DFolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;DFolderBTN.Parent" xml:space="preserve">
     <value>FolderPanel</value>
@@ -421,7 +421,7 @@
     <value>EFolderBTN</value>
   </data>
   <data name="&gt;&gt;EFolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;EFolderBTN.Parent" xml:space="preserve">
     <value>FolderPanel</value>
@@ -448,7 +448,7 @@
     <value>FolderPanel</value>
   </data>
   <data name="&gt;&gt;FolderPanel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;FolderPanel.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -478,7 +478,7 @@
     <value>FolderBTN</value>
   </data>
   <data name="&gt;&gt;FolderBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;FolderBTN.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -508,7 +508,7 @@
     <value>MenuBTN</value>
   </data>
   <data name="&gt;&gt;MenuBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;MenuBTN.Parent" xml:space="preserve">
     <value>MainMenu</value>
@@ -532,7 +532,7 @@
     <value>MainMenu</value>
   </data>
   <data name="&gt;&gt;MainMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;MainMenu.Parent" xml:space="preserve">
     <value>$this</value>
@@ -571,7 +571,7 @@
     <value>History_DataTable</value>
   </data>
   <data name="&gt;&gt;History_DataTable.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2DataGridView, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;History_DataTable.Parent" xml:space="preserve">
     <value>$this</value>
@@ -598,7 +598,7 @@
     <value>infoBTN</value>
   </data>
   <data name="&gt;&gt;infoBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;infoBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
@@ -625,7 +625,7 @@
     <value>LoadDataBTN</value>
   </data>
   <data name="&gt;&gt;LoadDataBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;LoadDataBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
@@ -652,40 +652,13 @@
     <value>SaveDataBTN</value>
   </data>
   <data name="&gt;&gt;SaveDataBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;SaveDataBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;SaveDataBTN.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="TelegramBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="TelegramBTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="TelegramBTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="TelegramBTN.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 36</value>
-  </data>
-  <data name="TelegramBTN.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Name" xml:space="preserve">
-    <value>TelegramBTN</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.Parent" xml:space="preserve">
-    <value>Menu2</value>
-  </data>
-  <data name="&gt;&gt;TelegramBTN.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="SettingBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -706,13 +679,13 @@
     <value>SettingBTN</value>
   </data>
   <data name="&gt;&gt;SettingBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;SettingBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;SettingBTN.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="DeleteAll_BTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -733,13 +706,13 @@
     <value>DeleteAll_BTN</value>
   </data>
   <data name="&gt;&gt;DeleteAll_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;DeleteAll_BTN.Parent" xml:space="preserve">
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;DeleteAll_BTN.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="DeleteBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -760,13 +733,13 @@
     <value>DeleteBTN</value>
   </data>
   <data name="&gt;&gt;DeleteBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;DeleteBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;DeleteBTN.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="RefreshBTN.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Right</value>
@@ -787,13 +760,13 @@
     <value>RefreshBTN</value>
   </data>
   <data name="&gt;&gt;RefreshBTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;RefreshBTN.Parent" xml:space="preserve">
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;RefreshBTN.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="Menu2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -811,7 +784,7 @@
     <value>Menu2</value>
   </data>
   <data name="&gt;&gt;Menu2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Menu2.Parent" xml:space="preserve">
     <value>$this</value>

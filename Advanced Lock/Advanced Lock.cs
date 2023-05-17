@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Globalization;
-using Guna.UI2.WinForms;
+﻿using Advanced_Lock.Forms;
 using Advanced_Lock.Properties;
-using static Advanced_Lock.Class.Colers;
+using Guna.UI2.WinForms;
+using System;
+using System.ComponentModel;
+using System.Drawing;
 using System.IO;
-using Advanced_Lock.Forms;
+using System.Windows.Forms;
+using static Advanced_Lock.Class.Colers;
 
 namespace Advanced_Lock
 {
@@ -23,14 +17,14 @@ namespace Advanced_Lock
             InitializeComponent();
         }
         /*--------- Func Start ---------*/
-        public void historyadd(string choose,string pass,string result)
+        public void historyadd(string choose, string pass, string result)
         {
             dataLoad();
             dataSet1.Tables[0].Rows.Add(choose, pass, result);
             dataSet1.AcceptChanges();
             dataSet1.WriteXml("History");
             File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
-            
+
         }
         void dataLoad()
         {
@@ -55,7 +49,7 @@ namespace Advanced_Lock
         }
         void DarkMode()
         {
-            Guna2Button[] DarkB = { MenuBTN, FolderBTN, FileBTN, TextBTN, SettingBTN, DeleteAll_BTN, DeleteBTN, RefreshBTN, infoBTN,TelegramBTN, SaveDataBTN,LoadDataBTN };
+            Guna2Button[] DarkB = { MenuBTN, FolderBTN, FileBTN, TextBTN, SettingBTN, DeleteAll_BTN, DeleteBTN, RefreshBTN, infoBTN, SaveDataBTN, LoadDataBTN };
             Guna2Button[] DarkB2 = { EFolderBTN, DFolderBTN, EFileBTN, DFileBTN, ETextBTN, DTextBTN };
             for (int i = 0; i < DarkB2.Length; i++)
             {
@@ -108,32 +102,27 @@ namespace Advanced_Lock
         /*------ Menu1 Start ------*/
         private void MenuBTN_Click(object sender, EventArgs e)
         {
+            Guna2Button[] MenuBTNS = { MenuBTN, FolderBTN, FileBTN, TextBTN, EFolderBTN, DFolderBTN, EFileBTN, DFileBTN, ETextBTN, DTextBTN };
+            foreach (var btn in MenuBTNS)
+            {
+                if (MenuBTN.Checked) btn.TextOffset = new Point(98, 0);
+                else btn.TextOffset = new Point(0, 0);
+            }
             MenuAnimation.Start();
         }
         private void MenuAnimation_Tick(object sender, EventArgs e)
         {
-            switch (MenuBTN.Checked)
+            if (MenuBTN.Checked && MainMenu.Width > 49)
             {
-                case true:
-                    if (MainMenu.Width > 49)
-                    {
-                        MainMenu.Width -= 9;
-                    }
-                    else
-                    {
-                        MenuAnimation.Stop();
-                    }
-                    break;
-                case false:
-                    if (MainMenu.Width < 126)
-                    {
-                        MainMenu.Width += 9;
-                    }
-                    else
-                    {
-                        MenuAnimation.Stop();
-                    }
-                    break;
+                MainMenu.Width -= 9;
+            }
+            else if (!MenuBTN.Checked && MainMenu.Width < 126)
+            {
+                MainMenu.Width += 9;
+            }
+            else
+            {
+                MenuAnimation.Stop();
             }
         }
         private void Menu_BTN_CheckedChanged(object sender, EventArgs e)
@@ -150,19 +139,6 @@ namespace Advanced_Lock
                 case "TextBTN":
                     TextPanel.Visible = TextBTN.Checked;
                     break;
-            }
-        }
-
-        private void MenuBTN_Resize(object sender, EventArgs e)
-        {
-            Guna2Button Btn = (Guna2Button)sender;
-            if (MenuBTN.Checked)
-            {
-                Btn.TextOffset = new Point(98, 0);
-            }
-            else
-            {
-                Btn.TextOffset = new Point(0, 0);
             }
         }
         /*------ Folder Encryption & Decryption ------*/
@@ -263,11 +239,6 @@ namespace Advanced_Lock
         private void SettingBTN_Click(object sender, EventArgs e)
         {
             new Setting_Page().ShowDialog();
-        }
-        /*------ Telegram ------*/
-        private void TelegramBTN_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://t.me/rvyrbyhrc");
         }
         /*------ Export Data ------*/
         private void SaveDataBTN_Click(object sender, EventArgs e)
