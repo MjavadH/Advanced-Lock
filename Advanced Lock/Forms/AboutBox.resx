@@ -117,83 +117,131 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;label_Description.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_Title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 20</value>
+  </data>
+  <data name="label_Title.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="label_Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_Title.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="label_Title.Text" xml:space="preserve">
+    <value>Advanced Lock</value>
+  </data>
+  <data name="label_Title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>BottomCenter</value>
+  </data>
+  <data name="&gt;&gt;label_Title.Name" xml:space="preserve">
+    <value>label_Title</value>
+  </data>
+  <data name="&gt;&gt;label_Title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Title.Parent" xml:space="preserve">
+    <value>panel_Title</value>
+  </data>
+  <data name="&gt;&gt;label_Title.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_Version.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 9pt</value>
+  </data>
   <data name="label_Version.Location" type="System.Drawing.Point, System.Drawing">
     <value>217, 29</value>
   </data>
-  <data name="linkLabel_Github.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 11pt</value>
-  </data>
-  <data name="linkLabel_Github.Text" xml:space="preserve">
-    <value>https://github.com/MjavadH/Advanced-Lock</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label_Heart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="label_Version.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
-  <data name="label_Description.Text" xml:space="preserve">
-    <value>Designer &amp;&amp; Devloper: MjavadH
-This is an open source software
-Github:
-</value>
+  <data name="label_Version.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 24</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
+  <data name="label_Version.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="label_Version.Text" xml:space="preserve">
+    <value>2.0.0 </value>
+  </data>
+  <data name="label_Version.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;label_Version.Name" xml:space="preserve">
+    <value>label_Version</value>
+  </data>
+  <data name="&gt;&gt;label_Version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Version.Parent" xml:space="preserve">
+    <value>panel_Title</value>
+  </data>
+  <data name="&gt;&gt;label_Version.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label_Made.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label_Made.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
   </data>
   <data name="label_Made.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
+  <data name="label_Made.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 33</value>
+  </data>
   <data name="label_Made.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
-  </data>
-  <data name="button_OK.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>AboutBox</value>
-  </data>
-  <data name="panel_Title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 20, 0, 0</value>
-  </data>
-  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>434, 51</value>
-  </data>
-  <data name="label_Description.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 11pt</value>
-  </data>
-  <data name="image_AppIcon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 150</value>
-  </data>
-  <data name="&gt;&gt;label_Made.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="label_Made.Text" xml:space="preserve">
     <value>Made with</value>
   </data>
-  <data name="&gt;&gt;label_inIran.Type" xml:space="preserve">
+  <data name="label_Made.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_Made.Name" xml:space="preserve">
+    <value>label_Made</value>
+  </data>
+  <data name="&gt;&gt;label_Made.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="button_OK.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;label_Made.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
   </data>
-  <data name="label_Title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 20</value>
+  <data name="&gt;&gt;label_Made.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="label_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 3, 0</value>
+  <data name="panel_Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, -20</value>
   </data>
-  <data name="label_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 94</value>
+  <data name="panel_Title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 20, 0, 0</value>
+  </data>
+  <data name="panel_Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 51</value>
+  </data>
+  <data name="panel_Title.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Name" xml:space="preserve">
+    <value>panel_Title</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="image_AppIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -300,310 +348,262 @@ Github:
         rkJggg==
 </value>
   </data>
-  <data name="&gt;&gt;label_Version.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="image_AppIcon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>277, 41</value>
   </data>
-  <data name="&gt;&gt;label_inIran.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label_Made.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 33</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="button_OK.Text" xml:space="preserve">
-    <value>OK</value>
-  </data>
-  <data name="label_Heart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="&gt;&gt;label_Made.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Name" xml:space="preserve">
-    <value>label_Heart</value>
-  </data>
-  <data name="label_E_and_D.Text" xml:space="preserve">
-    <value>Encrypt and decrypt anything</value>
-  </data>
-  <data name="&gt;&gt;label_Title.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;button_OK.Name" xml:space="preserve">
-    <value>button_OK</value>
-  </data>
-  <data name="&gt;&gt;image_AppIcon.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="image_AppIcon.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 150</value>
   </data>
   <data name="image_AppIcon.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;label_inIran.Name" xml:space="preserve">
-    <value>label_inIran</value>
+  <data name="image_AppIcon.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
   </data>
-  <data name="&gt;&gt;panel_Title.Parent" xml:space="preserve">
+  <data name="&gt;&gt;image_AppIcon.Name" xml:space="preserve">
+    <value>image_AppIcon</value>
+  </data>
+  <data name="&gt;&gt;image_AppIcon.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;image_AppIcon.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_Title.Parent" xml:space="preserve">
-    <value>panel_Title</value>
-  </data>
-  <data name="label_Description.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label_Made.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 3</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="panel_Title.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="label_inIran.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>6, 0, 3, 0</value>
-  </data>
-  <data name="label_Title.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="label_E_and_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 66</value>
-  </data>
-  <data name="label_Heart.Text" xml:space="preserve">
-    <value>♥</value>
-  </data>
-  <data name="button_OK.Location" type="System.Drawing.Point, System.Drawing">
-    <value>358, 4</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;button_OK.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;label_Description.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 12pt</value>
-  </data>
-  <data name="&gt;&gt;linkLabel_Github.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label_Title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="label_Made.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label_E_and_D.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="&gt;&gt;image_AppIcon.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="label_E_and_D.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label_Made.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="label_inIran.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
-  <data name="label_Title.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="label_inIran.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 3</value>
   </data>
-  <data name="&gt;&gt;linkLabel_Github.Name" xml:space="preserve">
-    <value>linkLabel_Github</value>
-  </data>
-  <data name="label_E_and_D.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label_E_and_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="label_inIran.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
-  <data name="&gt;&gt;label_Made.Name" xml:space="preserve">
-    <value>label_Made</value>
+  <data name="label_inIran.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 33</value>
   </data>
-  <data name="&gt;&gt;label_Version.Type" xml:space="preserve">
+  <data name="label_inIran.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label_inIran.Text" xml:space="preserve">
+    <value>in Iran</value>
+  </data>
+  <data name="label_inIran.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.Name" xml:space="preserve">
+    <value>label_inIran</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label_Version.Name" xml:space="preserve">
-    <value>label_Version</value>
+  <data name="&gt;&gt;label_inIran.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
   </data>
-  <data name="&gt;&gt;linkLabel_Github.Type" xml:space="preserve">
-    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label_inIran.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;button_OK.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="label_Heart.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
   </data>
-  <data name="&gt;&gt;label_Description.Name" xml:space="preserve">
-    <value>label_Description</value>
+  <data name="label_Heart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 3</value>
   </data>
-  <data name="linkLabel_Github.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 31</value>
+  <data name="label_Heart.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 3, 0</value>
+  </data>
+  <data name="label_Heart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 33</value>
+  </data>
+  <data name="label_Heart.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label_Heart.Text" xml:space="preserve">
+    <value>♥</value>
   </data>
   <data name="label_Heart.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="label_Version.Text" xml:space="preserve">
-    <value>2.0.0 </value>
+  <data name="&gt;&gt;label_Heart.Name" xml:space="preserve">
+    <value>label_Heart</value>
   </data>
-  <data name="label_Version.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;label_Heart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="button_OK.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="button_OK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 4</value>
+  </data>
+  <data name="button_OK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 30</value>
+  </data>
+  <data name="button_OK.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="button_OK.Text" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Name" xml:space="preserve">
+    <value>button_OK</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 246</value>
+  </data>
+  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 15</value>
+  </data>
+  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 51</value>
+  </data>
+  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="label_E_and_D.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 12pt, style=Bold</value>
+  </data>
+  <data name="label_E_and_D.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 66</value>
+  </data>
+  <data name="label_E_and_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
+  <data name="label_E_and_D.Size" type="System.Drawing.Size, System.Drawing">
+    <value>247, 28</value>
+  </data>
+  <data name="label_E_and_D.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label_E_and_D.Text" xml:space="preserve">
+    <value>Encrypt and decrypt anything</value>
+  </data>
+  <data name="label_E_and_D.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;label_E_and_D.Name" xml:space="preserve">
+    <value>label_E_and_D</value>
+  </data>
   <data name="&gt;&gt;label_E_and_D.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_E_and_D.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label_E_and_D.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label_Description.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 11pt</value>
+  </data>
+  <data name="label_Description.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 94</value>
+  </data>
+  <data name="label_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 0, 3, 0</value>
+  </data>
+  <data name="label_Description.Size" type="System.Drawing.Size, System.Drawing">
+    <value>242, 80</value>
+  </data>
+  <data name="label_Description.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label_Description.Text" xml:space="preserve">
+    <value>Designer &amp;&amp; Devloper: MjavadH
+This is an open source software
+Github:
+</value>
+  </data>
+  <data name="&gt;&gt;label_Description.Name" xml:space="preserve">
+    <value>label_Description</value>
+  </data>
+  <data name="&gt;&gt;label_Description.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label_Description.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label_Version.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 9pt</value>
+  <data name="&gt;&gt;label_Description.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="label_inIran.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;image_AppIcon.Name" xml:space="preserve">
-    <value>image_AppIcon</value>
-  </data>
-  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 15</value>
-  </data>
-  <data name="label_inIran.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="linkLabel_Github.TabIndex" type="System.Int32, mscorlib">
-    <value>28</value>
-  </data>
-  <data name="&gt;&gt;label_Title.Name" xml:space="preserve">
-    <value>label_Title</value>
-  </data>
-  <data name="&gt;&gt;label_inIran.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="label_inIran.Text" xml:space="preserve">
-    <value>in Iran</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.Name" xml:space="preserve">
-    <value>panel_Title</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>AboutBox</value>
-  </data>
-  <data name="label_Version.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 24</value>
-  </data>
-  <data name="image_AppIcon.TabIndex" type="System.Int32, mscorlib">
-    <value>26</value>
-  </data>
-  <data name="label_E_and_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 28</value>
+  <data name="linkLabel_Github.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 11pt</value>
   </data>
   <data name="linkLabel_Github.Location" type="System.Drawing.Point, System.Drawing">
     <value>20, 174</value>
   </data>
-  <data name="&gt;&gt;image_AppIcon.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="linkLabel_Github.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 31</value>
   </data>
-  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="linkLabel_Github.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
   </data>
-  <data name="label_Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 80</value>
+  <data name="linkLabel_Github.Text" xml:space="preserve">
+    <value>https://github.com/MjavadH/Advanced-Lock</value>
   </data>
-  <data name="&gt;&gt;label_E_and_D.Name" xml:space="preserve">
-    <value>label_E_and_D</value>
+  <data name="&gt;&gt;linkLabel_Github.Name" xml:space="preserve">
+    <value>linkLabel_Github</value>
   </data>
-  <data name="button_OK.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 30</value>
-  </data>
-  <data name="&gt;&gt;label_E_and_D.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label_inIran.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;label_Made.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="label_Title.Text" xml:space="preserve">
-    <value>Advanced Lock</value>
-  </data>
-  <data name="image_AppIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 41</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="label_Heart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 33</value>
-  </data>
-  <data name="label_Title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>BottomCenter</value>
+  <data name="&gt;&gt;linkLabel_Github.Type" xml:space="preserve">
+    <value>System.Windows.Forms.LinkLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;linkLabel_Github.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="panel_Title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 51</value>
-  </data>
-  <data name="label_Heart.Location" type="System.Drawing.Point, System.Drawing">
-    <value>91, 3</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>435, 283</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label_inIran.Location" type="System.Drawing.Point, System.Drawing">
-    <value>124, 3</value>
-  </data>
-  <data name="label_Version.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="&gt;&gt;label_Title.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label_inIran.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 33</value>
-  </data>
-  <data name="panel_Title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>85, -20</value>
-  </data>
-  <data name="label_E_and_D.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 12pt, style=Bold</value>
-  </data>
-  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>9, 9, 9, 9</value>
-  </data>
-  <data name="&gt;&gt;label_Version.Parent" xml:space="preserve">
-    <value>panel_Title</value>
-  </data>
-  <data name="label_Heart.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="label_Title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 31</value>
-  </data>
-  <data name="label_Version.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;linkLabel_Github.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>435, 283</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 12pt</value>
+  </data>
+  <data name="$this.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>9, 9, 9, 9</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>AboutBox</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>AboutBox</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

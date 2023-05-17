@@ -64,12 +64,12 @@ namespace Advanced_Lock
             // 
             // panel_Title
             // 
-            resources.ApplyResources(this.panel_Title, "panel_Title");
             this.panel_Title.BackColor = System.Drawing.Color.Transparent;
             this.panel_Title.BorderRadius = 10;
             this.panel_Title.Controls.Add(this.label_Version);
             this.panel_Title.Controls.Add(this.label_Title);
             this.panel_Title.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel_Title, "panel_Title");
             this.panel_Title.Name = "panel_Title";
             this.panel_Title.ShadowDecoration.Parent = this.panel_Title;
             // 
@@ -82,7 +82,6 @@ namespace Advanced_Lock
             // 
             // panel_Bottom
             // 
-            resources.ApplyResources(this.panel_Bottom, "panel_Bottom");
             this.panel_Bottom.BackColor = System.Drawing.Color.Transparent;
             this.panel_Bottom.BorderRadius = 10;
             this.panel_Bottom.Controls.Add(this.label_inIran);
@@ -90,6 +89,7 @@ namespace Advanced_Lock
             this.panel_Bottom.Controls.Add(this.button_OK);
             this.panel_Bottom.Controls.Add(this.label_Made);
             this.panel_Bottom.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.panel_Bottom, "panel_Bottom");
             this.panel_Bottom.Name = "panel_Bottom";
             this.panel_Bottom.ShadowDecoration.Parent = this.panel_Bottom;
             // 
@@ -106,12 +106,12 @@ namespace Advanced_Lock
             // 
             // button_OK
             // 
-            resources.ApplyResources(this.button_OK, "button_OK");
             this.button_OK.BorderRadius = 5;
             this.button_OK.CheckedState.Parent = this.button_OK;
             this.button_OK.CustomImages.Parent = this.button_OK;
             this.button_OK.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.button_OK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.button_OK, "button_OK");
             this.button_OK.ForeColor = System.Drawing.Color.White;
             this.button_OK.HoverState.Parent = this.button_OK;
             this.button_OK.Name = "button_OK";
@@ -139,8 +139,8 @@ namespace Advanced_Lock
             // 
             // AboutBox
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.linkLabel_Github);
             this.Controls.Add(this.label_Description);
             this.Controls.Add(this.label_E_and_D);
@@ -153,6 +153,7 @@ namespace Advanced_Lock
             this.Name = "AboutBox";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
+            this.Load += new System.EventHandler(this.AboutBox_Load);
             this.panel_Title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.image_AppIcon)).EndInit();
             this.panel_Bottom.ResumeLayout(false);
