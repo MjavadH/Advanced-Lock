@@ -73,43 +73,82 @@ namespace Advanced_Lock
         {
             this.UserSelected.Text = UserSelected;
             /*Set Action*/
-            if (type == "Decryption")
+            switch (type)
             {
-                action = enmAction.Decryption;
-                this.Text = "Decryption";
-                this.Icon = Resources.File_Icon;
-            }
-            else if (type == "Encryption")
-            {
-                action = enmAction.Encryption;
-                this.Text = "Encryption";
-                this.Icon = Resources.File_Icon;
-            }
-            else if (type == "EncryptFolder")
-            {
-                action = enmAction.EncryptFolder;
-                this.Text = "EncryptFolder";
-            }
-            else if (type == "DecryptFolder")
-            {
-                action = enmAction.DecryptFolder;
-                this.Text = "DecryptFolder";
-            }
-            else if (type == "TextE")
-            {
-                action = enmAction.TextE;
-                this.UserSelected.ReadOnly = false;
-                progressBar.Visible = false;
-                Text_ED_Panel.Visible = true;
-                this.Text = "Encryption";
-            }
-            else if (type == "TextD")
-            {
-                Text_ED_Panel.Visible = true;
-                this.UserSelected.ReadOnly = false;
-                progressBar.Visible = false;
-                action = enmAction.TextD;
-                this.Text = "Decryption";
+                case "Decryption":
+                    action = enmAction.Decryption;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزگشایی فایل";
+                    }
+                    else
+                    {
+                        this.Text = "Decryption File";
+                    }
+                    this.Icon = Resources.File_Icon;
+                    break;
+                case "Encryption":
+                    action = enmAction.Encryption;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزنگاری فایل";
+                    }
+                    else
+                    {
+                        this.Text = "Encryption File";
+                    }
+                    this.Icon = Resources.File_Icon;
+                    break;
+                case "EncryptFolder":
+                    action = enmAction.EncryptFolder;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزنگاری پوشه";
+                    }
+                    else
+                    {
+                        this.Text = "Encryption Folder";
+                    }
+                    break;
+                case "DecryptFolder":
+                    action = enmAction.DecryptFolder;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزگشایی پوشه";
+                    }
+                    else
+                    {
+                        this.Text = "Decryption Folder";
+                    }
+                    break;
+                case "TextE":
+                    action = enmAction.TextE;
+                    this.UserSelected.ReadOnly = false;
+                    progressBar.Visible = false;
+                    Text_ED_Panel.Visible = true;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزنگاری متن";
+                    }
+                    else
+                    {
+                        this.Text = "Encryption Text";
+                    }
+                    break;
+                case "TextD":
+                    Text_ED_Panel.Visible = true;
+                    this.UserSelected.ReadOnly = false;
+                    progressBar.Visible = false;
+                    action = enmAction.TextD;
+                    if (Settings.Default.lan)
+                    {
+                        this.Text = "رمزگشایی متن";
+                    }
+                    else
+                    {
+                        this.Text = "Decryption Text";
+                    }
+                    break;
             }
             this.Show();
         }

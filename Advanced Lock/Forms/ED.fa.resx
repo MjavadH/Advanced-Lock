@@ -126,12 +126,6 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ED_Text_Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 23</value>
-  </data>
-  <data name="ED_Text_Text.Text" xml:space="preserve">
-    <value>نتیجه:</value>
-  </data>
   <data name="Text_ED_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 166</value>
   </data>
@@ -161,8 +155,8 @@
   <data name="PasswordText.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 98</value>
   </data>
-  <data name="PasswordText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 23</value>
+  <data name="PasswordText.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="PasswordText.Text" xml:space="preserve">
     <value>گذرواژه:</value>
@@ -170,8 +164,8 @@
   <data name="Line.Size" type="System.Drawing.Size, System.Drawing">
     <value>469, 26</value>
   </data>
-  <data name="PathText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 23</value>
+  <data name="PathText.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
   <data name="PathText.Text" xml:space="preserve">
     <value>انتخاب شما:</value>
@@ -181,6 +175,12 @@
   </data>
   <data name="Progress_BTN.Text" xml:space="preserve">
     <value>تایید</value>
+  </data>
+  <data name="ED_Text_Text.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="ED_Text_Text.Text" xml:space="preserve">
+    <value>نتیجه:</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

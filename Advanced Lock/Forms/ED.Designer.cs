@@ -247,9 +247,7 @@ namespace Advanced_Lock
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ED_FormClosing);
             this.Load += new System.EventHandler(this.ED_Load);
             this.ED_Panel.ResumeLayout(false);
-            this.ED_Panel.PerformLayout();
             this.Text_ED_Panel.ResumeLayout(false);
-            this.Text_ED_Panel.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -136,7 +136,7 @@
     <value>progressBar</value>
   </data>
   <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ProgressBar, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2ProgressBar, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
     <value>ED_Panel</value>
@@ -196,16 +196,13 @@
     <value>Result_ED_Text</value>
   </data>
   <data name="&gt;&gt;Result_ED_Text.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Result_ED_Text.Parent" xml:space="preserve">
     <value>Text_ED_Panel</value>
   </data>
   <data name="&gt;&gt;Result_ED_Text.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="ED_Text_Text.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="ED_Text_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -220,7 +217,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="ED_Text_Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 23</value>
+    <value>469, 23</value>
   </data>
   <data name="ED_Text_Text.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -259,7 +256,7 @@
     <value>Text_ED_Panel</value>
   </data>
   <data name="&gt;&gt;Text_ED_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Text_ED_Panel.Parent" xml:space="preserve">
     <value>ED_Panel</value>
@@ -309,16 +306,13 @@
     <value>Password_User</value>
   </data>
   <data name="&gt;&gt;Password_User.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Password_User.Parent" xml:space="preserve">
     <value>ED_Panel</value>
   </data>
   <data name="&gt;&gt;Password_User.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="PasswordText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="PasswordText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -330,7 +324,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="PasswordText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 23</value>
+    <value>469, 23</value>
   </data>
   <data name="PasswordText.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -366,7 +360,7 @@
     <value>Line</value>
   </data>
   <data name="&gt;&gt;Line.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Line.Parent" xml:space="preserve">
     <value>ED_Panel</value>
@@ -396,16 +390,13 @@
     <value>UserSelected</value>
   </data>
   <data name="&gt;&gt;UserSelected.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;UserSelected.Parent" xml:space="preserve">
     <value>ED_Panel</value>
   </data>
   <data name="&gt;&gt;UserSelected.ZOrder" xml:space="preserve">
     <value>6</value>
-  </data>
-  <data name="PathText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="PathText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -417,7 +408,7 @@
     <value>0, 0, 0, 0</value>
   </data>
   <data name="PathText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 23</value>
+    <value>469, 23</value>
   </data>
   <data name="PathText.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -438,7 +429,7 @@
     <value>7</value>
   </data>
   <data name="Cancel_BTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>Vazir, 9pt</value>
   </data>
   <data name="Cancel_BTN.Location" type="System.Drawing.Point, System.Drawing">
     <value>35, 275</value>
@@ -456,7 +447,7 @@
     <value>Cancel_BTN</value>
   </data>
   <data name="&gt;&gt;Cancel_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Cancel_BTN.Parent" xml:space="preserve">
     <value>ED_Panel</value>
@@ -465,7 +456,7 @@
     <value>8</value>
   </data>
   <data name="Progress_BTN.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+    <value>Vazir, 9pt</value>
   </data>
   <data name="Progress_BTN.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 275</value>
@@ -483,7 +474,7 @@
     <value>Progress_BTN</value>
   </data>
   <data name="&gt;&gt;Progress_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Progress_BTN.Parent" xml:space="preserve">
     <value>ED_Panel</value>
@@ -510,7 +501,7 @@
     <value>ED_Panel</value>
   </data>
   <data name="&gt;&gt;ED_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;ED_Panel.Parent" xml:space="preserve">
     <value>$this</value>
