@@ -7,10 +7,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Advanced Lock")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Encrypt and decrypt anything")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Advanced Lock")]
-[assembly: AssemblyProduct("MjavadH")]
+[assembly: AssemblyCompany("")]
+[assembly: AssemblyProduct("Advanced Lock")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

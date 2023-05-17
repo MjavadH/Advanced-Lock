@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
+using System.IO;
 
 namespace Advanced_Lock
 {
@@ -59,6 +60,7 @@ namespace Advanced_Lock
             }
             if (Environment.GetCommandLineArgs().Length == 2)
             {
+
                 if (Environment.GetCommandLineArgs()[1].EndsWith(".alo"))
                 {
                     show_ED(Environment.GetCommandLineArgs()[1], "Decryption");
@@ -66,6 +68,17 @@ namespace Advanced_Lock
                 else if (Environment.GetCommandLineArgs()[1].EndsWith(".alf"))
                 {
                     show_ED(Environment.GetCommandLineArgs()[1], "DecryptFolder");
+                }
+            }
+            else if (Environment.GetCommandLineArgs().Length == 3)
+            {
+                if (Environment.GetCommandLineArgs()[2] == "Folder")
+                {
+                    show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
+                }
+                else if (Environment.GetCommandLineArgs()[2] == "File")
+                {
+                    show_ED(Environment.GetCommandLineArgs()[1], "Encryption");
                 }
             }
         }
@@ -274,7 +287,7 @@ namespace Advanced_Lock
             }
             else
             {
-                if (Environment.GetCommandLineArgs().Length == 2)
+                if (Environment.GetCommandLineArgs().Length >= 2)
                 {
                     Application.Exit();
                 }
