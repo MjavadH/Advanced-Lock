@@ -31,15 +31,15 @@ namespace Advanced_Lock.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notification));
-            this.Elipse = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.borderRadius = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.NText = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Elipse
+            // borderRadius
             // 
-            this.Elipse.BorderRadius = 7;
-            this.Elipse.TargetControl = this;
+            this.borderRadius.BorderRadius = 7;
+            this.borderRadius.TargetControl = this;
             // 
             // timer1
             // 
@@ -76,7 +76,7 @@ namespace Advanced_Lock.Forms
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Elipse Elipse;
+        private Guna.UI2.WinForms.Guna2Elipse borderRadius;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label NText;
     }

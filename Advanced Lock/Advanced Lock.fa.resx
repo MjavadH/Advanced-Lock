@@ -156,6 +156,27 @@
   <data name="resultHistory.HeaderText" xml:space="preserve">
     <value>نتیجه</value>
   </data>
+  <data name="infoBTN.ToolTip" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="LoadDataBTN.ToolTip" xml:space="preserve">
+    <value>بارگذاری تاریخچه</value>
+  </data>
+  <data name="SaveDataBTN.ToolTip" xml:space="preserve">
+    <value>ذخیره تاریخچه</value>
+  </data>
+  <data name="SettingBTN.ToolTip" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="DeleteAll_BTN.ToolTip" xml:space="preserve">
+    <value>حذف تمام تاریخچه ها</value>
+  </data>
+  <data name="DeleteBTN.ToolTip" xml:space="preserve">
+    <value>حذف ردیف</value>
+  </data>
+  <data name="RefreshBTN.ToolTip" xml:space="preserve">
+    <value>تازه کردن داده ها</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

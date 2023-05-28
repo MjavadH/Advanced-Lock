@@ -72,13 +72,13 @@ namespace Advanced_Lock
             }
             else if (Environment.GetCommandLineArgs().Length == 3)
             {
-                if (Environment.GetCommandLineArgs()[2] == "Folder")
-                {
-                    show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
-                }
-                else if (Environment.GetCommandLineArgs()[2] == "File")
+                if (Environment.GetCommandLineArgs()[2] == "File")
                 {
                     show_ED(Environment.GetCommandLineArgs()[1], "Encryption");
+                }
+                else if (Environment.GetCommandLineArgs()[2] == "Folder")
+                {
+                    show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
                 }
             }
         }

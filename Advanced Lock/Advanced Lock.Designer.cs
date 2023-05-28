@@ -31,9 +31,9 @@ namespace Advanced_Lock
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Advanced));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.MenuAnimation = new System.Windows.Forms.Timer(this.components);
             this.FileDialog = new System.Windows.Forms.OpenFileDialog();
             this.MainMenu = new Guna.UI2.WinForms.Guna2Panel();
@@ -67,6 +67,7 @@ namespace Advanced_Lock
             this.DeleteAll_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteBTN = new Guna.UI2.WinForms.Guna2Button();
             this.RefreshBTN = new Guna.UI2.WinForms.Guna2Button();
+            this.toolTip_BTNs = new System.Windows.Forms.ToolTip(this.components);
             this.MainMenu.SuspendLayout();
             this.TextPanel.SuspendLayout();
             this.FilePanel.SuspendLayout();
@@ -103,22 +104,24 @@ namespace Advanced_Lock
             this.MainMenu.ShadowDecoration.Depth = 40;
             this.MainMenu.ShadowDecoration.Enabled = true;
             this.MainMenu.ShadowDecoration.Parent = this.MainMenu;
+            this.toolTip_BTNs.SetToolTip(this.MainMenu, resources.GetString("MainMenu.ToolTip"));
             // 
             // TextPanel
             // 
+            resources.ApplyResources(this.TextPanel, "TextPanel");
             this.TextPanel.Controls.Add(this.DTextBTN);
             this.TextPanel.Controls.Add(this.ETextBTN);
-            resources.ApplyResources(this.TextPanel, "TextPanel");
             this.TextPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.TextPanel.Name = "TextPanel";
             this.TextPanel.ShadowDecoration.Parent = this.TextPanel;
+            this.toolTip_BTNs.SetToolTip(this.TextPanel, resources.GetString("TextPanel.ToolTip"));
             // 
             // DTextBTN
             // 
+            resources.ApplyResources(this.DTextBTN, "DTextBTN");
             this.DTextBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DTextBTN.CheckedState.Parent = this.DTextBTN;
             this.DTextBTN.CustomImages.Parent = this.DTextBTN;
-            resources.ApplyResources(this.DTextBTN, "DTextBTN");
             this.DTextBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DTextBTN.ForeColor = System.Drawing.Color.White;
             this.DTextBTN.HoverState.Parent = this.DTextBTN;
@@ -127,15 +130,16 @@ namespace Advanced_Lock
             this.DTextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DTextBTN.Name = "DTextBTN";
             this.DTextBTN.ShadowDecoration.Parent = this.DTextBTN;
+            this.toolTip_BTNs.SetToolTip(this.DTextBTN, resources.GetString("DTextBTN.ToolTip"));
             this.DTextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // ETextBTN
             // 
+            resources.ApplyResources(this.ETextBTN, "ETextBTN");
             this.ETextBTN.BackColor = System.Drawing.Color.Transparent;
             this.ETextBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.ETextBTN.CheckedState.Parent = this.ETextBTN;
             this.ETextBTN.CustomImages.Parent = this.ETextBTN;
-            resources.ApplyResources(this.ETextBTN, "ETextBTN");
             this.ETextBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.ETextBTN.ForeColor = System.Drawing.Color.White;
             this.ETextBTN.HoverState.Parent = this.ETextBTN;
@@ -144,15 +148,16 @@ namespace Advanced_Lock
             this.ETextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.ETextBTN.Name = "ETextBTN";
             this.ETextBTN.ShadowDecoration.Parent = this.ETextBTN;
+            this.toolTip_BTNs.SetToolTip(this.ETextBTN, resources.GetString("ETextBTN.ToolTip"));
             this.ETextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // TextBTN
             // 
+            resources.ApplyResources(this.TextBTN, "TextBTN");
             this.TextBTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.TextBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.TextBTN.CheckedState.Parent = this.TextBTN;
             this.TextBTN.CustomImages.Parent = this.TextBTN;
-            resources.ApplyResources(this.TextBTN, "TextBTN");
             this.TextBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.TextBTN.ForeColor = System.Drawing.Color.White;
             this.TextBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -162,23 +167,25 @@ namespace Advanced_Lock
             this.TextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.TextBTN.Name = "TextBTN";
             this.TextBTN.ShadowDecoration.Parent = this.TextBTN;
+            this.toolTip_BTNs.SetToolTip(this.TextBTN, resources.GetString("TextBTN.ToolTip"));
             this.TextBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FilePanel
             // 
+            resources.ApplyResources(this.FilePanel, "FilePanel");
             this.FilePanel.Controls.Add(this.DFileBTN);
             this.FilePanel.Controls.Add(this.EFileBTN);
-            resources.ApplyResources(this.FilePanel, "FilePanel");
             this.FilePanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.FilePanel.Name = "FilePanel";
             this.FilePanel.ShadowDecoration.Parent = this.FilePanel;
+            this.toolTip_BTNs.SetToolTip(this.FilePanel, resources.GetString("FilePanel.ToolTip"));
             // 
             // DFileBTN
             // 
+            resources.ApplyResources(this.DFileBTN, "DFileBTN");
             this.DFileBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DFileBTN.CheckedState.Parent = this.DFileBTN;
             this.DFileBTN.CustomImages.Parent = this.DFileBTN;
-            resources.ApplyResources(this.DFileBTN, "DFileBTN");
             this.DFileBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DFileBTN.ForeColor = System.Drawing.Color.White;
             this.DFileBTN.HoverState.Parent = this.DFileBTN;
@@ -187,14 +194,15 @@ namespace Advanced_Lock
             this.DFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFileBTN.Name = "DFileBTN";
             this.DFileBTN.ShadowDecoration.Parent = this.DFileBTN;
+            this.toolTip_BTNs.SetToolTip(this.DFileBTN, resources.GetString("DFileBTN.ToolTip"));
             this.DFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // EFileBTN
             // 
+            resources.ApplyResources(this.EFileBTN, "EFileBTN");
             this.EFileBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.EFileBTN.CheckedState.Parent = this.EFileBTN;
             this.EFileBTN.CustomImages.Parent = this.EFileBTN;
-            resources.ApplyResources(this.EFileBTN, "EFileBTN");
             this.EFileBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.EFileBTN.ForeColor = System.Drawing.Color.White;
             this.EFileBTN.HoverState.Parent = this.EFileBTN;
@@ -203,15 +211,16 @@ namespace Advanced_Lock
             this.EFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFileBTN.Name = "EFileBTN";
             this.EFileBTN.ShadowDecoration.Parent = this.EFileBTN;
+            this.toolTip_BTNs.SetToolTip(this.EFileBTN, resources.GetString("EFileBTN.ToolTip"));
             this.EFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // FileBTN
             // 
+            resources.ApplyResources(this.FileBTN, "FileBTN");
             this.FileBTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.FileBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.FileBTN.CheckedState.Parent = this.FileBTN;
             this.FileBTN.CustomImages.Parent = this.FileBTN;
-            resources.ApplyResources(this.FileBTN, "FileBTN");
             this.FileBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.FileBTN.ForeColor = System.Drawing.Color.White;
             this.FileBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -221,23 +230,25 @@ namespace Advanced_Lock
             this.FileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FileBTN.Name = "FileBTN";
             this.FileBTN.ShadowDecoration.Parent = this.FileBTN;
+            this.toolTip_BTNs.SetToolTip(this.FileBTN, resources.GetString("FileBTN.ToolTip"));
             this.FileBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FolderPanel
             // 
+            resources.ApplyResources(this.FolderPanel, "FolderPanel");
             this.FolderPanel.Controls.Add(this.DFolderBTN);
             this.FolderPanel.Controls.Add(this.EFolderBTN);
-            resources.ApplyResources(this.FolderPanel, "FolderPanel");
             this.FolderPanel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.FolderPanel.Name = "FolderPanel";
             this.FolderPanel.ShadowDecoration.Parent = this.FolderPanel;
+            this.toolTip_BTNs.SetToolTip(this.FolderPanel, resources.GetString("FolderPanel.ToolTip"));
             // 
             // DFolderBTN
             // 
+            resources.ApplyResources(this.DFolderBTN, "DFolderBTN");
             this.DFolderBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DFolderBTN.CheckedState.Parent = this.DFolderBTN;
             this.DFolderBTN.CustomImages.Parent = this.DFolderBTN;
-            resources.ApplyResources(this.DFolderBTN, "DFolderBTN");
             this.DFolderBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DFolderBTN.ForeColor = System.Drawing.Color.White;
             this.DFolderBTN.HoverState.Parent = this.DFolderBTN;
@@ -246,15 +257,16 @@ namespace Advanced_Lock
             this.DFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFolderBTN.Name = "DFolderBTN";
             this.DFolderBTN.ShadowDecoration.Parent = this.DFolderBTN;
+            this.toolTip_BTNs.SetToolTip(this.DFolderBTN, resources.GetString("DFolderBTN.ToolTip"));
             this.DFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // EFolderBTN
             // 
+            resources.ApplyResources(this.EFolderBTN, "EFolderBTN");
             this.EFolderBTN.BackColor = System.Drawing.Color.Transparent;
             this.EFolderBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.EFolderBTN.CheckedState.Parent = this.EFolderBTN;
             this.EFolderBTN.CustomImages.Parent = this.EFolderBTN;
-            resources.ApplyResources(this.EFolderBTN, "EFolderBTN");
             this.EFolderBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.EFolderBTN.ForeColor = System.Drawing.Color.White;
             this.EFolderBTN.HoverState.Parent = this.EFolderBTN;
@@ -263,15 +275,16 @@ namespace Advanced_Lock
             this.EFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFolderBTN.Name = "EFolderBTN";
             this.EFolderBTN.ShadowDecoration.Parent = this.EFolderBTN;
+            this.toolTip_BTNs.SetToolTip(this.EFolderBTN, resources.GetString("EFolderBTN.ToolTip"));
             this.EFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // FolderBTN
             // 
+            resources.ApplyResources(this.FolderBTN, "FolderBTN");
             this.FolderBTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.FolderBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.FolderBTN.CheckedState.Parent = this.FolderBTN;
             this.FolderBTN.CustomImages.Parent = this.FolderBTN;
-            resources.ApplyResources(this.FolderBTN, "FolderBTN");
             this.FolderBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.FolderBTN.ForeColor = System.Drawing.Color.White;
             this.FolderBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -281,15 +294,16 @@ namespace Advanced_Lock
             this.FolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FolderBTN.Name = "FolderBTN";
             this.FolderBTN.ShadowDecoration.Parent = this.FolderBTN;
+            this.toolTip_BTNs.SetToolTip(this.FolderBTN, resources.GetString("FolderBTN.ToolTip"));
             this.FolderBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // MenuBTN
             // 
+            resources.ApplyResources(this.MenuBTN, "MenuBTN");
             this.MenuBTN.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.ToogleButton;
             this.MenuBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.MenuBTN.CheckedState.Parent = this.MenuBTN;
             this.MenuBTN.CustomImages.Parent = this.MenuBTN;
-            resources.ApplyResources(this.MenuBTN, "MenuBTN");
             this.MenuBTN.FillColor = System.Drawing.Color.Empty;
             this.MenuBTN.ForeColor = System.Drawing.Color.White;
             this.MenuBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -299,6 +313,7 @@ namespace Advanced_Lock
             this.MenuBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.MenuBTN.Name = "MenuBTN";
             this.MenuBTN.ShadowDecoration.Parent = this.MenuBTN;
+            this.toolTip_BTNs.SetToolTip(this.MenuBTN, resources.GetString("MenuBTN.ToolTip"));
             this.MenuBTN.Click += new System.EventHandler(this.MenuBTN_Click);
             // 
             // dataSet1
@@ -334,11 +349,12 @@ namespace Advanced_Lock
             // 
             // History_DataTable
             // 
+            resources.ApplyResources(this.History_DataTable, "History_DataTable");
             this.History_DataTable.AllowUserToAddRows = false;
             this.History_DataTable.AllowUserToDeleteRows = false;
             this.History_DataTable.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
-            this.History_DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
+            this.History_DataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.History_DataTable.AutoGenerateColumns = false;
             this.History_DataTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.History_DataTable.BackgroundColor = System.Drawing.Color.White;
@@ -346,15 +362,14 @@ namespace Advanced_Lock
             this.History_DataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.History_DataTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.History_DataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Vazir", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.History_DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.History_DataTable, "History_DataTable");
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Vazir", 12F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.History_DataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.History_DataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.History_DataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.yourChoseHistory,
@@ -362,14 +377,14 @@ namespace Advanced_Lock
             this.resultHistory});
             this.History_DataTable.DataMember = "History";
             this.History_DataTable.DataSource = this.dataSet1;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Vazir", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.History_DataTable.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Vazir", 12F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.History_DataTable.DefaultCellStyle = dataGridViewCellStyle6;
             this.History_DataTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.History_DataTable.EnableHeadersVisualStyles = false;
             this.History_DataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
@@ -401,6 +416,7 @@ namespace Advanced_Lock
             this.History_DataTable.ThemeStyle.RowsStyle.Height = 22;
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.toolTip_BTNs.SetToolTip(this.History_DataTable, resources.GetString("History_DataTable.ToolTip"));
             // 
             // yourChoseHistory
             // 
@@ -425,6 +441,7 @@ namespace Advanced_Lock
             // 
             // Menu2
             // 
+            resources.ApplyResources(this.Menu2, "Menu2");
             this.Menu2.Controls.Add(this.infoBTN);
             this.Menu2.Controls.Add(this.LoadDataBTN);
             this.Menu2.Controls.Add(this.SaveDataBTN);
@@ -432,18 +449,18 @@ namespace Advanced_Lock
             this.Menu2.Controls.Add(this.DeleteAll_BTN);
             this.Menu2.Controls.Add(this.DeleteBTN);
             this.Menu2.Controls.Add(this.RefreshBTN);
-            resources.ApplyResources(this.Menu2, "Menu2");
             this.Menu2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.Menu2.Name = "Menu2";
             this.Menu2.ShadowDecoration.Depth = 40;
             this.Menu2.ShadowDecoration.Enabled = true;
             this.Menu2.ShadowDecoration.Parent = this.Menu2;
+            this.toolTip_BTNs.SetToolTip(this.Menu2, resources.GetString("Menu2.ToolTip"));
             // 
             // infoBTN
             // 
+            resources.ApplyResources(this.infoBTN, "infoBTN");
             this.infoBTN.CheckedState.Parent = this.infoBTN;
             this.infoBTN.CustomImages.Parent = this.infoBTN;
-            resources.ApplyResources(this.infoBTN, "infoBTN");
             this.infoBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.infoBTN.ForeColor = System.Drawing.Color.White;
             this.infoBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -452,13 +469,14 @@ namespace Advanced_Lock
             this.infoBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.infoBTN.Name = "infoBTN";
             this.infoBTN.ShadowDecoration.Parent = this.infoBTN;
+            this.toolTip_BTNs.SetToolTip(this.infoBTN, resources.GetString("infoBTN.ToolTip"));
             this.infoBTN.Click += new System.EventHandler(this.infoBTN_Click);
             // 
             // LoadDataBTN
             // 
+            resources.ApplyResources(this.LoadDataBTN, "LoadDataBTN");
             this.LoadDataBTN.CheckedState.Parent = this.LoadDataBTN;
             this.LoadDataBTN.CustomImages.Parent = this.LoadDataBTN;
-            resources.ApplyResources(this.LoadDataBTN, "LoadDataBTN");
             this.LoadDataBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.LoadDataBTN.ForeColor = System.Drawing.Color.White;
             this.LoadDataBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -467,13 +485,14 @@ namespace Advanced_Lock
             this.LoadDataBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.LoadDataBTN.Name = "LoadDataBTN";
             this.LoadDataBTN.ShadowDecoration.Parent = this.LoadDataBTN;
+            this.toolTip_BTNs.SetToolTip(this.LoadDataBTN, resources.GetString("LoadDataBTN.ToolTip"));
             this.LoadDataBTN.Click += new System.EventHandler(this.LoadDataBTN_Click);
             // 
             // SaveDataBTN
             // 
+            resources.ApplyResources(this.SaveDataBTN, "SaveDataBTN");
             this.SaveDataBTN.CheckedState.Parent = this.SaveDataBTN;
             this.SaveDataBTN.CustomImages.Parent = this.SaveDataBTN;
-            resources.ApplyResources(this.SaveDataBTN, "SaveDataBTN");
             this.SaveDataBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.SaveDataBTN.ForeColor = System.Drawing.Color.White;
             this.SaveDataBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -482,13 +501,14 @@ namespace Advanced_Lock
             this.SaveDataBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.SaveDataBTN.Name = "SaveDataBTN";
             this.SaveDataBTN.ShadowDecoration.Parent = this.SaveDataBTN;
+            this.toolTip_BTNs.SetToolTip(this.SaveDataBTN, resources.GetString("SaveDataBTN.ToolTip"));
             this.SaveDataBTN.Click += new System.EventHandler(this.SaveDataBTN_Click);
             // 
             // SettingBTN
             // 
+            resources.ApplyResources(this.SettingBTN, "SettingBTN");
             this.SettingBTN.CheckedState.Parent = this.SettingBTN;
             this.SettingBTN.CustomImages.Parent = this.SettingBTN;
-            resources.ApplyResources(this.SettingBTN, "SettingBTN");
             this.SettingBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.SettingBTN.ForeColor = System.Drawing.Color.White;
             this.SettingBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -497,13 +517,14 @@ namespace Advanced_Lock
             this.SettingBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.SettingBTN.Name = "SettingBTN";
             this.SettingBTN.ShadowDecoration.Parent = this.SettingBTN;
+            this.toolTip_BTNs.SetToolTip(this.SettingBTN, resources.GetString("SettingBTN.ToolTip"));
             this.SettingBTN.Click += new System.EventHandler(this.SettingBTN_Click);
             // 
             // DeleteAll_BTN
             // 
+            resources.ApplyResources(this.DeleteAll_BTN, "DeleteAll_BTN");
             this.DeleteAll_BTN.CheckedState.Parent = this.DeleteAll_BTN;
             this.DeleteAll_BTN.CustomImages.Parent = this.DeleteAll_BTN;
-            resources.ApplyResources(this.DeleteAll_BTN, "DeleteAll_BTN");
             this.DeleteAll_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.DeleteAll_BTN.ForeColor = System.Drawing.Color.White;
             this.DeleteAll_BTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -512,13 +533,14 @@ namespace Advanced_Lock
             this.DeleteAll_BTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DeleteAll_BTN.Name = "DeleteAll_BTN";
             this.DeleteAll_BTN.ShadowDecoration.Parent = this.DeleteAll_BTN;
+            this.toolTip_BTNs.SetToolTip(this.DeleteAll_BTN, resources.GetString("DeleteAll_BTN.ToolTip"));
             this.DeleteAll_BTN.Click += new System.EventHandler(this.DeleteAll_BTN_Click);
             // 
             // DeleteBTN
             // 
+            resources.ApplyResources(this.DeleteBTN, "DeleteBTN");
             this.DeleteBTN.CheckedState.Parent = this.DeleteBTN;
             this.DeleteBTN.CustomImages.Parent = this.DeleteBTN;
-            resources.ApplyResources(this.DeleteBTN, "DeleteBTN");
             this.DeleteBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.DeleteBTN.ForeColor = System.Drawing.Color.White;
             this.DeleteBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -527,13 +549,14 @@ namespace Advanced_Lock
             this.DeleteBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DeleteBTN.Name = "DeleteBTN";
             this.DeleteBTN.ShadowDecoration.Parent = this.DeleteBTN;
+            this.toolTip_BTNs.SetToolTip(this.DeleteBTN, resources.GetString("DeleteBTN.ToolTip"));
             this.DeleteBTN.Click += new System.EventHandler(this.DeleteBTN_Click);
             // 
             // RefreshBTN
             // 
+            resources.ApplyResources(this.RefreshBTN, "RefreshBTN");
             this.RefreshBTN.CheckedState.Parent = this.RefreshBTN;
             this.RefreshBTN.CustomImages.Parent = this.RefreshBTN;
-            resources.ApplyResources(this.RefreshBTN, "RefreshBTN");
             this.RefreshBTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
             this.RefreshBTN.ForeColor = System.Drawing.Color.White;
             this.RefreshBTN.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
@@ -542,17 +565,19 @@ namespace Advanced_Lock
             this.RefreshBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.RefreshBTN.Name = "RefreshBTN";
             this.RefreshBTN.ShadowDecoration.Parent = this.RefreshBTN;
+            this.toolTip_BTNs.SetToolTip(this.RefreshBTN, resources.GetString("RefreshBTN.ToolTip"));
             this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
             // 
             // Advanced
             // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
-            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.History_DataTable);
             this.Controls.Add(this.Menu2);
             this.Controls.Add(this.MainMenu);
             this.Name = "Advanced";
+            this.toolTip_BTNs.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.Activated += new System.EventHandler(this.Advanced_Activated);
             this.Load += new System.EventHandler(this.Form_Load);
             this.MainMenu.ResumeLayout(false);
@@ -601,6 +626,7 @@ namespace Advanced_Lock
         private System.Windows.Forms.DataGridViewTextBoxColumn yourChoseHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn resultHistory;
+        private System.Windows.Forms.ToolTip toolTip_BTNs;
     }
 }
 

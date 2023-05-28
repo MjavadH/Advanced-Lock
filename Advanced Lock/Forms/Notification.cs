@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using Advanced_Lock.Properties;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using Advanced_Lock.Properties;
 using static Advanced_Lock.Class.Colers;
 
 namespace Advanced_Lock.Forms
@@ -25,7 +19,7 @@ namespace Advanced_Lock.Forms
             start,
             close
         }
-        private Notification.enmAction action;
+        private enmAction action;
 
         private int x, y;
         /*--------- Enum & Var End  ---------*/
@@ -79,35 +73,36 @@ namespace Advanced_Lock.Forms
                     break;
             }
         }
-        /*--------- Show  ---------*/
+        /*--------- Show Notification  ---------*/
         public void showAlert(string msg)
         {
-            /*----- Setting form -----*/
-            this.Opacity = 0.0;
-            this.StartPosition = FormStartPosition.Manual;
-            string fname;
-
-            for (int i = 1; i < 10; i++)
+            if (Settings.Default.Show_notification) // if Show_notification is true
             {
-                fname = "alert" + i.ToString();
-                Notification frm = (Notification)Application.OpenForms[fname];
+                /*----- Setting form -----*/
+                this.Opacity = 0.0;
+                this.StartPosition = FormStartPosition.Manual;
+                string fname;
 
-                if (frm == null)
+                for (int i = 1; i < 10; i++)
                 {
-                    this.Name = fname;
-                    this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width + 15;
-                    this.y = Screen.PrimaryScreen.WorkingArea.Height - this.Height * i;
-                    this.Location = new Point(this.x, this.y);
-                    break;
+                    fname = "alert" + i.ToString();
+                    Notification frm = (Notification)Application.OpenForms[fname];
+
+                    if (frm == null)
+                    {
+                        this.Name = fname;
+                        this.x = Screen.PrimaryScreen.WorkingArea.Width - this.Width + 15;
+                        this.y = Screen.PrimaryScreen.WorkingArea.Height - this.Height * i;
+                        this.Location = new Point(this.x, this.y);
+                        break;
+                    }
                 }
-            }
-            this.x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5;
+                this.x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5;
 
 
-            this.NText.Text = msg;
-            /*----- Start Show -----*/
-            if (Settings.Default.Show_notification)
-            {
+                this.NText.Text = msg; // Notification text
+
+                /*----- Start Show -----*/
                 this.Show();
                 this.action = enmAction.start;
                 this.timer1.Interval = 1;

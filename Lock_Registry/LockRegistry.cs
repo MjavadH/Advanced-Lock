@@ -8,15 +8,16 @@ namespace Registry_Configuration
     public class LockRegistry
     {
         private static RegistryKey reg;
-        private static string App_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe";
-        private static string Icon_Loc = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";
+        private static string App_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application path
+        private static string Icon_Loc = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";// Icons file
 
         static void Main()
         {
             string command = "\"" + App_Location + "\"" + " \"%1\"";
+            /*--------- Create File Registry ---------*/
             try
             {
-                reg = Registry.ClassesRoot.CreateSubKey(@".alo");
+                reg = Registry.ClassesRoot.CreateSubKey(@".alo");// file extension
                 reg.SetValue("", "AdvancedLock.alo");
                 reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alo");
                 reg.SetValue("", "AdvancedLock File");
@@ -29,10 +30,10 @@ namespace Registry_Configuration
             {
                 throw e;
             }
-            //Create Folder Registry
+            /*--------- Create Folder Registry ---------*/
             try
             {
-                reg = Registry.ClassesRoot.CreateSubKey(".alf");
+                reg = Registry.ClassesRoot.CreateSubKey(".alf"); // file extension
                 reg.SetValue("", "AdvancedLock.alf");
                 reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alf");
                 reg.SetValue("", "AdvancedLock Folder");
@@ -45,10 +46,9 @@ namespace Registry_Configuration
             {
                 throw e;
             }
-            ContextMenu.Folder_ContextMenu();
-            ContextMenu.File_ContextMenu();
+            ContextMenu.Folder_ContextMenu(); // void Create Folder ContextMenu Registry
+            ContextMenu.File_ContextMenu(); // void Create File ContextMenu Registry
         }
-        //Create File Registry
         public void CreateRegistery()
         {
             try
@@ -65,17 +65,19 @@ namespace Registry_Configuration
                 throw e;
             }
         }
+        /*--------- Check Registry ---------*/
         public bool CheckRegistery()
         {
             return Registry.ClassesRoot.OpenSubKey(@"\.alo", false) == null ? false : true;
         }
     }
+    /*--------- ContextMenu Registry ---------*/
     public class ContextMenu
     {
         private static RegistryKey reg;
         private static string App_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe";
         private static string Icon_Loc = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";
-
+        /*--------- Create File ContextMenu Registry ---------*/
         public static void Folder_ContextMenu()
         {
             string command = "\"" + App_Location + "\"" + " \"%1\"" + " \"Folder\"";
@@ -92,6 +94,7 @@ namespace Registry_Configuration
                 throw e;
             }
         }
+        /*--------- Create File ContextMenu Registry ---------*/
         public static void File_ContextMenu()
         {
             string command = "\"" + App_Location + "\"" + " \"%1\"" + " \"File\"";

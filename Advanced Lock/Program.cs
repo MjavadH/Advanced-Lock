@@ -37,7 +37,7 @@ namespace Advanced_Lock
             Thread.CurrentThread.CurrentCulture = cu;
             Thread.CurrentThread.CurrentUICulture = cu;
 
-            /*Open ED if user open .alo and .alf file or click Encryption in contextmenu*/
+            /*Open ED.cs Form if user open .alo and .alf file or click Encryption in contextmenu*/
             if (Environment.GetCommandLineArgs().Length >= 2)
             {
                 Application.Run(new ED());

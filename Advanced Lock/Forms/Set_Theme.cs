@@ -15,12 +15,14 @@ namespace Advanced_Lock
             Settings.Default.Save();
             Application.Restart();
         }
+        /*--------- if user click dark mode ---------*/
         private void DarkModeBTN_Click(object sender, EventArgs e)
         {
             Settings.Default.ThemeCheck = "On";
             Settings.Default.DarkMode = true;
             StartApp();
         }
+        /*--------- if user click light mode ---------*/
         private void LightMode_BTN_Click(object sender, EventArgs e)
         {
             Settings.Default.ThemeCheck = "Off";
