@@ -189,9 +189,9 @@ namespace Advanced_Lock.Forms
         /*--------- Config Panel Start ---------*/
         private void CheckConfig_BTN_Click(object sender, EventArgs e)
         {
-            if (!new LockRegistry().CheckRegistery())
+            if (!new Registry_Editor().CheckExtensionRegistery())
             {
-                new LockRegistry().CreateRegistery();
+                new Registry_Editor().CreateRegistery();
                 Notif("The configuration was checked and all problems were fixed", "پیکربندی برسی شد و تمامی مشکلات رفع شد");
             }
             else

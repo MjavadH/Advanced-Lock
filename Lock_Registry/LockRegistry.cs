@@ -5,47 +5,12 @@ using System.IO;
 
 namespace Registry_Configuration
 {
-    public class LockRegistry
+    public class Registry_Editor
     {
-        private static RegistryKey reg;
-        private static string App_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application path
-        private static string Icon_Loc = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";// Icons file
-
         static void Main()
         {
-            string command = "\"" + App_Location + "\"" + " \"%1\"";
-            /*--------- Create File Registry ---------*/
-            try
-            {
-                reg = Registry.ClassesRoot.CreateSubKey(@".alo");// file extension
-                reg.SetValue("", "AdvancedLock.alo");
-                reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alo");
-                reg.SetValue("", "AdvancedLock File");
-                reg = Registry.ClassesRoot.CreateSubKey(@"AdvancedLock.alo\DefaultIcon");
-                reg.SetValue("", Icon_Loc + ",0");
-                reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alo" + @"\shell\open\command");
-                reg.SetValue("", command);
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            /*--------- Create Folder Registry ---------*/
-            try
-            {
-                reg = Registry.ClassesRoot.CreateSubKey(".alf"); // file extension
-                reg.SetValue("", "AdvancedLock.alf");
-                reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alf");
-                reg.SetValue("", "AdvancedLock Folder");
-                reg = Registry.ClassesRoot.CreateSubKey(@"AdvancedLock.alf\DefaultIcon");
-                reg.SetValue("", Icon_Loc + ",1");
-                reg = Registry.ClassesRoot.CreateSubKey("AdvancedLock.alf" + @"\shell\open\command");
-                reg.SetValue("", command);
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
+            extension.File_extension();// void Create File extension Registry
+            extension.Folder_extension();// void Create Folder extension Registry
             ContextMenu.Folder_ContextMenu(); // void Create Folder ContextMenu Registry
             ContextMenu.File_ContextMenu(); // void Create File ContextMenu Registry
         }
@@ -66,9 +31,67 @@ namespace Registry_Configuration
             }
         }
         /*--------- Check Registry ---------*/
-        public bool CheckRegistery()
+        string[] extensions = { extension.file_extension, extension.folder_extension };
+        public bool CheckExtensionRegistery()
         {
-            return Registry.ClassesRoot.OpenSubKey(@"\.alo", false) == null ? false : true;
+            foreach (var item in extensions)
+            {
+                if (Registry.ClassesRoot.OpenSubKey(@"\." + item, false) == null)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    /*--------- Extension Registry ---------*/
+    public class extension
+    {
+        private static RegistryKey reg;
+        private static string application_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application path
+        private static string application_Name = "AdvancedLock"; // Application name
+        private static string icon_Location = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";// Icons file
+        internal static string file_extension = "alo";// File extension
+        internal static string folder_extension = "alf";// File extension
+        private static string command = "\"" + application_Location + "\"" + " \"%1\"";
+
+        /*--------- Create File Registry ---------*/
+        public static void File_extension()
+        {
+            try
+            {
+                reg = Registry.ClassesRoot.CreateSubKey("." + file_extension);// file extension
+                reg.SetValue("", application_Name + "." + file_extension);
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + file_extension);
+                reg.SetValue("", application_Name + " File");
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + file_extension + @"\DefaultIcon");
+                reg.SetValue("", icon_Location + ",0");
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + file_extension + @"\shell\open\command");
+                reg.SetValue("", command);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+        }
+        /*--------- Create Folder Registry ---------*/
+        public static void Folder_extension()
+        {
+            try
+            {
+                reg = Registry.ClassesRoot.CreateSubKey("." + folder_extension); // file extension
+                reg.SetValue("", application_Name + "." + folder_extension);
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + folder_extension);
+                reg.SetValue("", application_Name + " Folder");
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + folder_extension + @"\DefaultIcon");
+                reg.SetValue("", icon_Location + ",1");
+                reg = Registry.ClassesRoot.CreateSubKey(application_Name + "." + folder_extension + @"\shell\open\command");
+                reg.SetValue("", command);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
         }
     }
     /*--------- ContextMenu Registry ---------*/
