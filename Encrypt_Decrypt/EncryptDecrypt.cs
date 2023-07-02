@@ -18,108 +18,124 @@ namespace Encrypt_Decrypt
         public static byte[] toEncryptedArray;
         public static byte[] toEncryptArray;
         public static byte[] resultArray;
+
+        public static void minimizeMemory()
+        {
+            I_O.resultArray.Initialize();
+            GC.Collect(GC.MaxGeneration);
+            GC.WaitForPendingFinalizers();
+            SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
+                (UIntPtr)0xFFFFFFFF, (UIntPtr)0xFFFFFFFF);
+        }
+        [DllImport("kernel32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool SetProcessWorkingSetSize(IntPtr process,
+            UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
+
     };
 
     /*Encryption__Decryption__Text*/
     public class Encryption__Decryption__Text
     {
-        private string SecurityKey = "Adv@n3eD KeY!";
         /*Encryption_method*/
-        private string Encryption_method(string Text, string key)
+        private static string Encryption_method(string Text, string key)
         {
             try
             {
-                SecurityKey = key;
-                byte[] toEncryptedArray = UTF8Encoding.UTF8.GetBytes(Text);
+                I_O.toEncryptedArray = UTF8Encoding.UTF8.GetBytes(Text);
 
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
 
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKey));
+                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
 
                 objMD5CryptoService.Clear();
                 objMD5CryptoService.Dispose();
 
-                var objTripleDESCryptoService = new TripleDESCryptoServiceProvider();
-
-                objTripleDESCryptoService.Key = securityKeyArray;
-
-                objTripleDESCryptoService.Mode = CipherMode.ECB;
-
-                objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
-
-
-                using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
+                using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
                 {
-                    byte[] resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
-                    objTripleDESCryptoService.Clear();
-                    objTripleDESCryptoService.Dispose();
-                    objCrytpoTransform.Dispose();
-                    return Convert.ToBase64String(resultArray, 0, resultArray.Length);
-                }
+                    objTripleDESCryptoService.Key = securityKeyArray;
+                    objTripleDESCryptoService.Mode = CipherMode.ECB;
+                    objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
 
+                    using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
+                    {
+                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptedArray, 0, I_O.toEncryptedArray.Length);
+                        securityKeyArray.Initialize();
+                        return Convert.ToBase64String(I_O.resultArray, 0, I_O.resultArray.Length);
+                    }
+                }
 
             }
             catch (Exception)
             {
                 return "Error";
             }
+            finally
+            {
+                I_O.minimizeMemory();
+            }
         }
         /*Decryption_method*/
-        private string Decryption_method(string Text, string key)
+        private static string Decryption_method(string Text, string key)
         {
             try
             {
-                SecurityKey = key;
-                byte[] toEncryptArray = Convert.FromBase64String(Text);
+                I_O.toEncryptArray = Convert.FromBase64String(Text);
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
 
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKey));
+                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
                 objMD5CryptoService.Clear();
                 objMD5CryptoService.Dispose();
-
-                var objTripleDESCryptoService = new TripleDESCryptoServiceProvider();
-
-                objTripleDESCryptoService.Key = securityKeyArray;
-
-                objTripleDESCryptoService.Mode = CipherMode.ECB;
-
-                objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
-
-                using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
+                using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
                 {
-                    byte[] resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
-                    objTripleDESCryptoService.Clear();
-                    objTripleDESCryptoService.Dispose();
-                    objCrytpoTransform.Dispose();
-                    return UTF8Encoding.UTF8.GetString(resultArray);
+                    objTripleDESCryptoService.Key = securityKeyArray;
+                    objTripleDESCryptoService.Mode = CipherMode.ECB;
+                    objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
+
+                    using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
+                    {
+                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptArray, 0, I_O.toEncryptArray.Length);
+                        securityKeyArray.Initialize();
+                        return UTF8Encoding.UTF8.GetString(I_O.resultArray);
+                    }
                 }
-
-
             }
             catch (Exception)
             {
                 return "Error incorent input";
             }
+            finally
+            {
+                I_O.minimizeMemory();
+            }
         }
         /*Encryption Text*/
         public static string Encryption(string Text, string key)
         {
-            string cypher = string.Empty;
-            if (!string.IsNullOrEmpty(Text))
+            string result = string.Empty;
+            if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
-                cypher = new Encryption__Decryption__Text().Encryption_method(Text, key);
+                result = Encryption_method(Text, key);
             }
-            return cypher;
+            else
+            {
+                result = "Text or Key is NullOrEmpty";
+            }
+            return result;
         }
         /*Decryption Text*/
         public static string Decryption(string Text, string key)
         {
-            string cypher = string.Empty;
-            if (!string.IsNullOrEmpty(Text))
+            string result = string.Empty;
+            if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
-                cypher = new Encryption__Decryption__Text().Decryption_method(Text, key);
+                result = Decryption_method(Text, key);
             }
-            return cypher;
+            else
+            {
+                result = "Text or Key is NullOrEmpty";
+            }
+            return result;
         }
     }
 
@@ -173,7 +189,7 @@ namespace Encrypt_Decrypt
             }
             finally
             {
-                minimizeMemory();
+                I_O.minimizeMemory();
             }
         }
         private static string Decryption_method(string path, string password, bool isFolder)
@@ -229,7 +245,7 @@ namespace Encrypt_Decrypt
 
             finally
             {
-                minimizeMemory();
+                I_O.minimizeMemory();
             }
         }
         public static string Encryption(string filePath, string key, bool Folder = false)
@@ -257,19 +273,6 @@ namespace Encrypt_Decrypt
             }
         }
 
-        private static void minimizeMemory()
-        {
-            I_O.resultArray.Initialize();
-            GC.Collect(GC.MaxGeneration);
-            GC.WaitForPendingFinalizers();
-            SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
-                (UIntPtr)0xFFFFFFFF, (UIntPtr)0xFFFFFFFF);
-        }
-
-        [DllImport("kernel32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool SetProcessWorkingSetSize(IntPtr process,
-            UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
     }
 
     /*Encryption__Decryption__Folder*/
