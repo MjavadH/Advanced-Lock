@@ -8,10 +8,53 @@ using System.Text;
 
 namespace Encrypt_Decrypt
 {
-    public class ProgressBar_Value
+    public static class Progress_status
     {
-        public int MaxValue = 100;
-        public int Value = 0;
+        public static long progressBar_MaxValue = 100;
+        public static long progressBar_Value = 0;
+        public static string Information = "";
+        public enum Mode
+        {
+            none,
+            Encrypt,
+            Decrypt
+        }
+        public static Mode GetMode = Mode.none;
+        public enum Operation
+        {
+            none,
+            Encryption_Text,
+            Decryption_Text,
+            Encryption_File,
+            Decryption_File,
+            Encryption_Folder,
+            Decryption_Folder
+        }
+        public static Operation operation = Operation.none;
+        public static void Cancel_Progress()
+        {
+            if (operation != Operation.none)
+            {
+                Information = "Canceling";
+                switch (operation)
+                {
+                    case Operation.none:
+                        break;
+                    case Operation.Encryption_Text:
+                        break;
+                    case Operation.Decryption_Text:
+                        break;
+                    case Operation.Encryption_File:
+                        break;
+                    case Operation.Decryption_File:
+                        break;
+                    case Operation.Encryption_Folder:
+                        break;
+                    case Operation.Decryption_Folder:
+                        break;
+                }
+            }
+        }
     }
     internal class I_O
     {
@@ -21,7 +64,7 @@ namespace Encrypt_Decrypt
 
         public static void minimizeMemory()
         {
-            I_O.resultArray.Initialize();
+            resultArray.Initialize();
             GC.Collect(GC.MaxGeneration);
             GC.WaitForPendingFinalizers();
             SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
@@ -115,6 +158,7 @@ namespace Encrypt_Decrypt
             string result = string.Empty;
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
+                Progress_status.operation = Progress_status.Operation.Encryption_Text;
                 result = Encryption_method(Text, key);
             }
             else
@@ -129,6 +173,7 @@ namespace Encrypt_Decrypt
             string result = string.Empty;
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
+                Progress_status.operation = Progress_status.Operation.Decryption_Text;
                 result = Decryption_method(Text, key);
             }
             else
@@ -148,8 +193,9 @@ namespace Encrypt_Decrypt
         {
             try
             {
-                SecurityKeyF = password;
+                Progress_status.Information = "Get File...";
                 I_O.toEncryptedArray = File.ReadAllBytes(path);
+                Progress_status.progressBar_MaxValue = I_O.toEncryptedArray.Length;
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
                 byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
                 objMD5CryptoService.Clear();
@@ -160,6 +206,7 @@ namespace Encrypt_Decrypt
                     objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
                     using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
                     {
+                        Progress_status.Information = "Encryption...";
                         I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptedArray, 0, I_O.toEncryptedArray.Length);
                         securityKeyArray.Initialize();
                         if (isFolder)
@@ -211,12 +258,12 @@ namespace Encrypt_Decrypt
                     objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
                     using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
                     {
-
+                        Progress_status.Information = "Decryption...";
                         I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptArray, 0, I_O.toEncryptArray.Length);
                         securityKeyArray.Initialize();
                         if (isFolder)
                         {
-
+                            Progress_status.Information = "Create Folder...";
                             string Fpath = path.Remove(path.Length - 3, 3) + "zip";
                             using (FileStream fs = File.Create(Fpath))
                             {
@@ -232,6 +279,7 @@ namespace Encrypt_Decrypt
                                 fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
                             }
                         }
+                        Progress_status.Information = "File Decrypted";
                         return "File Decrypted";
                     }
                 }
@@ -282,6 +330,7 @@ namespace Encrypt_Decrypt
         {
             if (Directory.Exists(folderPath))
             {
+                Progress_status.operation = Progress_status.Operation.Encryption_Folder;
                 string CompResult = Compress_Decompress.Compress(folderPath);
                 if (CompResult.EndsWith(".zip"))
                 {
@@ -309,6 +358,7 @@ namespace Encrypt_Decrypt
         {
             if (File.Exists(filePath))
             {
+                Progress_status.operation = Progress_status.Operation.Decryption_Folder;
                 string DecryptResult = Encryption__Decryption__File.Decryption(filePath, key, true);
                 if (DecryptResult.EndsWith(".zip"))
                 {
