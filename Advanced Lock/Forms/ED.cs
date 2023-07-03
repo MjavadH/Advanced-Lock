@@ -176,7 +176,6 @@ namespace Advanced_Lock
             {
                 AlertBox.Visible = false;
                 /*Start Encryption && Decryption*/
-                Cancel_BTN.Enabled = false;
                 Progress_BTN.Enabled = false;
                 string Result;
                 switch (this.action)
@@ -202,7 +201,6 @@ namespace Advanced_Lock
                     case enmAction.TextE:
                         Result = Encryption__Decryption__Text.Encryption(UserSelected.Text, Password_User.Text);
                         Result_ED_Text.Text = Result;
-                        Cancel_BTN.Enabled = true;
                         new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
                         Progress_BTN.Enabled = true;
                         break;
@@ -210,7 +208,6 @@ namespace Advanced_Lock
                     case enmAction.TextD:
                         Result = Encryption__Decryption__Text.Decryption(UserSelected.Text, Password_User.Text);
                         Result_ED_Text.Text = Result;
-                        Cancel_BTN.Enabled = true;
                         if (Result != "Error incorent input")
                         {
                             new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
@@ -266,10 +263,10 @@ namespace Advanced_Lock
         {
             if (Result_Work == "Error")
             {
+                Cancel_BTN.Enabled = true;
+                Progress_BTN.Enabled = true;
                 progressBar.ProgressColor = Color.FromArgb(255, 96, 96);
                 progressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
-                Cancel_BTN.Enabled = true;
-                Progress_BTN.Text = "Error!";
                 Notif("Error!", "خطایی رخ داد!");
             }
             else if (Result_Work == "incorect password")
@@ -312,8 +309,8 @@ namespace Advanced_Lock
         {
             while (string.IsNullOrEmpty(Result_Work))
             {
-                progressBar.Maximum = new ProgressBar_Value().MaxValue;
-                progressBar.Value = new ProgressBar_Value().Value;
+                progressBar.Maximum = (int) Progress_status.progressBar_MaxValue /10;
+                progressBar.Value = (int) Progress_status.progressBar_Value / 10;
             }
         }
 
