@@ -35,6 +35,7 @@ namespace Advanced_Lock.Forms
             if (Settings.Default.DarkMode)
             {
                 DarkMode();
+                label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDarkDark);
             }
         }
         /*--------- Start Timer  ---------*/
@@ -43,7 +44,7 @@ namespace Advanced_Lock.Forms
             switch (this.action)
             {
                 case enmAction.wait:
-                    timer1.Interval = 2000;
+                    timer1.Interval = 2500;
                     action = enmAction.close;
                     break;
                 case enmAction.start:
@@ -73,6 +74,36 @@ namespace Advanced_Lock.Forms
                     break;
             }
         }
+
+        private void label_CloseBTN_Click(object sender, EventArgs e)
+        {
+            base.Close();
+        }
+
+        private void label_CloseBTN_MouseEnter(object sender, EventArgs e)
+        {
+            if (Settings.Default.DarkMode)
+            {
+                label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDark);
+            }
+            else
+            {
+                label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDarkDark);
+            }
+        }
+
+        private void label_CloseBTN_MouseLeave(object sender, EventArgs e)
+        {
+            if (Settings.Default.DarkMode)
+            {
+                label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDarkDark);
+            }
+            else
+            {
+                label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDark);
+            }
+        }
+
         /*--------- Show Notification  ---------*/
         public void showAlert(string msg)
         {

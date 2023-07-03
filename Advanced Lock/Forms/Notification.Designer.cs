@@ -34,6 +34,7 @@ namespace Advanced_Lock.Forms
             this.borderRadius = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.NText = new System.Windows.Forms.Label();
+            this.label_CloseBTN = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // borderRadius
@@ -55,11 +56,27 @@ namespace Advanced_Lock.Forms
             this.NText.Text = "Notification Text";
             this.NText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label_CloseBTN
+            // 
+            this.label_CloseBTN.AutoSize = true;
+            this.label_CloseBTN.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label_CloseBTN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_CloseBTN.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label_CloseBTN.Location = new System.Drawing.Point(348, 3);
+            this.label_CloseBTN.Name = "label_CloseBTN";
+            this.label_CloseBTN.Size = new System.Drawing.Size(19, 24);
+            this.label_CloseBTN.TabIndex = 2;
+            this.label_CloseBTN.Text = "X";
+            this.label_CloseBTN.Click += new System.EventHandler(this.label_CloseBTN_Click);
+            this.label_CloseBTN.MouseEnter += new System.EventHandler(this.label_CloseBTN_MouseEnter);
+            this.label_CloseBTN.MouseLeave += new System.EventHandler(this.label_CloseBTN_MouseLeave);
+            // 
             // Notification
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(372, 108);
+            this.Controls.Add(this.label_CloseBTN);
             this.Controls.Add(this.NText);
             this.Font = new System.Drawing.Font("Vazir", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -71,6 +88,7 @@ namespace Advanced_Lock.Forms
             this.Text = "Notification";
             this.Load += new System.EventHandler(this.Notification_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -79,5 +97,6 @@ namespace Advanced_Lock.Forms
         private Guna.UI2.WinForms.Guna2Elipse borderRadius;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label NText;
+        private System.Windows.Forms.Label label_CloseBTN;
     }
 }
