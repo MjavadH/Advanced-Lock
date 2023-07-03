@@ -2,9 +2,11 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Encrypt_Decrypt
 {
@@ -187,17 +189,42 @@ namespace Encrypt_Decrypt
     /*Encryption__Decryption__File*/
     public class Encryption__Decryption__File
     {
-        private static string SecurityKeyF = "Adv@n3eD KeY!";
-
-        private static string Encryption_method(string path, string password, bool isFolder)
+        private static bool CheckPassword(string encryptedPassword, string password)
         {
+            string decrypted_Password = Encryption__Decryption__Text.Decryption(encryptedPassword, password);
+            if (decrypted_Password != "Error incorent input")
+            {
+                return true; // if password is not incorent
+            }
+            else return false;
+        }
+        private static string CheckPathName(string path)
+        {
+            for (int i = 1; File.Exists(path); i++)
+            {
+                string fileName = Path.GetFileName(path);
+                if (fileName.StartsWith(string.Format("Copy({0})", i - 1)))
+                {
+                    path = path.Replace(string.Format("Copy({0})", i - 1), string.Format("Copy({0})", i));
+                }
+                else
+                {
+                    path = path.Replace(fileName, string.Format("Copy({0})", i) + fileName);
+                }
+            }
+            return path;
+        }
+        private static async Task<string> Encryption_method(string path, string password, bool isFolder)
+        {
+            string resultFilePath = path + ".alo";
+            string resultFolderPath = path.Remove(path.Length - 3, 3) + "alf";
             try
             {
                 Progress_status.Information = "Get File...";
                 I_O.toEncryptedArray = File.ReadAllBytes(path);
                 Progress_status.progressBar_MaxValue = I_O.toEncryptedArray.Length;
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
+                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(password));
                 objMD5CryptoService.Clear();
                 using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
                 {
@@ -209,29 +236,36 @@ namespace Encrypt_Decrypt
                         Progress_status.Information = "Encryption...";
                         I_O.resultArray = objCrytpoTransform.TransformFinalBlock(I_O.toEncryptedArray, 0, I_O.toEncryptedArray.Length);
                         securityKeyArray.Initialize();
+                        Progress_status.Information = "Create File";
+                        string tempPath = Path.GetTempFileName();
+                        using (FileStream fs = File.Create(tempPath))
+                        {
+                            await fs.WriteAsync(I_O.resultArray, 0, I_O.resultArray.Length);
+                            fs.Close();
+                        }
                         if (isFolder)
                         {
-                            string Fpath = path.Remove(path.Length - 3, 3);
-                            using (FileStream fs = File.Create(Fpath + "alf"))
-                            {
-                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-                                File.Delete(path);
-                            }
+
+                            string newFolderName = await Task.Run(() => CheckPathName(resultFolderPath));
+                            File.WriteAllText(newFolderName, Encryption__Decryption__Text.Encryption(password, password) + "\n" + Convert.ToBase64String(File.ReadAllBytes(tempPath)));
                         }
                         else
                         {
-                            using (FileStream fs = File.Create(path + ".alo"))
-                            {
-                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-                            }
+                            string newFileName = await Task.Run(() => CheckPathName(resultFilePath));
+                            File.WriteAllText(newFileName, Encryption__Decryption__Text.Encryption(password, password) + "\n" + Convert.ToBase64String(File.ReadAllBytes(tempPath)));
                         }
-
+                        File.Delete(tempPath);
+                        Progress_status.Information = "File Encrpted";
                         return "File Encrpted";
                     }
                 }
             }
             catch (Exception)
             {
+                if (File.Exists(resultFilePath))
+                {
+                    File.Delete(resultFilePath);
+                }
                 return "Error";
             }
             finally
@@ -239,16 +273,22 @@ namespace Encrypt_Decrypt
                 I_O.minimizeMemory();
             }
         }
-        private static string Decryption_method(string path, string password, bool isFolder)
+        private static async Task<string> Decryption_method(string path, string password, bool isFolder)
         {
             try
             {
-                SecurityKeyF = password;
-
-                I_O.toEncryptArray = File.ReadAllBytes(path);
-
+                Progress_status.Information = "Checking Password...";
+                string password_Lines = File.ReadLines(path).First();
+                if (!CheckPassword(password_Lines, password))
+                {
+                    return "incorect password";
+                }
+                I_O.toEncryptArray = Convert.FromBase64String(File.ReadAllText(path).Split('\n')[1]);
+                Progress_status.Information = "Get File...";
+                I_O.minimizeMemory();
+                Progress_status.progressBar_MaxValue = I_O.toEncryptedArray.Length;
                 MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(SecurityKeyF));
+                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(password));
                 objMD5CryptoService.Clear();
                 objMD5CryptoService.Dispose();
                 using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
@@ -268,52 +308,67 @@ namespace Encrypt_Decrypt
                             using (FileStream fs = File.Create(Fpath))
                             {
                                 fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-                                File.Delete(path);
                             }
                             return Fpath;
                         }
                         else
                         {
-                            using (FileStream fs = File.Create(path.Remove(path.Length - 3, 3)))
+                            Progress_status.Information = "Create File...";
+                            string newPathName = await Task.Run(() => CheckPathName(path.Remove(path.Length - 4, 4)));
+                            using (FileStream fs = File.Create(newPathName))
                             {
-                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                                await fs.WriteAsync(I_O.resultArray, 0, I_O.resultArray.Length);
+                                Progress_status.progressBar_Value = fs.Length;
                             }
                         }
                         Progress_status.Information = "File Decrypted";
                         return "File Decrypted";
                     }
                 }
-
-
             }
             catch (Exception)
             {
-                return "incorect password";
+                return "Error";
             }
-
             finally
             {
                 I_O.minimizeMemory();
             }
         }
-        public static string Encryption(string filePath, string key, bool Folder = false)
+        /// <summary>
+        /// Encryption File
+        /// </summary>
+        /// <param name="filePath">File full path. example:c:/text.txt</param>
+        /// <param name="key">Password</param>
+        /// <param name="Folder"></param>
+        /// <returns>Result:'File Encrpted' or 'Error'</returns>
+        public static string Encryption(string filePath, string key, in bool Folder = false)
         {
             if (File.Exists(filePath))
             {
-                string result = Encryption_method(filePath, key, Folder);
-                return result;
+                Progress_status.operation = Progress_status.Operation.Encryption_File;
+                Task<string> result = Encryption_method(filePath, key, Folder);
+                return result.Result;
             }
             else
             {
                 return "not found file";
             }
         }
+        /// <summary>
+        /// Decryption File
+        /// </summary>
+        /// <param name="filePath">File full path. example:c:/text.[file extension]</param>
+        /// <param name="key">Password</param>
+        /// <param name="Folder"></param>
+        /// <returns>Result:'File Encrpted' or 'Error'</returns>
         public static string Decryption(string filePath, string key, bool Folder = false)
         {
             if (File.Exists(filePath))
             {
-                string result = Decryption_method(filePath, key, Folder);
-                return result;
+                Progress_status.operation = Progress_status.Operation.Decryption_File;
+                Task<string> result = Decryption_method(filePath, key, Folder);
+                return result.Result;
             }
             else
             {
@@ -335,6 +390,7 @@ namespace Encrypt_Decrypt
                 if (CompResult.EndsWith(".zip"))
                 {
                     string MainResult = Encryption__Decryption__File.Encryption(CompResult, key, true);
+                    File.Delete(CompResult);
                     if (MainResult == "File Encrpted")
                     {
                         return "Folder Encrpted";
