@@ -23,20 +23,6 @@ namespace Advanced_Lock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            /*Chenge Language*/
-            CultureInfo cu;
-            if (!Settings.Default.lan)
-            {
-                cu = new CultureInfo("en-US");
-            }
-            else
-            {
-                cu = new CultureInfo("fa");
-            }
-            Thread.CurrentThread.CurrentCulture = cu;
-            Thread.CurrentThread.CurrentUICulture = cu;
-
             /*Open ED.cs Form if user open .alo and .alf file or click Encryption in contextmenu*/
             if (Environment.GetCommandLineArgs().Length >= 2)
             {

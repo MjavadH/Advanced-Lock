@@ -25,18 +25,6 @@ namespace Advanced_Lock.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool lan {
-            get {
-                return ((bool)(this["lan"]));
-            }
-            set {
-                this["lan"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
         public string History {
             get {
@@ -116,6 +104,18 @@ namespace Advanced_Lock.Properties {
             }
             set {
                 this["Password_Enter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("en-US")]
+        public string languages {
+            get {
+                return ((string)(this["languages"]));
+            }
+            set {
+                this["languages"] = value;
             }
         }
     }
