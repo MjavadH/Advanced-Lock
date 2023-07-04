@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application description" xml:space="preserve">
+    <value>رمزنگاری و رمزگشایی هرچیزی</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>انصراف</value>
+  </data>
+  <data name="Change languages" xml:space="preserve">
+    <value>تغییر زبان</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>بررسی</value>
+  </data>
+  <data name="Check configuration" xml:space="preserve">
+    <value>بررسی پیکربندی</value>
+  </data>
+  <data name="Checked configuration and fixed problems" xml:space="preserve">
+    <value>پیکربندی برسی شد و تمامی مشکلات رفع شد</value>
+  </data>
+  <data name="Dark Mode" xml:space="preserve">
+    <value>حالت تاریک</value>
+  </data>
+  <data name="Decrypt" xml:space="preserve">
+    <value>رمزگشایی</value>
+  </data>
+  <data name="Decryption File" xml:space="preserve">
+    <value>رمزگشایی فایل</value>
+  </data>
+  <data name="Decryption Folder" xml:space="preserve">
+    <value>رمزگشایی پوشه</value>
+  </data>
+  <data name="Decryption Text" xml:space="preserve">
+    <value>رمزگشایی متن</value>
+  </data>
+  <data name="Delete All History" xml:space="preserve">
+    <value>حذف تمام تاریخچه ها</value>
+  </data>
+  <data name="Delete Row" xml:space="preserve">
+    <value>حذف ردیف</value>
+  </data>
+  <data name="Developer Description" xml:space="preserve">
+    <value>طراح و توسعه دهنده: MjavadH
+این یک نرم‌افزار متن باز است
+گیت هاب:
+</value>
+  </data>
+  <data name="Enable password" xml:space="preserve">
+    <value>فعال کردن گذرواژه</value>
+  </data>
+  <data name="Encrypt" xml:space="preserve">
+    <value>رمزنگاری</value>
+  </data>
+  <data name="Encryption File" xml:space="preserve">
+    <value>رمزنگاری فایل</value>
+  </data>
+  <data name="Encryption Folder" xml:space="preserve">
+    <value>رمزنگاری پوشه</value>
+  </data>
+  <data name="Encryption Text" xml:space="preserve">
+    <value>رمزنگاری متن</value>
+  </data>
+  <data name="Enter password" xml:space="preserve">
+    <value>گذرواژه وارد کنید:</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>خطایی رخ داد</value>
+  </data>
+  <data name="Error password or your choice" xml:space="preserve">
+    <value>خطا: کادر های 'انتخاب شما' یا 'گذرواژه' خالی است
+</value>
+  </data>
+  <data name="Example Notification" xml:space="preserve">
+    <value>تست اعلان</value>
+  </data>
+  <data name="Export is done" xml:space="preserve">
+    <value>دیتا ها ذخیره شدند</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>فایل</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>پوشه</value>
+  </data>
+  <data name="Import is done" xml:space="preserve">
+    <value>دیتا ها بارگزاری شدند</value>
+  </data>
+  <data name="in iran" xml:space="preserve">
+    <value>در ایران</value>
+  </data>
+  <data name="Incorect Password" xml:space="preserve">
+    <value>گذرواژه اشتباه است!</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>اطلاعات</value>
+  </data>
+  <data name="Light Mode" xml:space="preserve">
+    <value>حالت روز</value>
+  </data>
+  <data name="Load History" xml:space="preserve">
+    <value>بارگذاری تاریخچه</value>
+  </data>
+  <data name="Made with" xml:space="preserve">
+    <value>ساخته شده با</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>منو</value>
+  </data>
+  <data name="Not found file" xml:space="preserve">
+    <value>فایل پیدا نشد</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>تایید</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>گذرواژه</value>
+  </data>
+  <data name="password is enable" xml:space="preserve">
+    <value>گذرواژه فعال شد</value>
+  </data>
+  <data name="Play sound" xml:space="preserve">
+    <value>پخش صدا</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>تازه کردن داده ها</value>
+  </data>
+  <data name="Restart app to chenge language" xml:space="preserve">
+    <value>برنامه را بسته و مجدد باز نمایید تا زبان تغییر کند</value>
+  </data>
+  <data name="Restart app to chenge theme" xml:space="preserve">
+    <value>برنامه را بسته و مجدد باز نمایید تا تغییر حالت به درستی انجام گیرد</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>نتیجه</value>
+  </data>
+  <data name="Result text copyed" xml:space="preserve">
+    <value>نتیجه کپی شد</value>
+  </data>
+  <data name="Result text empty" xml:space="preserve">
+    <value>نتیجه خالی است</value>
+  </data>
+  <data name="Save History" xml:space="preserve">
+    <value>ذخیره تاریخچه</value>
+  </data>
+  <data name="Select your Theme" xml:space="preserve">
+    <value>تم مورد نظر خود را انتخاب کنید</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>تنظیمات</value>
+  </data>
+  <data name="Show notification" xml:space="preserve">
+    <value>نمایش اعلان</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>ثبت</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>متن</value>
+  </data>
+  <data name="There is no problem in configuring" xml:space="preserve">
+    <value>مشکلی در پیکربندی نرم‌افزار وجود ندارد</value>
+  </data>
+  <data name="your choice" xml:space="preserve">
+    <value>انتخاب شما</value>
+  </data>
+</root>
