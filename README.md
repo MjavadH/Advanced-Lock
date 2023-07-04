@@ -14,7 +14,8 @@ Encrypt and decrypt anything
 
 ### TODO:
 - [ ] Context Menu option
+- [ ] Add more languages
 - [ ] Create Custom browser for File and Folder
-- [x] Optimize memory usage
+- [ ] Optimize memory usage
 
 ### Screenshot :
