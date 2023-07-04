@@ -5,8 +5,11 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
+using System.Reflection;
+using System.Resources;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
+using Advanced_Lock.Class;
 
 namespace Advanced_Lock
 {
@@ -17,6 +20,7 @@ namespace Advanced_Lock
             InitializeComponent();
         }
         /*--------- Func Start ---------*/
+        public AllText text = new AllText();
         public void historyadd(string choose, string pass, string result)
         {
             dataLoad();
@@ -24,7 +28,6 @@ namespace Advanced_Lock
             dataSet1.AcceptChanges();
             dataSet1.WriteXml("History");
             File.WriteAllText("History", Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText("History"), "Adv@n3eD KeY!"));
-
         }
         void dataLoad()
         {
@@ -68,22 +71,40 @@ namespace Advanced_Lock
             History_DataTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             History_DataTable.BackgroundColor = Color.FromArgb(16, 16, 17);
         }
-        void Notif(string msg_en, string msg_fa)
+        void Notif(string msg)
         {
             Notification frm = new Notification();
-            if (Settings.Default.lan)
-            {
-                frm.showAlert(msg_fa);
-            }
-            else
-            {
-                frm.showAlert(msg_en);
-            }
+            frm.showAlert(msg);
+        }
+        private void SetTextLanguages()
+        {
+            MenuBTN.Text = text.Menu;
+            FolderBTN.Text = text.Folder;
+            EFolderBTN.Text = text.Encrypt;
+            EFileBTN.Text = text.Encrypt;
+            ETextBTN.Text = text.Encrypt;
+            DFolderBTN.Text = text.Decrypt;
+            DFileBTN.Text = text.Decrypt;
+            DTextBTN.Text = text.Decrypt;
+            DTextBTN.Text = text.Decrypt;
+            FileBTN.Text = text.File;
+            TextBTN.Text = text.Text;
+            yourChoseHistory.HeaderText = text.Your_Choice;
+            passwordHistory.HeaderText = text.Password;
+            resultHistory.HeaderText = text.Result;
+            toolTip_BTNs.SetToolTip(RefreshBTN, text.Refresh);
+            toolTip_BTNs.SetToolTip(DeleteBTN, text.Delete_Row);
+            toolTip_BTNs.SetToolTip(DeleteAll_BTN, text.Delete_All_History);
+            toolTip_BTNs.SetToolTip(SettingBTN, text.Setting);
+            toolTip_BTNs.SetToolTip(SaveDataBTN, text.Save_History);
+            toolTip_BTNs.SetToolTip(LoadDataBTN, text.Load_History);
+            toolTip_BTNs.SetToolTip(infoBTN, text.Information);
         }
         /*--------- Func End ---------*/
         private void Form_Load(object sender, EventArgs e)
         {
             dataLoad();
+            SetTextLanguages();
             if (Settings.Default.DarkMode)
             {
                 DarkMode();
@@ -106,7 +127,7 @@ namespace Advanced_Lock
             foreach (var btn in MenuBTNS)
             {
                 if (MenuBTN.Checked) btn.TextOffset = new Point(98, 0);
-                else btn.TextOffset = new Point(0, 0);
+                else btn.TextOffset = new Point(5, 0);
             }
             MenuAnimation.Start();
         }
@@ -114,11 +135,11 @@ namespace Advanced_Lock
         {
             if (MenuBTN.Checked && MainMenu.Width > 49)
             {
-                MainMenu.Width -= 9;
+                MainMenu.Width -= 14;
             }
             else if (!MenuBTN.Checked && MainMenu.Width < 126)
             {
-                MainMenu.Width += 9;
+                MainMenu.Width += 14;
             }
             else
             {
@@ -250,7 +271,7 @@ namespace Advanced_Lock
             {
                 dataSet1.WriteXml(exportD.FileName);
                 File.WriteAllText(exportD.FileName, Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(File.ReadAllText(exportD.FileName), "Adv@n3eD KeY!"));
-                Notif("Export is done", "دیتا ها ذخیره شدند");
+                Notif(text.Export_Is_Done);
             }
         }
         /*------ Import Data ------*/
@@ -261,7 +282,7 @@ namespace Advanced_Lock
             if (ImportD.ShowDialog() == DialogResult.OK)
             {
                 File.WriteAllText("History", File.ReadAllText(ImportD.FileName));
-                Notif("Import is done", "دیتا ها بارگزاری شدند");
+                Notif(text.Import_Is_Done);
                 HistoryRefresh();
             }
         }

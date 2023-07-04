@@ -56,9 +56,6 @@ namespace Advanced_Lock
             this.UserSelected_password_DS = new System.Data.DataColumn();
             this.User_Result = new System.Data.DataColumn();
             this.History_DataTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.yourChoseHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.resultHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Menu2 = new Guna.UI2.WinForms.Guna2Panel();
             this.infoBTN = new Guna.UI2.WinForms.Guna2Button();
             this.LoadDataBTN = new Guna.UI2.WinForms.Guna2Button();
@@ -68,6 +65,9 @@ namespace Advanced_Lock
             this.DeleteBTN = new Guna.UI2.WinForms.Guna2Button();
             this.RefreshBTN = new Guna.UI2.WinForms.Guna2Button();
             this.toolTip_BTNs = new System.Windows.Forms.ToolTip(this.components);
+            this.resultHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.yourChoseHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainMenu.SuspendLayout();
             this.TextPanel.SuspendLayout();
             this.FilePanel.SuspendLayout();
@@ -128,6 +128,7 @@ namespace Advanced_Lock
             this.DTextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DTextBTN.Name = "DTextBTN";
             this.DTextBTN.ShadowDecoration.Parent = this.DTextBTN;
+            this.DTextBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.DTextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // ETextBTN
@@ -145,6 +146,7 @@ namespace Advanced_Lock
             this.ETextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.ETextBTN.Name = "ETextBTN";
             this.ETextBTN.ShadowDecoration.Parent = this.ETextBTN;
+            this.ETextBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.ETextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // TextBTN
@@ -163,6 +165,7 @@ namespace Advanced_Lock
             this.TextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.TextBTN.Name = "TextBTN";
             this.TextBTN.ShadowDecoration.Parent = this.TextBTN;
+            this.TextBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.TextBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FilePanel
@@ -188,6 +191,7 @@ namespace Advanced_Lock
             this.DFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFileBTN.Name = "DFileBTN";
             this.DFileBTN.ShadowDecoration.Parent = this.DFileBTN;
+            this.DFileBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.DFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // EFileBTN
@@ -204,6 +208,7 @@ namespace Advanced_Lock
             this.EFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFileBTN.Name = "EFileBTN";
             this.EFileBTN.ShadowDecoration.Parent = this.EFileBTN;
+            this.EFileBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.EFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // FileBTN
@@ -222,6 +227,7 @@ namespace Advanced_Lock
             this.FileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FileBTN.Name = "FileBTN";
             this.FileBTN.ShadowDecoration.Parent = this.FileBTN;
+            this.FileBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.FileBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FolderPanel
@@ -235,6 +241,7 @@ namespace Advanced_Lock
             // 
             // DFolderBTN
             // 
+            this.DFolderBTN.BackColor = System.Drawing.Color.Transparent;
             this.DFolderBTN.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(166)))), ((int)(((byte)(0)))));
             this.DFolderBTN.CheckedState.Parent = this.DFolderBTN;
             this.DFolderBTN.CustomImages.Parent = this.DFolderBTN;
@@ -247,6 +254,7 @@ namespace Advanced_Lock
             this.DFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFolderBTN.Name = "DFolderBTN";
             this.DFolderBTN.ShadowDecoration.Parent = this.DFolderBTN;
+            this.DFolderBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.DFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // EFolderBTN
@@ -264,6 +272,7 @@ namespace Advanced_Lock
             this.EFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFolderBTN.Name = "EFolderBTN";
             this.EFolderBTN.ShadowDecoration.Parent = this.EFolderBTN;
+            this.EFolderBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.EFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // FolderBTN
@@ -282,6 +291,7 @@ namespace Advanced_Lock
             this.FolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FolderBTN.Name = "FolderBTN";
             this.FolderBTN.ShadowDecoration.Parent = this.FolderBTN;
+            this.FolderBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.FolderBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // MenuBTN
@@ -300,6 +310,7 @@ namespace Advanced_Lock
             this.MenuBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.MenuBTN.Name = "MenuBTN";
             this.MenuBTN.ShadowDecoration.Parent = this.MenuBTN;
+            this.MenuBTN.TextOffset = new System.Drawing.Point(5, 0);
             this.MenuBTN.Click += new System.EventHandler(this.MenuBTN_Click);
             // 
             // dataSet1
@@ -345,7 +356,7 @@ namespace Advanced_Lock
             this.History_DataTable.BackgroundColor = System.Drawing.Color.White;
             this.History_DataTable.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.History_DataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.History_DataTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.History_DataTable.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
             this.History_DataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
@@ -402,27 +413,6 @@ namespace Advanced_Lock
             this.History_DataTable.ThemeStyle.RowsStyle.Height = 22;
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // yourChoseHistory
-            // 
-            this.yourChoseHistory.DataPropertyName = "YourChose";
-            resources.ApplyResources(this.yourChoseHistory, "yourChoseHistory");
-            this.yourChoseHistory.Name = "yourChoseHistory";
-            this.yourChoseHistory.ReadOnly = true;
-            // 
-            // passwordHistory
-            // 
-            this.passwordHistory.DataPropertyName = "Password";
-            resources.ApplyResources(this.passwordHistory, "passwordHistory");
-            this.passwordHistory.Name = "passwordHistory";
-            this.passwordHistory.ReadOnly = true;
-            // 
-            // resultHistory
-            // 
-            this.resultHistory.DataPropertyName = "Result";
-            resources.ApplyResources(this.resultHistory, "resultHistory");
-            this.resultHistory.Name = "resultHistory";
-            this.resultHistory.ReadOnly = true;
             // 
             // Menu2
             // 
@@ -552,6 +542,27 @@ namespace Advanced_Lock
             this.toolTip_BTNs.SetToolTip(this.RefreshBTN, resources.GetString("RefreshBTN.ToolTip"));
             this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
             // 
+            // resultHistory
+            // 
+            this.resultHistory.DataPropertyName = "Result";
+            resources.ApplyResources(this.resultHistory, "resultHistory");
+            this.resultHistory.Name = "resultHistory";
+            this.resultHistory.ReadOnly = true;
+            // 
+            // passwordHistory
+            // 
+            this.passwordHistory.DataPropertyName = "Password";
+            resources.ApplyResources(this.passwordHistory, "passwordHistory");
+            this.passwordHistory.Name = "passwordHistory";
+            this.passwordHistory.ReadOnly = true;
+            // 
+            // yourChoseHistory
+            // 
+            this.yourChoseHistory.DataPropertyName = "YourChose";
+            resources.ApplyResources(this.yourChoseHistory, "yourChoseHistory");
+            this.yourChoseHistory.Name = "yourChoseHistory";
+            this.yourChoseHistory.ReadOnly = true;
+            // 
             // Advanced
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -606,10 +617,10 @@ namespace Advanced_Lock
         private Guna.UI2.WinForms.Guna2Button infoBTN;
         private Guna.UI2.WinForms.Guna2Button SaveDataBTN;
         private Guna.UI2.WinForms.Guna2Button LoadDataBTN;
+        private System.Windows.Forms.ToolTip toolTip_BTNs;
         private System.Windows.Forms.DataGridViewTextBoxColumn yourChoseHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn passwordHistory;
         private System.Windows.Forms.DataGridViewTextBoxColumn resultHistory;
-        private System.Windows.Forms.ToolTip toolTip_BTNs;
     }
 }
 
