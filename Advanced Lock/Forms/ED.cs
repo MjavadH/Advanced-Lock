@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using System.IO;
+using Advanced_Lock.Class;
 
 namespace Advanced_Lock
 {
@@ -16,6 +17,7 @@ namespace Advanced_Lock
         {
             InitializeComponent();
         }
+        public AllText text = new AllText();
         public enum enmAction
         {
             /*Actions*/
@@ -40,17 +42,19 @@ namespace Advanced_Lock
             Password_User.FillColor = Darkmode.DarkMode[1];
             Result_ED_Text.FillColor = Darkmode.DarkMode[1];
         }
-        void Notif(string msg_en, string msg_fa)
+        void Notif(string msg)
         {
             Notification frm = new Notification();
-            if (Settings.Default.lan)
-            {
-                frm.showAlert(msg_fa);
-            }
-            else
-            {
-                frm.showAlert(msg_en);
-            }
+            frm.showAlert(msg);
+        }
+        private void SetTextLanguages()
+        {
+            PathText.Text = text.Your_Choice + ":";
+            PasswordText.Text = text.Password + ":";
+            ED_Text_Text.Text = text.Result + ":";
+            Cancel_BTN.Text = text.Cancel;
+            Progress_BTN.Text = text.OK;
+            AlertBox.Text = text.Error_Password_Or_Your_Choice;
         }
         private void ED_Load(object sender, EventArgs e)
         {
@@ -81,6 +85,7 @@ namespace Advanced_Lock
                     show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
                 }
             }
+            SetTextLanguages();
         }
         public void show_ED(string UserSelected, string type)
         {
@@ -90,77 +95,35 @@ namespace Advanced_Lock
             {
                 case "Decryption":
                     action = enmAction.Decryption;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزگشایی فایل";
-                    }
-                    else
-                    {
-                        this.Text = "Decryption File";
-                    }
+                    this.Text = text.Decryption_File;
                     this.Icon = Resources.File_Icon;
                     break;
                 case "Encryption":
                     action = enmAction.Encryption;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزنگاری فایل";
-                    }
-                    else
-                    {
-                        this.Text = "Encryption File";
-                    }
+                    this.Text = text.Encryption_File;
                     this.Icon = Resources.File_Icon;
                     break;
                 case "EncryptFolder":
                     action = enmAction.EncryptFolder;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزنگاری پوشه";
-                    }
-                    else
-                    {
-                        this.Text = "Encryption Folder";
-                    }
+                    this.Text = text.Encryption_Folder;
                     break;
                 case "DecryptFolder":
                     action = enmAction.DecryptFolder;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزگشایی پوشه";
-                    }
-                    else
-                    {
-                        this.Text = "Decryption Folder";
-                    }
+                    this.Text = text.Decryption_Folder;
                     break;
                 case "TextE":
                     action = enmAction.TextE;
                     this.UserSelected.ReadOnly = false;
                     progressBar.Visible = false;
                     Text_ED_Panel.Visible = true;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزنگاری متن";
-                    }
-                    else
-                    {
-                        this.Text = "Encryption Text";
-                    }
+                    this.Text = text.Encryption_Text;
                     break;
                 case "TextD":
                     Text_ED_Panel.Visible = true;
                     this.UserSelected.ReadOnly = false;
                     progressBar.Visible = false;
                     action = enmAction.TextD;
-                    if (Settings.Default.lan)
-                    {
-                        this.Text = "رمزگشایی متن";
-                    }
-                    else
-                    {
-                        this.Text = "Decryption Text";
-                    }
+                    this.Text = text.Decryption_Text;
                     break;
             }
             this.Show();
@@ -228,13 +191,13 @@ namespace Advanced_Lock
         {
             if (Result_ED_Text.Text == "")
             {
-                Result_ED_Text.PlaceholderText = "Result text is empty!";
+                Result_ED_Text.PlaceholderText = text.Result_text_empty;
             }
             else
             {
                 Clipboard.SetText(Result_ED_Text.Text);
                 Result_ED_Text.Text = "";
-                Result_ED_Text.PlaceholderText = "Result text was copyed!";
+                Result_ED_Text.PlaceholderText = text.Result_text_copyed;
             }
         }
 
@@ -267,19 +230,19 @@ namespace Advanced_Lock
                 Progress_BTN.Enabled = true;
                 progressBar.ProgressColor = Color.FromArgb(255, 96, 96);
                 progressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
-                Notif("Error!", "خطایی رخ داد!");
+                Notif(text.Error);
             }
             else if (Result_Work == "incorect password")
             {
                 Cancel_BTN.Enabled = true;
                 Progress_BTN.Enabled = true;
-                Notif("incorect password", "گذرواژه اشتباه است");
+                Notif(text.Incorect_Password);
                 progressBar.Value = 0;
             }
             else if (Result_Work == "not found file")
             {
                 Cancel_BTN.Enabled = true;
-                Notif("not found file", "فایل پیدا نشد");
+                Notif(text.Not_found_file);
                 progressBar.Value = 0;
             }
             else

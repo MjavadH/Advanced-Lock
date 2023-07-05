@@ -237,7 +237,6 @@ namespace Advanced_Lock
             // 
             this.AcceptButton = this.Progress_BTN;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.CancelButton = this.Cancel_BTN;
             resources.ApplyResources(this, "$this");
             this.Controls.Add(this.ED_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;

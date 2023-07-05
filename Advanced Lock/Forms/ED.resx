@@ -157,7 +157,7 @@
     <value>15</value>
   </data>
   <data name="AlertBox.Text" xml:space="preserve">
-    <value>Error: Box 'your choice' or 'password' is empty</value>
+    <value>Error: Field 'your choice' or 'password' is empty</value>
   </data>
   <data name="AlertBox.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -190,7 +190,7 @@
     <value>469, 64</value>
   </data>
   <data name="Result_ED_Text.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;Result_ED_Text.Name" xml:space="preserve">
     <value>Result_ED_Text</value>
@@ -300,7 +300,7 @@
     <value>469, 45</value>
   </data>
   <data name="Password_User.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;Password_User.Name" xml:space="preserve">
     <value>Password_User</value>
@@ -438,7 +438,7 @@
     <value>180, 45</value>
   </data>
   <data name="Cancel_BTN.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="Cancel_BTN.Text" xml:space="preserve">
     <value>Cancel</value>
@@ -465,7 +465,7 @@
     <value>180, 45</value>
   </data>
   <data name="Progress_BTN.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>4</value>
   </data>
   <data name="Progress_BTN.Text" xml:space="preserve">
     <value>OK</value>
