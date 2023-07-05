@@ -32,19 +32,19 @@ namespace Advanced_Lock.Forms
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterPass));
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_EnterPassword = new System.Windows.Forms.Label();
             this.Box_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.OK_BTN = new Guna.UI2.WinForms.Guna2Button();
-            this.Incorect = new System.Windows.Forms.Label();
+            this.lable_IncorectPassword = new System.Windows.Forms.Label();
             this.Timer = new System.Windows.Forms.Timer(this.components);
             this.Transition = new Guna.UI2.WinForms.Guna2Transition();
             this.SuspendLayout();
             // 
-            // label1
+            // label_EnterPassword
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.Transition.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label1.Name = "label1";
+            resources.ApplyResources(this.label_EnterPassword, "label_EnterPassword");
+            this.Transition.SetDecoration(this.label_EnterPassword, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label_EnterPassword.Name = "label_EnterPassword";
             // 
             // Box_password
             // 
@@ -88,12 +88,12 @@ namespace Advanced_Lock.Forms
             this.OK_BTN.ShadowDecoration.Parent = this.OK_BTN;
             this.OK_BTN.Click += new System.EventHandler(this.OK_BTN_Click);
             // 
-            // Incorect
+            // lable_IncorectPassword
             // 
-            resources.ApplyResources(this.Incorect, "Incorect");
-            this.Transition.SetDecoration(this.Incorect, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Incorect.ForeColor = System.Drawing.Color.Red;
-            this.Incorect.Name = "Incorect";
+            resources.ApplyResources(this.lable_IncorectPassword, "lable_IncorectPassword");
+            this.Transition.SetDecoration(this.lable_IncorectPassword, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lable_IncorectPassword.ForeColor = System.Drawing.Color.Red;
+            this.lable_IncorectPassword.Name = "lable_IncorectPassword";
             // 
             // Timer
             // 
@@ -126,10 +126,10 @@ namespace Advanced_Lock.Forms
             this.AcceptButton = this.OK_BTN;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.Incorect);
+            this.Controls.Add(this.lable_IncorectPassword);
             this.Controls.Add(this.OK_BTN);
             this.Controls.Add(this.Box_password);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_EnterPassword);
             this.Transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -143,11 +143,11 @@ namespace Advanced_Lock.Forms
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_EnterPassword;
         private Guna.UI2.WinForms.Guna2TextBox Box_password;
         private Guna.UI2.WinForms.Guna2Button OK_BTN;
         private Guna.UI2.WinForms.Guna2Transition Transition;
-        private System.Windows.Forms.Label Incorect;
+        private System.Windows.Forms.Label lable_IncorectPassword;
         private System.Windows.Forms.Timer Timer;
     }
 }

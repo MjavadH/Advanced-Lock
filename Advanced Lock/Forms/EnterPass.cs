@@ -4,6 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using Microsoft.Win32;
+using Advanced_Lock.Class;
 
 namespace Advanced_Lock.Forms
 {
@@ -13,7 +14,14 @@ namespace Advanced_Lock.Forms
         {
             InitializeComponent();
         }
-        private void EnterPass_Load(object sender, EventArgs e)
+        public AllText text = new AllText();
+        private void SetTextLanguages()
+        {
+            OK_BTN.Text = text.OK;
+            lable_IncorectPassword.Text = text.Incorect_Password;
+            label_EnterPassword.Text = text.Enter_Password;
+        }
+            private void EnterPass_Load(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)
             {
@@ -22,6 +30,7 @@ namespace Advanced_Lock.Forms
                 OK_BTN.FillColor = Darkmode.DarkMode[0];
             }
             Box_password.Focus();
+            SetTextLanguages();
         }
 
         private void OK_BTN_Click(object sender, EventArgs e)
@@ -37,14 +46,14 @@ namespace Advanced_Lock.Forms
             }
             else
             {
-                Transition.AddToQueue(Incorect, Guna.UI2.AnimatorNS.AnimateMode.Show);
+                Transition.AddToQueue(lable_IncorectPassword, Guna.UI2.AnimatorNS.AnimateMode.Show);
                 Timer.Start();
             }
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            Transition.AddToQueue(Incorect, Guna.UI2.AnimatorNS.AnimateMode.Hide);
+            Transition.AddToQueue(lable_IncorectPassword, Guna.UI2.AnimatorNS.AnimateMode.Hide);
             Timer.Stop();
         }
     }

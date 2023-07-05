@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label_EnterPassword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <metadata name="Transition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -160,28 +160,28 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="label_EnterPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 22</value>
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="label_EnterPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 26</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+  <data name="label_EnterPassword.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="label1.Text" xml:space="preserve">
+  <data name="label_EnterPassword.Text" xml:space="preserve">
     <value>Enter password:</value>
   </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
+  <data name="&gt;&gt;label_EnterPassword.Name" xml:space="preserve">
+    <value>label_EnterPassword</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_EnterPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label_EnterPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_EnterPassword.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="Box_password.Font" type="System.Drawing.Font, System.Drawing">
@@ -204,7 +204,7 @@
     <value>Box_password</value>
   </data>
   <data name="&gt;&gt;Box_password.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;Box_password.Parent" xml:space="preserve">
     <value>$this</value>
@@ -231,7 +231,7 @@
     <value>OK_BTN</value>
   </data>
   <data name="&gt;&gt;OK_BTN.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;OK_BTN.Parent" xml:space="preserve">
     <value>$this</value>
@@ -239,34 +239,34 @@
   <data name="&gt;&gt;OK_BTN.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Incorect.AutoSize" type="System.Boolean, mscorlib">
+  <data name="lable_IncorectPassword.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="Incorect.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="lable_IncorectPassword.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 65</value>
   </data>
-  <data name="Incorect.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="lable_IncorectPassword.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 26</value>
   </data>
-  <data name="Incorect.TabIndex" type="System.Int32, mscorlib">
+  <data name="lable_IncorectPassword.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="Incorect.Text" xml:space="preserve">
+  <data name="lable_IncorectPassword.Text" xml:space="preserve">
     <value>Incorect password!</value>
   </data>
-  <data name="Incorect.Visible" type="System.Boolean, mscorlib">
+  <data name="lable_IncorectPassword.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Incorect.Name" xml:space="preserve">
-    <value>Incorect</value>
+  <data name="&gt;&gt;lable_IncorectPassword.Name" xml:space="preserve">
+    <value>lable_IncorectPassword</value>
   </data>
-  <data name="&gt;&gt;Incorect.Type" xml:space="preserve">
+  <data name="&gt;&gt;lable_IncorectPassword.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Incorect.Parent" xml:space="preserve">
+  <data name="&gt;&gt;lable_IncorectPassword.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Incorect.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;lable_IncorectPassword.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="Timer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -3102,7 +3102,7 @@
     <value>Transition</value>
   </data>
   <data name="&gt;&gt;Transition.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Transition, Guna.UI2, Version=2.0.0.6, Culture=neutral, PublicKeyToken=null</value>
+    <value>Guna.UI2.WinForms.Guna2Transition, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>EnterPass</value>
