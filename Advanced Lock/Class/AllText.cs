@@ -1,12 +1,17 @@
 ﻿using Advanced_Lock.Properties;
 using System.Reflection;
 using System.Resources;
+using System.Collections.Generic;
 
 namespace Advanced_Lock.Class
 {
     public class AllText
     {
         private static string languagesName = Settings.Default.languages;
+        public Dictionary<string, string> allAvailableLanguages = new Dictionary<string, string> { /*{languages File Name, display name}*/ 
+            { "en-US", "English" },
+            { "fa-IR","فارسی" }
+        };
         private ResourceManager languages_Selector = new ResourceManager(string.Format("Advanced_Lock.String.{0}", languagesName), Assembly.GetExecutingAssembly());
         public string Application_Description { get => languages_Selector.GetString("Application description"); }
         public string Cancel { get => languages_Selector.GetString("Cancel"); }
