@@ -1,4 +1,5 @@
-﻿using Advanced_Lock.Properties;
+﻿using Advanced_Lock.Class;
+using Advanced_Lock.Properties;
 using System;
 using System.Reflection;
 using System.Windows.Forms;
@@ -13,6 +14,7 @@ namespace Advanced_Lock
             InitializeComponent();
             label_Version.Text = Assembly.GetExecutingAssembly().GetName().Version.ToString();
         }
+        public AllText text = new AllText();
         void DarkMode()
         {
             this.BackColor = Darkmode.DarkMode[0];
@@ -21,12 +23,21 @@ namespace Advanced_Lock
             panel_Bottom.FillColor = Darkmode.DarkMode[1];
             button_OK.FillColor = Darkmode.DarkMode[4];
         }
+        private void SetTextLanguages()
+        {
+            label_Made.Text = text.Made_With;
+            label_inIran.Text = text.In_Iran;
+            button_OK.Text = text.OK;
+            label_E_and_D.Text = text.Application_Description;
+            label_Description.Text = text.Developer_Description;
+        }
         private void AboutBox_Load(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)
             {
                 DarkMode();
             }
+            SetTextLanguages();
         }
         private void button_OK_Click(object sender, EventArgs e)
         {
