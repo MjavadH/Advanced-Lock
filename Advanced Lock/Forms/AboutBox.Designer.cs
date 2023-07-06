@@ -157,6 +157,7 @@ namespace Advanced_Lock
             this.panel_Title.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.image_AppIcon)).EndInit();
             this.panel_Bottom.ResumeLayout(false);
+            this.panel_Bottom.PerformLayout();
             this.ResumeLayout(false);
 
         }

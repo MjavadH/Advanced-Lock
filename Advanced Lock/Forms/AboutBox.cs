@@ -25,11 +25,19 @@ namespace Advanced_Lock
         }
         private void SetTextLanguages()
         {
-            label_Made.Text = text.Made_With;
-            label_inIran.Text = text.In_Iran;
             button_OK.Text = text.OK;
             label_E_and_D.Text = text.Application_Description;
             label_Description.Text = text.Developer_Description;
+            if (Settings.Default.languages == "fa-IR")
+            {
+                label_Made.Text = text.In_Iran;
+                label_inIran.Text = text.Made_With;
+            }
+            else
+            {
+                label_Made.Text = text.Made_With;
+                label_inIran.Text = text.In_Iran;
+            }
         }
         private void AboutBox_Load(object sender, EventArgs e)
         {
