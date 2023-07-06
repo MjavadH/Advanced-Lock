@@ -14,7 +14,7 @@ namespace Advanced_Lock.Forms
         {
             InitializeComponent();
         }
-        public AllText text = new AllText();
+        AllText text = new AllText();
         private void SetTextLanguages()
         {
             OK_BTN.Text = text.OK;

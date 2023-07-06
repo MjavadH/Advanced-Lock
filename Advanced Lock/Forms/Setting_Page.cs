@@ -13,6 +13,7 @@ using static Advanced_Lock.Class.Colers;
 using Guna.UI2.WinForms;
 using Microsoft.Win32;
 using Registry_Configuration;
+using Advanced_Lock.Class;
 
 namespace Advanced_Lock.Forms
 {
@@ -22,6 +23,7 @@ namespace Advanced_Lock.Forms
         {
             InitializeComponent();
         }
+        AllText text = new AllText();
         void DarkMode()
         {
             this.BackColor = Darkmode.DarkMode[2];

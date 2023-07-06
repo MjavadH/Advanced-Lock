@@ -20,7 +20,7 @@ namespace Advanced_Lock
             InitializeComponent();
         }
         /*--------- Func Start ---------*/
-        public AllText text = new AllText();
+        AllText text = new AllText();
         public void historyadd(string choose, string pass, string result)
         {
             dataLoad();

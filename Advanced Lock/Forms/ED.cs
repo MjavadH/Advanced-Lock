@@ -17,7 +17,7 @@ namespace Advanced_Lock
         {
             InitializeComponent();
         }
-        public AllText text = new AllText();
+        AllText text = new AllText();
         public enum enmAction
         {
             /*Actions*/
