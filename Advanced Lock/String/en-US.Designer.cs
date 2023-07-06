@@ -234,7 +234,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Enter the password:.
+        ///   Looks up a localized string similar to Enter the password.
         /// </summary>
         internal static string Enter_password {
             get {

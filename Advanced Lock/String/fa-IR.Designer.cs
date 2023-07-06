@@ -235,7 +235,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to گذرواژه وارد کنید:.
+        ///   Looks up a localized string similar to گذرواژه وارد کنید.
         /// </summary>
         internal static string Enter_password {
             get {

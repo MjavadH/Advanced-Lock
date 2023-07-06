@@ -177,7 +177,7 @@ Github:</value>
     <value>Encryption Text</value>
   </data>
   <data name="Enter password" xml:space="preserve">
-    <value>Enter the password:</value>
+    <value>Enter the password</value>
   </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
