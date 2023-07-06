@@ -117,38 +117,164 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_DarkMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label_DarkMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 43</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label_DarkMode.Text" xml:space="preserve">
+    <value>Dark Mode</value>
+  </data>
+  <data name="label_DarkMode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
   <data name="&gt;&gt;label_DarkMode.Name" xml:space="preserve">
     <value>label_DarkMode</value>
   </data>
-  <data name="&gt;&gt;label_Header.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_DarkMode.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel_LightMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 62</value>
+  <data name="&gt;&gt;label_DarkMode.Parent" xml:space="preserve">
+    <value>panelText_DarkMode</value>
   </data>
-  <data name="&gt;&gt;LightMode.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;label_DarkMode.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DarkMode.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="label_LightMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="label_LightMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="label_LightMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 43</value>
+  </data>
+  <data name="label_LightMode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label_LightMode.Text" xml:space="preserve">
+    <value>Light Mode</value>
   </data>
   <data name="label_LightMode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="label_Header.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 10</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label_DarkMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
   <data name="&gt;&gt;label_LightMode.Name" xml:space="preserve">
     <value>label_LightMode</value>
   </data>
+  <data name="&gt;&gt;label_LightMode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_LightMode.Parent" xml:space="preserve">
+    <value>panelText_LightMode</value>
+  </data>
+  <data name="&gt;&gt;label_LightMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label_Header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="label_Header.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 10</value>
+  </data>
+  <data name="label_Header.Size" type="System.Drawing.Size, System.Drawing">
+    <value>379, 49</value>
+  </data>
+  <data name="label_Header.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label_Header.Text" xml:space="preserve">
+    <value>Choose your theme</value>
+  </data>
+  <data name="label_Header.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label_Header.Name" xml:space="preserve">
+    <value>label_Header</value>
+  </data>
+  <data name="&gt;&gt;label_Header.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Header.Parent" xml:space="preserve">
+    <value>panel_Title</value>
+  </data>
+  <data name="&gt;&gt;label_Header.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DarkMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="DarkMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 169</value>
+  </data>
+  <data name="DarkMode.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;DarkMode.Name" xml:space="preserve">
+    <value>DarkMode</value>
+  </data>
+  <data name="&gt;&gt;DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;DarkMode.Parent" xml:space="preserve">
+    <value>panel_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;DarkMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="LightMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="LightMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LightMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="LightMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 169</value>
+  </data>
   <data name="LightMode.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
+  </data>
+  <data name="LightMode.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;LightMode.Name" xml:space="preserve">
+    <value>LightMode</value>
+  </data>
+  <data name="&gt;&gt;LightMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;LightMode.Parent" xml:space="preserve">
+    <value>panel_LightMode</value>
+  </data>
+  <data name="&gt;&gt;LightMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel_Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, -10</value>
   </data>
   <data name="panel_Title.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 10, 0, 0</value>
@@ -156,38 +282,188 @@
   <data name="panel_Title.Size" type="System.Drawing.Size, System.Drawing">
     <value>379, 59</value>
   </data>
-  <data name="&gt;&gt;label_DarkMode.Parent" xml:space="preserve">
-    <value>panel_DarkMode</value>
+  <data name="panel_Title.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;label_Header.Name" xml:space="preserve">
-    <value>label_Header</value>
-  </data>
-  <data name="&gt;&gt;LightMode.Name" xml:space="preserve">
-    <value>LightMode</value>
-  </data>
-  <data name="&gt;&gt;label_Header.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel_Title.Name" xml:space="preserve">
     <value>panel_Title</value>
   </data>
-  <data name="label_LightMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
+  <data name="&gt;&gt;panel_Title.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="label_DarkMode.Text" xml:space="preserve">
-    <value>Dark Mode</value>
+  <data name="&gt;&gt;panel_Title.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="panel_DarkMode.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 10</value>
+  <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
+  <data name="checkBox_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 11</value>
   </data>
-  <data name="&gt;&gt;LightMode.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="checkBox_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="checkBox_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkBox_DarkMode.Name" xml:space="preserve">
+    <value>checkBox_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;checkBox_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;checkBox_DarkMode.Parent" xml:space="preserve">
+    <value>panelText_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;checkBox_DarkMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelText_DarkMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelText_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 169</value>
+  </data>
+  <data name="panelText_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 43</value>
+  </data>
+  <data name="panelText_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelText_DarkMode.Name" xml:space="preserve">
+    <value>panelText_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;panelText_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panelText_DarkMode.Parent" xml:space="preserve">
+    <value>panel_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;panelText_DarkMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 74</value>
+  </data>
+  <data name="panel_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 212</value>
+  </data>
+  <data name="panel_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;panel_DarkMode.Name" xml:space="preserve">
     <value>panel_DarkMode</value>
   </data>
-  <data name="panel_DarkMode.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;panel_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="checkBox_LightMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 11</value>
+  </data>
+  <data name="checkBox_LightMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="checkBox_LightMode.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;checkBox_LightMode.Name" xml:space="preserve">
+    <value>checkBox_LightMode</value>
+  </data>
+  <data name="&gt;&gt;checkBox_LightMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;checkBox_LightMode.Parent" xml:space="preserve">
+    <value>panelText_LightMode</value>
+  </data>
+  <data name="&gt;&gt;checkBox_LightMode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panelText_LightMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="panelText_LightMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 169</value>
+  </data>
+  <data name="panelText_LightMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 43</value>
+  </data>
+  <data name="panelText_LightMode.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
+  </data>
+  <data name="&gt;&gt;panelText_LightMode.Name" xml:space="preserve">
+    <value>panelText_LightMode</value>
+  </data>
+  <data name="&gt;&gt;panelText_LightMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panelText_LightMode.Parent" xml:space="preserve">
+    <value>panel_LightMode</value>
+  </data>
+  <data name="&gt;&gt;panelText_LightMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_LightMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>329, 74</value>
+  </data>
+  <data name="panel_LightMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 212</value>
+  </data>
+  <data name="panel_LightMode.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_LightMode.Name" xml:space="preserve">
+    <value>panel_LightMode</value>
+  </data>
+  <data name="&gt;&gt;panel_LightMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_LightMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_LightMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Submit_BTN.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="Submit_BTN.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 322</value>
+  </data>
+  <data name="Submit_BTN.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 36</value>
+  </data>
+  <data name="Submit_BTN.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Submit_BTN.Text" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.Name" xml:space="preserve">
+    <value>Submit_BTN</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>616, 379</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 13pt</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2994,175 +3270,16 @@
         RERERERERERERERERGLk/wPsNDvneFBU/gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="label_LightMode.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="label_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 52</value>
-  </data>
-  <data name="label_DarkMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;DarkMode.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;panel_LightMode.Name" xml:space="preserve">
-    <value>panel_LightMode</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label_DarkMode.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_DarkMode.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 180</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label_Header.Size" type="System.Drawing.Size, System.Drawing">
-    <value>379, 49</value>
-  </data>
-  <data name="panel_Title.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label_LightMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 52</value>
-  </data>
-  <data name="label_Header.Text" xml:space="preserve">
-    <value>Choose your theme</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 13pt</value>
-  </data>
-  <data name="&gt;&gt;panel_LightMode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="panel_LightMode.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LightMode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="LightMode.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;DarkMode.Name" xml:space="preserve">
-    <value>DarkMode</value>
-  </data>
-  <data name="DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 116</value>
-  </data>
-  <data name="LightMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DarkMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label_LightMode.Text" xml:space="preserve">
-    <value>Light Mode</value>
-  </data>
-  <data name="label_Header.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;label_DarkMode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="LightMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 180</value>
-  </data>
-  <data name="&gt;&gt;panel_DarkMode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="panel_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 334</value>
-  </data>
-  <data name="&gt;&gt;label_Header.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_DarkMode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel_Title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>118, -10</value>
-  </data>
-  <data name="&gt;&gt;panel_Title.Name" xml:space="preserve">
-    <value>panel_Title</value>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Theme</value>
   </data>
-  <data name="&gt;&gt;label_DarkMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_LightMode.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label_LightMode.Parent" xml:space="preserve">
-    <value>panel_LightMode</value>
-  </data>
-  <data name="&gt;&gt;DarkMode.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="panel_LightMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 334</value>
-  </data>
-  <data name="label_LightMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_LightMode.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 10</value>
-  </data>
-  <data name="label_DarkMode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="panel_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 62</value>
-  </data>
-  <data name="&gt;&gt;panel_LightMode.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LightMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>336, 116</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>616, 379</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Set_Theme</value>
   </data>
-  <data name="&gt;&gt;panel_LightMode.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DarkMode.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label_Header.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="DarkMode.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="label_Header.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="&gt;&gt;label_LightMode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>

@@ -20,13 +20,20 @@ namespace Advanced_Lock
         {
             Settings.Default.ThemeCheck = "On";
             Settings.Default.DarkMode = true;
-            StartApp();
+            checkBox_DarkMode.Checked = true;
+            checkBox_LightMode.Checked = false;
         }
         /*--------- if user click light mode ---------*/
         private void LightMode_BTN_Click(object sender, EventArgs e)
         {
             Settings.Default.ThemeCheck = "Off";
             Settings.Default.DarkMode = false;
+            checkBox_DarkMode.Checked = false;
+            checkBox_LightMode.Checked = true;
+        }
+
+        private void Submit_BTN_Click(object sender, EventArgs e)
+        {
             StartApp();
         }
     }
