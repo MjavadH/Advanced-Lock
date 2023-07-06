@@ -30,17 +30,15 @@ namespace Advanced_Lock.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Setting_Page));
-            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             this.DarkModePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.label_DarkM = new System.Windows.Forms.Label();
             this.DarkModePic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.DarkMode_Toggle = new Guna.UI2.WinForms.Guna2ToggleSwitch();
             this.SwitchLangPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_Lang = new System.Windows.Forms.Panel();
-            this.SwitchLang_Toggle = new Guna.UI2.WinForms.Guna2ToggleSwitch();
-            this.Lable_fa = new System.Windows.Forms.Label();
-            this.label_en = new System.Windows.Forms.Label();
+            this.comboBox_Languages = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label_Lang = new System.Windows.Forms.Label();
             this.LangPic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Notifi_Panel = new Guna.UI2.WinForms.Guna2Panel();
@@ -84,7 +82,6 @@ namespace Advanced_Lock.Forms
             // 
             // DarkModePanel
             // 
-            resources.ApplyResources(this.DarkModePanel, "DarkModePanel");
             this.DarkModePanel.BackColor = System.Drawing.Color.Transparent;
             this.DarkModePanel.BorderRadius = 20;
             this.DarkModePanel.Controls.Add(this.label_DarkM);
@@ -92,6 +89,7 @@ namespace Advanced_Lock.Forms
             this.DarkModePanel.Controls.Add(this.DarkMode_Toggle);
             this.TransitionOK.SetDecoration(this.DarkModePanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DarkModePanel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.DarkModePanel, "DarkModePanel");
             this.DarkModePanel.Name = "DarkModePanel";
             this.DarkModePanel.ShadowDecoration.BorderRadius = 20;
             this.DarkModePanel.ShadowDecoration.Depth = 8;
@@ -100,14 +98,14 @@ namespace Advanced_Lock.Forms
             // 
             // label_DarkM
             // 
-            resources.ApplyResources(this.label_DarkM, "label_DarkM");
             this.TransitionOK.SetDecoration(this.label_DarkM, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_DarkM, "label_DarkM");
             this.label_DarkM.Name = "label_DarkM";
             // 
             // DarkModePic
             // 
-            resources.ApplyResources(this.DarkModePic, "DarkModePic");
             this.TransitionOK.SetDecoration(this.DarkModePic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.DarkModePic, "DarkModePic");
             this.DarkModePic.Image = global::Advanced_Lock.Properties.Resources.icons8_night_wind_96px;
             this.DarkModePic.Name = "DarkModePic";
             this.DarkModePic.ShadowDecoration.Parent = this.DarkModePic;
@@ -115,7 +113,6 @@ namespace Advanced_Lock.Forms
             // 
             // DarkMode_Toggle
             // 
-            resources.ApplyResources(this.DarkMode_Toggle, "DarkMode_Toggle");
             this.DarkMode_Toggle.Animated = true;
             this.DarkMode_Toggle.AutoRoundedCorners = true;
             this.DarkMode_Toggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -126,6 +123,7 @@ namespace Advanced_Lock.Forms
             this.DarkMode_Toggle.CheckedState.InnerColor = System.Drawing.Color.White;
             this.DarkMode_Toggle.CheckedState.Parent = this.DarkMode_Toggle;
             this.TransitionOK.SetDecoration(this.DarkMode_Toggle, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.DarkMode_Toggle, "DarkMode_Toggle");
             this.DarkMode_Toggle.Name = "DarkMode_Toggle";
             this.DarkMode_Toggle.ShadowDecoration.Parent = this.DarkMode_Toggle;
             this.DarkMode_Toggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -139,7 +137,6 @@ namespace Advanced_Lock.Forms
             // 
             // SwitchLangPanel
             // 
-            resources.ApplyResources(this.SwitchLangPanel, "SwitchLangPanel");
             this.SwitchLangPanel.BackColor = System.Drawing.Color.Transparent;
             this.SwitchLangPanel.BorderRadius = 20;
             this.SwitchLangPanel.Controls.Add(this.panel_Lang);
@@ -147,6 +144,7 @@ namespace Advanced_Lock.Forms
             this.SwitchLangPanel.Controls.Add(this.LangPic);
             this.TransitionOK.SetDecoration(this.SwitchLangPanel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.SwitchLangPanel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.SwitchLangPanel, "SwitchLangPanel");
             this.SwitchLangPanel.Name = "SwitchLangPanel";
             this.SwitchLangPanel.ShadowDecoration.BorderRadius = 20;
             this.SwitchLangPanel.ShadowDecoration.Depth = 8;
@@ -155,59 +153,39 @@ namespace Advanced_Lock.Forms
             // 
             // panel_Lang
             // 
-            resources.ApplyResources(this.panel_Lang, "panel_Lang");
-            this.panel_Lang.Controls.Add(this.SwitchLang_Toggle);
-            this.panel_Lang.Controls.Add(this.Lable_fa);
-            this.panel_Lang.Controls.Add(this.label_en);
+            this.panel_Lang.Controls.Add(this.comboBox_Languages);
             this.TransitionOK.SetDecoration(this.panel_Lang, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.panel_Lang, "panel_Lang");
             this.panel_Lang.Name = "panel_Lang";
             // 
-            // SwitchLang_Toggle
+            // comboBox_Languages
             // 
-            resources.ApplyResources(this.SwitchLang_Toggle, "SwitchLang_Toggle");
-            this.SwitchLang_Toggle.Animated = true;
-            this.SwitchLang_Toggle.AutoRoundedCorners = true;
-            this.SwitchLang_Toggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SwitchLang_Toggle.CheckedState.BorderRadius = 14;
-            this.SwitchLang_Toggle.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.SwitchLang_Toggle.CheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.SwitchLang_Toggle.CheckedState.InnerBorderRadius = 10;
-            this.SwitchLang_Toggle.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.SwitchLang_Toggle.CheckedState.Parent = this.SwitchLang_Toggle;
-            this.TransitionOK.SetDecoration(this.SwitchLang_Toggle, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.SwitchLang_Toggle.Name = "SwitchLang_Toggle";
-            this.SwitchLang_Toggle.ShadowDecoration.Parent = this.SwitchLang_Toggle;
-            this.SwitchLang_Toggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.SwitchLang_Toggle.UncheckedState.BorderRadius = 14;
-            this.SwitchLang_Toggle.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.SwitchLang_Toggle.UncheckedState.InnerBorderColor = System.Drawing.Color.White;
-            this.SwitchLang_Toggle.UncheckedState.InnerBorderRadius = 10;
-            this.SwitchLang_Toggle.UncheckedState.InnerColor = System.Drawing.Color.White;
-            this.SwitchLang_Toggle.UncheckedState.Parent = this.SwitchLang_Toggle;
-            this.SwitchLang_Toggle.Click += new System.EventHandler(this.ToggleSwitchLang_Click);
-            // 
-            // Lable_fa
-            // 
-            resources.ApplyResources(this.Lable_fa, "Lable_fa");
-            this.TransitionOK.SetDecoration(this.Lable_fa, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Lable_fa.Name = "Lable_fa";
-            // 
-            // label_en
-            // 
-            resources.ApplyResources(this.label_en, "label_en");
-            this.TransitionOK.SetDecoration(this.label_en, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label_en.Name = "label_en";
+            this.comboBox_Languages.BackColor = System.Drawing.Color.Transparent;
+            this.comboBox_Languages.BorderRadius = 8;
+            this.TransitionOK.SetDecoration(this.comboBox_Languages, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.comboBox_Languages.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.comboBox_Languages.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox_Languages.FocusedColor = System.Drawing.Color.Empty;
+            this.comboBox_Languages.FocusedState.Parent = this.comboBox_Languages;
+            resources.ApplyResources(this.comboBox_Languages, "comboBox_Languages");
+            this.comboBox_Languages.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.comboBox_Languages.FormattingEnabled = true;
+            this.comboBox_Languages.HoverState.Parent = this.comboBox_Languages;
+            this.comboBox_Languages.ItemsAppearance.Parent = this.comboBox_Languages;
+            this.comboBox_Languages.Name = "comboBox_Languages";
+            this.comboBox_Languages.ShadowDecoration.Parent = this.comboBox_Languages;
+            this.comboBox_Languages.SelectedIndexChanged += new System.EventHandler(this.comboBox_Languages_SelectedIndexChanged);
             // 
             // label_Lang
             // 
-            resources.ApplyResources(this.label_Lang, "label_Lang");
             this.TransitionOK.SetDecoration(this.label_Lang, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_Lang, "label_Lang");
             this.label_Lang.Name = "label_Lang";
             // 
             // LangPic
             // 
-            resources.ApplyResources(this.LangPic, "LangPic");
             this.TransitionOK.SetDecoration(this.LangPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.LangPic, "LangPic");
             this.LangPic.Image = global::Advanced_Lock.Properties.Resources.icons8_language_85px;
             this.LangPic.Name = "LangPic";
             this.LangPic.ShadowDecoration.Parent = this.LangPic;
@@ -215,7 +193,6 @@ namespace Advanced_Lock.Forms
             // 
             // Notifi_Panel
             // 
-            resources.ApplyResources(this.Notifi_Panel, "Notifi_Panel");
             this.Notifi_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Notifi_Panel.BorderRadius = 20;
             this.Notifi_Panel.Controls.Add(this.label_notifi);
@@ -223,6 +200,7 @@ namespace Advanced_Lock.Forms
             this.Notifi_Panel.Controls.Add(this.Notifi_Toggle);
             this.TransitionOK.SetDecoration(this.Notifi_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Notifi_Panel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Notifi_Panel, "Notifi_Panel");
             this.Notifi_Panel.Name = "Notifi_Panel";
             this.Notifi_Panel.ShadowDecoration.BorderRadius = 20;
             this.Notifi_Panel.ShadowDecoration.Depth = 8;
@@ -231,14 +209,14 @@ namespace Advanced_Lock.Forms
             // 
             // label_notifi
             // 
-            resources.ApplyResources(this.label_notifi, "label_notifi");
             this.TransitionOK.SetDecoration(this.label_notifi, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_notifi, "label_notifi");
             this.label_notifi.Name = "label_notifi";
             // 
             // NotifiPic
             // 
-            resources.ApplyResources(this.NotifiPic, "NotifiPic");
             this.TransitionOK.SetDecoration(this.NotifiPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.NotifiPic, "NotifiPic");
             this.NotifiPic.Image = global::Advanced_Lock.Properties.Resources.icons8_info_popup_85px;
             this.NotifiPic.Name = "NotifiPic";
             this.NotifiPic.ShadowDecoration.Color = System.Drawing.Color.Empty;
@@ -247,7 +225,6 @@ namespace Advanced_Lock.Forms
             // 
             // Notifi_Toggle
             // 
-            resources.ApplyResources(this.Notifi_Toggle, "Notifi_Toggle");
             this.Notifi_Toggle.Animated = true;
             this.Notifi_Toggle.AutoRoundedCorners = true;
             this.Notifi_Toggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -258,6 +235,7 @@ namespace Advanced_Lock.Forms
             this.Notifi_Toggle.CheckedState.InnerColor = System.Drawing.Color.White;
             this.Notifi_Toggle.CheckedState.Parent = this.Notifi_Toggle;
             this.TransitionOK.SetDecoration(this.Notifi_Toggle, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.Notifi_Toggle, "Notifi_Toggle");
             this.Notifi_Toggle.Name = "Notifi_Toggle";
             this.Notifi_Toggle.ShadowDecoration.Parent = this.Notifi_Toggle;
             this.Notifi_Toggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -271,7 +249,6 @@ namespace Advanced_Lock.Forms
             // 
             // Sound_Panel
             // 
-            resources.ApplyResources(this.Sound_Panel, "Sound_Panel");
             this.Sound_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Sound_Panel.BorderRadius = 20;
             this.Sound_Panel.Controls.Add(this.label_Sound);
@@ -279,6 +256,7 @@ namespace Advanced_Lock.Forms
             this.Sound_Panel.Controls.Add(this.Sound_Toggle);
             this.TransitionOK.SetDecoration(this.Sound_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Sound_Panel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Sound_Panel, "Sound_Panel");
             this.Sound_Panel.Name = "Sound_Panel";
             this.Sound_Panel.ShadowDecoration.BorderRadius = 20;
             this.Sound_Panel.ShadowDecoration.Depth = 8;
@@ -287,14 +265,14 @@ namespace Advanced_Lock.Forms
             // 
             // label_Sound
             // 
-            resources.ApplyResources(this.label_Sound, "label_Sound");
             this.TransitionOK.SetDecoration(this.label_Sound, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_Sound, "label_Sound");
             this.label_Sound.Name = "label_Sound";
             // 
             // SoundPic
             // 
-            resources.ApplyResources(this.SoundPic, "SoundPic");
             this.TransitionOK.SetDecoration(this.SoundPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.SoundPic, "SoundPic");
             this.SoundPic.Image = global::Advanced_Lock.Properties.Resources.icons8_sound_85px;
             this.SoundPic.Name = "SoundPic";
             this.SoundPic.ShadowDecoration.Parent = this.SoundPic;
@@ -302,7 +280,6 @@ namespace Advanced_Lock.Forms
             // 
             // Sound_Toggle
             // 
-            resources.ApplyResources(this.Sound_Toggle, "Sound_Toggle");
             this.Sound_Toggle.Animated = true;
             this.Sound_Toggle.AutoRoundedCorners = true;
             this.Sound_Toggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -313,6 +290,7 @@ namespace Advanced_Lock.Forms
             this.Sound_Toggle.CheckedState.InnerColor = System.Drawing.Color.White;
             this.Sound_Toggle.CheckedState.Parent = this.Sound_Toggle;
             this.TransitionOK.SetDecoration(this.Sound_Toggle, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.Sound_Toggle, "Sound_Toggle");
             this.Sound_Toggle.Name = "Sound_Toggle";
             this.Sound_Toggle.ShadowDecoration.Parent = this.Sound_Toggle;
             this.Sound_Toggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -326,7 +304,6 @@ namespace Advanced_Lock.Forms
             // 
             // Password_Panel
             // 
-            resources.ApplyResources(this.Password_Panel, "Password_Panel");
             this.Password_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Password_Panel.BorderRadius = 20;
             this.Password_Panel.Controls.Add(this.OK_BTN);
@@ -337,6 +314,7 @@ namespace Advanced_Lock.Forms
             this.Password_Panel.Controls.Add(this.password_Toggle);
             this.TransitionOK.SetDecoration(this.Password_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Password_Panel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Password_Panel, "Password_Panel");
             this.Password_Panel.Name = "Password_Panel";
             this.Password_Panel.ShadowDecoration.BorderRadius = 20;
             this.Password_Panel.ShadowDecoration.Depth = 8;
@@ -345,20 +323,20 @@ namespace Advanced_Lock.Forms
             // 
             // OK_BTN
             // 
-            resources.ApplyResources(this.OK_BTN, "OK_BTN");
             this.TransitionOK.SetDecoration(this.OK_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.OK_BTN.Image = global::Advanced_Lock.Properties.Resources.icons8_ok_30px;
+            resources.ApplyResources(this.OK_BTN, "OK_BTN");
             this.OK_BTN.Name = "OK_BTN";
             this.OK_BTN.TabStop = false;
             // 
             // Submit_BTN
             // 
-            resources.ApplyResources(this.Submit_BTN, "Submit_BTN");
             this.Submit_BTN.BorderRadius = 10;
             this.Submit_BTN.CheckedState.Parent = this.Submit_BTN;
             this.Submit_BTN.CustomImages.Parent = this.Submit_BTN;
             this.TransitionOK.SetDecoration(this.Submit_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Submit_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(185)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.Submit_BTN, "Submit_BTN");
             this.Submit_BTN.ForeColor = System.Drawing.Color.White;
             this.Submit_BTN.HoverState.Parent = this.Submit_BTN;
             this.Submit_BTN.Name = "Submit_BTN";
@@ -367,7 +345,6 @@ namespace Advanced_Lock.Forms
             // 
             // Box_password
             // 
-            resources.ApplyResources(this.Box_password, "Box_password");
             this.Box_password.AutoRoundedCorners = true;
             this.Box_password.BorderRadius = 14;
             this.Box_password.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -380,6 +357,7 @@ namespace Advanced_Lock.Forms
             this.Box_password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Box_password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Box_password.FocusedState.Parent = this.Box_password;
+            resources.ApplyResources(this.Box_password, "Box_password");
             this.Box_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Box_password.HoverState.Parent = this.Box_password;
             this.Box_password.IconRight = global::Advanced_Lock.Properties.Resources.eye;
@@ -397,14 +375,14 @@ namespace Advanced_Lock.Forms
             // 
             // label_Password
             // 
-            resources.ApplyResources(this.label_Password, "label_Password");
             this.TransitionOK.SetDecoration(this.label_Password, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_Password, "label_Password");
             this.label_Password.Name = "label_Password";
             // 
             // PasswordPic
             // 
-            resources.ApplyResources(this.PasswordPic, "PasswordPic");
             this.TransitionOK.SetDecoration(this.PasswordPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.PasswordPic, "PasswordPic");
             this.PasswordPic.Image = global::Advanced_Lock.Properties.Resources.icons8_safe_85px;
             this.PasswordPic.Name = "PasswordPic";
             this.PasswordPic.ShadowDecoration.Color = System.Drawing.Color.Empty;
@@ -413,7 +391,6 @@ namespace Advanced_Lock.Forms
             // 
             // password_Toggle
             // 
-            resources.ApplyResources(this.password_Toggle, "password_Toggle");
             this.password_Toggle.Animated = true;
             this.password_Toggle.AutoRoundedCorners = true;
             this.password_Toggle.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -424,6 +401,7 @@ namespace Advanced_Lock.Forms
             this.password_Toggle.CheckedState.InnerColor = System.Drawing.Color.White;
             this.password_Toggle.CheckedState.Parent = this.password_Toggle;
             this.TransitionOK.SetDecoration(this.password_Toggle, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.password_Toggle, "password_Toggle");
             this.password_Toggle.Name = "password_Toggle";
             this.password_Toggle.ShadowDecoration.Parent = this.password_Toggle;
             this.password_Toggle.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -445,26 +423,25 @@ namespace Advanced_Lock.Forms
             // 
             this.TransitionOK.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Scale;
             this.TransitionOK.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.TransitionOK.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.TransitionOK.DefaultAnimation = animation1;
             // 
             // Config_Panel
             // 
-            resources.ApplyResources(this.Config_Panel, "Config_Panel");
             this.Config_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Config_Panel.BorderRadius = 20;
             this.Config_Panel.Controls.Add(this.Checked_BTN);
@@ -473,6 +450,7 @@ namespace Advanced_Lock.Forms
             this.Config_Panel.Controls.Add(this.ConfigPic);
             this.TransitionOK.SetDecoration(this.Config_Panel, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Config_Panel.FillColor = System.Drawing.Color.White;
+            resources.ApplyResources(this.Config_Panel, "Config_Panel");
             this.Config_Panel.Name = "Config_Panel";
             this.Config_Panel.ShadowDecoration.BorderRadius = 20;
             this.Config_Panel.ShadowDecoration.Depth = 8;
@@ -481,26 +459,26 @@ namespace Advanced_Lock.Forms
             // 
             // Checked_BTN
             // 
-            resources.ApplyResources(this.Checked_BTN, "Checked_BTN");
             this.TransitionOK.SetDecoration(this.Checked_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Checked_BTN.Image = global::Advanced_Lock.Properties.Resources.icons8_ok_30px;
+            resources.ApplyResources(this.Checked_BTN, "Checked_BTN");
             this.Checked_BTN.Name = "Checked_BTN";
             this.Checked_BTN.TabStop = false;
             // 
             // label_Config
             // 
-            resources.ApplyResources(this.label_Config, "label_Config");
             this.TransitionOK.SetDecoration(this.label_Config, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.label_Config, "label_Config");
             this.label_Config.Name = "label_Config";
             // 
             // CheckConfig_BTN
             // 
-            resources.ApplyResources(this.CheckConfig_BTN, "CheckConfig_BTN");
             this.CheckConfig_BTN.BorderRadius = 10;
             this.CheckConfig_BTN.CheckedState.Parent = this.CheckConfig_BTN;
             this.CheckConfig_BTN.CustomImages.Parent = this.CheckConfig_BTN;
             this.TransitionOK.SetDecoration(this.CheckConfig_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
             this.CheckConfig_BTN.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(69)))), ((int)(((byte)(255)))));
+            resources.ApplyResources(this.CheckConfig_BTN, "CheckConfig_BTN");
             this.CheckConfig_BTN.ForeColor = System.Drawing.Color.White;
             this.CheckConfig_BTN.HoverState.Parent = this.CheckConfig_BTN;
             this.CheckConfig_BTN.Name = "CheckConfig_BTN";
@@ -509,8 +487,8 @@ namespace Advanced_Lock.Forms
             // 
             // ConfigPic
             // 
-            resources.ApplyResources(this.ConfigPic, "ConfigPic");
             this.TransitionOK.SetDecoration(this.ConfigPic, Guna.UI2.AnimatorNS.DecorationType.None);
+            resources.ApplyResources(this.ConfigPic, "ConfigPic");
             this.ConfigPic.Image = global::Advanced_Lock.Properties.Resources.icons8_administrative_tools_96px;
             this.ConfigPic.Name = "ConfigPic";
             this.ConfigPic.ShadowDecoration.Parent = this.ConfigPic;
@@ -518,8 +496,8 @@ namespace Advanced_Lock.Forms
             // 
             // Setting_Page
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            resources.ApplyResources(this, "$this");
             this.Controls.Add(this.SwitchLangPanel);
             this.Controls.Add(this.Config_Panel);
             this.Controls.Add(this.Sound_Panel);
@@ -532,6 +510,7 @@ namespace Advanced_Lock.Forms
             this.MinimizeBox = false;
             this.Name = "Setting_Page";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Setting_Page_FormClosed);
             this.Load += new System.EventHandler(this.Setting_Page_Load);
             this.DarkModePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DarkModePic)).EndInit();
@@ -561,9 +540,6 @@ namespace Advanced_Lock.Forms
         private Guna.UI2.WinForms.Guna2PictureBox DarkModePic;
         private Guna.UI2.WinForms.Guna2Panel SwitchLangPanel;
         private Guna.UI2.WinForms.Guna2PictureBox LangPic;
-        private Guna.UI2.WinForms.Guna2ToggleSwitch SwitchLang_Toggle;
-        private System.Windows.Forms.Label Lable_fa;
-        private System.Windows.Forms.Label label_en;
         private System.Windows.Forms.Label label_DarkM;
         private System.Windows.Forms.Panel panel_Lang;
         private System.Windows.Forms.Label label_Lang;
@@ -589,5 +565,6 @@ namespace Advanced_Lock.Forms
         private Guna.UI2.WinForms.Guna2PictureBox ConfigPic;
         private Guna.UI2.WinForms.Guna2Button CheckConfig_BTN;
         private System.Windows.Forms.PictureBox Checked_BTN;
+        private Guna.UI2.WinForms.Guna2ComboBox comboBox_Languages;
     }
 }

@@ -37,17 +37,21 @@ namespace Advanced_Lock.Forms
                 PL[i].ShadowDecoration.Color = Darkmode.DarkMode[3];
             }
         }
-        void Notif(string msg_en, string msg_fa)
+        void Notif(string msg)
         {
             Notification frm = new Notification();
-            if (Settings.Default.lan)
-            {
-                frm.showAlert(msg_fa);
-            }
-            else
-            {
-                frm.showAlert(msg_en);
-            }
+            frm.showAlert(msg);
+        }
+        private void SetTextLanguages()
+        {
+            label_DarkM.Text = text.Dark_Mode;
+            label_notifi.Text = text.Show_Notification;
+            label_Password.Text = text.Enable_Password;
+            Submit_BTN.Text = text.Submit;
+            label_Lang.Text = text.Change_Languages;
+            label_Sound.Text = text.Play_Sound;
+            label_Config.Text = text.Check_Configuration;
+            CheckConfig_BTN.Text = text.Check;
         }
         private void Setting_Page_Load(object sender, EventArgs e)
         {
@@ -56,7 +60,6 @@ namespace Advanced_Lock.Forms
                 DarkMode();
             }
             DarkMode_Toggle.Checked = Settings.Default.DarkMode;
-            SwitchLang_Toggle.Checked = Settings.Default.lan;
             Notifi_Toggle.Checked = Settings.Default.Show_notification;
             Sound_Toggle.Checked = Settings.Default.Play_sound;
             password_Toggle.Checked = Settings.Default.Enable_Password;
@@ -79,6 +82,12 @@ namespace Advanced_Lock.Forms
                 catch (Exception)
                 { }
             }
+            SetTextLanguages();
+            foreach (var languagesName in text.allAvailableLanguages.Values)
+            {
+                comboBox_Languages.Items.Add(languagesName);
+            }
+            comboBox_Languages.Text = text.allAvailableLanguages[Settings.Default.languages];
         }   
         private void Toggles_Click(object sender, EventArgs e)
         {
@@ -87,11 +96,11 @@ namespace Advanced_Lock.Forms
             {
                 case "DarkMode_Toggle":
                     Settings.Default.DarkMode = !Settings.Default.DarkMode;
-                    Notif("Restart app to chenge theme", "برنامه را بسته و مجدد باز نمایید تا تغییر حالت به درستی انجام گیرد");
+                    Notif(text.Restart_app_to_chenge_theme);
                     break;
                 case "Notifi_Toggle":
                     Settings.Default.Show_notification = !Settings.Default.Show_notification;
-                    Notif("example notification", "مثال نمایش اعلان");
+                    Notif(text.Example_Notification);
                     break;
                 case "Sound_Toggle":
                     Settings.Default.Play_sound = !Settings.Default.Play_sound;
@@ -115,21 +124,8 @@ namespace Advanced_Lock.Forms
         /*--------- Chenge Lang ---------*/
         private void ToggleSwitchLang_Click(object sender, EventArgs e)
         {
-            if (!SwitchLang_Toggle.Checked)
-            {
-                CultureInfo cul;
-                cul = new CultureInfo("en-US");
-                Settings.Default.lan = false;
-                Settings.Default.Save();
-            }
-            else if (SwitchLang_Toggle.Checked)
-            {
-                CultureInfo cul;
-                cul = new CultureInfo("fa-IR");
-                Settings.Default.lan = true;
-                Settings.Default.Save();
-            }
-            Notif("Restart app to chenge language", "برنامه را بسته و مجدد باز نمایید تا زبان تغییر کند");
+
+            Notif(text.Restart_app_to_chenge_language);
         }
         /*--------- Password Panel Start ---------*/
         private void Submit_BTN_Click(object sender, EventArgs e)
@@ -144,7 +140,7 @@ namespace Advanced_Lock.Forms
                 regPass.SetValue("passEnabaled", "true", RegistryValueKind.String);
 
                 TransitionOK.AddToQueue(OK_BTN, Guna.UI2.AnimatorNS.AnimateMode.Show);
-                Notif("password is enable", "گذرواژه فعال شد");
+                Notif(text.Password_is_enable);
                 timerOK.Start();
             }
         }
@@ -194,13 +190,26 @@ namespace Advanced_Lock.Forms
             if (!new Registry_Editor().CheckExtensionRegistery())
             {
                 new Registry_Editor().CreateRegistery();
-                Notif("The configuration was checked and all problems were fixed", "پیکربندی برسی شد و تمامی مشکلات رفع شد");
+                Notif(text.Checked_configuration_and_fixed_problems);
             }
             else
             {
-                Notif("There is no problem in configuring the software", "مشکلی در پیکربندی نرم‌افزار وجود ندارد");
+                Notif(text.There_is_no_problem_in_configuring);
                 TransitionOK.ShowSync(Checked_BTN);
             }
+        }
+        private void comboBox_Languages_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox_Languages.Text != text.allAvailableLanguages[Settings.Default.languages])
+            {
+                Settings.Default.languages = text.allAvailableLanguages.FirstOrDefault(x => x.Value == comboBox_Languages.Text).Key;
+                Notif(text.Restart_app_to_chenge_language);
+            }
+        }
+
+        private void Setting_Page_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Settings.Default.Save();
         }
         /*--------- Config Panel End ---------*/
 
