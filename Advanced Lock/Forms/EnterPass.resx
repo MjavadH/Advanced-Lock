@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label_EnterPassword.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <metadata name="Transition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>99, 17</value>
   </metadata>
@@ -160,43 +156,20 @@
 </value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label_EnterPassword.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 22</value>
-  </data>
-  <data name="label_EnterPassword.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 26</value>
-  </data>
-  <data name="label_EnterPassword.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="label_EnterPassword.Text" xml:space="preserve">
-    <value>Enter password:</value>
-  </data>
-  <data name="&gt;&gt;label_EnterPassword.Name" xml:space="preserve">
-    <value>label_EnterPassword</value>
-  </data>
-  <data name="&gt;&gt;label_EnterPassword.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_EnterPassword.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label_EnterPassword.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="Box_password.Font" type="System.Drawing.Font, System.Drawing">
     <value>Vazir, 9pt</value>
   </data>
   <data name="Box_password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 18</value>
+    <value>54, 8</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Box_password.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 6, 4, 6</value>
   </data>
   <data name="Box_password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 30</value>
+    <value>250, 40</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Box_password.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -216,7 +189,7 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="OK_BTN.Location" type="System.Drawing.Point, System.Drawing">
-    <value>263, 57</value>
+    <value>262, 57</value>
   </data>
   <data name="OK_BTN.Size" type="System.Drawing.Size, System.Drawing">
     <value>83, 31</value>

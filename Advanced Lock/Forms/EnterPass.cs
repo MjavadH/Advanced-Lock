@@ -19,7 +19,7 @@ namespace Advanced_Lock.Forms
         {
             OK_BTN.Text = text.OK;
             lable_IncorectPassword.Text = text.Incorect_Password;
-            label_EnterPassword.Text = text.Enter_Password;
+            Box_password.PlaceholderText = text.Enter_Password;
         }
             private void EnterPass_Load(object sender, EventArgs e)
         {
@@ -28,6 +28,8 @@ namespace Advanced_Lock.Forms
                 this.BackColor = Darkmode.DarkMode[2];
                 this.ForeColor = Color.White;
                 OK_BTN.FillColor = Darkmode.DarkMode[0];
+                Box_password.FillColor = Darkmode.DarkMode[0];
+                Box_password.BorderColor = Darkmode.DarkMode[4];
             }
             Box_password.Focus();
             SetTextLanguages();

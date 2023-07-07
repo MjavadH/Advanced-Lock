@@ -30,9 +30,8 @@ namespace Advanced_Lock.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterPass));
             Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
-            this.label_EnterPassword = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EnterPass));
             this.Box_password = new Guna.UI2.WinForms.Guna2TextBox();
             this.OK_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.lable_IncorectPassword = new System.Windows.Forms.Label();
@@ -40,16 +39,9 @@ namespace Advanced_Lock.Forms
             this.Transition = new Guna.UI2.WinForms.Guna2Transition();
             this.SuspendLayout();
             // 
-            // label_EnterPassword
-            // 
-            resources.ApplyResources(this.label_EnterPassword, "label_EnterPassword");
-            this.Transition.SetDecoration(this.label_EnterPassword, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.label_EnterPassword.Name = "label_EnterPassword";
-            // 
             // Box_password
             // 
-            this.Box_password.AutoRoundedCorners = true;
-            this.Box_password.BorderRadius = 14;
+            this.Box_password.BorderRadius = 9;
             this.Box_password.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Transition.SetDecoration(this.Box_password, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Box_password.DefaultText = "";
@@ -63,20 +55,19 @@ namespace Advanced_Lock.Forms
             resources.ApplyResources(this.Box_password, "Box_password");
             this.Box_password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Box_password.HoverState.Parent = this.Box_password;
+            this.Box_password.IconLeft = global::Advanced_Lock.Properties.Resources.icons8_lock_48px;
             this.Box_password.Name = "Box_password";
             this.Box_password.PasswordChar = '\0';
-            this.Box_password.PlaceholderText = "";
+            this.Box_password.PlaceholderText = "Enter password";
             this.Box_password.SelectedText = "";
             this.Box_password.ShadowDecoration.Parent = this.Box_password;
             this.Box_password.TabStop = false;
-            this.Box_password.TextOffset = new System.Drawing.Point(0, -1);
             this.Box_password.UseSystemPasswordChar = true;
             this.Box_password.WordWrap = false;
             // 
             // OK_BTN
             // 
-            this.OK_BTN.AutoRoundedCorners = true;
-            this.OK_BTN.BorderRadius = 14;
+            this.OK_BTN.BorderRadius = 7;
             this.OK_BTN.CheckedState.Parent = this.OK_BTN;
             this.OK_BTN.CustomImages.Parent = this.OK_BTN;
             this.Transition.SetDecoration(this.OK_BTN, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -129,7 +120,6 @@ namespace Advanced_Lock.Forms
             this.Controls.Add(this.lable_IncorectPassword);
             this.Controls.Add(this.OK_BTN);
             this.Controls.Add(this.Box_password);
-            this.Controls.Add(this.label_EnterPassword);
             this.Transition.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
@@ -142,8 +132,6 @@ namespace Advanced_Lock.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label_EnterPassword;
         private Guna.UI2.WinForms.Guna2TextBox Box_password;
         private Guna.UI2.WinForms.Guna2Button OK_BTN;
         private Guna.UI2.WinForms.Guna2Transition Transition;
