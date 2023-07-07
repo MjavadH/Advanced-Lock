@@ -22,14 +22,14 @@ namespace Advanced_Lock.String {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class en_US {
+    internal class en {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal en_US() {
+        internal en() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Advanced_Lock.String {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.String.en-US", typeof(en_US).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.String.en", typeof(en).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -315,7 +315,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Incorect Password!.
+        ///   Looks up a localized string similar to Incorrect Password!.
         /// </summary>
         internal static string Incorect_Password {
             get {
@@ -423,7 +423,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart app to chenge language.
+        ///   Looks up a localized string similar to Restart app to change language.
         /// </summary>
         internal static string Restart_app_to_chenge_language {
             get {
@@ -432,7 +432,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart app to chenge theme.
+        ///   Looks up a localized string similar to Restart app to change theme.
         /// </summary>
         internal static string Restart_app_to_chenge_theme {
             get {
@@ -450,7 +450,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Result text copyed.
+        ///   Looks up a localized string similar to Result text copied.
         /// </summary>
         internal static string Result_text_copyed {
             get {

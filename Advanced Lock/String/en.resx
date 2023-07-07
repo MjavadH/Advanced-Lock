@@ -204,7 +204,7 @@ Github:</value>
     <value>in iran</value>
   </data>
   <data name="Incorect Password" xml:space="preserve">
-    <value>Incorect Password!</value>
+    <value>Incorrect Password!</value>
   </data>
   <data name="Information" xml:space="preserve">
     <value>Information</value>
@@ -240,16 +240,16 @@ Github:</value>
     <value>Refresh</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
-    <value>Restart app to chenge language</value>
+    <value>Restart app to change language</value>
   </data>
   <data name="Restart app to chenge theme" xml:space="preserve">
-    <value>Restart app to chenge theme</value>
+    <value>Restart app to change theme</value>
   </data>
   <data name="Result" xml:space="preserve">
     <value>Result</value>
   </data>
   <data name="Result text copyed" xml:space="preserve">
-    <value>Result text copyed</value>
+    <value>Result text copied</value>
   </data>
   <data name="Result text empty" xml:space="preserve">
     <value>Result text is empty</value>
