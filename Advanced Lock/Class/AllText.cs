@@ -9,8 +9,10 @@ namespace Advanced_Lock.Class
     {
         private static string languagesName = Settings.Default.languages;
         internal Dictionary<string, string> allAvailableLanguages = new Dictionary<string, string> { /*{languages File Name, display name}*/ 
-            { "en-US", "English" },
-            { "fa-IR","فارسی" }
+            { "en", "English" },
+            { "fa","فارسی" },
+            { "ar","العربية" },
+            { "zh","中国人" }
         };
         private ResourceManager languages_Selector = new ResourceManager(string.Format("Advanced_Lock.String.{0}", languagesName), Assembly.GetExecutingAssembly());
         internal string Application_Description { get => languages_Selector.GetString("Application description"); }

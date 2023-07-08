@@ -153,15 +153,25 @@
     <Compile Include="Forms\Set_Theme.Designer.cs">
       <DependentUpon>Set_Theme.cs</DependentUpon>
     </Compile>
-    <Compile Include="String\en-US.Designer.cs">
-      <DependentUpon>en-US.resx</DependentUpon>
+    <Compile Include="String\ar.Designer.cs">
+      <DependentUpon>ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\fa-IR.Designer.cs">
+    <Compile Include="String\zh.Designer.cs">
+      <DependentUpon>zh.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>fa-IR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="String\en.Designer.cs">
+      <DependentUpon>en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="String\fa.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>fa.resx</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Forms\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
@@ -194,13 +204,21 @@
     <EmbeddedResource Include="Forms\Set_Theme.resx">
       <DependentUpon>Set_Theme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\en-US.resx">
+    <EmbeddedResource Include="String\ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>en-US.Designer.cs</LastGenOutput>
+      <LastGenOutput>ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\fa-IR.resx">
+    <EmbeddedResource Include="String\zh.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>fa-IR.Designer.cs</LastGenOutput>
+      <LastGenOutput>zh.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="String\en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="String\fa.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>fa.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -315,6 +333,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <None Include="Resources\icons8_lock_48px.png" />
     <None Include="Resources\icons8_administrative_tools_96px.png" />
     <None Include="Resources\Folder-Icon.ico" />
     <None Include="Resources\File-Icon.ico" />
