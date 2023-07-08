@@ -6,7 +6,6 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
-using System.IO;
 using Advanced_Lock.Class;
 
 namespace Advanced_Lock
@@ -76,14 +75,27 @@ namespace Advanced_Lock
             }
             else if (Environment.GetCommandLineArgs().Length == 3)
             {
-                if (Environment.GetCommandLineArgs()[2] == "File")
+                if (Environment.GetCommandLineArgs()[1].EndsWith(".alo"))
                 {
-                    show_ED(Environment.GetCommandLineArgs()[1], "Encryption");
+                    show_ED(Environment.GetCommandLineArgs()[1], "Decryption");
                 }
-                else if (Environment.GetCommandLineArgs()[2] == "Folder")
+                else if (Environment.GetCommandLineArgs()[1].EndsWith(".alf"))
                 {
-                    show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
+                    show_ED(Environment.GetCommandLineArgs()[1], "DecryptFolder");
                 }
+                else
+                {
+                    if (Environment.GetCommandLineArgs()[2] == "File")
+                    {
+                        show_ED(Environment.GetCommandLineArgs()[1], "Encryption");
+                    }
+                    else if (Environment.GetCommandLineArgs()[2] == "Folder")
+                    {
+                        show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
+                    }
+                }
+                
+
             }
             SetTextLanguages();
         }
@@ -204,7 +216,7 @@ namespace Advanced_Lock
         private void Background_EFile_DoWork(object sender, DoWorkEventArgs e)
         {
             string Arg = e.Argument.ToString();
-            backgroundProgress.RunWorkerAsync(Arg);
+            backgroundProgress.RunWorkerAsync();
             switch (Arg)
             {
                 case "Decrypt_File":
@@ -270,22 +282,27 @@ namespace Advanced_Lock
 
         private void backgroundProgress_DoWork(object sender, DoWorkEventArgs e)
         {
+            while (progressBar.Maximum < 1)
+            {
+                progressBar.Maximum = (int)Progress_status.progressBar_MaxValue;
+            }
             while (string.IsNullOrEmpty(Result_Work))
             {
-                progressBar.Maximum = (int) Progress_status.progressBar_MaxValue /10;
-                progressBar.Value = (int) Progress_status.progressBar_Value / 10;
+                progressBar.Value = (int) Progress_status.progressBar_Value;
             }
         }
-
         private void ED_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (backgroundProgress.IsBusy)
+            if (Environment.GetCommandLineArgs().Length < 2)
             {
-                backgroundProgress.CancelAsync();
-            }
-            if (Background_EFile.IsBusy)
-            {
-                Background_EFile.CancelAsync();
+                if (backgroundProgress.IsBusy)
+                {
+                    backgroundProgress.CancelAsync();
+                }
+                if (Background_EFile.IsBusy)
+                {
+                    Background_EFile.CancelAsync();
+                }
             }
         }
     }
