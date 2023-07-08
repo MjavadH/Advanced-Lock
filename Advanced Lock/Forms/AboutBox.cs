@@ -28,7 +28,7 @@ namespace Advanced_Lock
             button_OK.Text = text.OK;
             label_E_and_D.Text = text.Application_Description;
             label_Description.Text = text.Developer_Description;
-            if (Settings.Default.languages == "fa-IR")
+            if (Settings.Default.languages == "fa" || Settings.Default.languages == "ar")
             {
                 label_Made.Text = text.In_Iran;
                 label_inIran.Text = text.Made_With;
