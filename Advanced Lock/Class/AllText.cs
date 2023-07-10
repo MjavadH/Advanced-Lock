@@ -12,7 +12,8 @@ namespace Advanced_Lock.Class
             { "en", "English" },
             { "fa","فارسی" },
             { "ar","العربية" },
-            { "zh","中国人" }
+            { "zh","中国人" },
+            { "ru","Русский" }
         };
         private ResourceManager languages_Selector = new ResourceManager(string.Format("Advanced_Lock.String.{0}", languagesName), Assembly.GetExecutingAssembly());
         internal string Application_Description { get => languages_Selector.GetString("Application description"); }
