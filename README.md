@@ -18,5 +18,7 @@ Encrypt and decrypt anything
 - [x] Add more languages
 - [ ] Create Custom browser for File and Folder
 - [ ] Optimize memory usage
+- [ ] Complete document
+- [ ] Update Encryption and Decryption method 
 
 ### Screenshot :
