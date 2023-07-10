@@ -53,7 +53,6 @@ namespace Advanced_Lock
             ED_Text_Text.Text = text.Result + ":";
             Cancel_BTN.Text = text.Cancel;
             Progress_BTN.Text = text.OK;
-            AlertBox.Text = text.Error_Password_Or_Your_Choice;
         }
         private void ED_Load(object sender, EventArgs e)
         {
@@ -145,13 +144,17 @@ namespace Advanced_Lock
             /*Check Box*/
             if (UserSelected.Text == "" || Password_User.Text == "")
             {
+                AlertBox.ForeColor = Color.FromArgb(255, 96, 96);
+                AlertBox.Text = text.Error_Password_Or_Your_Choice;
                 AlertBox.Visible = true;
             }
             else
             {
-                AlertBox.Visible = false;
                 /*Start Encryption && Decryption*/
                 Progress_BTN.Enabled = false;
+                AlertBox.Visible = true;
+                AlertBox.Text = "";
+                AlertBox.ForeColor = Color.Blue;
                 string Result;
                 switch (this.action)
                 {
@@ -288,6 +291,7 @@ namespace Advanced_Lock
             }
             while (string.IsNullOrEmpty(Result_Work))
             {
+                AlertBox.Text = Progress_status.Information;
                 progressBar.Value = (int) Progress_status.progressBar_Value;
             }
         }

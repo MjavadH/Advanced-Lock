@@ -78,7 +78,7 @@ namespace Advanced_Lock
             // 
             this.AlertBox.AutoEllipsis = true;
             resources.ApplyResources(this.AlertBox, "AlertBox");
-            this.AlertBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.AlertBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.AlertBox.Name = "AlertBox";
             // 
             // Text_ED_Panel
