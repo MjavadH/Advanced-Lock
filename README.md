@@ -22,3 +22,11 @@ Encrypt and decrypt anything
 - [ ] Update Encryption and Decryption method 
 
 ### Screenshot :
+[![MainPage][MainPage]][MainPage]
+[![EDPage][EDPage]][EDPage]
+[![SettingsPage][SettingsPage]][SettingsPage]
+
+
+[MainPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/MainPage.jpg "MainPage"
+[EDPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/EDPage.jpg "EDPage"
+[SettingsPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/SettingsPage.jpg "SettingsPage"
