@@ -355,7 +355,7 @@
 </value>
   </data>
   <data name="image_AppIcon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>277, 41</value>
+    <value>286, 41</value>
   </data>
   <data name="image_AppIcon.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 150</value>
@@ -377,6 +377,66 @@
   </data>
   <data name="&gt;&gt;image_AppIcon.ZOrder" xml:space="preserve">
     <value>3</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.Name" xml:space="preserve">
+    <value>label_inIran</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;label_inIran.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.Name" xml:space="preserve">
+    <value>label_Heart</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;label_Heart.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Name" xml:space="preserve">
+    <value>button_OK</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;button_OK.Parent" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 246</value>
+  </data>
+  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 15</value>
+  </data>
+  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 51</value>
+  </data>
+  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label_inIran.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
@@ -471,41 +531,17 @@
   <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
-  </data>
-  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 15</value>
-  </data>
-  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 51</value>
-  </data>
-  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label_E_and_D.Font" type="System.Drawing.Font, System.Drawing">
     <value>Vazir, 12pt, style=Bold</value>
   </data>
   <data name="label_E_and_D.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 66</value>
+    <value>0, 66</value>
   </data>
   <data name="label_E_and_D.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
   <data name="label_E_and_D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>247, 28</value>
+    <value>280, 28</value>
   </data>
   <data name="label_E_and_D.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -532,13 +568,13 @@
     <value>Vazir, 11pt</value>
   </data>
   <data name="label_Description.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 94</value>
+    <value>8, 94</value>
   </data>
   <data name="label_Description.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>6, 0, 3, 0</value>
   </data>
   <data name="label_Description.Size" type="System.Drawing.Size, System.Drawing">
-    <value>242, 80</value>
+    <value>288, 90</value>
   </data>
   <data name="label_Description.TabIndex" type="System.Int32, mscorlib">
     <value>27</value>
@@ -565,10 +601,10 @@ Github:
     <value>Vazir, 11pt</value>
   </data>
   <data name="linkLabel_Github.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 174</value>
+    <value>8, 184</value>
   </data>
   <data name="linkLabel_Github.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 31</value>
+    <value>317, 31</value>
   </data>
   <data name="linkLabel_Github.TabIndex" type="System.Int32, mscorlib">
     <value>28</value>

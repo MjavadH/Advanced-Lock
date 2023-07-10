@@ -120,11 +120,13 @@ namespace Advanced_Lock
             // 
             // label_E_and_D
             // 
+            this.label_E_and_D.AutoEllipsis = true;
             resources.ApplyResources(this.label_E_and_D, "label_E_and_D");
             this.label_E_and_D.Name = "label_E_and_D";
             // 
             // label_Description
             // 
+            this.label_Description.AutoEllipsis = true;
             resources.ApplyResources(this.label_Description, "label_Description");
             this.label_Description.Name = "label_Description";
             // 
