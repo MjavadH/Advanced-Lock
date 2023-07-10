@@ -38,7 +38,7 @@ namespace Registry_Configuration
         {
             foreach (var item in extensions)
             {
-                if (Registry.ClassesRoot.OpenSubKey(@"\." + item, false) == null)
+                if (Registry.ClassesRoot.OpenSubKey(@"\" + item, false) == null)
                 {
                     return false;
                 }
