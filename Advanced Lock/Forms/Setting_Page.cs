@@ -187,16 +187,24 @@ namespace Advanced_Lock.Forms
         /*--------- Config Panel Start ---------*/
         private void CheckConfig_BTN_Click(object sender, EventArgs e)
         {
-            if (!new Registry_Editor().CheckExtensionRegistery())
+            try
             {
-                new Registry_Editor().CreateRegistery();
-                Notif(text.Checked_configuration_and_fixed_problems);
+                if (!new Registry_Editor().CheckExtensionRegistery())
+                {
+                    new Registry_Editor().CreateRegistery();
+                    Notif(text.Checked_configuration_and_fixed_problems);
+                }
+                else
+                {
+                    Notif(text.There_is_no_problem_in_configuring);
+                    TransitionOK.Show(Checked_BTN);
+                }
             }
-            else
+            catch (Exception)
             {
-                Notif(text.There_is_no_problem_in_configuring);
-                TransitionOK.ShowSync(Checked_BTN);
+                Notif(text.Error);
             }
+            
         }
         private void comboBox_Languages_SelectedIndexChanged(object sender, EventArgs e)
         {
