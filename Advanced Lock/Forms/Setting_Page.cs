@@ -132,14 +132,14 @@ namespace Advanced_Lock.Forms
         {
             if (!string.IsNullOrEmpty(Box_password.Text))
             {
-                string password = Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(Box_password.Text, "Adv@n3eD KeY!");
+                string password = Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(Box_password.Text, Box_password.Text);
 
                 Registry.CurrentUser.CreateSubKey(@"SOFTWARE\AdvancedLock\password", RegistryKeyPermissionCheck.ReadWriteSubTree);
                 RegistryKey regPass = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
                 regPass.SetValue("pass", password, RegistryValueKind.String);
                 regPass.SetValue("passEnabaled", "true", RegistryValueKind.String);
 
-                TransitionOK.AddToQueue(OK_BTN, Guna.UI2.AnimatorNS.AnimateMode.Show);
+                TransitionOK.Show(OK_BTN);
                 Notif(text.Password_is_enable);
                 timerOK.Start();
             }

@@ -37,10 +37,10 @@ namespace Advanced_Lock.Forms
 
         private void OK_BTN_Click(object sender, EventArgs e)
         {
-            RegistryKey reg = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
+            RegistryKey reg = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", false);
 
-            string password = Encrypt_Decrypt.Encryption__Decryption__Text.Decryption(reg.GetValue("pass").ToString(), "Adv@n3eD KeY!");
-            if (Box_password.Text == password)
+            string password = Encrypt_Decrypt.Encryption__Decryption__Text.Encryption(Box_password.Text, Box_password.Text);
+            if (reg.GetValue("pass").ToString() == password)
             {
                 Settings.Default.Password_Enter = true;
                 Settings.Default.Save();
@@ -48,14 +48,14 @@ namespace Advanced_Lock.Forms
             }
             else
             {
-                Transition.AddToQueue(lable_IncorectPassword, Guna.UI2.AnimatorNS.AnimateMode.Show);
+                Transition.Show(lable_IncorectPassword);
                 Timer.Start();
             }
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            Transition.AddToQueue(lable_IncorectPassword, Guna.UI2.AnimatorNS.AnimateMode.Hide);
+            Transition.Hide(lable_IncorectPassword);
             Timer.Stop();
         }
     }
