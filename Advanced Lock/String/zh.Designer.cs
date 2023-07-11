@@ -178,9 +178,9 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Designer &amp;&amp; Devloper: MjavadH
-        ///This is an open source software
-        ///Github:.
+        ///   Looks up a localized string similar to 设计者和开发者：MjavadH
+        ///这是一个开源软件
+        ///GitHub：.
         /// </summary>
         internal static string Developer_Description {
             get {

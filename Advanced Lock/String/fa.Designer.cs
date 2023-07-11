@@ -180,8 +180,7 @@ namespace Advanced_Lock.String {
         /// <summary>
         ///   Looks up a localized string similar to طراح و توسعه دهنده: MjavadH
         ///این یک نرم‌افزار متن باز است
-        ///گیت هاب:
-        ///.
+        ///گیت هاب:.
         /// </summary>
         internal static string Developer_Description {
             get {

@@ -157,9 +157,9 @@
     <value>Delete Row</value>
   </data>
   <data name="Developer Description" xml:space="preserve">
-    <value>Designer &amp;&amp; Devloper: MjavadH
+    <value>Designer and Developer: MjavadH
 This is an open source software
-Github:</value>
+GitHub:</value>
   </data>
   <data name="Enable password" xml:space="preserve">
     <value>Enable password</value>
@@ -201,7 +201,7 @@ Github:</value>
     <value>Import is done</value>
   </data>
   <data name="in iran" xml:space="preserve">
-    <value>in iran</value>
+    <value>in Iran</value>
   </data>
   <data name="Incorect Password" xml:space="preserve">
     <value>Incorrect Password!</value>
@@ -240,10 +240,10 @@ Github:</value>
     <value>Refresh</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
-    <value>Restart app to change language</value>
+    <value>Restart application to change language</value>
   </data>
   <data name="Restart app to chenge theme" xml:space="preserve">
-    <value>Restart app to change theme</value>
+    <value>Restart application to change theme</value>
   </data>
   <data name="Result" xml:space="preserve">
     <value>Result</value>

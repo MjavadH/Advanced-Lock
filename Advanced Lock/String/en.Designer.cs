@@ -178,9 +178,9 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Designer &amp;&amp; Devloper: MjavadH
+        ///   Looks up a localized string similar to Designer and Developer: MjavadH
         ///This is an open source software
-        ///Github:.
+        ///GitHub:.
         /// </summary>
         internal static string Developer_Description {
             get {
@@ -306,7 +306,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to in iran.
+        ///   Looks up a localized string similar to in Iran.
         /// </summary>
         internal static string in_iran {
             get {
@@ -423,7 +423,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart app to change language.
+        ///   Looks up a localized string similar to Restart application to change language.
         /// </summary>
         internal static string Restart_app_to_chenge_language {
             get {
@@ -432,7 +432,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Restart app to change theme.
+        ///   Looks up a localized string similar to Restart application to change theme.
         /// </summary>
         internal static string Restart_app_to_chenge_theme {
             get {
