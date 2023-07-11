@@ -158,6 +158,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="String\de.Designer.cs">
+      <DependentUpon>de.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="String\ru.Designer.cs">
+      <DependentUpon>ru.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="String\zh.Designer.cs">
       <DependentUpon>zh.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -207,6 +217,14 @@
     <EmbeddedResource Include="String\ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="String\de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="String\ru.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="String\zh.resx">
       <Generator>ResXFileCodeGenerator</Generator>
