@@ -297,14 +297,38 @@
   <data name="&gt;&gt;panel_Title.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="checkBox_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 11</value>
+  <data name="&gt;&gt;panelText_DarkMode.Name" xml:space="preserve">
+    <value>panelText_DarkMode</value>
   </data>
-  <data name="checkBox_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 20</value>
+  <data name="&gt;&gt;panelText_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="checkBox_DarkMode.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="&gt;&gt;panelText_DarkMode.Parent" xml:space="preserve">
+    <value>panel_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;panelText_DarkMode.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 74</value>
+  </data>
+  <data name="panel_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 212</value>
+  </data>
+  <data name="panel_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.Name" xml:space="preserve">
+    <value>panel_DarkMode</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_DarkMode.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;checkBox_DarkMode.Name" xml:space="preserve">
     <value>checkBox_DarkMode</value>
@@ -342,26 +366,26 @@
   <data name="&gt;&gt;panelText_DarkMode.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="panel_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 74</value>
+  <data name="checkBox_DarkMode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 11</value>
   </data>
-  <data name="panel_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 212</value>
+  <data name="checkBox_DarkMode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
   </data>
-  <data name="panel_DarkMode.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="checkBox_DarkMode.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;panel_DarkMode.Name" xml:space="preserve">
-    <value>panel_DarkMode</value>
+  <data name="&gt;&gt;checkBox_DarkMode.Name" xml:space="preserve">
+    <value>checkBox_DarkMode</value>
   </data>
-  <data name="&gt;&gt;panel_DarkMode.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="&gt;&gt;checkBox_DarkMode.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;panel_DarkMode.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;checkBox_DarkMode.Parent" xml:space="preserve">
+    <value>panelText_DarkMode</value>
   </data>
-  <data name="&gt;&gt;panel_DarkMode.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;checkBox_DarkMode.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="checkBox_LightMode.Location" type="System.Drawing.Point, System.Drawing">
     <value>236, 11</value>

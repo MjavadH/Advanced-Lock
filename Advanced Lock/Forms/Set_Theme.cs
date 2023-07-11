@@ -12,6 +12,11 @@ namespace Advanced_Lock
         }
         void StartApp()
         {
+            if (string.IsNullOrEmpty(Settings.Default.ThemeCheck))
+            {
+                Settings.Default.ThemeCheck = "Off";
+                Settings.Default.DarkMode = false;
+            }
             Settings.Default.Save();
             Application.Restart();
         }

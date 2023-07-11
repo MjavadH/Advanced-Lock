@@ -38,9 +38,9 @@ namespace Advanced_Lock
             this.panel_Title = new Guna.UI2.WinForms.Guna2Panel();
             this.panel_DarkMode = new Guna.UI2.WinForms.Guna2Panel();
             this.panelText_DarkMode = new Guna.UI2.WinForms.Guna2Panel();
+            this.checkBox_DarkMode = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.panel_LightMode = new Guna.UI2.WinForms.Guna2Panel();
             this.panelText_LightMode = new Guna.UI2.WinForms.Guna2Panel();
-            this.checkBox_DarkMode = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.checkBox_LightMode = new Guna.UI2.WinForms.Guna2CustomCheckBox();
             this.Submit_BTN = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.DarkMode)).BeginInit();
@@ -124,6 +124,24 @@ namespace Advanced_Lock
             this.panelText_DarkMode.ShadowDecoration.Parent = this.panelText_DarkMode;
             this.panelText_DarkMode.Click += new System.EventHandler(this.DarkModeBTN_Click);
             // 
+            // checkBox_DarkMode
+            // 
+            this.checkBox_DarkMode.Animated = true;
+            this.checkBox_DarkMode.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.checkBox_DarkMode.CheckedState.BorderRadius = 8;
+            this.checkBox_DarkMode.CheckedState.BorderThickness = 1;
+            this.checkBox_DarkMode.CheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.checkBox_DarkMode.CheckedState.Parent = this.checkBox_DarkMode;
+            resources.ApplyResources(this.checkBox_DarkMode, "checkBox_DarkMode");
+            this.checkBox_DarkMode.Name = "checkBox_DarkMode";
+            this.checkBox_DarkMode.ShadowDecoration.Parent = this.checkBox_DarkMode;
+            this.checkBox_DarkMode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.checkBox_DarkMode.UncheckedState.BorderRadius = 8;
+            this.checkBox_DarkMode.UncheckedState.BorderThickness = 1;
+            this.checkBox_DarkMode.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.checkBox_DarkMode.UncheckedState.Parent = this.checkBox_DarkMode;
+            this.checkBox_DarkMode.Click += new System.EventHandler(this.DarkModeBTN_Click);
+            // 
             // panel_LightMode
             // 
             this.panel_LightMode.BorderRadius = 15;
@@ -145,24 +163,6 @@ namespace Advanced_Lock
             this.panelText_LightMode.ShadowDecoration.Parent = this.panelText_LightMode;
             this.panelText_LightMode.UseTransparentBackground = true;
             this.panelText_LightMode.Click += new System.EventHandler(this.LightMode_BTN_Click);
-            // 
-            // checkBox_DarkMode
-            // 
-            this.checkBox_DarkMode.Animated = true;
-            this.checkBox_DarkMode.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.checkBox_DarkMode.CheckedState.BorderRadius = 8;
-            this.checkBox_DarkMode.CheckedState.BorderThickness = 1;
-            this.checkBox_DarkMode.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.checkBox_DarkMode.CheckedState.Parent = this.checkBox_DarkMode;
-            resources.ApplyResources(this.checkBox_DarkMode, "checkBox_DarkMode");
-            this.checkBox_DarkMode.Name = "checkBox_DarkMode";
-            this.checkBox_DarkMode.ShadowDecoration.Parent = this.checkBox_DarkMode;
-            this.checkBox_DarkMode.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.checkBox_DarkMode.UncheckedState.BorderRadius = 8;
-            this.checkBox_DarkMode.UncheckedState.BorderThickness = 1;
-            this.checkBox_DarkMode.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.checkBox_DarkMode.UncheckedState.Parent = this.checkBox_DarkMode;
-            this.checkBox_DarkMode.Click += new System.EventHandler(this.DarkModeBTN_Click);
             // 
             // checkBox_LightMode
             // 
