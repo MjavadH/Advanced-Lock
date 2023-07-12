@@ -23,6 +23,20 @@ namespace Advanced_Lock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            if (string.IsNullOrEmpty(Settings.Default.languages))
+            {
+                string windowsLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
+                foreach (var languages in new Class.AllText().allAvailableLanguages.Keys)
+                {
+                    if (windowsLanguage == languages)
+                    {
+                        Settings.Default.languages = windowsLanguage;
+                        Settings.Default.Save();
+                        break;
+                    }
+                }
+                if(string.IsNullOrEmpty(Settings.Default.languages)) Settings.Default.languages = "en";
+            }
             /*Open ED.cs Form if user open .alo and .alf file or click Encryption in contextmenu*/
             if (Environment.GetCommandLineArgs().Length >= 2)
             {
