@@ -1,4 +1,5 @@
-﻿using Advanced_Lock.Properties;
+﻿using Advanced_Lock.Class;
+using Advanced_Lock.Properties;
 using System;
 using System.Windows.Forms;
 
@@ -9,6 +10,16 @@ namespace Advanced_Lock
         public Set_Theme()
         {
             InitializeComponent();
+            SetTextLanguages();
+        }
+
+        AllText text = new AllText();
+        private void SetTextLanguages()
+        {
+            label_Header.Text = text.Select_Your_Theme;
+            Submit_BTN.Text = text.Submit;
+            label_DarkMode.Text = text.Dark_Mode;
+            label_LightMode.Text = text.Light_Mode;
         }
         void StartApp()
         {
