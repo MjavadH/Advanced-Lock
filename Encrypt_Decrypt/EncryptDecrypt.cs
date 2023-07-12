@@ -2,7 +2,7 @@
 using System;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
+using System.IO.Compression;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
@@ -480,6 +480,31 @@ namespace Encrypt_Decrypt
                 return "Error";
             }
         }
+        public static void CompressFile(string inputPath, string outputPath)
+        {
+            using (FileStream originalFileStream = File.OpenRead(inputPath))
+            {
+                using (FileStream compressedFileStream = File.Create(outputPath))
+                {
+                    using (DeflateStream compressionStream = new DeflateStream(compressedFileStream, CompressionMode.Compress))
+                    {
+                        originalFileStream.CopyTo(compressionStream);
+                    }
+                }
+            }
+        }
+        public static void DecompressFile(string inputPath, string outputPath)
+        {
+            using (FileStream compressedFileStream = File.OpenRead(inputPath))
+            {
+                using (FileStream originalFileStream = File.Create(outputPath))
+                {
+                    using (DeflateStream decompressionStream = new DeflateStream(compressedFileStream, CompressionMode.Decompress))
+                    {
+                        decompressionStream.CopyTo(originalFileStream);
+                    }
+                }
+            }
+        }
     }
-
 }
