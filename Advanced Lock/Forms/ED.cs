@@ -1,4 +1,5 @@
-﻿using Advanced_Lock.Forms;
+﻿using Advanced_Lock.Class;
+using Advanced_Lock.Forms;
 using Advanced_Lock.Properties;
 using Encrypt_Decrypt;
 using System;
@@ -6,7 +7,6 @@ using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
-using Advanced_Lock.Class;
 
 namespace Advanced_Lock
 {
@@ -93,7 +93,7 @@ namespace Advanced_Lock
                         show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
                     }
                 }
-                
+
 
             }
             SetTextLanguages();
@@ -297,17 +297,21 @@ namespace Advanced_Lock
         }
         private void ED_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (Environment.GetCommandLineArgs().Length < 2)
+            try
             {
-                if (backgroundProgress.IsBusy)
+                if (Environment.GetCommandLineArgs().Length < 2)
                 {
-                    backgroundProgress.CancelAsync();
-                }
-                if (Background_EFile.IsBusy)
-                {
-                    Background_EFile.CancelAsync();
+                    if (backgroundProgress.IsBusy)
+                    {
+                        backgroundProgress.CancelAsync();
+                    }
+                    if (Background_EFile.IsBusy)
+                    {
+                        Background_EFile.CancelAsync();
+                    }
                 }
             }
+            catch (Exception) { }
         }
     }
 }
