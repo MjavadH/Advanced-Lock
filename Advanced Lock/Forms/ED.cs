@@ -198,7 +198,35 @@ namespace Advanced_Lock
 
         private void Cancel_BTN_Click(object sender, EventArgs e)
         {
-            this.Close();
+            if (Background_EFile.IsBusy)
+            {
+                this.Cursor = Cursors.WaitCursor;
+                Cancel_BTN.Enabled = false;
+                BackgroundWorker waitForResult = new BackgroundWorker();
+                waitForResult.DoWork += WaitForResult_DoWork;
+                waitForResult.RunWorkerCompleted += WaitForResult_RunWorkerCompleted;
+                waitForResult.RunWorkerAsync();
+            }
+            else
+            {
+                this.Close();
+            }
+            
+        }
+
+        private void WaitForResult_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
+            this.Cursor = Cursors.Default;
+            Cancel_BTN.Enabled = true;
+        }
+
+        private void WaitForResult_DoWork(object sender, DoWorkEventArgs e)
+        {
+            Progress_status.Cancel_Progress();
+            while (string.IsNullOrEmpty(Result_Work))
+            {
+                if (!string.IsNullOrEmpty(Result_Work)) break;
+            }
         }
 
         /*copy to clipboard*/

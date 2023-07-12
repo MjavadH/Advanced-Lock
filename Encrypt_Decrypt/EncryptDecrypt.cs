@@ -6,22 +6,18 @@ using System.IO.Compression;
 using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Encrypt_Decrypt
 {
-    public static class Progress_status
+    public class Progress_status
     {
         public static long progressBar_MaxValue = 100;
         public static long progressBar_Value = 0;
-        public static string Information = "";
-        public enum Mode
-        {
-            none,
-            Encrypt,
-            Decrypt
-        }
-        public static Mode GetMode = Mode.none;
+        public static string Information { get; internal set; }
+        public static bool working { get; internal set; }
+        internal static CancellationToken token;
         public enum Operation
         {
             none,
@@ -37,24 +33,8 @@ namespace Encrypt_Decrypt
         {
             if (operation != Operation.none)
             {
+                working = false;
                 Information = "Canceling";
-                switch (operation)
-                {
-                    case Operation.none:
-                        break;
-                    case Operation.Encryption_Text:
-                        break;
-                    case Operation.Decryption_Text:
-                        break;
-                    case Operation.Encryption_File:
-                        break;
-                    case Operation.Decryption_File:
-                        break;
-                    case Operation.Encryption_Folder:
-                        break;
-                    case Operation.Decryption_Folder:
-                        break;
-                }
             }
         }
     }
