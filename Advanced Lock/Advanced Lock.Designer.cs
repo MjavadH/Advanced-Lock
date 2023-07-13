@@ -56,6 +56,9 @@ namespace Advanced_Lock
             this.UserSelected_password_DS = new System.Data.DataColumn();
             this.User_Result = new System.Data.DataColumn();
             this.History_DataTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.yourChoseHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resultHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Menu2 = new Guna.UI2.WinForms.Guna2Panel();
             this.infoBTN = new Guna.UI2.WinForms.Guna2Button();
             this.LoadDataBTN = new Guna.UI2.WinForms.Guna2Button();
@@ -65,9 +68,6 @@ namespace Advanced_Lock
             this.DeleteBTN = new Guna.UI2.WinForms.Guna2Button();
             this.RefreshBTN = new Guna.UI2.WinForms.Guna2Button();
             this.toolTip_BTNs = new System.Windows.Forms.ToolTip(this.components);
-            this.resultHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.yourChoseHistory = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MainMenu.SuspendLayout();
             this.TextPanel.SuspendLayout();
             this.FilePanel.SuspendLayout();
@@ -125,10 +125,11 @@ namespace Advanced_Lock
             this.DTextBTN.HoverState.Parent = this.DTextBTN;
             this.DTextBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_padlock_48px;
             this.DTextBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DTextBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.DTextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DTextBTN.Name = "DTextBTN";
             this.DTextBTN.ShadowDecoration.Parent = this.DTextBTN;
-            this.DTextBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.DTextBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.DTextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // ETextBTN
@@ -143,10 +144,11 @@ namespace Advanced_Lock
             this.ETextBTN.HoverState.Parent = this.ETextBTN;
             this.ETextBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_lock_48px_1;
             this.ETextBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ETextBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.ETextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.ETextBTN.Name = "ETextBTN";
             this.ETextBTN.ShadowDecoration.Parent = this.ETextBTN;
-            this.ETextBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.ETextBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.ETextBTN.Click += new System.EventHandler(this.Text_ED_Click);
             // 
             // TextBTN
@@ -162,10 +164,11 @@ namespace Advanced_Lock
             this.TextBTN.HoverState.Parent = this.TextBTN;
             this.TextBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_text_48px;
             this.TextBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.TextBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.TextBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.TextBTN.Name = "TextBTN";
             this.TextBTN.ShadowDecoration.Parent = this.TextBTN;
-            this.TextBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.TextBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.TextBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FilePanel
@@ -188,10 +191,11 @@ namespace Advanced_Lock
             this.DFileBTN.HoverState.Parent = this.DFileBTN;
             this.DFileBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_unlocked_file_48px_1;
             this.DFileBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DFileBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.DFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFileBTN.Name = "DFileBTN";
             this.DFileBTN.ShadowDecoration.Parent = this.DFileBTN;
-            this.DFileBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.DFileBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.DFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // EFileBTN
@@ -205,10 +209,11 @@ namespace Advanced_Lock
             this.EFileBTN.HoverState.Parent = this.EFileBTN;
             this.EFileBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_secured_file_48px;
             this.EFileBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.EFileBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.EFileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFileBTN.Name = "EFileBTN";
             this.EFileBTN.ShadowDecoration.Parent = this.EFileBTN;
-            this.EFileBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.EFileBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.EFileBTN.Click += new System.EventHandler(this.FileBTN_Click);
             // 
             // FileBTN
@@ -224,10 +229,11 @@ namespace Advanced_Lock
             this.FileBTN.HoverState.Parent = this.FileBTN;
             this.FileBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_file_48px;
             this.FileBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FileBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.FileBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FileBTN.Name = "FileBTN";
             this.FileBTN.ShadowDecoration.Parent = this.FileBTN;
-            this.FileBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.FileBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.FileBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // FolderPanel
@@ -251,10 +257,11 @@ namespace Advanced_Lock
             this.DFolderBTN.HoverState.Parent = this.DFolderBTN;
             this.DFolderBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_opened_folder_52px;
             this.DFolderBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.DFolderBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.DFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.DFolderBTN.Name = "DFolderBTN";
             this.DFolderBTN.ShadowDecoration.Parent = this.DFolderBTN;
-            this.DFolderBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.DFolderBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.DFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // EFolderBTN
@@ -269,10 +276,11 @@ namespace Advanced_Lock
             this.EFolderBTN.HoverState.Parent = this.EFolderBTN;
             this.EFolderBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_private_folder_48px;
             this.EFolderBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.EFolderBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.EFolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.EFolderBTN.Name = "EFolderBTN";
             this.EFolderBTN.ShadowDecoration.Parent = this.EFolderBTN;
-            this.EFolderBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.EFolderBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.EFolderBTN.Click += new System.EventHandler(this.EFolderBTN_Click);
             // 
             // FolderBTN
@@ -288,10 +296,11 @@ namespace Advanced_Lock
             this.FolderBTN.HoverState.Parent = this.FolderBTN;
             this.FolderBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_folder_48px;
             this.FolderBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.FolderBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.FolderBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.FolderBTN.Name = "FolderBTN";
             this.FolderBTN.ShadowDecoration.Parent = this.FolderBTN;
-            this.FolderBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.FolderBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.FolderBTN.CheckedChanged += new System.EventHandler(this.Menu_BTN_CheckedChanged);
             // 
             // MenuBTN
@@ -307,10 +316,11 @@ namespace Advanced_Lock
             this.MenuBTN.HoverState.Parent = this.MenuBTN;
             this.MenuBTN.Image = global::Advanced_Lock.Properties.Resources.icons8_menu_48px;
             this.MenuBTN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.MenuBTN.ImageOffset = new System.Drawing.Point(-3, 0);
             this.MenuBTN.ImageSize = new System.Drawing.Size(25, 25);
             this.MenuBTN.Name = "MenuBTN";
             this.MenuBTN.ShadowDecoration.Parent = this.MenuBTN;
-            this.MenuBTN.TextOffset = new System.Drawing.Point(5, 0);
+            this.MenuBTN.TextOffset = new System.Drawing.Point(8, 0);
             this.MenuBTN.Click += new System.EventHandler(this.MenuBTN_Click);
             // 
             // dataSet1
@@ -413,6 +423,27 @@ namespace Advanced_Lock
             this.History_DataTable.ThemeStyle.RowsStyle.Height = 22;
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
             this.History_DataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // yourChoseHistory
+            // 
+            this.yourChoseHistory.DataPropertyName = "YourChose";
+            resources.ApplyResources(this.yourChoseHistory, "yourChoseHistory");
+            this.yourChoseHistory.Name = "yourChoseHistory";
+            this.yourChoseHistory.ReadOnly = true;
+            // 
+            // passwordHistory
+            // 
+            this.passwordHistory.DataPropertyName = "Password";
+            resources.ApplyResources(this.passwordHistory, "passwordHistory");
+            this.passwordHistory.Name = "passwordHistory";
+            this.passwordHistory.ReadOnly = true;
+            // 
+            // resultHistory
+            // 
+            this.resultHistory.DataPropertyName = "Result";
+            resources.ApplyResources(this.resultHistory, "resultHistory");
+            this.resultHistory.Name = "resultHistory";
+            this.resultHistory.ReadOnly = true;
             // 
             // Menu2
             // 
@@ -541,27 +572,6 @@ namespace Advanced_Lock
             this.RefreshBTN.ShadowDecoration.Parent = this.RefreshBTN;
             this.toolTip_BTNs.SetToolTip(this.RefreshBTN, resources.GetString("RefreshBTN.ToolTip"));
             this.RefreshBTN.Click += new System.EventHandler(this.RefreshBTN_Click);
-            // 
-            // resultHistory
-            // 
-            this.resultHistory.DataPropertyName = "Result";
-            resources.ApplyResources(this.resultHistory, "resultHistory");
-            this.resultHistory.Name = "resultHistory";
-            this.resultHistory.ReadOnly = true;
-            // 
-            // passwordHistory
-            // 
-            this.passwordHistory.DataPropertyName = "Password";
-            resources.ApplyResources(this.passwordHistory, "passwordHistory");
-            this.passwordHistory.Name = "passwordHistory";
-            this.passwordHistory.ReadOnly = true;
-            // 
-            // yourChoseHistory
-            // 
-            this.yourChoseHistory.DataPropertyName = "YourChose";
-            resources.ApplyResources(this.yourChoseHistory, "yourChoseHistory");
-            this.yourChoseHistory.Name = "yourChoseHistory";
-            this.yourChoseHistory.ReadOnly = true;
             // 
             // Advanced
             // 

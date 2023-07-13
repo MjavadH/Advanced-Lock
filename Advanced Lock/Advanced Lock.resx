@@ -3684,16 +3684,10 @@
   <data name="&gt;&gt;User_Result.Type" xml:space="preserve">
     <value>System.Data.DataColumn, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;toolTip_BTNs.Name" xml:space="preserve">
-    <value>toolTip_BTNs</value>
+  <data name="&gt;&gt;yourChoseHistory.Name" xml:space="preserve">
+    <value>yourChoseHistory</value>
   </data>
-  <data name="&gt;&gt;toolTip_BTNs.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;resultHistory.Name" xml:space="preserve">
-    <value>resultHistory</value>
-  </data>
-  <data name="&gt;&gt;resultHistory.Type" xml:space="preserve">
+  <data name="&gt;&gt;yourChoseHistory.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;passwordHistory.Name" xml:space="preserve">
@@ -3702,11 +3696,17 @@
   <data name="&gt;&gt;passwordHistory.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;yourChoseHistory.Name" xml:space="preserve">
-    <value>yourChoseHistory</value>
+  <data name="&gt;&gt;resultHistory.Name" xml:space="preserve">
+    <value>resultHistory</value>
   </data>
-  <data name="&gt;&gt;yourChoseHistory.Type" xml:space="preserve">
+  <data name="&gt;&gt;resultHistory.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip_BTNs.Name" xml:space="preserve">
+    <value>toolTip_BTNs</value>
+  </data>
+  <data name="&gt;&gt;toolTip_BTNs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Advanced</value>
