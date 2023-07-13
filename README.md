@@ -6,7 +6,7 @@ Encrypt and decrypt anything
 - Encrypt and decrypt File
 - Encrypt and decrypt Folder
 - Dark and Light Mode
-- Support 4 languages
+- Support 6 languages (English,Farsi,Arabic,Chinese,Russian,German)
 - File Association (Open .alo and .alf by default)
 - Context Menu option(encrypt and decrypt File and Folder with right click)
 - Lock the software with a password
