@@ -267,38 +267,37 @@ namespace Advanced_Lock
 
         private void Background_EFile_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
-            if (Result_Work == "Error")
+            switch (Result_Work)
             {
-                Cancel_BTN.Enabled = true;
-                Progress_BTN.Enabled = true;
-                progressBar.ProgressColor = Color.FromArgb(255, 96, 96);
-                progressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
-                Notif(text.Error);
-            }
-            else if (Result_Work == "incorect password")
-            {
-                Cancel_BTN.Enabled = true;
-                Progress_BTN.Enabled = true;
-                Notif(text.Incorect_Password);
-                progressBar.Value = 0;
-            }
-            else if (Result_Work == "not found file")
-            {
-                Cancel_BTN.Enabled = true;
-                Notif(text.Not_found_file);
-                progressBar.Value = 0;
-            }
-            else
-            {
-                if (Environment.GetCommandLineArgs().Length >= 2)
-                {
-                    Application.Exit();
-                }
-                else
-                {
-                    new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_Work);
-                    this.Close();
-                }
+                case "Error":
+                    Progress_BTN.Enabled = true;
+                    progressBar.ProgressColor = Color.FromArgb(255, 96, 96);
+                    progressBar.ProgressColor2 = Color.FromArgb(255, 96, 96);
+                    Notif(text.Error);
+                    break;
+                case "incorect password":
+                    Progress_BTN.Enabled = true;
+                    Notif(text.Incorect_Password);
+                    break;
+                case "not found file":
+                    Notif(text.Not_found_file);
+                    break;
+                case "Cancel":
+                    Progress_BTN.Enabled = true;
+                    Cancel_BTN.Enabled = true;
+                    Notif("Cancel");
+                    break;
+                default:
+                    if (Environment.GetCommandLineArgs().Length >= 2)
+                    {
+                        Application.Exit();
+                    }
+                    else
+                    {
+                        new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_Work);
+                        this.Close();
+                    }
+                    break;
             }
         }
 
@@ -319,8 +318,7 @@ namespace Advanced_Lock
             }
             while (string.IsNullOrEmpty(Result_Work))
             {
-                AlertBox.Text = Progress_status.Information;
-                progressBar.Value = (int) Progress_status.progressBar_Value;
+                progressBar.Value = (int)Progress_status.progressBar_Value;
             }
         }
         private void ED_FormClosing(object sender, FormClosingEventArgs e)
