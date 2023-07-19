@@ -12,7 +12,7 @@ namespace Advanced_Lock.Class
             { "en", "English" },
             { "fa","فارسی" },
             { "ar","العربية" },
-            { "zh","中国人" },
+            { "zh","简体中文" },
             { "ru","Русский" },
             { "de","Deutsch" }
         };
