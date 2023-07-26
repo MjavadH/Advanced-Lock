@@ -1,5 +1,8 @@
 ## Advanced Lock application open source
 Encrypt and decrypt anything
+
+$\color{red}{\textsf{Note: This program is currently in the test version, the encryption algorithm may change, avoid encrypting your important files.}}$
+
 ### Available features :
 
 - Encrypt and decrypt Text
