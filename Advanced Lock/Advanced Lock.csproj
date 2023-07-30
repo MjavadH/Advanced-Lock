@@ -108,14 +108,14 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\AllText.cs" />
+    <Compile Include="Classes\AllText.cs" />
     <Compile Include="Forms\AboutBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Class\Colers.cs" />
+    <Compile Include="Classes\Colers.cs" />
     <Compile Include="Forms\ED.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -154,32 +154,32 @@
     <Compile Include="Forms\Set_Theme.Designer.cs">
       <DependentUpon>Set_Theme.cs</DependentUpon>
     </Compile>
-    <Compile Include="String\ar.Designer.cs">
+    <Compile Include="Translations\ar.Designer.cs">
       <DependentUpon>ar.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\de.Designer.cs">
+    <Compile Include="Translations\de.Designer.cs">
       <DependentUpon>de.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\ru.Designer.cs">
+    <Compile Include="Translations\ru.Designer.cs">
       <DependentUpon>ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\zh.Designer.cs">
+    <Compile Include="Translations\zh.Designer.cs">
       <DependentUpon>zh.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\en.Designer.cs">
+    <Compile Include="Translations\en.Designer.cs">
       <DependentUpon>en.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="String\fa.Designer.cs">
+    <Compile Include="Translations\fa.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>fa.resx</DependentUpon>
@@ -215,27 +215,27 @@
     <EmbeddedResource Include="Forms\Set_Theme.resx">
       <DependentUpon>Set_Theme.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\ar.resx">
+    <EmbeddedResource Include="Translations\ar.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ar.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\de.resx">
+    <EmbeddedResource Include="Translations\de.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>de.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\ru.resx">
+    <EmbeddedResource Include="Translations\ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ru.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\zh.resx">
+    <EmbeddedResource Include="Translations\zh.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>zh.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\en.resx">
+    <EmbeddedResource Include="Translations\en.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>en.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="String\fa.resx">
+    <EmbeddedResource Include="Translations\fa.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>fa.Designer.cs</LastGenOutput>
     </EmbeddedResource>

@@ -9,7 +9,7 @@ using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
-using Advanced_Lock.Class;
+using Advanced_Lock.Classes;
 
 namespace Advanced_Lock
 {

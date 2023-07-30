@@ -7,13 +7,12 @@ using System.Drawing;
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using Guna.UI2.WinForms;
 using Microsoft.Win32;
 using Registry_Configuration;
-using Advanced_Lock.Class;
+using Advanced_Lock.Classes;
 
 namespace Advanced_Lock.Forms
 {

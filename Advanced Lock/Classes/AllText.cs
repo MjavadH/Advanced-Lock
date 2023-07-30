@@ -3,7 +3,7 @@ using System.Reflection;
 using System.Resources;
 using System.Collections.Generic;
 
-namespace Advanced_Lock.Class
+namespace Advanced_Lock.Classes
 {
     class AllText
     {
@@ -16,7 +16,7 @@ namespace Advanced_Lock.Class
             { "ru","Русский" },
             { "de","Deutsch" }
         };
-        private ResourceManager languages_Selector = new ResourceManager(string.Format("Advanced_Lock.String.{0}", languagesName), Assembly.GetExecutingAssembly());
+        private ResourceManager languages_Selector = new ResourceManager(string.Format("Advanced_Lock.Translations.{0}", languagesName), Assembly.GetExecutingAssembly());
         internal string Application_Description { get => languages_Selector.GetString("Application description"); }
         internal string Cancel { get => languages_Selector.GetString("Cancel"); }
         internal string Change_Languages { get => languages_Selector.GetString("Change languages"); }

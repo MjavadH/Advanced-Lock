@@ -26,7 +26,7 @@ namespace Advanced_Lock
             if (string.IsNullOrEmpty(Settings.Default.languages))
             {
                 string windowsLanguage = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
-                foreach (var languages in new Class.AllText().allAvailableLanguages.Keys)
+                foreach (var languages in new Classes.AllText().allAvailableLanguages.Keys)
                 {
                     if (windowsLanguage == languages)
                     {

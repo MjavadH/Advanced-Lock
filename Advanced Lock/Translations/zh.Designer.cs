@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Advanced_Lock.String {
+namespace Advanced_Lock.Translations {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Advanced_Lock.String {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.String.zh", typeof(zh).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.Translations.zh", typeof(zh).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

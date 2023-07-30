@@ -1,4 +1,4 @@
-﻿using Advanced_Lock.Class;
+﻿using Advanced_Lock.Classes;
 using Advanced_Lock.Properties;
 using System;
 using System.Windows.Forms;

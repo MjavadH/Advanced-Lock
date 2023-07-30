@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Advanced_Lock.String {
+namespace Advanced_Lock.Translations {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Advanced_Lock.String {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class de {
+    internal class en {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal de() {
+        internal en() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Advanced_Lock.String {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.String.de", typeof(de).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.Translations.en", typeof(en).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Alles verschlüsseln und entschlüsseln.
+        ///   Looks up a localized string similar to Encrypt and decrypt anything.
         /// </summary>
         internal static string Application_description {
             get {
@@ -70,7 +70,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Stornieren.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
         internal static string Cancel {
             get {
@@ -79,7 +79,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sprachen ändern.
+        ///   Looks up a localized string similar to Change languages.
         /// </summary>
         internal static string Change_languages {
             get {
@@ -88,7 +88,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Überprüfen.
+        ///   Looks up a localized string similar to Check.
         /// </summary>
         internal static string Check {
             get {
@@ -97,7 +97,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Konfiguration prüfen.
+        ///   Looks up a localized string similar to Check configuration.
         /// </summary>
         internal static string Check_configuration {
             get {
@@ -106,7 +106,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Konfiguration wurde überprüft und alle Probleme wurden behoben.
+        ///   Looks up a localized string similar to The configuration was checked and all problems were fixed.
         /// </summary>
         internal static string Checked_configuration_and_fixed_problems {
             get {
@@ -115,7 +115,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dunkler Modus.
+        ///   Looks up a localized string similar to Dark Mode.
         /// </summary>
         internal static string Dark_Mode {
             get {
@@ -124,7 +124,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entschlüsseln.
+        ///   Looks up a localized string similar to Decrypt.
         /// </summary>
         internal static string Decrypt {
             get {
@@ -133,7 +133,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entschlüsselungsdatei.
+        ///   Looks up a localized string similar to Decryption File.
         /// </summary>
         internal static string Decryption_File {
             get {
@@ -142,7 +142,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entschlüsselungsordner.
+        ///   Looks up a localized string similar to Decryption Folder.
         /// </summary>
         internal static string Decryption_Folder {
             get {
@@ -151,7 +151,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Entschlüsselungstext.
+        ///   Looks up a localized string similar to Decryption Text.
         /// </summary>
         internal static string Decryption_Text {
             get {
@@ -160,7 +160,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gesamten Verlauf löschen.
+        ///   Looks up a localized string similar to Delete All History.
         /// </summary>
         internal static string Delete_All_History {
             get {
@@ -169,7 +169,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zeile löschen.
+        ///   Looks up a localized string similar to Delete Row.
         /// </summary>
         internal static string Delete_Row {
             get {
@@ -178,8 +178,8 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Designer und Entwickler: MjavadH
-        ///Dies ist eine Open-Source-Software
+        ///   Looks up a localized string similar to Designer and Developer: MjavadH
+        ///This is an open source software
         ///GitHub:.
         /// </summary>
         internal static string Developer_Description {
@@ -189,7 +189,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Passwort aktivieren.
+        ///   Looks up a localized string similar to Enable password.
         /// </summary>
         internal static string Enable_password {
             get {
@@ -198,7 +198,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verschlüsseln.
+        ///   Looks up a localized string similar to Encrypt.
         /// </summary>
         internal static string Encrypt {
             get {
@@ -207,7 +207,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verschlüsselungsdatei.
+        ///   Looks up a localized string similar to Encryption File.
         /// </summary>
         internal static string Encryption_File {
             get {
@@ -216,7 +216,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verschlüsselungsordner.
+        ///   Looks up a localized string similar to Encryption Folder.
         /// </summary>
         internal static string Encryption_Folder {
             get {
@@ -225,7 +225,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verschlüsselungstext.
+        ///   Looks up a localized string similar to Encryption Text.
         /// </summary>
         internal static string Encryption_Text {
             get {
@@ -234,7 +234,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Geben Sie das Passwort ein.
+        ///   Looks up a localized string similar to Enter the password.
         /// </summary>
         internal static string Enter_password {
             get {
@@ -243,7 +243,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fehler.
+        ///   Looks up a localized string similar to Error.
         /// </summary>
         internal static string Error {
             get {
@@ -252,7 +252,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fehler: Das Feld „Ihre Wahl“ oder „Passwort“ ist leer.
+        ///   Looks up a localized string similar to Error: Field &apos;your choice&apos; or &apos;password&apos; is empty.
         /// </summary>
         internal static string Error_password_or_your_choice {
             get {
@@ -261,7 +261,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Beispielbenachrichtigung.
+        ///   Looks up a localized string similar to Example Notification.
         /// </summary>
         internal static string Example_Notification {
             get {
@@ -270,7 +270,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Export ist abgeschlossen.
+        ///   Looks up a localized string similar to Export is done.
         /// </summary>
         internal static string Export_is_done {
             get {
@@ -279,7 +279,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Datei.
+        ///   Looks up a localized string similar to File.
         /// </summary>
         internal static string File {
             get {
@@ -288,7 +288,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ordner.
+        ///   Looks up a localized string similar to Folder.
         /// </summary>
         internal static string Folder {
             get {
@@ -297,7 +297,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Import ist abgeschlossen.
+        ///   Looks up a localized string similar to Import is done.
         /// </summary>
         internal static string Import_is_done {
             get {
@@ -315,7 +315,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Falsches Passwort!.
+        ///   Looks up a localized string similar to Incorrect Password!.
         /// </summary>
         internal static string Incorect_Password {
             get {
@@ -333,7 +333,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lichtmodus.
+        ///   Looks up a localized string similar to Light Mode.
         /// </summary>
         internal static string Light_Mode {
             get {
@@ -342,7 +342,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verlauf laden.
+        ///   Looks up a localized string similar to Load History.
         /// </summary>
         internal static string Load_History {
             get {
@@ -351,7 +351,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Gemacht mit.
+        ///   Looks up a localized string similar to Made with.
         /// </summary>
         internal static string Made_with {
             get {
@@ -360,7 +360,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Speisekarte.
+        ///   Looks up a localized string similar to Menu.
         /// </summary>
         internal static string Menu {
             get {
@@ -369,7 +369,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Datei nicht gefunden.
+        ///   Looks up a localized string similar to Not found file.
         /// </summary>
         internal static string Not_found_file {
             get {
@@ -387,7 +387,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Passwort.
+        ///   Looks up a localized string similar to Password.
         /// </summary>
         internal static string Password {
             get {
@@ -396,7 +396,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Passwort ist aktiviert.
+        ///   Looks up a localized string similar to password is enable.
         /// </summary>
         internal static string password_is_enable {
             get {
@@ -405,7 +405,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ton abspielen.
+        ///   Looks up a localized string similar to Play sound.
         /// </summary>
         internal static string Play_sound {
             get {
@@ -414,7 +414,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Aktualisierung.
+        ///   Looks up a localized string similar to Refresh.
         /// </summary>
         internal static string Refresh {
             get {
@@ -423,7 +423,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starten Sie die Anwendung neu, um die Sprache zu ändern.
+        ///   Looks up a localized string similar to Restart application to change language.
         /// </summary>
         internal static string Restart_app_to_chenge_language {
             get {
@@ -432,7 +432,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Starten Sie die Anwendung neu, um das Thema zu ändern.
+        ///   Looks up a localized string similar to Restart application to change theme.
         /// </summary>
         internal static string Restart_app_to_chenge_theme {
             get {
@@ -441,7 +441,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ergebnis.
+        ///   Looks up a localized string similar to Result.
         /// </summary>
         internal static string Result {
             get {
@@ -450,7 +450,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ergebnistext kopiert.
+        ///   Looks up a localized string similar to Result text copied.
         /// </summary>
         internal static string Result_text_copyed {
             get {
@@ -459,7 +459,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Der Ergebnistext ist leer.
+        ///   Looks up a localized string similar to Result text is empty.
         /// </summary>
         internal static string Result_text_empty {
             get {
@@ -468,7 +468,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Verlauf speichern.
+        ///   Looks up a localized string similar to Save History.
         /// </summary>
         internal static string Save_History {
             get {
@@ -477,7 +477,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Wählen Sie Ihr Thema aus.
+        ///   Looks up a localized string similar to Select your Theme.
         /// </summary>
         internal static string Select_your_Theme {
             get {
@@ -486,7 +486,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Einstellungen.
+        ///   Looks up a localized string similar to Settings.
         /// </summary>
         internal static string Settings {
             get {
@@ -495,7 +495,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Benachrichtigung anzeigen.
+        ///   Looks up a localized string similar to Show notification.
         /// </summary>
         internal static string Show_notification {
             get {
@@ -504,7 +504,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Einreichen.
+        ///   Looks up a localized string similar to Submit.
         /// </summary>
         internal static string Submit {
             get {
@@ -522,7 +522,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Die Konfiguration der Software ist kein Problem.
+        ///   Looks up a localized string similar to There is no problem in configuring the software.
         /// </summary>
         internal static string There_is_no_problem_in_configuring {
             get {
@@ -531,7 +531,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to deine Entscheidung.
+        ///   Looks up a localized string similar to your choice.
         /// </summary>
         internal static string your_choice {
             get {

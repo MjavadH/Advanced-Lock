@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using static Advanced_Lock.Class.Colers;
 using Microsoft.Win32;
-using Advanced_Lock.Class;
+using Advanced_Lock.Classes;
 
 namespace Advanced_Lock.Forms
 {

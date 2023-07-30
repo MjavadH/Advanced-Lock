@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Advanced_Lock.String {
+namespace Advanced_Lock.Translations {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Advanced_Lock.String {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class fa {
+    internal class de {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal fa() {
+        internal de() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Advanced_Lock.String {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.String.fa", typeof(fa).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Advanced_Lock.Translations.de", typeof(de).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزنگاری و رمزگشایی هرچیزی.
+        ///   Looks up a localized string similar to Alles verschlüsseln und entschlüsseln.
         /// </summary>
         internal static string Application_description {
             get {
@@ -70,7 +70,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to انصراف.
+        ///   Looks up a localized string similar to Stornieren.
         /// </summary>
         internal static string Cancel {
             get {
@@ -79,7 +79,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تغییر زبان.
+        ///   Looks up a localized string similar to Sprachen ändern.
         /// </summary>
         internal static string Change_languages {
             get {
@@ -88,7 +88,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to بررسی.
+        ///   Looks up a localized string similar to Überprüfen.
         /// </summary>
         internal static string Check {
             get {
@@ -97,7 +97,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to بررسی پیکربندی.
+        ///   Looks up a localized string similar to Konfiguration prüfen.
         /// </summary>
         internal static string Check_configuration {
             get {
@@ -106,7 +106,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to پیکربندی برسی شد و تمامی مشکلات رفع شد.
+        ///   Looks up a localized string similar to Die Konfiguration wurde überprüft und alle Probleme wurden behoben.
         /// </summary>
         internal static string Checked_configuration_and_fixed_problems {
             get {
@@ -115,7 +115,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حالت تاریک.
+        ///   Looks up a localized string similar to Dunkler Modus.
         /// </summary>
         internal static string Dark_Mode {
             get {
@@ -124,7 +124,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزگشایی.
+        ///   Looks up a localized string similar to Entschlüsseln.
         /// </summary>
         internal static string Decrypt {
             get {
@@ -133,7 +133,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزگشایی فایل.
+        ///   Looks up a localized string similar to Entschlüsselungsdatei.
         /// </summary>
         internal static string Decryption_File {
             get {
@@ -142,7 +142,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزگشایی پوشه.
+        ///   Looks up a localized string similar to Entschlüsselungsordner.
         /// </summary>
         internal static string Decryption_Folder {
             get {
@@ -151,7 +151,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزگشایی متن.
+        ///   Looks up a localized string similar to Entschlüsselungstext.
         /// </summary>
         internal static string Decryption_Text {
             get {
@@ -160,7 +160,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حذف تمام تاریخچه ها.
+        ///   Looks up a localized string similar to Gesamten Verlauf löschen.
         /// </summary>
         internal static string Delete_All_History {
             get {
@@ -169,7 +169,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حذف ردیف.
+        ///   Looks up a localized string similar to Zeile löschen.
         /// </summary>
         internal static string Delete_Row {
             get {
@@ -178,9 +178,9 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to طراح و توسعه دهنده: MjavadH
-        ///این یک نرم‌افزار متن باز است
-        ///گیت هاب:.
+        ///   Looks up a localized string similar to Designer und Entwickler: MjavadH
+        ///Dies ist eine Open-Source-Software
+        ///GitHub:.
         /// </summary>
         internal static string Developer_Description {
             get {
@@ -189,7 +189,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to فعال کردن گذرواژه.
+        ///   Looks up a localized string similar to Passwort aktivieren.
         /// </summary>
         internal static string Enable_password {
             get {
@@ -198,7 +198,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزنگاری.
+        ///   Looks up a localized string similar to Verschlüsseln.
         /// </summary>
         internal static string Encrypt {
             get {
@@ -207,7 +207,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزنگاری فایل.
+        ///   Looks up a localized string similar to Verschlüsselungsdatei.
         /// </summary>
         internal static string Encryption_File {
             get {
@@ -216,7 +216,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزنگاری پوشه.
+        ///   Looks up a localized string similar to Verschlüsselungsordner.
         /// </summary>
         internal static string Encryption_Folder {
             get {
@@ -225,7 +225,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to رمزنگاری متن.
+        ///   Looks up a localized string similar to Verschlüsselungstext.
         /// </summary>
         internal static string Encryption_Text {
             get {
@@ -234,7 +234,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to گذرواژه وارد کنید.
+        ///   Looks up a localized string similar to Geben Sie das Passwort ein.
         /// </summary>
         internal static string Enter_password {
             get {
@@ -243,7 +243,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to خطایی رخ داد.
+        ///   Looks up a localized string similar to Fehler.
         /// </summary>
         internal static string Error {
             get {
@@ -252,8 +252,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to خطا: کادر های &apos;انتخاب شما&apos; یا &apos;گذرواژه&apos; خالی است
-        ///.
+        ///   Looks up a localized string similar to Fehler: Das Feld „Ihre Wahl“ oder „Passwort“ ist leer.
         /// </summary>
         internal static string Error_password_or_your_choice {
             get {
@@ -262,7 +261,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تست اعلان.
+        ///   Looks up a localized string similar to Beispielbenachrichtigung.
         /// </summary>
         internal static string Example_Notification {
             get {
@@ -271,7 +270,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to دیتا ها ذخیره شدند.
+        ///   Looks up a localized string similar to Der Export ist abgeschlossen.
         /// </summary>
         internal static string Export_is_done {
             get {
@@ -280,7 +279,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to فایل.
+        ///   Looks up a localized string similar to Datei.
         /// </summary>
         internal static string File {
             get {
@@ -289,7 +288,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to پوشه.
+        ///   Looks up a localized string similar to Ordner.
         /// </summary>
         internal static string Folder {
             get {
@@ -298,7 +297,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to دیتا ها بارگزاری شدند.
+        ///   Looks up a localized string similar to Der Import ist abgeschlossen.
         /// </summary>
         internal static string Import_is_done {
             get {
@@ -307,7 +306,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to در ایران.
+        ///   Looks up a localized string similar to in Iran.
         /// </summary>
         internal static string in_iran {
             get {
@@ -316,7 +315,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to گذرواژه اشتباه است!.
+        ///   Looks up a localized string similar to Falsches Passwort!.
         /// </summary>
         internal static string Incorect_Password {
             get {
@@ -325,7 +324,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to اطلاعات.
+        ///   Looks up a localized string similar to Information.
         /// </summary>
         internal static string Information {
             get {
@@ -334,7 +333,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حالت روز.
+        ///   Looks up a localized string similar to Lichtmodus.
         /// </summary>
         internal static string Light_Mode {
             get {
@@ -343,7 +342,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to بارگذاری تاریخچه.
+        ///   Looks up a localized string similar to Verlauf laden.
         /// </summary>
         internal static string Load_History {
             get {
@@ -352,7 +351,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ساخته شده با.
+        ///   Looks up a localized string similar to Gemacht mit.
         /// </summary>
         internal static string Made_with {
             get {
@@ -361,7 +360,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to منو.
+        ///   Looks up a localized string similar to Speisekarte.
         /// </summary>
         internal static string Menu {
             get {
@@ -370,7 +369,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to فایل پیدا نشد.
+        ///   Looks up a localized string similar to Datei nicht gefunden.
         /// </summary>
         internal static string Not_found_file {
             get {
@@ -379,7 +378,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تایید.
+        ///   Looks up a localized string similar to OK.
         /// </summary>
         internal static string OK {
             get {
@@ -388,7 +387,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to گذرواژه.
+        ///   Looks up a localized string similar to Passwort.
         /// </summary>
         internal static string Password {
             get {
@@ -397,7 +396,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to گذرواژه فعال شد.
+        ///   Looks up a localized string similar to Passwort ist aktiviert.
         /// </summary>
         internal static string password_is_enable {
             get {
@@ -406,7 +405,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to پخش صدا.
+        ///   Looks up a localized string similar to Ton abspielen.
         /// </summary>
         internal static string Play_sound {
             get {
@@ -415,7 +414,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تازه کردن داده ها.
+        ///   Looks up a localized string similar to Aktualisierung.
         /// </summary>
         internal static string Refresh {
             get {
@@ -424,7 +423,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to برنامه را بسته و مجدد باز نمایید تا زبان تغییر کند.
+        ///   Looks up a localized string similar to Starten Sie die Anwendung neu, um die Sprache zu ändern.
         /// </summary>
         internal static string Restart_app_to_chenge_language {
             get {
@@ -433,7 +432,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to برنامه را بسته و مجدد باز نمایید تا تغییر حالت به درستی انجام گیرد.
+        ///   Looks up a localized string similar to Starten Sie die Anwendung neu, um das Thema zu ändern.
         /// </summary>
         internal static string Restart_app_to_chenge_theme {
             get {
@@ -442,7 +441,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to نتیجه.
+        ///   Looks up a localized string similar to Ergebnis.
         /// </summary>
         internal static string Result {
             get {
@@ -451,7 +450,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to نتیجه کپی شد.
+        ///   Looks up a localized string similar to Ergebnistext kopiert.
         /// </summary>
         internal static string Result_text_copyed {
             get {
@@ -460,7 +459,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to نتیجه خالی است.
+        ///   Looks up a localized string similar to Der Ergebnistext ist leer.
         /// </summary>
         internal static string Result_text_empty {
             get {
@@ -469,7 +468,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ذخیره تاریخچه.
+        ///   Looks up a localized string similar to Verlauf speichern.
         /// </summary>
         internal static string Save_History {
             get {
@@ -478,7 +477,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تم مورد نظر خود را انتخاب کنید.
+        ///   Looks up a localized string similar to Wählen Sie Ihr Thema aus.
         /// </summary>
         internal static string Select_your_Theme {
             get {
@@ -487,7 +486,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تنظیمات.
+        ///   Looks up a localized string similar to Einstellungen.
         /// </summary>
         internal static string Settings {
             get {
@@ -496,7 +495,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to نمایش اعلان.
+        ///   Looks up a localized string similar to Benachrichtigung anzeigen.
         /// </summary>
         internal static string Show_notification {
             get {
@@ -505,7 +504,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ثبت.
+        ///   Looks up a localized string similar to Einreichen.
         /// </summary>
         internal static string Submit {
             get {
@@ -514,7 +513,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to متن.
+        ///   Looks up a localized string similar to Text.
         /// </summary>
         internal static string Text {
             get {
@@ -523,7 +522,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to مشکلی در پیکربندی نرم‌افزار وجود ندارد.
+        ///   Looks up a localized string similar to Die Konfiguration der Software ist kein Problem.
         /// </summary>
         internal static string There_is_no_problem_in_configuring {
             get {
@@ -532,7 +531,7 @@ namespace Advanced_Lock.String {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to انتخاب شما.
+        ///   Looks up a localized string similar to deine Entscheidung.
         /// </summary>
         internal static string your_choice {
             get {
