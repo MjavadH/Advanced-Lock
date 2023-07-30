@@ -22,7 +22,7 @@ namespace Registry_Configuration
             {
 
                 Process p = new Process();
-                p.StartInfo.FileName = "Lock_Registry.exe";
+                p.StartInfo.FileName = System.Reflection.Assembly.GetExecutingAssembly().GetName().Name + ".exe";
                 p.StartInfo.UseShellExecute = true;
                 p.StartInfo.Verb = "runas";
                 p.Start();
@@ -50,11 +50,11 @@ namespace Registry_Configuration
     public class extension
     {
         protected static RegistryKey reg;
-        protected static string application_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application path
+        protected static string application_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application full path
         internal protected static string application_Name = "AdvancedLock"; // Application name
-        protected static string icon_Location = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";// Icons file
+        protected static string icon_Location = "\"" + Directory.GetCurrentDirectory() + @"\Icons.icl" + "\"";// Icons file full path
         internal protected static string file_extension = ".alo";// File extension
-        internal protected static string folder_extension = ".alf";// File extension
+        internal protected static string folder_extension = ".alf";// Folder extension
         private static string command = "\"" + application_Location + "\"" + " \"%1\"";
 
         /*--------- Create File Registry ---------*/
@@ -81,7 +81,7 @@ namespace Registry_Configuration
         {
             try
             {
-                reg = Registry.ClassesRoot.CreateSubKey(folder_extension); // file extension
+                reg = Registry.ClassesRoot.CreateSubKey(folder_extension);
                 reg.SetValue("", application_Name + folder_extension);
                 reg = Registry.ClassesRoot.CreateSubKey(application_Name + folder_extension);
                 reg.SetValue("", application_Name + " Folder");
