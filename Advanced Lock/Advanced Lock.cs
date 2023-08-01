@@ -112,13 +112,6 @@ namespace Advanced_Lock
             Settings.Default.Password_Enter = false;
             Settings.Default.Save();
         }
-        private void Advanced_Activated(object sender, EventArgs e)
-        {
-            if (Settings.Default.DarkMode)
-            {
-                DarkMode();
-            }
-        }
         /*--------- Menus Start ---------*/
         /*------ Menu1 Start ------*/
         private void MenuBTN_Click(object sender, EventArgs e)

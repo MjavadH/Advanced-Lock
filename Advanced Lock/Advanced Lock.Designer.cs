@@ -582,7 +582,6 @@ namespace Advanced_Lock
             this.Controls.Add(this.Menu2);
             this.Controls.Add(this.MainMenu);
             this.Name = "Advanced";
-            this.Activated += new System.EventHandler(this.Advanced_Activated);
             this.Load += new System.EventHandler(this.Form_Load);
             this.MainMenu.ResumeLayout(false);
             this.TextPanel.ResumeLayout(false);
