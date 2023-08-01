@@ -44,7 +44,7 @@ namespace Advanced_Lock.Forms
             Submit_BTN.Text = text.Submit;
             label_Lang.Text = text.Change_Languages;
             label_Sound.Text = text.Play_Sound;
-            label_Config.Text = text.Check_Configuration;
+            label_Config.Text = text.Configuration;
             CheckConfig_BTN.Text = text.Check;
         }
         private void Setting_Page_Load(object sender, EventArgs e)
