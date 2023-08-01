@@ -21,7 +21,7 @@ namespace Advanced_Lock.Classes
         internal string Cancel { get => languages_Selector.GetString("Cancel"); }
         internal string Change_Languages { get => languages_Selector.GetString("Change languages"); }
         internal string Check { get => languages_Selector.GetString("Check"); }
-        internal string Check_Configuration { get => languages_Selector.GetString("Check configuration"); }
+        internal string Configuration { get => languages_Selector.GetString("Configuration"); }
         internal string Dark_Mode { get => languages_Selector.GetString("Dark Mode"); }
         internal string Decrypt { get => languages_Selector.GetString("Decrypt"); }
         internal string Delete_All_History { get => languages_Selector.GetString("Delete All History"); }
@@ -70,6 +70,8 @@ namespace Advanced_Lock.Classes
         internal string Not_found_file { get => languages_Selector.GetString("Not found file"); }
         internal string Result_text_copyed { get => languages_Selector.GetString("Result text copyed"); }
         internal string Result_text_empty { get => languages_Selector.GetString("Result text empty"); }
+        internal string Add { get => languages_Selector.GetString("Add"); }
+        internal string Remove { get => languages_Selector.GetString("Remove"); }
 
     }
 }

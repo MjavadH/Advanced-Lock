@@ -61,6 +61,15 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to افزودن.
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to رمزنگاری و رمزگشایی هرچیزی.
         /// </summary>
         internal static string Application_description {
@@ -97,20 +106,20 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to بررسی پیکربندی.
-        /// </summary>
-        internal static string Check_configuration {
-            get {
-                return ResourceManager.GetString("Check configuration", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to پیکربندی برسی شد و تمامی مشکلات رفع شد.
+        ///   Looks up a localized string similar to پیکربندی بررسی شد و تمامی مشکلات رفع شد.
         /// </summary>
         internal static string Checked_configuration_and_fixed_problems {
             get {
                 return ResourceManager.GetString("Checked configuration and fixed problems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to پیکربندی.
+        /// </summary>
+        internal static string Configuration {
+            get {
+                return ResourceManager.GetString("Configuration", resourceCulture);
             }
         }
         
@@ -420,6 +429,15 @@ namespace Advanced_Lock.Translations {
         internal static string Refresh {
             get {
                 return ResourceManager.GetString("Refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to حذف.
+        /// </summary>
+        internal static string Remove {
+            get {
+                return ResourceManager.GetString("Remove", resourceCulture);
             }
         }
         

@@ -61,6 +61,15 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hinzufügen.
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Alles verschlüsseln und entschlüsseln.
         /// </summary>
         internal static string Application_description {
@@ -97,20 +106,20 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Konfiguration prüfen.
-        /// </summary>
-        internal static string Check_configuration {
-            get {
-                return ResourceManager.GetString("Check configuration", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Die Konfiguration wurde überprüft und alle Probleme wurden behoben.
         /// </summary>
         internal static string Checked_configuration_and_fixed_problems {
             get {
                 return ResourceManager.GetString("Checked configuration and fixed problems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Aufbau.
+        /// </summary>
+        internal static string Configuration {
+            get {
+                return ResourceManager.GetString("Configuration", resourceCulture);
             }
         }
         
@@ -419,6 +428,15 @@ namespace Advanced_Lock.Translations {
         internal static string Refresh {
             get {
                 return ResourceManager.GetString("Refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entfernen.
+        /// </summary>
+        internal static string Remove {
+            get {
+                return ResourceManager.GetString("Remove", resourceCulture);
             }
         }
         

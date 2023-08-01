@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Добавлять</value>
+  </data>
   <data name="Application description" xml:space="preserve">
     <value>Шифровать и расшифровывать что угодно</value>
   </data>
@@ -129,11 +132,11 @@
   <data name="Check" xml:space="preserve">
     <value>проверка</value>
   </data>
-  <data name="Check configuration" xml:space="preserve">
-    <value>Проверить конфигурацию</value>
-  </data>
   <data name="Checked configuration and fixed problems" xml:space="preserve">
     <value>Конфигурация проверена и все проблемы устранены</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>Конфигурация</value>
   </data>
   <data name="Dark Mode" xml:space="preserve">
     <value>Темный режим</value>
@@ -238,6 +241,9 @@ GitHub:</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Обновить</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Удалять</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
     <value>Перезапустите приложение, чтобы изменить язык</value>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
   <data name="Application description" xml:space="preserve">
     <value>Encrypt and decrypt anything</value>
   </data>
@@ -129,11 +132,11 @@
   <data name="Check" xml:space="preserve">
     <value>Check</value>
   </data>
-  <data name="Check configuration" xml:space="preserve">
-    <value>Check configuration</value>
-  </data>
   <data name="Checked configuration and fixed problems" xml:space="preserve">
     <value>The configuration was checked and all problems were fixed</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>Configuration</value>
   </data>
   <data name="Dark Mode" xml:space="preserve">
     <value>Dark Mode</value>
@@ -238,6 +241,9 @@ GitHub:</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Refresh</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Remove</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
     <value>Restart application to change language</value>

@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>يضيف</value>
+  </data>
   <data name="Application description" xml:space="preserve">
     <value>تشفير وفك تشفير أي شيء</value>
   </data>
@@ -129,11 +132,11 @@
   <data name="Check" xml:space="preserve">
     <value>تحقق</value>
   </data>
-  <data name="Check configuration" xml:space="preserve">
-    <value>تحقق من التكوين</value>
-  </data>
   <data name="Checked configuration and fixed problems" xml:space="preserve">
     <value>تم فحص التكوين وتم إصلاح جميع المشكلات</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>إعدادات</value>
   </data>
   <data name="Dark Mode" xml:space="preserve">
     <value>الوضع الداكن</value>
@@ -238,6 +241,9 @@ GitHub:</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>ينعش</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>يزيل</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
     <value>أعد تشغيل التطبيق لتغيير اللغة</value>

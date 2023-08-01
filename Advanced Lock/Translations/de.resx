@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
   <data name="Application description" xml:space="preserve">
     <value>Alles verschlüsseln und entschlüsseln</value>
   </data>
@@ -129,11 +132,11 @@
   <data name="Check" xml:space="preserve">
     <value>Überprüfen</value>
   </data>
-  <data name="Check configuration" xml:space="preserve">
-    <value>Konfiguration prüfen</value>
-  </data>
   <data name="Checked configuration and fixed problems" xml:space="preserve">
     <value>Die Konfiguration wurde überprüft und alle Probleme wurden behoben</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>Aufbau</value>
   </data>
   <data name="Dark Mode" xml:space="preserve">
     <value>Dunkler Modus</value>
@@ -238,6 +241,9 @@ GitHub:</value>
   </data>
   <data name="Refresh" xml:space="preserve">
     <value>Aktualisierung</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Entfernen</value>
   </data>
   <data name="Restart app to chenge language" xml:space="preserve">
     <value>Starten Sie die Anwendung neu, um die Sprache zu ändern</value>

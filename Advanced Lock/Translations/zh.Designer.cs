@@ -61,6 +61,15 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 添加.
+        /// </summary>
+        internal static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 加密和解密任何东西.
         /// </summary>
         internal static string Application_description {
@@ -97,20 +106,20 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 检查配置.
-        /// </summary>
-        internal static string Check_configuration {
-            get {
-                return ResourceManager.GetString("Check configuration", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to 检查配置并修复所有问题.
         /// </summary>
         internal static string Checked_configuration_and_fixed_problems {
             get {
                 return ResourceManager.GetString("Checked configuration and fixed problems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 配置.
+        /// </summary>
+        internal static string Configuration {
+            get {
+                return ResourceManager.GetString("Configuration", resourceCulture);
             }
         }
         
@@ -419,6 +428,15 @@ namespace Advanced_Lock.Translations {
         internal static string Refresh {
             get {
                 return ResourceManager.GetString("Refresh", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 消除.
+        /// </summary>
+        internal static string Remove {
+            get {
+                return ResourceManager.GetString("Remove", resourceCulture);
             }
         }
         
