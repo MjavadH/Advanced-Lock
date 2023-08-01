@@ -8,7 +8,7 @@ using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
-using static Advanced_Lock.Class.Colers;
+using static Advanced_Lock.Classes.Colers;
 using Advanced_Lock.Classes;
 
 namespace Advanced_Lock

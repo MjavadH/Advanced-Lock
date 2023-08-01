@@ -3,7 +3,7 @@ using Advanced_Lock.Properties;
 using System;
 using System.Reflection;
 using System.Windows.Forms;
-using static Advanced_Lock.Class.Colers;
+using static Advanced_Lock.Classes.Colers;
 
 namespace Advanced_Lock
 {

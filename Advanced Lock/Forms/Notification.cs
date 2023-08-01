@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using static Advanced_Lock.Class.Colers;
+using static Advanced_Lock.Classes.Colers;
 
 namespace Advanced_Lock.Forms
 {

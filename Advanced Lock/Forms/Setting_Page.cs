@@ -1,18 +1,13 @@
-﻿using Advanced_Lock.Properties;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Globalization;
-using System.Linq;
-using System.Text;
-using System.Windows.Forms;
-using static Advanced_Lock.Class.Colers;
+﻿using Advanced_Lock.Classes;
+using Advanced_Lock.Properties;
 using Guna.UI2.WinForms;
 using Microsoft.Win32;
 using Registry_Configuration;
-using Advanced_Lock.Classes;
+using System;
+using System.Drawing;
+using System.Linq;
+using System.Windows.Forms;
+using static Advanced_Lock.Classes.Colers;
 
 namespace Advanced_Lock.Forms
 {

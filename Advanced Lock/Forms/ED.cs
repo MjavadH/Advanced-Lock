@@ -6,7 +6,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using static Advanced_Lock.Class.Colers;
+using static Advanced_Lock.Classes.Colers;
 
 namespace Advanced_Lock
 {
