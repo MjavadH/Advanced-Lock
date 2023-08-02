@@ -62,27 +62,13 @@ namespace Advanced_Lock.Forms
                 Box_password.Enabled = false;
                 Submit_BTN.Enabled = false;
             }
-            else
-            {
-                try
-                {
-                    RegistryKey regPass = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
-                    string pass = regPass.GetValue("pass","").ToString();
-                    if (!string.IsNullOrEmpty(pass))
-                    {
-                        Box_password.Text = Encrypt_Decrypt.Encryption__Decryption__Text.Decryption(pass, "Adv@n3eD KeY!");
-                    }
-                }
-                catch (Exception)
-                { }
-            }
             SetTextLanguages();
             foreach (var languagesName in text.allAvailableLanguages.Values)
             {
                 comboBox_Languages.Items.Add(languagesName);
             }
             comboBox_Languages.Text = text.allAvailableLanguages[Settings.Default.languages];
-        }   
+        }
         private void Toggles_Click(object sender, EventArgs e)
         {
             Guna2ToggleSwitch BTNT = (Guna2ToggleSwitch)sender;
@@ -132,7 +118,6 @@ namespace Advanced_Lock.Forms
                 RegistryKey regPass = Registry.CurrentUser.OpenSubKey(@"SOFTWARE\AdvancedLock\password", true);
                 regPass.SetValue("pass", password, RegistryValueKind.String);
                 regPass.SetValue("passEnabaled", "true", RegistryValueKind.String);
-
                 TransitionOK.Show(OK_BTN);
                 Notif(text.Password_is_enable);
                 timerOK.Start();
@@ -161,9 +146,9 @@ namespace Advanced_Lock.Forms
                     regPass.SetValue("passEnabaled", "false", RegistryValueKind.String);
                 }
                 catch (Exception)
-                {}
+                { }
             }
-            else if (password_Toggle.Checked && Box_password.Text != "")
+            else if (password_Toggle.Checked)
             {
                 try
                 {
