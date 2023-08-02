@@ -164,27 +164,64 @@ namespace Advanced_Lock.Forms
 
         /*--------- Pass Panel End ---------*/
         /*--------- Config Panel Start ---------*/
-        private void CheckConfig_BTN_Click(object sender, EventArgs e)
+        void DefaultBTN()
+        {
+            CheckConfig_BTN.Tag = "Check";
+            CheckConfig_BTN.FillColor = Color.FromArgb(0, 69, 255);
+            CheckConfig_BTN.Text = text.Check;
+        }
+        void AddConfig()
         {
             try
             {
+                new Registry_Editor().StartAdmin(Registry_Editor.RegistryMode.Create);
+                Notif(text.Checked_configuration_and_fixed_problems);
+                TransitionOK.Show(Checked_BTN);
+                DefaultBTN();
+            }
+            catch (Exception)
+            {
+                CheckConfig_BTN.FillColor = Color.FromArgb(255, 185, 0);
+                CheckConfig_BTN.Text = text.Add;
+                CheckConfig_BTN.Tag = "Add";
+            }
+        }
+        private void CheckConfig_BTN_Click(object sender, EventArgs e)
+        {
+            if (CheckConfig_BTN.Tag.ToString() == "Add")
+            {
+                AddConfig();
+            }
+            else if (CheckConfig_BTN.Tag.ToString() == "Remove")
+            {
+                try
+                {
+                    new Registry_Editor().StartAdmin(Registry_Editor.RegistryMode.Delete);
+                    TransitionOK.Show(Checked_BTN);
+                    DefaultBTN();
+                }
+                catch (Exception)
+                {
+                    Notif(text.Error);
+                }
+            }
+            else
+            {
                 if (!new Registry_Editor().CheckExtensionRegistery())
                 {
-                    new Registry_Editor().CreateRegistery();
-                    Notif(text.Checked_configuration_and_fixed_problems);
+                    AddConfig();
                 }
                 else
                 {
                     Notif(text.There_is_no_problem_in_configuring);
-                    TransitionOK.Show(Checked_BTN);
+                    CheckConfig_BTN.FillColor = Color.FromArgb(255, 96, 96);
+                    CheckConfig_BTN.Text = text.Remove;
+                    CheckConfig_BTN.Tag = "Remove";
                 }
             }
-            catch (Exception)
-            {
-                Notif(text.Error);
-            }
-            
         }
+        /*--------- Config Panel End ---------*/
+        /*--------- Languages Panel Start ---------*/
         private void comboBox_Languages_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox_Languages.Text != text.allAvailableLanguages[Settings.Default.languages])
@@ -193,12 +230,12 @@ namespace Advanced_Lock.Forms
                 Notif(text.Restart_app_to_chenge_language);
             }
         }
-
+        /*--------- Languages Panel End ---------*/
         private void Setting_Page_FormClosed(object sender, FormClosedEventArgs e)
         {
             Settings.Default.Save();
         }
-        /*--------- Config Panel End ---------*/
+
 
     }
 }

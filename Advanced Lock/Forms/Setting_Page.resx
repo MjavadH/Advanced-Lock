@@ -117,44 +117,68 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;label_DarkM.Name" xml:space="preserve">
+    <value>label_DarkM</value>
+  </data>
+  <data name="&gt;&gt;label_DarkM.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_DarkM.Parent" xml:space="preserve">
+    <value>DarkModePanel</value>
+  </data>
+  <data name="&gt;&gt;label_DarkM.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DarkModePic.Name" xml:space="preserve">
+    <value>DarkModePic</value>
+  </data>
+  <data name="&gt;&gt;DarkModePic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;DarkModePic.Parent" xml:space="preserve">
+    <value>DarkModePanel</value>
+  </data>
+  <data name="&gt;&gt;DarkModePic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DarkMode_Toggle.Name" xml:space="preserve">
+    <value>DarkMode_Toggle</value>
+  </data>
+  <data name="&gt;&gt;DarkMode_Toggle.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;DarkMode_Toggle.Parent" xml:space="preserve">
+    <value>DarkModePanel</value>
+  </data>
+  <data name="&gt;&gt;DarkMode_Toggle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="DarkModePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 37</value>
+  </data>
+  <data name="DarkModePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 155</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DarkModePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DarkModePanel.Name" xml:space="preserve">
+    <value>DarkModePanel</value>
+  </data>
+  <data name="&gt;&gt;DarkModePanel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;DarkModePanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DarkModePanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <metadata name="TransitionOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>104, 17</value>
+    <value>89, 2</value>
   </metadata>
-  <data name="animation1.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
-</value>
-  </data>
-  <data name="animation1.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
-</value>
-  </data>
-  <data name="animation1.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
-</value>
-  </data>
-  <data name="animation1.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAgD8L
-</value>
-  </data>
-  <data name="animation1.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
-    <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
-        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
-        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
-</value>
-  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label_DarkM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -162,14 +186,12 @@
   <data name="label_DarkM.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label_DarkM.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 78</value>
   </data>
   <data name="label_DarkM.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 26</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="label_DarkM.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
@@ -242,40 +264,61 @@
   <data name="&gt;&gt;DarkMode_Toggle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="DarkModePanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 37</value>
+  <data name="&gt;&gt;panel_Lang.Name" xml:space="preserve">
+    <value>panel_Lang</value>
   </data>
-  <data name="DarkModePanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 155</value>
+  <data name="&gt;&gt;panel_Lang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DarkModePanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;panel_Lang.Parent" xml:space="preserve">
+    <value>SwitchLangPanel</value>
+  </data>
+  <data name="&gt;&gt;panel_Lang.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;DarkModePanel.Name" xml:space="preserve">
-    <value>DarkModePanel</value>
+  <data name="&gt;&gt;label_Lang.Name" xml:space="preserve">
+    <value>label_Lang</value>
   </data>
-  <data name="&gt;&gt;DarkModePanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;label_Lang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Lang.Parent" xml:space="preserve">
+    <value>SwitchLangPanel</value>
+  </data>
+  <data name="&gt;&gt;label_Lang.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LangPic.Name" xml:space="preserve">
+    <value>LangPic</value>
+  </data>
+  <data name="&gt;&gt;LangPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;LangPic.Parent" xml:space="preserve">
+    <value>SwitchLangPanel</value>
+  </data>
+  <data name="&gt;&gt;LangPic.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SwitchLangPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 282</value>
+  </data>
+  <data name="SwitchLangPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 155</value>
+  </data>
+  <data name="SwitchLangPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;SwitchLangPanel.Name" xml:space="preserve">
+    <value>SwitchLangPanel</value>
+  </data>
+  <data name="&gt;&gt;SwitchLangPanel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;DarkModePanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;SwitchLangPanel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;DarkModePanel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="comboBox_Languages.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
-  </data>
-  <data name="comboBox_Languages.ItemHeight" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="comboBox_Languages.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="comboBox_Languages.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 36</value>
-  </data>
-  <data name="comboBox_Languages.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;SwitchLangPanel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="&gt;&gt;comboBox_Languages.Name" xml:space="preserve">
@@ -314,6 +357,33 @@
   <data name="&gt;&gt;panel_Lang.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="comboBox_Languages.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="comboBox_Languages.ItemHeight" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="comboBox_Languages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 7</value>
+  </data>
+  <data name="comboBox_Languages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 36</value>
+  </data>
+  <data name="comboBox_Languages.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Languages.Name" xml:space="preserve">
+    <value>comboBox_Languages</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Languages.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Languages.Parent" xml:space="preserve">
+    <value>panel_Lang</value>
+  </data>
+  <data name="&gt;&gt;comboBox_Languages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label_Lang.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -330,7 +400,7 @@
     <value>2</value>
   </data>
   <data name="label_Lang.Text" xml:space="preserve">
-    <value>Chenge Languages</value>
+    <value>Languages</value>
   </data>
   <data name="label_Lang.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -380,26 +450,62 @@
   <data name="&gt;&gt;LangPic.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="SwitchLangPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 282</value>
+  <data name="&gt;&gt;label_notifi.Name" xml:space="preserve">
+    <value>label_notifi</value>
   </data>
-  <data name="SwitchLangPanel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;label_notifi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_notifi.Parent" xml:space="preserve">
+    <value>Notifi_Panel</value>
+  </data>
+  <data name="&gt;&gt;label_notifi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;NotifiPic.Name" xml:space="preserve">
+    <value>NotifiPic</value>
+  </data>
+  <data name="&gt;&gt;NotifiPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;NotifiPic.Parent" xml:space="preserve">
+    <value>Notifi_Panel</value>
+  </data>
+  <data name="&gt;&gt;NotifiPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Notifi_Toggle.Name" xml:space="preserve">
+    <value>Notifi_Toggle</value>
+  </data>
+  <data name="&gt;&gt;Notifi_Toggle.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Notifi_Toggle.Parent" xml:space="preserve">
+    <value>Notifi_Panel</value>
+  </data>
+  <data name="&gt;&gt;Notifi_Toggle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Notifi_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 37</value>
+  </data>
+  <data name="Notifi_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>155, 155</value>
   </data>
-  <data name="SwitchLangPanel.TabIndex" type="System.Int32, mscorlib">
+  <data name="Notifi_Panel.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;SwitchLangPanel.Name" xml:space="preserve">
-    <value>SwitchLangPanel</value>
+  <data name="&gt;&gt;Notifi_Panel.Name" xml:space="preserve">
+    <value>Notifi_Panel</value>
   </data>
-  <data name="&gt;&gt;SwitchLangPanel.Type" xml:space="preserve">
+  <data name="&gt;&gt;Notifi_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;SwitchLangPanel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Notifi_Panel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;SwitchLangPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;Notifi_Panel.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label_notifi.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -417,7 +523,7 @@
     <value>2</value>
   </data>
   <data name="label_notifi.Text" xml:space="preserve">
-    <value>Show notification</value>
+    <value>Notification</value>
   </data>
   <data name="label_notifi.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -485,26 +591,62 @@
   <data name="&gt;&gt;Notifi_Toggle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Notifi_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 37</value>
+  <data name="&gt;&gt;label_Sound.Name" xml:space="preserve">
+    <value>label_Sound</value>
   </data>
-  <data name="Notifi_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 155</value>
+  <data name="&gt;&gt;label_Sound.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Notifi_Panel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;label_Sound.Parent" xml:space="preserve">
+    <value>Sound_Panel</value>
+  </data>
+  <data name="&gt;&gt;label_Sound.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Notifi_Panel.Name" xml:space="preserve">
-    <value>Notifi_Panel</value>
+  <data name="&gt;&gt;SoundPic.Name" xml:space="preserve">
+    <value>SoundPic</value>
   </data>
-  <data name="&gt;&gt;Notifi_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;SoundPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;SoundPic.Parent" xml:space="preserve">
+    <value>Sound_Panel</value>
+  </data>
+  <data name="&gt;&gt;SoundPic.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Sound_Toggle.Name" xml:space="preserve">
+    <value>Sound_Toggle</value>
+  </data>
+  <data name="&gt;&gt;Sound_Toggle.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Sound_Toggle.Parent" xml:space="preserve">
+    <value>Sound_Panel</value>
+  </data>
+  <data name="&gt;&gt;Sound_Toggle.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Sound_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 282</value>
+  </data>
+  <data name="Sound_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 155</value>
+  </data>
+  <data name="Sound_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Sound_Panel.Name" xml:space="preserve">
+    <value>Sound_Panel</value>
+  </data>
+  <data name="&gt;&gt;Sound_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;Notifi_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Sound_Panel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Notifi_Panel.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;Sound_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="label_Sound.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -590,26 +732,98 @@
   <data name="&gt;&gt;Sound_Toggle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Sound_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 282</value>
+  <data name="&gt;&gt;OK_BTN.Name" xml:space="preserve">
+    <value>OK_BTN</value>
   </data>
-  <data name="Sound_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 155</value>
+  <data name="&gt;&gt;OK_BTN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Sound_Panel.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;OK_BTN.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;OK_BTN.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Sound_Panel.Name" xml:space="preserve">
-    <value>Sound_Panel</value>
+  <data name="&gt;&gt;Submit_BTN.Name" xml:space="preserve">
+    <value>Submit_BTN</value>
   </data>
-  <data name="&gt;&gt;Sound_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;Submit_BTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;Submit_BTN.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Box_password.Name" xml:space="preserve">
+    <value>Box_password</value>
+  </data>
+  <data name="&gt;&gt;Box_password.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Box_password.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;Box_password.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label_Password.Name" xml:space="preserve">
+    <value>label_Password</value>
+  </data>
+  <data name="&gt;&gt;label_Password.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_Password.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;label_Password.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PasswordPic.Name" xml:space="preserve">
+    <value>PasswordPic</value>
+  </data>
+  <data name="&gt;&gt;PasswordPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;PasswordPic.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;PasswordPic.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;password_Toggle.Name" xml:space="preserve">
+    <value>password_Toggle</value>
+  </data>
+  <data name="&gt;&gt;password_Toggle.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2ToggleSwitch, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;password_Toggle.Parent" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;password_Toggle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Password_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 37</value>
+  </data>
+  <data name="Password_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 155</value>
+  </data>
+  <data name="Password_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Password_Panel.Name" xml:space="preserve">
+    <value>Password_Panel</value>
+  </data>
+  <data name="&gt;&gt;Password_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;Sound_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Password_Panel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Sound_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;Password_Panel.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="OK_BTN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -711,7 +925,7 @@
     <value>2</value>
   </data>
   <data name="label_Password.Text" xml:space="preserve">
-    <value>Enable password</value>
+    <value>Password</value>
   </data>
   <data name="label_Password.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -779,30 +993,116 @@
   <data name="&gt;&gt;password_Toggle.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="Password_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>426, 37</value>
+  <metadata name="timerOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>4, 3</value>
+  </metadata>
+  <metadata name="TransitionOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>89, 2</value>
+  </metadata>
+  <data name="animation2.BlindCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
   </data>
-  <data name="Password_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>355, 155</value>
+  <data name="animation2.MosaicCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
   </data>
-  <data name="Password_Panel.TabIndex" type="System.Int32, mscorlib">
+  <data name="animation2.MosaicShift" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="animation2.ScaleCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAACAPwAAgD8L
+</value>
+  </data>
+  <data name="animation2.SlideCoeff" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAABVTeXN0ZW0uRHJh
+        d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
+</value>
+  </data>
+  <data name="&gt;&gt;Checked_BTN.Name" xml:space="preserve">
+    <value>Checked_BTN</value>
+  </data>
+  <data name="&gt;&gt;Checked_BTN.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Checked_BTN.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;Checked_BTN.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Password_Panel.Name" xml:space="preserve">
-    <value>Password_Panel</value>
+  <data name="&gt;&gt;label_Config.Name" xml:space="preserve">
+    <value>label_Config</value>
   </data>
-  <data name="&gt;&gt;Password_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="&gt;&gt;label_Config.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Password_Panel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label_Config.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
   </data>
-  <data name="&gt;&gt;Password_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;label_Config.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Name" xml:space="preserve">
+    <value>CheckConfig_BTN</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;CheckConfig_BTN.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Name" xml:space="preserve">
+    <value>ConfigPic</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.Parent" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;ConfigPic.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="timerOK.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
+  <data name="Config_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>226, 282</value>
+  </data>
+  <data name="Config_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 155</value>
+  </data>
+  <data name="Config_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Name" xml:space="preserve">
+    <value>Config_Panel</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Config_Panel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
   <data name="Checked_BTN.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -923,32 +1223,11 @@
   <data name="&gt;&gt;ConfigPic.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="Config_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>226, 282</value>
-  </data>
-  <data name="Config_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 155</value>
-  </data>
-  <data name="Config_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Config_Panel.Name" xml:space="preserve">
-    <value>Config_Panel</value>
-  </data>
-  <data name="&gt;&gt;Config_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;Config_Panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Config_Panel.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>47</value>
+    <value>33</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 488</value>
