@@ -3,7 +3,7 @@ using Advanced_Lock.Properties;
 using System;
 using System.Reflection;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 
 namespace Advanced_Lock
 {
@@ -17,11 +17,11 @@ namespace Advanced_Lock
         public AllText text = new AllText();
         void DarkMode()
         {
-            this.BackColor = Darkmode.DarkMode[0];
-            this.ForeColor = Darkmode.DarkMode[3];
-            panel_Title.FillColor = Darkmode.DarkMode[1];
-            panel_Bottom.FillColor = Darkmode.DarkMode[1];
-            button_OK.FillColor = Darkmode.DarkMode[4];
+            this.BackColor = Darkmode.Dark_Gray;
+            this.ForeColor = Darkmode.Light_Gray;
+            panel_Title.FillColor = Darkmode.Very_Dark_Gray;
+            panel_Bottom.FillColor = Darkmode.Very_Dark_Gray;
+            button_OK.FillColor = Darkmode.Midnight_Blue;
         }
         private void SetTextLanguages()
         {

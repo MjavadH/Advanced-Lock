@@ -7,7 +7,7 @@ using System;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 
 namespace Advanced_Lock.Forms
 {
@@ -20,15 +20,15 @@ namespace Advanced_Lock.Forms
         AllText text = new AllText();
         void DarkMode()
         {
-            this.BackColor = Darkmode.DarkMode[2];
+            this.BackColor = Darkmode.Almost_Black;
             this.ForeColor = Color.White;
-            Submit_BTN.FillColor = Darkmode.DarkMode[4];
-            CheckConfig_BTN.FillColor = Darkmode.DarkMode[4];
-            Guna2Panel[] PL = { DarkModePanel, SwitchLangPanel,Sound_Panel,Notifi_Panel, Password_Panel, Config_Panel };
+            Submit_BTN.FillColor = Darkmode.Midnight_Blue;
+            CheckConfig_BTN.FillColor = Darkmode.Midnight_Blue;
+            Guna2Panel[] PL = { DarkModePanel, SwitchLangPanel, Sound_Panel, Notifi_Panel, Password_Panel, Config_Panel };
             for (int i = 0; i < PL.Length; i++)
             {
-                PL[i].FillColor = Darkmode.DarkMode[1];
-                PL[i].ShadowDecoration.Color = Darkmode.DarkMode[3];
+                PL[i].FillColor = Darkmode.Very_Dark_Gray;
+                PL[i].ShadowDecoration.Color = Darkmode.Light_Gray;
             }
         }
         void Notif(string msg)

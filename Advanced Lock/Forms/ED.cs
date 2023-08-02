@@ -6,7 +6,7 @@ using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 
 namespace Advanced_Lock
 {
@@ -33,13 +33,13 @@ namespace Advanced_Lock
 
         void DarkMode()
         {
-            this.BackColor = Darkmode.DarkMode[0];
+            this.BackColor = Darkmode.Dark_Gray;
             this.ForeColor = Color.White;
-            ED_Panel.BackColor = Darkmode.DarkMode[1];
+            ED_Panel.BackColor = Darkmode.Very_Dark_Gray;
             ED_Panel.ForeColor = Color.White;
-            UserSelected.FillColor = Darkmode.DarkMode[1];
-            Password_User.FillColor = Darkmode.DarkMode[1];
-            Result_ED_Text.FillColor = Darkmode.DarkMode[1];
+            UserSelected.FillColor = Darkmode.Very_Dark_Gray;
+            Password_User.FillColor = Darkmode.Very_Dark_Gray;
+            Result_ED_Text.FillColor = Darkmode.Very_Dark_Gray;
         }
         void Notif(string msg)
         {

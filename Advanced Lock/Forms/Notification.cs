@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 
 namespace Advanced_Lock.Forms
 {
@@ -26,10 +26,9 @@ namespace Advanced_Lock.Forms
         /*--------- DarkMode Func  ---------*/
         void DarkMode()
         {
-            this.BackColor = Darkmode.DarkMode[2];
-            this.ForeColor = Darkmode.DarkMode[3];
+            this.BackColor = Darkmode.Almost_Black;
+            this.ForeColor = Darkmode.Light_Gray;
         }
-
         private void Notification_Load(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)

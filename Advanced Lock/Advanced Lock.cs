@@ -8,7 +8,7 @@ using System.IO;
 using System.Reflection;
 using System.Resources;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 using Advanced_Lock.Classes;
 
 namespace Advanced_Lock
@@ -56,18 +56,18 @@ namespace Advanced_Lock
             Guna2Button[] DarkB2 = { EFolderBTN, DFolderBTN, EFileBTN, DFileBTN, ETextBTN, DTextBTN };
             for (int i = 0; i < DarkB2.Length; i++)
             {
-                DarkB2[i].FillColor = Darkmode.DarkMode[1];
+                DarkB2[i].FillColor = Darkmode.Very_Dark_Gray;
             }
             for (int i = 0; i < DarkB.Length; i++)
             {
-                DarkB[i].FillColor = Darkmode.DarkMode[0];
-                DarkB[i].CheckedState.FillColor = Darkmode.DarkMode[0];
-                DarkB[i].HoverState.FillColor = Darkmode.DarkMode[1];
+                DarkB[i].FillColor = Darkmode.Dark_Gray;
+                DarkB[i].CheckedState.FillColor = Darkmode.Dark_Gray;
+                DarkB[i].HoverState.FillColor = Darkmode.Very_Dark_Gray;
 
             }
-            this.BackColor = Darkmode.DarkMode[0];
-            MainMenu.FillColor = Darkmode.DarkMode[0];
-            Menu2.FillColor = Darkmode.DarkMode[0];
+            this.BackColor = Darkmode.Dark_Gray;
+            MainMenu.FillColor = Darkmode.Dark_Gray;
+            Menu2.FillColor = Darkmode.Dark_Gray;
             History_DataTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
             History_DataTable.BackgroundColor = Color.FromArgb(16, 16, 17);
         }

@@ -2,7 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using static Advanced_Lock.Classes.Colers;
+using static Advanced_Lock.Classes.Colors;
 using Microsoft.Win32;
 using Advanced_Lock.Classes;
 
@@ -25,11 +25,11 @@ namespace Advanced_Lock.Forms
         {
             if (Settings.Default.DarkMode)
             {
-                this.BackColor = Darkmode.DarkMode[2];
+                this.BackColor = Darkmode.Almost_Black;
                 this.ForeColor = Color.White;
-                OK_BTN.FillColor = Darkmode.DarkMode[0];
-                Box_password.FillColor = Darkmode.DarkMode[0];
-                Box_password.BorderColor = Darkmode.DarkMode[4];
+                OK_BTN.FillColor = Darkmode.Dark_Gray;
+                Box_password.FillColor = Darkmode.Dark_Gray;
+                Box_password.BorderColor = Darkmode.Midnight_Blue;
             }
             Box_password.Focus();
             SetTextLanguages();
