@@ -115,7 +115,7 @@
     <Compile Include="Forms\AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Classes\Colers.cs" />
+    <Compile Include="Classes\Colors.cs" />
     <Compile Include="Forms\ED.cs">
       <SubType>Form</SubType>
     </Compile>
