@@ -30,6 +30,10 @@ __Warning: This program is currently in the test version, the encryption algorit
 [![EDPage][EDPage]][EDPage]
 [![SettingsPage][SettingsPage]][SettingsPage]
 
+### Requirements:
+- Requires a 64-bit processor and operating system
+- OS: Windows 7 and later
+- RAM: 2GB
 
 [MainPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/MainPage.jpg "MainPage"
 [EDPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/EDPage.jpg "EDPage"
