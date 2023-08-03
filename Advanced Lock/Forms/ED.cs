@@ -34,9 +34,9 @@ namespace Advanced_Lock
         void DarkMode()
         {
             this.BackColor = Darkmode.Dark_Gray;
-            this.ForeColor = Color.White;
+            this.ForeColor = Darkmode.Light_Gray;
             ED_Panel.BackColor = Darkmode.Very_Dark_Gray;
-            ED_Panel.ForeColor = Color.White;
+            this.ForeColor = Darkmode.Light_Gray;
             UserSelected.FillColor = Darkmode.Very_Dark_Gray;
             Password_User.FillColor = Darkmode.Very_Dark_Gray;
             Result_ED_Text.FillColor = Darkmode.Very_Dark_Gray;

@@ -66,10 +66,11 @@ namespace Advanced_Lock
 
             }
             this.BackColor = Darkmode.Dark_Gray;
+            this.ForeColor = Darkmode.Light_Gray;
             MainMenu.FillColor = Darkmode.Dark_Gray;
             Menu2.FillColor = Darkmode.Dark_Gray;
             History_DataTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Dark;
-            History_DataTable.BackgroundColor = Color.FromArgb(16, 16, 17);
+            History_DataTable.BackgroundColor = Darkmode.Almost_Black;
         }
         void Notif(string msg)
         {

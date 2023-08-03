@@ -26,7 +26,7 @@ namespace Advanced_Lock.Forms
             if (Settings.Default.DarkMode)
             {
                 this.BackColor = Darkmode.Almost_Black;
-                this.ForeColor = Color.White;
+                this.ForeColor = Darkmode.Light_Gray;
                 OK_BTN.FillColor = Darkmode.Dark_Gray;
                 Box_password.FillColor = Darkmode.Dark_Gray;
                 Box_password.BorderColor = Darkmode.Midnight_Blue;

@@ -21,14 +21,14 @@ namespace Advanced_Lock.Forms
         void DarkMode()
         {
             this.BackColor = Darkmode.Almost_Black;
-            this.ForeColor = Color.White;
+            this.ForeColor = Darkmode.Light_Gray;
             Submit_BTN.FillColor = Darkmode.Midnight_Blue;
             CheckConfig_BTN.FillColor = Darkmode.Midnight_Blue;
-            Guna2Panel[] PL = { DarkModePanel, SwitchLangPanel, Sound_Panel, Notifi_Panel, Password_Panel, Config_Panel };
-            for (int i = 0; i < PL.Length; i++)
+            Guna2Panel[] panels = { DarkModePanel, SwitchLangPanel, Sound_Panel, Notifi_Panel, Password_Panel, Config_Panel };
+            for (int i = 0; i < panels.Length; i++)
             {
-                PL[i].FillColor = Darkmode.Very_Dark_Gray;
-                PL[i].ShadowDecoration.Color = Darkmode.Light_Gray;
+                panels[i].FillColor = Darkmode.Very_Dark_Gray;
+                panels[i].ShadowDecoration.Color = Darkmode.Light_Gray;
             }
         }
         void Notif(string msg)
