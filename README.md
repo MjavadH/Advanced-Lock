@@ -1,5 +1,6 @@
-## Advanced Lock application open source
+## Advanced Lock application open source <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
 Encrypt and decrypt anything
+
 
 __Warning: This program is currently in the test version, the encryption algorithm may change, avoid encrypting your important files.__
 
@@ -20,7 +21,7 @@ __Warning: This program is currently in the test version, the encryption algorit
 - [x] Context Menu option
 - [x] Add more languages
 - [ ] Create Custom browser for File and Folder
-- [ ] Optimize memory usage
+- [x] Optimize memory usage
 - [ ] Complete document
 - [x] Update Encryption and Decryption method
 - [ ] Add more customization settings 
