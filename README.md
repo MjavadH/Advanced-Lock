@@ -31,6 +31,7 @@ __Warning: This program is currently in the test version, the encryption algorit
 [![SettingsPage][SettingsPage]][SettingsPage]
 
 ### Requirements:
+- .NET Framework 4.7 ([Download](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net47))
 - Requires a 64-bit processor and operating system
 - OS: Windows 7 and later
 - RAM: 2GB
