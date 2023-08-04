@@ -215,6 +215,7 @@ namespace Advanced_Lock.Forms
                 {
                     Notif(text.There_is_no_problem_in_configuring);
                     CheckConfig_BTN.FillColor = Color.FromArgb(255, 96, 96);
+                    TransitionOK.Show(Checked_BTN);
                     CheckConfig_BTN.Text = text.Remove;
                     CheckConfig_BTN.Tag = "Remove";
                 }
