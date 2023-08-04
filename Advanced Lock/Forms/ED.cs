@@ -144,17 +144,17 @@ namespace Advanced_Lock
             /*Check Box*/
             if (UserSelected.Text == "" || Password_User.Text == "")
             {
-                AlertBox.ForeColor = Color.FromArgb(255, 96, 96);
-                AlertBox.Text = text.Error_Password_Or_Your_Choice;
-                AlertBox.Visible = true;
+                alert_Label.ForeColor = Color.FromArgb(255, 96, 96);
+                alert_Label.Text = text.Error_Password_Or_Your_Choice;
+                alert_Label.Visible = true;
             }
             else
             {
                 /*Start Encryption && Decryption*/
                 Progress_BTN.Enabled = false;
-                AlertBox.Visible = true;
-                AlertBox.Text = "";
-                AlertBox.ForeColor = Color.Blue;
+                //alert_Label.Visible = true;
+                alert_Label.Text = "";
+                alert_Label.ForeColor = Color.FromArgb(128, 128, 255);//Blue color
                 string Result;
                 switch (this.action)
                 {
@@ -211,7 +211,7 @@ namespace Advanced_Lock
             {
                 this.Close();
             }
-            
+
         }
 
         private void WaitForResult_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
@@ -312,10 +312,11 @@ namespace Advanced_Lock
 
         private void backgroundProgress_DoWork(object sender, DoWorkEventArgs e)
         {
-            while (progressBar.Maximum < 1)
+            do
             {
                 progressBar.Maximum = (int)Progress_status.progressBar_MaxValue;
             }
+            while (progressBar.Maximum < 1);
             while (string.IsNullOrEmpty(Result_Work))
             {
                 progressBar.Value = (int)Progress_status.progressBar_Value;

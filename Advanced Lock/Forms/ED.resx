@@ -144,53 +144,35 @@
   <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="AlertBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="alert_Label.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
-  <data name="AlertBox.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="alert_Label.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 365</value>
   </data>
-  <data name="AlertBox.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="alert_Label.Size" type="System.Drawing.Size, System.Drawing">
     <value>469, 26</value>
   </data>
-  <data name="AlertBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="alert_Label.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="AlertBox.Text" xml:space="preserve">
+  <data name="alert_Label.Text" xml:space="preserve">
     <value>Error: Field 'your choice' or 'password' is empty</value>
   </data>
-  <data name="AlertBox.Visible" type="System.Boolean, mscorlib">
+  <data name="alert_Label.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;AlertBox.Name" xml:space="preserve">
-    <value>AlertBox</value>
+  <data name="&gt;&gt;alert_Label.Name" xml:space="preserve">
+    <value>alert_Label</value>
   </data>
-  <data name="&gt;&gt;AlertBox.Type" xml:space="preserve">
+  <data name="&gt;&gt;alert_Label.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AlertBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;alert_Label.Parent" xml:space="preserve">
     <value>ED_Panel</value>
   </data>
-  <data name="&gt;&gt;AlertBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;alert_Label.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="Result_ED_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="Result_ED_Text.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Vazir, 9pt</value>
-  </data>
-  <data name="Result_ED_Text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 23</value>
-  </data>
-  <data name="Result_ED_Text.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 4, 3, 4</value>
-  </data>
-  <data name="Result_ED_Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 64</value>
-  </data>
-  <data name="Result_ED_Text.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;Result_ED_Text.Name" xml:space="preserve">
     <value>Result_ED_Text</value>
@@ -203,27 +185,6 @@
   </data>
   <data name="&gt;&gt;Result_ED_Text.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="ED_Text_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="ED_Text_Text.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ED_Text_Text.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ED_Text_Text.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="ED_Text_Text.Size" type="System.Drawing.Size, System.Drawing">
-    <value>469, 23</value>
-  </data>
-  <data name="ED_Text_Text.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="ED_Text_Text.Text" xml:space="preserve">
-    <value>Result:</value>
   </data>
   <data name="&gt;&gt;ED_Text_Text.Name" xml:space="preserve">
     <value>ED_Text_Text</value>
@@ -508,6 +469,69 @@
   </data>
   <data name="&gt;&gt;ED_Panel.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="Result_ED_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Result_ED_Text.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Vazir, 9pt</value>
+  </data>
+  <data name="Result_ED_Text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 23</value>
+  </data>
+  <data name="Result_ED_Text.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="Result_ED_Text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 64</value>
+  </data>
+  <data name="Result_ED_Text.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Result_ED_Text.Name" xml:space="preserve">
+    <value>Result_ED_Text</value>
+  </data>
+  <data name="&gt;&gt;Result_ED_Text.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;Result_ED_Text.Parent" xml:space="preserve">
+    <value>Text_ED_Panel</value>
+  </data>
+  <data name="&gt;&gt;Result_ED_Text.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ED_Text_Text.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="ED_Text_Text.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ED_Text_Text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ED_Text_Text.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ED_Text_Text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>469, 23</value>
+  </data>
+  <data name="ED_Text_Text.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="ED_Text_Text.Text" xml:space="preserve">
+    <value>Result:</value>
+  </data>
+  <data name="&gt;&gt;ED_Text_Text.Name" xml:space="preserve">
+    <value>ED_Text_Text</value>
+  </data>
+  <data name="&gt;&gt;ED_Text_Text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ED_Text_Text.Parent" xml:space="preserve">
+    <value>Text_ED_Panel</value>
+  </data>
+  <data name="&gt;&gt;ED_Text_Text.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <metadata name="Background_EFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>18, 6</value>

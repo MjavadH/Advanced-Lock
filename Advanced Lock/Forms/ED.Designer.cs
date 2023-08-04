@@ -32,7 +32,7 @@ namespace Advanced_Lock
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ED));
             this.ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
-            this.AlertBox = new System.Windows.Forms.Label();
+            this.alert_Label = new System.Windows.Forms.Label();
             this.Text_ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Result_ED_Text = new Guna.UI2.WinForms.Guna2TextBox();
             this.ED_Text_Text = new System.Windows.Forms.Label();
@@ -52,7 +52,7 @@ namespace Advanced_Lock
             // ED_Panel
             // 
             this.ED_Panel.Controls.Add(this.progressBar);
-            this.ED_Panel.Controls.Add(this.AlertBox);
+            this.ED_Panel.Controls.Add(this.alert_Label);
             this.ED_Panel.Controls.Add(this.Text_ED_Panel);
             this.ED_Panel.Controls.Add(this.Password_User);
             this.ED_Panel.Controls.Add(this.PasswordText);
@@ -74,12 +74,12 @@ namespace Advanced_Lock
             this.progressBar.ShadowDecoration.Parent = this.progressBar;
             this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // AlertBox
+            // alert_Label
             // 
-            this.AlertBox.AutoEllipsis = true;
-            resources.ApplyResources(this.AlertBox, "AlertBox");
-            this.AlertBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.AlertBox.Name = "AlertBox";
+            this.alert_Label.AutoEllipsis = true;
+            resources.ApplyResources(this.alert_Label, "alert_Label");
+            this.alert_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
+            this.alert_Label.Name = "alert_Label";
             // 
             // Text_ED_Panel
             // 
@@ -241,7 +241,6 @@ namespace Advanced_Lock
             this.Controls.Add(this.ED_Panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "ED";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ED_FormClosing);
@@ -264,7 +263,7 @@ namespace Advanced_Lock
         private Guna.UI2.WinForms.Guna2Panel Text_ED_Panel;
         private Guna.UI2.WinForms.Guna2TextBox Result_ED_Text;
         private System.Windows.Forms.Label ED_Text_Text;
-        private System.Windows.Forms.Label AlertBox;
+        private System.Windows.Forms.Label alert_Label;
         private System.ComponentModel.BackgroundWorker Background_EFile;
         private Guna.UI2.WinForms.Guna2ProgressBar progressBar;
         private System.ComponentModel.BackgroundWorker backgroundProgress;
