@@ -392,16 +392,16 @@ namespace Encrypt_Decrypt
         /// <summary>
         /// Encryption File
         /// </summary>
-        /// <param name="filePath">File full path. example:c:/text.txt</param>
+        /// <param name="Path">Full path. example:c:\text.[file extension] Or c:\Folder </param>
         /// <param name="key">Password</param>
         /// <param name="Folder"></param>
         /// <returns>Result:'File Encrpted' or 'Error' or 'Cancel'</returns>
-        public static string Encryption(string filePath, string key, in bool Folder = false)
+        public static string Encryption(string path, string key, in bool Folder = false)
         {
-            if (File.Exists(filePath))
+            if (File.Exists(path))
             {
                 Progress_status.operation = Progress_status.Operation.Encryption_File;
-                string result = Encryption_method(filePath, key, Folder).Result;
+                string result = Encryption_method(path, key, Folder).Result;
                 if (!Progress_status.working)
                 {
                     File.Delete(result);
@@ -417,16 +417,16 @@ namespace Encrypt_Decrypt
         /// <summary>
         /// Decryption File
         /// </summary>
-        /// <param name="filePath">File full path. example:c:/text.[file extension]</param>
+        /// <param name="Path">Full path. example:c:\text.[file extension]</param>
         /// <param name="key">Password</param>
         /// <param name="Folder"></param>
         /// <returns>Result:'File Decrypted' or 'Error' or 'incorect password'</returns>
-        public static string Decryption(string filePath, string key, bool Folder = false)
+        public static string Decryption(string path, string key, bool Folder = false)
         {
-            if (File.Exists(filePath))
+            if (File.Exists(path))
             {
                 Progress_status.operation = Progress_status.Operation.Decryption_File;
-                string result = Decryption_method(filePath, key, Folder).Result;
+                string result = Decryption_method(path, key, Folder).Result;
                 if (!Progress_status.working)
                 {
                     File.Delete(result);
