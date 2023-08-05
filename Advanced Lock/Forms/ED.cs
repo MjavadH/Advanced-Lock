@@ -35,7 +35,6 @@ namespace Advanced_Lock
         {
             this.BackColor = Darkmode.Dark_Gray;
             this.ForeColor = Darkmode.Light_Gray;
-            ED_Panel.BackColor = Darkmode.Very_Dark_Gray;
             this.ForeColor = Darkmode.Light_Gray;
             UserSelected.FillColor = Darkmode.Very_Dark_Gray;
             Password_User.FillColor = Darkmode.Very_Dark_Gray;
@@ -126,11 +125,11 @@ namespace Advanced_Lock
                     action = enmAction.TextE;
                     this.UserSelected.ReadOnly = false;
                     progressBar.Visible = false;
-                    Text_ED_Panel.Visible = true;
+                    result_Panel.Visible = true;
                     this.Text = text.Encryption_Text;
                     break;
                 case "TextD":
-                    Text_ED_Panel.Visible = true;
+                    result_Panel.Visible = true;
                     this.UserSelected.ReadOnly = false;
                     progressBar.Visible = false;
                     action = enmAction.TextD;

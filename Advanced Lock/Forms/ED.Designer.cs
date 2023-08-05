@@ -30,10 +30,9 @@ namespace Advanced_Lock
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ED));
-            this.ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.progressBar = new Guna.UI2.WinForms.Guna2ProgressBar();
             this.alert_Label = new System.Windows.Forms.Label();
-            this.Text_ED_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.result_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Result_ED_Text = new Guna.UI2.WinForms.Guna2TextBox();
             this.ED_Text_Text = new System.Windows.Forms.Label();
             this.Password_User = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,25 +44,8 @@ namespace Advanced_Lock
             this.Progress_BTN = new Guna.UI2.WinForms.Guna2Button();
             this.Background_EFile = new System.ComponentModel.BackgroundWorker();
             this.backgroundProgress = new System.ComponentModel.BackgroundWorker();
-            this.ED_Panel.SuspendLayout();
-            this.Text_ED_Panel.SuspendLayout();
+            this.result_Panel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ED_Panel
-            // 
-            this.ED_Panel.Controls.Add(this.progressBar);
-            this.ED_Panel.Controls.Add(this.alert_Label);
-            this.ED_Panel.Controls.Add(this.Text_ED_Panel);
-            this.ED_Panel.Controls.Add(this.Password_User);
-            this.ED_Panel.Controls.Add(this.PasswordText);
-            this.ED_Panel.Controls.Add(this.Line);
-            this.ED_Panel.Controls.Add(this.UserSelected);
-            this.ED_Panel.Controls.Add(this.PathText);
-            this.ED_Panel.Controls.Add(this.Cancel_BTN);
-            this.ED_Panel.Controls.Add(this.Progress_BTN);
-            resources.ApplyResources(this.ED_Panel, "ED_Panel");
-            this.ED_Panel.Name = "ED_Panel";
-            this.ED_Panel.ShadowDecoration.Parent = this.ED_Panel;
             // 
             // progressBar
             // 
@@ -81,13 +63,13 @@ namespace Advanced_Lock
             this.alert_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(96)))), ((int)(((byte)(96)))));
             this.alert_Label.Name = "alert_Label";
             // 
-            // Text_ED_Panel
+            // result_Panel
             // 
-            this.Text_ED_Panel.Controls.Add(this.Result_ED_Text);
-            this.Text_ED_Panel.Controls.Add(this.ED_Text_Text);
-            resources.ApplyResources(this.Text_ED_Panel, "Text_ED_Panel");
-            this.Text_ED_Panel.Name = "Text_ED_Panel";
-            this.Text_ED_Panel.ShadowDecoration.Parent = this.Text_ED_Panel;
+            this.result_Panel.Controls.Add(this.Result_ED_Text);
+            this.result_Panel.Controls.Add(this.ED_Text_Text);
+            resources.ApplyResources(this.result_Panel, "result_Panel");
+            this.result_Panel.Name = "result_Panel";
+            this.result_Panel.ShadowDecoration.Parent = this.result_Panel;
             // 
             // Result_ED_Text
             // 
@@ -238,21 +220,28 @@ namespace Advanced_Lock
             this.AcceptButton = this.Progress_BTN;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
-            this.Controls.Add(this.ED_Panel);
+            this.Controls.Add(this.progressBar);
+            this.Controls.Add(this.Progress_BTN);
+            this.Controls.Add(this.Cancel_BTN);
+            this.Controls.Add(this.alert_Label);
+            this.Controls.Add(this.result_Panel);
+            this.Controls.Add(this.Password_User);
+            this.Controls.Add(this.PasswordText);
+            this.Controls.Add(this.Line);
+            this.Controls.Add(this.UserSelected);
+            this.Controls.Add(this.PathText);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ED";
             this.TopMost = true;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ED_FormClosing);
             this.Load += new System.EventHandler(this.ED_Load);
-            this.ED_Panel.ResumeLayout(false);
-            this.Text_ED_Panel.ResumeLayout(false);
+            this.result_Panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2Panel ED_Panel;
         private Guna.UI2.WinForms.Guna2TextBox UserSelected;
         private System.Windows.Forms.Label PathText;
         private Guna.UI2.WinForms.Guna2Button Cancel_BTN;
@@ -260,7 +249,7 @@ namespace Advanced_Lock
         private Guna.UI2.WinForms.Guna2TextBox Password_User;
         private System.Windows.Forms.Label PasswordText;
         private Guna.UI2.WinForms.Guna2Separator Line;
-        private Guna.UI2.WinForms.Guna2Panel Text_ED_Panel;
+        private Guna.UI2.WinForms.Guna2Panel result_Panel;
         private Guna.UI2.WinForms.Guna2TextBox Result_ED_Text;
         private System.Windows.Forms.Label ED_Text_Text;
         private System.Windows.Forms.Label alert_Label;
