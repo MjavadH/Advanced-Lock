@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Application description" xml:space="preserve">
+    <value>あらゆるものを暗号化および復号化する</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Change languages" xml:space="preserve">
+    <value>言語を変更する</value>
+  </data>
+  <data name="Check" xml:space="preserve">
+    <value>チェック</value>
+  </data>
+  <data name="Checked configuration and fixed problems" xml:space="preserve">
+    <value>構成がチェックされ、すべての問題が修正されました</value>
+  </data>
+  <data name="Configuration" xml:space="preserve">
+    <value>構成</value>
+  </data>
+  <data name="Dark Mode" xml:space="preserve">
+    <value>ダークモード</value>
+  </data>
+  <data name="Decrypt" xml:space="preserve">
+    <value>復号化</value>
+  </data>
+  <data name="Decryption File" xml:space="preserve">
+    <value>復号化ファイル</value>
+  </data>
+  <data name="Decryption Folder" xml:space="preserve">
+    <value>復号化フォルダー</value>
+  </data>
+  <data name="Decryption Text" xml:space="preserve">
+    <value>復号化テキスト</value>
+  </data>
+  <data name="Delete All History" xml:space="preserve">
+    <value>すべての履歴を削除</value>
+  </data>
+  <data name="Delete Row" xml:space="preserve">
+    <value>行を削除する</value>
+  </data>
+  <data name="Developer Description" xml:space="preserve">
+    <value>デザイナー兼開発者: MjavadH
+これはオープンソース ソフトウェアです
+GitHub:</value>
+  </data>
+  <data name="Enable password" xml:space="preserve">
+    <value>パスワードを有効にする</value>
+  </data>
+  <data name="Encrypt" xml:space="preserve">
+    <value>暗号化する</value>
+  </data>
+  <data name="Encryption File" xml:space="preserve">
+    <value>暗号化ファイル</value>
+  </data>
+  <data name="Encryption Folder" xml:space="preserve">
+    <value>暗号化フォルダー</value>
+  </data>
+  <data name="Encryption Text" xml:space="preserve">
+    <value>暗号化テキスト</value>
+  </data>
+  <data name="Enter password" xml:space="preserve">
+    <value>パスワードを入力してください</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>誤り</value>
+  </data>
+  <data name="Error password or your choice" xml:space="preserve">
+    <value>エラー: 「選択したもの」または「パスワード」フィールドが空です</value>
+  </data>
+  <data name="Example Notification" xml:space="preserve">
+    <value>通知例</value>
+  </data>
+  <data name="Export is done" xml:space="preserve">
+    <value>エクスポートが完了しました</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>フォルダ</value>
+  </data>
+  <data name="Import is done" xml:space="preserve">
+    <value>インポートが完了しました</value>
+  </data>
+  <data name="in iran" xml:space="preserve">
+    <value>イランで</value>
+  </data>
+  <data name="Incorect Password" xml:space="preserve">
+    <value>パスワードが間違っています!</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>情報</value>
+  </data>
+  <data name="Light Mode" xml:space="preserve">
+    <value>ライトモード</value>
+  </data>
+  <data name="Load History" xml:space="preserve">
+    <value>履歴のロード</value>
+  </data>
+  <data name="Made with" xml:space="preserve">
+    <value>で作った</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>メニュー</value>
+  </data>
+  <data name="Not found file" xml:space="preserve">
+    <value>ファイルが見つかりません</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>パスワード</value>
+  </data>
+  <data name="password is enable" xml:space="preserve">
+    <value>パスワードは有効です</value>
+  </data>
+  <data name="Play sound" xml:space="preserve">
+    <value>音を出す</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>リフレッシュ</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="Restart app to chenge language" xml:space="preserve">
+    <value>言語を変更するにはアプリケーションを再起動してください</value>
+  </data>
+  <data name="Restart app to chenge theme" xml:space="preserve">
+    <value>アプリケーションを再起動してテーマを変更する</value>
+  </data>
+  <data name="Result" xml:space="preserve">
+    <value>結果</value>
+  </data>
+  <data name="Result text copyed" xml:space="preserve">
+    <value>結果テキストがコピーされました</value>
+  </data>
+  <data name="Result text empty" xml:space="preserve">
+    <value>結果のテキストが空です</value>
+  </data>
+  <data name="Save History" xml:space="preserve">
+    <value>履歴の保存</value>
+  </data>
+  <data name="Select your Theme" xml:space="preserve">
+    <value>テーマを選択してください</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="Show notification" xml:space="preserve">
+    <value>通知を表示する</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>送信</value>
+  </data>
+  <data name="Text" xml:space="preserve">
+    <value>文章</value>
+  </data>
+  <data name="There is no problem in configuring" xml:space="preserve">
+    <value>ソフトウェアの設定には問題ありません</value>
+  </data>
+  <data name="your choice" xml:space="preserve">
+    <value>あなたの選択</value>
+  </data>
+</root>

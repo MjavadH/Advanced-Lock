@@ -164,6 +164,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Translations\ja.Designer.cs">
+      <DependentUpon>ja.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="Translations\ru.Designer.cs">
       <DependentUpon>ru.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -222,6 +227,10 @@
     <EmbeddedResource Include="Translations\de.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>de.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Translations\ja.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ja.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Translations\ru.resx">
       <Generator>ResXFileCodeGenerator</Generator>
