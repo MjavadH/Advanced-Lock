@@ -15,3 +15,14 @@ __اخطار: این نرم‌افزار در نسخه آزمایشی می‌ب�
 - قفل کردن نرم‌افزار با پسورد
 - ذخیره و بارگذاری تاریخچه
 - گزینه های 'نمایش اعلان' و 'پخش صدا'
+  
+### تصویر از محیط برنامه :
+[![MainPage][MainPage]][MainPage]
+[![EDPage][EDPage]][EDPage]
+[![SettingsPage][SettingsPage]][SettingsPage]
+
+
+
+[MainPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/MainPage.jpg "MainPage"
+[EDPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/EDPage.jpg "EDPage"
+[SettingsPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/SettingsPage.jpg "SettingsPage"
