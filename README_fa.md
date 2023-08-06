@@ -22,6 +22,13 @@ __اخطار: این نرم‌افزار در نسخه آزمایشی می‌ب�
 [![SettingsPage][SettingsPage]][SettingsPage]
 
 
+### الزامات:
+- دات نت فریم ورک 4.7 ([دانلود](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net47))
+- پردازنده و سیستم عامل ۶۴بیتی
+- سیستم عامل: ویندوز ۷ و بالاتر
+- رم: ۲گیگابایت
+
+
 
 [MainPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/MainPage.jpg "MainPage"
 [EDPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/EDPage.jpg "EDPage"
