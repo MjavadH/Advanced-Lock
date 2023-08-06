@@ -242,6 +242,7 @@ namespace Encrypt_Decrypt
 
                             I_O.resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
                             fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
+                            Array.Clear(I_O.resultArray, 0, I_O.resultArray.Length);
                             Progress_status.progressBar_Value = fs.Length;
                             index += chunkSize;
                         }
@@ -316,7 +317,7 @@ namespace Encrypt_Decrypt
                             int bytesRead = 0;
                             fsR.Seek(Encrypted_Password.Length, SeekOrigin.Begin);
                             int index = Encrypted_Password.Length;
-
+                            Progress_status.progressBar_MaxValue = fsR.Length;
                             while (index < totalSize && Progress_status.working)
                             {
                                 if (totalSize - index < chunkSize)
@@ -328,8 +329,8 @@ namespace Encrypt_Decrypt
 
                                 I_O.resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
                                 fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-
-                                I_O.resultArray = null;
+                                Array.Clear(I_O.resultArray,0, I_O.resultArray.Length);
+                                Progress_status.progressBar_Value = fs.Length;
                                 index += chunkSize;
                             }
                             fsR.Flush();
