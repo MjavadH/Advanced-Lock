@@ -9,8 +9,8 @@ __Warning: This program is currently in the test version, the encryption algorit
 - Encrypt and decrypt Text
 - Encrypt and decrypt File
 - Encrypt and decrypt Folder
-- Dark and Light Mode
-- Support 6 languages (English, Farsi, Arabic, Chinese, Russian, German)
+- Dark and Light Mode  
+- Support 7 languages (English, Farsi, Arabic, Chinese, Russian, German, Japanese)
 - File Association (Open .alo and .alf by default)
 - Context Menu option(encrypt and decrypt File and Folder with right click)
 - Lock the software with a password
