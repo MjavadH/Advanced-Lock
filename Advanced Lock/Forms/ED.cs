@@ -53,6 +53,11 @@ namespace Advanced_Lock
             Cancel_BTN.Text = text.Cancel;
             Progress_BTN.Text = text.OK;
         }
+        Advanced advanced = new Advanced();
+        private void SendToHistory()
+        {
+            advanced.historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
+        }
         private void ED_Load(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)
@@ -174,16 +179,19 @@ namespace Advanced_Lock
                     case enmAction.TextE:
                         Result = Encryption__Decryption__Text.Encryption(UserSelected.Text, Password_User.Text);
                         Result_ED_Text.Text = Result;
-                        new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
+                        if (Result != "Error")
+                        {
+                            SendToHistory();
+                        }
                         Progress_BTN.Enabled = true;
                         break;
                     /*Decryption Text*/
                     case enmAction.TextD:
                         Result = Encryption__Decryption__Text.Decryption(UserSelected.Text, Password_User.Text);
                         Result_ED_Text.Text = Result;
-                        if (Result != "Error incorent input")
+                        if (Result != "Incorrect input")
                         {
-                            new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
+                            SendToHistory();
                         }
                         Progress_BTN.Enabled = true;
                         break;
@@ -282,7 +290,7 @@ namespace Advanced_Lock
                     }
                     else
                     {
-                        new Advanced().historyadd(UserSelected.Text, Password_User.Text, Result_Work);
+                        SendToHistory();
                         this.Close();
                     }
                     break;
