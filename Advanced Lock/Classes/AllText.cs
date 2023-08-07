@@ -73,6 +73,5 @@ namespace Advanced_Lock.Classes
         internal string Result_text_empty { get => languages_Selector.GetString("Result text empty"); }
         internal string Add { get => languages_Selector.GetString("Add"); }
         internal string Remove { get => languages_Selector.GetString("Remove"); }
-
     }
 }

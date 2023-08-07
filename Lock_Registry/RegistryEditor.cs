@@ -40,7 +40,6 @@ namespace Registry_Configuration
                 {
                     p.StartInfo.Arguments = "Delete";
                 }
-
                 p.StartInfo.UseShellExecute = true;
                 p.StartInfo.Verb = "runas";
                 p.Start();
@@ -52,23 +51,22 @@ namespace Registry_Configuration
         }
         protected static void CreateRegisteryd()
         {
-            extension.File_extension();// void Create File extension Registry
-            extension.Folder_extension();// void Create Folder extension Registry
-            ContextMenu.File_ContextMenu(extension.application_Name + extension.file_extension, "Decrypt File with " + extension.application_Name);
-            ContextMenu.File_ContextMenu(extension.application_Name + extension.folder_extension, "Decrypt Folder with " + extension.application_Name, 1);
-            ContextMenu.File_ContextMenu("Encrypt File with " + extension.application_Name);
-            ContextMenu.Folder_ContextMenu("Encrypt Folder with " + extension.application_Name);
+            Extension.File_extension();// void Create File extension Registry
+            Extension.Folder_extension();// void Create Folder extension Registry
+            ContextMenu.File_ContextMenu(Extension.application_Name + Extension.file_extension, "Decrypt File with " + Extension.application_Name);
+            ContextMenu.File_ContextMenu(Extension.application_Name + Extension.folder_extension, "Decrypt Folder with " + Extension.application_Name, 1);
+            ContextMenu.File_ContextMenu("Encrypt File with " + Extension.application_Name);
+            ContextMenu.Folder_ContextMenu("Encrypt Folder with " + Extension.application_Name);
         }
         protected static void DeleteRegistery()
         {
-            extension.File_extension_Delete(); // void Delete File extension Registry
-            extension.Folder_extension_Delete(); // void Delete Folder extension Registry
+            Extension.File_extension_Delete(); // void Delete File extension Registry
+            Extension.Folder_extension_Delete(); // void Delete Folder extension Registry
             ContextMenu.File_ContextMenu_Delete(); // void Delete File ContextMenu Registry
             ContextMenu.Folder_ContextMenu_Delete(); // void Delete Folder ContextMenu Registry
-
         }
         /*--------- Check Registry ---------*/
-        string[] extensions = { extension.file_extension, extension.folder_extension };
+        string[] extensions = { Extension.file_extension, Extension.folder_extension };
         public bool CheckExtensionRegistery()
         {
             foreach (var item in extensions)
@@ -82,7 +80,7 @@ namespace Registry_Configuration
         }
     }
     /*--------- Extension Registry ---------*/
-    public class extension
+    public class Extension
     {
         protected static RegistryKey reg;
         protected static string application_Location = Directory.GetCurrentDirectory() + @"\Advanced Lock.exe"; // Application full path
@@ -91,7 +89,6 @@ namespace Registry_Configuration
         internal protected static string file_extension = ".alo";// File extension
         internal protected static string folder_extension = ".alf";// Folder extension
         private static string command = "\"" + application_Location + "\"" + " \"%1\"";
-
         /*--------- File Registry ---------*/
         public static void File_extension()
         {
@@ -156,7 +153,7 @@ namespace Registry_Configuration
         }
     }
     /*--------- ContextMenu Registry ---------*/
-    public class ContextMenu : extension
+    public class ContextMenu : Extension
     {
         /*--------- Folder ContextMenu Registry ---------*/
         public static void Folder_ContextMenu(string title)

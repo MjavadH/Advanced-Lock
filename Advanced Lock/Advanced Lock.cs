@@ -63,7 +63,6 @@ namespace Advanced_Lock
                 DarkB[i].FillColor = Darkmode.Dark_Gray;
                 DarkB[i].CheckedState.FillColor = Darkmode.Dark_Gray;
                 DarkB[i].HoverState.FillColor = Darkmode.Very_Dark_Gray;
-
             }
             this.BackColor = Darkmode.Dark_Gray;
             this.ForeColor = Darkmode.Light_Gray;

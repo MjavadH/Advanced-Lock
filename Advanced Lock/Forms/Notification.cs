@@ -20,7 +20,6 @@ namespace Advanced_Lock.Forms
             close
         }
         private enmAction action;
-
         private int x, y;
         /*--------- Enum & Var End  ---------*/
         /*--------- DarkMode Func  ---------*/
@@ -64,7 +63,6 @@ namespace Advanced_Lock.Forms
                 case enmAction.close:
                     timer1.Interval = 1;
                     this.Opacity -= 0.1;
-
                     this.Left -= 3;
                     if (base.Opacity == 0.0)
                     {
@@ -73,12 +71,10 @@ namespace Advanced_Lock.Forms
                     break;
             }
         }
-
         private void label_CloseBTN_Click(object sender, EventArgs e)
         {
             base.Close();
         }
-
         private void label_CloseBTN_MouseEnter(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)
@@ -90,7 +86,6 @@ namespace Advanced_Lock.Forms
                 label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDarkDark);
             }
         }
-
         private void label_CloseBTN_MouseLeave(object sender, EventArgs e)
         {
             if (Settings.Default.DarkMode)
@@ -102,7 +97,6 @@ namespace Advanced_Lock.Forms
                 label_CloseBTN.ForeColor = Color.FromKnownColor(KnownColor.ControlDark);
             }
         }
-
         /*--------- Show Notification  ---------*/
         public void showAlert(string msg)
         {
@@ -112,12 +106,10 @@ namespace Advanced_Lock.Forms
                 this.Opacity = 0.0;
                 this.StartPosition = FormStartPosition.Manual;
                 string fname;
-
                 for (int i = 1; i < 10; i++)
                 {
                     fname = "alert" + i.ToString();
                     Notification frm = (Notification)Application.OpenForms[fname];
-
                     if (frm == null)
                     {
                         this.Name = fname;
@@ -128,10 +120,7 @@ namespace Advanced_Lock.Forms
                     }
                 }
                 this.x = Screen.PrimaryScreen.WorkingArea.Width - base.Width - 5;
-
-
                 this.NText.Text = msg; // Notification text
-
                 /*----- Start Show -----*/
                 this.Show();
                 this.action = enmAction.start;

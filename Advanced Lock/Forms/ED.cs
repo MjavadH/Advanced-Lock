@@ -61,7 +61,6 @@ namespace Advanced_Lock
             }
             if (Environment.GetCommandLineArgs().Length == 2)
             {
-
                 if (Environment.GetCommandLineArgs()[1].EndsWith(".alo"))
                 {
                     show_ED(Environment.GetCommandLineArgs()[1], "Decryption");
@@ -92,8 +91,6 @@ namespace Advanced_Lock
                         show_ED(Environment.GetCommandLineArgs()[1], "EncryptFolder");
                     }
                 }
-
-
             }
             SetTextLanguages();
         }
@@ -160,7 +157,6 @@ namespace Advanced_Lock
                     /*Encryption File*/
                     case enmAction.Encryption:
                         Background_EFile.RunWorkerAsync("Encrypt_File");
-
                         break;
                     /*Decryption File*/
                     case enmAction.Decryption:
@@ -194,7 +190,6 @@ namespace Advanced_Lock
                 }
             }
         }
-
         private void Cancel_BTN_Click(object sender, EventArgs e)
         {
             if (Background_EFile.IsBusy)
@@ -210,15 +205,12 @@ namespace Advanced_Lock
             {
                 this.Close();
             }
-
         }
-
         private void WaitForResult_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             this.Cursor = Cursors.Default;
             Cancel_BTN.Enabled = true;
         }
-
         private void WaitForResult_DoWork(object sender, DoWorkEventArgs e)
         {
             Progress_status.Cancel_Progress();
@@ -227,7 +219,6 @@ namespace Advanced_Lock
                 if (!string.IsNullOrEmpty(Result_Work)) break;
             }
         }
-
         /*copy to clipboard*/
         private void Result_ED_Text_IconRightClick(object sender, EventArgs e)
         {
@@ -242,7 +233,6 @@ namespace Advanced_Lock
                 Result_ED_Text.PlaceholderText = text.Result_text_copyed;
             }
         }
-
         private void Background_EFile_DoWork(object sender, DoWorkEventArgs e)
         {
             string Arg = e.Argument.ToString();
@@ -263,7 +253,6 @@ namespace Advanced_Lock
                     break;
             }
         }
-
         private void Background_EFile_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             switch (Result_Work)
@@ -299,7 +288,6 @@ namespace Advanced_Lock
                     break;
             }
         }
-
         private void Password_User_IconRightClick(object sender, EventArgs e)
         {
             if (Password_User.UseSystemPasswordChar)
@@ -308,7 +296,6 @@ namespace Advanced_Lock
             }
             else Password_User.UseSystemPasswordChar = true;
         }
-
         private void backgroundProgress_DoWork(object sender, DoWorkEventArgs e)
         {
             do

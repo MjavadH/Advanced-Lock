@@ -104,7 +104,6 @@ namespace Advanced_Lock.Forms
         /*--------- Chenge Lang ---------*/
         private void ToggleSwitchLang_Click(object sender, EventArgs e)
         {
-
             Notif(text.Restart_app_to_chenge_language);
         }
         /*--------- Password Panel Start ---------*/
@@ -123,7 +122,6 @@ namespace Advanced_Lock.Forms
                 timerOK.Start();
             }
         }
-
         private void Box_password_IconRightClick(object sender, EventArgs e)
         {
             Box_password.UseSystemPasswordChar = !Box_password.UseSystemPasswordChar;
@@ -134,7 +132,6 @@ namespace Advanced_Lock.Forms
             TransitionOK.Hide(OK_BTN);
             timerOK.Stop();
         }
-
         private void password_Toggle_CheckedChanged(object sender, EventArgs e)
         {
             RegistryKey regPass;
@@ -161,7 +158,6 @@ namespace Advanced_Lock.Forms
                 regPass.SetValue("passEnabaled", "true", RegistryValueKind.String);
             }
         }
-
         /*--------- Pass Panel End ---------*/
         /*--------- Config Panel Start ---------*/
         void DefaultBTN()
@@ -236,7 +232,5 @@ namespace Advanced_Lock.Forms
         {
             Settings.Default.Save();
         }
-
-
     }
 }
