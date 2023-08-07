@@ -50,104 +50,98 @@ namespace Encrypt_Decrypt
         private static extern bool SetProcessWorkingSetSize(IntPtr process,
             UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
     }
-    /*Encryption__Decryption__Text*/
+    #region  Text Encryption && Decryption Algorithm
+    /// <summary>
+    /// Text Encryption and Decryption Algorithm
+    /// </summary>
     public class Encryption__Decryption__Text
     {
-        /*Encryption_method*/
-        private static string Encryption_method(string Text, string key)
-        {
-            try
-            {
-                byte[] toEncryptedArray = UTF8Encoding.UTF8.GetBytes(Text);
-                MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
-                objMD5CryptoService.Clear();
-                objMD5CryptoService.Dispose();
-                using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
-                {
-                    objTripleDESCryptoService.Key = securityKeyArray;
-                    objTripleDESCryptoService.Mode = CipherMode.ECB;
-                    objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
-                    using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
-                    {
-                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
-                        securityKeyArray.Initialize();
-                        return Convert.ToBase64String(I_O.resultArray, 0, I_O.resultArray.Length);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                return "Error";
-            }
-            finally
-            {
-                I_O.minimizeMemory();
-            }
-        }
-        /*Decryption_method*/
-        private static string Decryption_method(string Text, string key)
-        {
-            try
-            {
-                byte[] toEncryptArray = Convert.FromBase64String(Text);
-                MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
-                byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
-                objMD5CryptoService.Clear();
-                objMD5CryptoService.Dispose();
-                using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
-                {
-                    objTripleDESCryptoService.Key = securityKeyArray;
-                    objTripleDESCryptoService.Mode = CipherMode.ECB;
-                    objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
-                    using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
-                    {
-                        I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
-                        securityKeyArray.Initialize();
-                        return UTF8Encoding.UTF8.GetString(I_O.resultArray);
-                    }
-                }
-            }
-            catch (Exception)
-            {
-                return "Error incorent input";
-            }
-            finally
-            {
-                I_O.minimizeMemory();
-            }
-        }
-        /*Encryption Text*/
+        /// <summary>
+        /// Text Encryption
+        /// </summary>
+        /// <param name="Text">The text you want to be encrypted</param>
+        /// <param name="key">Password</param>
+        /// <returns>Encrypted text || "Error" || "Empty input"</returns>
         public static string Encryption(string Text, string key)
         {
-            string result = string.Empty;
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
-                Progress_status.operation = Progress_status.Operation.Encryption_Text;
-                result = Encryption_method(Text, key);
+                try
+                {
+                    Progress_status.operation = Progress_status.Operation.Encryption_Text;
+                    byte[] toEncryptedArray = UTF8Encoding.UTF8.GetBytes(Text);
+                    MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
+                    byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
+                    objMD5CryptoService.Clear();
+                    objMD5CryptoService.Dispose();
+
+                    using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
+                    {
+                        objTripleDESCryptoService.Key = securityKeyArray;
+                        objTripleDESCryptoService.Mode = CipherMode.ECB;
+                        objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
+                        using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
+                        {
+                            I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
+                            securityKeyArray.Initialize();
+                            return Convert.ToBase64String(I_O.resultArray, 0, I_O.resultArray.Length);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    return "Error";
+                }
             }
             else
             {
-                result = "Text or Key is NullOrEmpty";
+                return "Empty input";
             }
-            return result;
         }
-        /*Decryption Text*/
+        /// <summary>
+        /// Text Decryption 
+        /// </summary>
+        /// <param name="Text">The text you want to Decrypted</param>
+        /// <param name="key">Password</param>
+        /// <returns>Decrypted text || "Incorrect input" || "Empty input"</returns>
         public static string Decryption(string Text, string key)
         {
-            string result = string.Empty;
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
             {
-                Progress_status.operation = Progress_status.Operation.Decryption_Text;
-                result = Decryption_method(Text, key);
+                try
+                {
+                    Progress_status.operation = Progress_status.Operation.Decryption_Text;
+                    byte[] toEncryptArray = Convert.FromBase64String(Text);
+                    MD5CryptoServiceProvider objMD5CryptoService = new MD5CryptoServiceProvider();
+                    byte[] securityKeyArray = objMD5CryptoService.ComputeHash(UTF8Encoding.UTF8.GetBytes(key));
+                    objMD5CryptoService.Clear();
+                    objMD5CryptoService.Dispose();
+
+                    using (var objTripleDESCryptoService = new TripleDESCryptoServiceProvider())
+                    {
+                        objTripleDESCryptoService.Key = securityKeyArray;
+                        objTripleDESCryptoService.Mode = CipherMode.ECB;
+                        objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
+                        using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
+                        {
+                            I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
+                            securityKeyArray.Initialize();
+                            return UTF8Encoding.UTF8.GetString(I_O.resultArray);
+                        }
+                    }
+                }
+                catch (Exception)
+                {
+                    return "Incorrect input";
+                }
             }
             else
             {
-                result = "Text or Key is NullOrEmpty";
+                return "Empty input";
             }
-            return result;
         }
     }
+    #endregion Text Encryption and Decryption
     /*Encryption__Decryption__File*/
     public class Encryption__Decryption__File
     {
@@ -158,7 +152,7 @@ namespace Encrypt_Decrypt
             {
                 decrypted_Password = Encryption__Decryption__Text.Decryption(Convert.ToBase64String(Encrypted_Password), password);
             }
-            if (decrypted_Password != "Error incorent input")
+            if (decrypted_Password != "Incorrect input")
             {
                 return true; // if password is not incorent
             }
