@@ -1,8 +1,7 @@
 ## Advanced Lock application open source <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
 Encrypt and decrypt anything
 
-
-__Warning: This program is currently in the test version, the encryption algorithm may change, avoid encrypting your important files.__
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Poppins&weight=500&duration=1&pause=1&color=F7ED0D&multiline=true&repeat=false&width=1000&height=60&lines=Warning%3A+This+program+is+currently+in+the+test+version%2C+the+encryption+algorithm+may+change;avoid+encrypting+your+important+files)
 
 ### Available features :
 
