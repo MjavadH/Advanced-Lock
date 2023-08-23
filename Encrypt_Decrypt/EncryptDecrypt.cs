@@ -62,6 +62,9 @@ namespace Encrypt_Decrypt
         /// <param name="Text">The text you want to be encrypted</param>
         /// <param name="key">Password</param>
         /// <returns>Encrypted text || "Error" || "Empty input"</returns>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when the <paramref name="Text"/> || <paramref name="key"/> is a null or empty reference.
+        /// </exception>
         public static string Encryption(string Text, string key)
         {
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
@@ -104,6 +107,9 @@ namespace Encrypt_Decrypt
         /// <param name="Text">The text you want to Decrypted</param>
         /// <param name="key">Password</param>
         /// <returns>Decrypted text || "Incorrect input" || "Empty input"</returns>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when the <paramref name="Text"/> || <paramref name="key"/> is a null or empty reference.
+        /// </exception>
         public static string Decryption(string Text, string key)
         {
             if (!string.IsNullOrEmpty(Text) && !string.IsNullOrEmpty(key))
@@ -142,7 +148,9 @@ namespace Encrypt_Decrypt
         }
     }
     #endregion Text Encryption and Decryption
-    /*Encryption__Decryption__File*/
+    /// <summary>
+    /// File Encryption and Decryption Algorithm
+    /// </summary>
     public class Encryption__Decryption__File
     {
         private static bool CheckPassword(string path, byte[] Encrypted_Password, string password)
@@ -361,7 +369,7 @@ namespace Encrypt_Decrypt
         /// <param name="Path">Full path. example:c:\text.[file extension]</param>
         /// <param name="key">Password</param>
         /// <param name="Folder"></param>
-        /// <returns>Result:'File Decrypted' or 'Error' or 'incorect password'</returns>
+        /// <returns>Result:'File Decrypted' or 'Error' or 'incorect password' or 'not found file'</returns>
         public static string Decryption(string path, string key, bool Folder = false)
         {
             if (File.Exists(path))
@@ -383,7 +391,9 @@ namespace Encrypt_Decrypt
             }
         }
     }
-    /*Encryption__Decryption__Folder*/
+    /// <summary>
+    /// Folder Encryption and Decryption Algorithm
+    /// </summary>
     public class Encryption__Decryption__Folder
     {
         public static string Encryption(string folderPath, string key)
