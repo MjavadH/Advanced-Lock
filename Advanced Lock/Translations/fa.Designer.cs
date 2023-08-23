@@ -271,7 +271,7 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to تست اعلان.
+        ///   Looks up a localized string similar to اعلان آزمایشی.
         /// </summary>
         internal static string Example_Notification {
             get {
