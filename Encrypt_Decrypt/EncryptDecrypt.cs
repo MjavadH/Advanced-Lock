@@ -169,11 +169,11 @@ namespace Encrypt_Decrypt
             {
                 decrypted_Password = Encryption__Decryption__Text.Decryption(Convert.ToBase64String(Encrypted_Password), password);
             }
-            if (decrypted_Password != "Incorrect input")
+            if (decrypted_Password == "Incorrect input")
             {
-                return true; // if password is not incorent
+                return false; // password are incorrect
             }
-            else return false;
+            else return true;
         }
         private static string CheckPathName(string path)
         {
