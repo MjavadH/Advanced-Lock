@@ -175,6 +175,11 @@ namespace Encrypt_Decrypt
             }
             else return true;
         }
+        /// <summary>
+        /// Check the path of the output file
+        /// </summary>
+        /// <param name="path">The full path of the output file</param>
+        /// <returns>Path to a file that does not exist</returns>
         private static string CheckPathName(string path)
         {
             for (int i = 1; File.Exists(path); i++)
@@ -405,6 +410,15 @@ namespace Encrypt_Decrypt
     /// </summary>
     public class Encryption__Decryption__Folder
     {
+        /// <summary>
+        /// Folder Encryption
+        /// </summary>
+        /// <param name="folderPath">The folder fullpath you want to be encrypted</param>
+        /// <param name="key">Password</param>
+        /// <returns>"Folder Encrpted" || "Error" || "not found folder"</returns>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when the <paramref name="folderPath"/> || <paramref name="key"/> is a null or empty reference.
+        /// </exception>
         public static string Encryption(string folderPath, string key)
         {
             if (Directory.Exists(folderPath))
@@ -438,6 +452,15 @@ namespace Encrypt_Decrypt
                 return "not found folder";
             }
         }
+        /// <summary>
+        /// Folder Decryption
+        /// </summary>
+        /// <param name="filePath">The file fullpath you want to be Decrypted</param>
+        /// <param name="key">Password</param>
+        /// <returns>"Folder Decrypted" || "Error" || "not found file"</returns>
+        /// <exception cref="ArgumentNullException">
+        ///     Thrown when the <paramref name="Text"/> || <paramref name="key"/> is a null or empty reference.
+        /// </exception>
         public static string Decryption(string filePath, string key)
         {
             if (File.Exists(filePath))
