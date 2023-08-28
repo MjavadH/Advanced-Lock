@@ -38,17 +38,6 @@ namespace Encrypt_Decrypt
     internal class I_O
     {
         public static byte[] resultArray;
-        public static void minimizeMemory()
-        {
-            GC.Collect(GC.MaxGeneration);
-            GC.WaitForPendingFinalizers();
-            SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
-                (UIntPtr)0xFFFFFFFF, (UIntPtr)0xFFFFFFFF);
-        }
-        [DllImport("kernel32.dll")]
-        [return: MarshalAs(UnmanagedType.Bool)]
-        private static extern bool SetProcessWorkingSetSize(IntPtr process,
-            UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
     }
     #region  Text Encryption && Decryption Algorithm
     /// <summary>
@@ -153,6 +142,26 @@ namespace Encrypt_Decrypt
     /// </summary>
     public class Encryption__Decryption__File
     {
+        #region Optimize memory usage
+        public static void MinimizeMemory()
+        {
+            GC.Collect(GC.MaxGeneration);
+            GC.WaitForPendingFinalizers();
+            SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle,
+                (UIntPtr)0xFFFFFFFF, (UIntPtr)0xFFFFFFFF);
+        }
+        [DllImport("kernel32.dll")]
+        [return: MarshalAs(UnmanagedType.Bool)]
+        private static extern bool SetProcessWorkingSetSize(IntPtr process,
+            UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
+        #endregion Optimize memory usage
+        /// <summary>
+        /// Check the password of the encrypted file
+        /// </summary>
+        /// <param name="path">The full path of the encrypted file</param>
+        /// <param name="Encrypted_Password">Encrypted Password</param>
+        /// <param name="password">Password</param>
+        /// <returns>Return false if password are incorrect otherwise return true</returns>
         private static bool CheckPassword(string path, byte[] Encrypted_Password, string password)
         {
             string decrypted_Password = null;
@@ -255,7 +264,7 @@ namespace Encrypt_Decrypt
             }
             finally
             {
-                I_O.minimizeMemory();
+                MinimizeMemory();
             }
         }
         private static string Decryption_method(string path, string password, bool isFolder)
@@ -333,7 +342,7 @@ namespace Encrypt_Decrypt
             }
             finally
             {
-                I_O.minimizeMemory();
+                MinimizeMemory();
             }
         }
         /// <summary>
