@@ -137,6 +137,7 @@ namespace Encrypt_Decrypt
         }
     }
     #endregion Text Encryption and Decryption
+    #region  File Encryption && Decryption Algorithm
     /// <summary>
     /// File Encryption and Decryption Algorithm
     /// </summary>
@@ -228,7 +229,7 @@ namespace Encrypt_Decrypt
                         fs.Write(Encrypted_Password, 0, Encrypted_Password.Length);
                         Progress_status.progressBar_MaxValue = fsR.Length;
                         int totalSize = (int)fsR.Length;
-                        int chunkSize = 1024 * 1024 * 64;// 64MB
+                        int chunkSize = (1024 * 1024) * 64;// 64MB
                         int index = 0;
                         byte[] blockbyte = new byte[chunkSize];
                         int bytesRead = 0;
@@ -405,6 +406,8 @@ namespace Encrypt_Decrypt
             }
         }
     }
+    #endregion  File Encryption && Decryption Algorithm
+    #region  Folder Encryption && Decryption Algorithm
     /// <summary>
     /// Folder Encryption and Decryption Algorithm
     /// </summary>
@@ -494,6 +497,7 @@ namespace Encrypt_Decrypt
             }
         }
     }
+    #endregion  Folder Encryption && Decryption Algorithm
     /*Compress_Decompress*/
     internal class Compress_Decompress
     {

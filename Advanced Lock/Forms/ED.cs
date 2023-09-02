@@ -27,7 +27,7 @@ namespace Advanced_Lock
             TextE,
             TextD
         }
-        private ED.enmAction action;
+        private enmAction action;
 
         string Result_Work;
 
