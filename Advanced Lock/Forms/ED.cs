@@ -56,7 +56,14 @@ namespace Advanced_Lock
         Advanced advanced = new Advanced();
         private void SendToHistory()
         {
-            advanced.historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
+            if (action == enmAction.TextE || action== enmAction.TextD)
+            {
+                advanced.historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
+            }
+            else
+            {
+                advanced.historyadd(UserSelected.Text, Password_User.Text, Result_Work);
+            }
         }
         private void ED_Load(object sender, EventArgs e)
         {
