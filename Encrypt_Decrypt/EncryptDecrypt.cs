@@ -35,16 +35,13 @@ namespace Encrypt_Decrypt
             }
         }
     }
-    internal class I_O
-    {
-        public static byte[] resultArray;
-    }
     #region  Text Encryption && Decryption Algorithm
     /// <summary>
     /// Text Encryption and Decryption Algorithm
     /// </summary>
     public class Encryption__Decryption__Text
     {
+        private static byte[] resultArray;
         /// <summary>
         /// Text Encryption
         /// </summary>
@@ -74,9 +71,9 @@ namespace Encrypt_Decrypt
                         objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
                         using (var objCrytpoTransform = objTripleDESCryptoService.CreateEncryptor())
                         {
-                            I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
+                            resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptedArray, 0, toEncryptedArray.Length);
                             securityKeyArray.Initialize();
-                            return Convert.ToBase64String(I_O.resultArray, 0, I_O.resultArray.Length);
+                            return Convert.ToBase64String(resultArray, 0, resultArray.Length);
                         }
                     }
                 }
@@ -119,9 +116,9 @@ namespace Encrypt_Decrypt
                         objTripleDESCryptoService.Padding = PaddingMode.PKCS7;
                         using (var objCrytpoTransform = objTripleDESCryptoService.CreateDecryptor())
                         {
-                            I_O.resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
+                            resultArray = objCrytpoTransform.TransformFinalBlock(toEncryptArray, 0, toEncryptArray.Length);
                             securityKeyArray.Initialize();
-                            return UTF8Encoding.UTF8.GetString(I_O.resultArray);
+                            return UTF8Encoding.UTF8.GetString(resultArray);
                         }
                     }
                 }
@@ -143,7 +140,8 @@ namespace Encrypt_Decrypt
     /// </summary>
     public class Encryption__Decryption__File
     {
-        #region Optimize memory usage
+        private static byte[] resultArray;
+        #region ----- Optimize memory usagen -----
         public static void MinimizeMemory()
         {
             GC.Collect(GC.MaxGeneration);
@@ -155,7 +153,7 @@ namespace Encrypt_Decrypt
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool SetProcessWorkingSetSize(IntPtr process,
             UIntPtr minimumWorkingSetSize, UIntPtr maximumWorkingSetSize);
-        #endregion Optimize memory usage
+        #endregion ----- Optimize memory usage -----
         /// <summary>
         /// Check the password of the encrypted file
         /// </summary>
@@ -241,9 +239,9 @@ namespace Encrypt_Decrypt
                             }
                             blockbyte = new byte[chunkSize];
                             bytesRead = fsR.Read(blockbyte, 0, blockbyte.Length);
-                            I_O.resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
-                            fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-                            Array.Clear(I_O.resultArray, 0, I_O.resultArray.Length);
+                            resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
+                            fs.Write(resultArray, 0, resultArray.Length);
+                            Array.Clear(resultArray, 0, resultArray.Length);
                             Progress_status.progressBar_Value = fs.Length;
                             index += chunkSize;
                         }
@@ -322,9 +320,9 @@ namespace Encrypt_Decrypt
                                 }
                                 blockbyte = new byte[chunkSize];
                                 bytesRead = fsR.Read(blockbyte, 0, blockbyte.Length);
-                                I_O.resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
-                                fs.Write(I_O.resultArray, 0, I_O.resultArray.Length);
-                                Array.Clear(I_O.resultArray, 0, I_O.resultArray.Length);
+                                resultArray = objCrytpoTransform.TransformFinalBlock(blockbyte, 0, blockbyte.Length);
+                                fs.Write(resultArray, 0, resultArray.Length);
+                                Array.Clear(resultArray, 0, resultArray.Length);
                                 Progress_status.progressBar_Value = fs.Length;
                                 index += chunkSize;
                             }
