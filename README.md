@@ -1,7 +1,8 @@
 ## Advanced Lock application open source <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
 Encrypt and decrypt anything
 
-> ### Warning: This app is archived, the encryption algorithm may have bugs. Avoid encrypting your important files
+> [!WARNING]
+> This app is archived, the encryption algorithm may have bugs. Avoid encrypting your important files
 
 ### Available features :
 
