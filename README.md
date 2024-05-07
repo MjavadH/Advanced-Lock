@@ -2,7 +2,7 @@
 Encrypt and decrypt anything
 
 > [!WARNING]
-> This app is archived, the encryption algorithm may have bugs. Avoid encrypting your important files
+> the encryption algorithm may have bugs. Avoid encrypting your important files
 
 ### Available features :
 
