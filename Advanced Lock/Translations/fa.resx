@@ -213,9 +213,6 @@
   <data name="Information" xml:space="preserve">
     <value>اطلاعات</value>
   </data>
-  <data name="Light Mode" xml:space="preserve">
-    <value>حالت روز</value>
-  </data>
   <data name="Load History" xml:space="preserve">
     <value>بارگذاری تاریخچه</value>
   </data>
@@ -263,9 +260,6 @@
   </data>
   <data name="Save History" xml:space="preserve">
     <value>ذخیره تاریخچه</value>
-  </data>
-  <data name="Select your Theme" xml:space="preserve">
-    <value>تم مورد نظر خود را انتخاب کنید</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>تنظیمات</value>

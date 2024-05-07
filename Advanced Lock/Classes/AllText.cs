@@ -37,7 +37,6 @@ namespace Advanced_Lock.Classes
         internal string Incorect_Password { get => languages_Selector.GetString("Incorect Password"); }
         internal string Information { get => languages_Selector.GetString("Information"); }
         internal string Developer_Description { get => languages_Selector.GetString("Developer Description"); }
-        internal string Light_Mode { get => languages_Selector.GetString("Light Mode"); }
         internal string Load_History { get => languages_Selector.GetString("Load History"); }
         internal string Made_With { get => languages_Selector.GetString("Made with"); }
         internal string Menu { get => languages_Selector.GetString("Menu"); }
@@ -47,7 +46,6 @@ namespace Advanced_Lock.Classes
         internal string Refresh { get => languages_Selector.GetString("Refresh"); }
         internal string Result { get => languages_Selector.GetString("Result"); }
         internal string Save_History { get => languages_Selector.GetString("Save History"); }
-        internal string Select_Your_Theme { get => languages_Selector.GetString("Select your Theme"); }
         internal string Setting { get => languages_Selector.GetString("Settings"); }
         internal string Show_Notification { get => languages_Selector.GetString("Show notification"); }
         internal string Submit { get => languages_Selector.GetString("Submit"); }

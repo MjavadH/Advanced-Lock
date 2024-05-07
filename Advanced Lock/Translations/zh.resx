@@ -212,9 +212,6 @@ GitHub：</value>
   <data name="Information" xml:space="preserve">
     <value>信息</value>
   </data>
-  <data name="Light Mode" xml:space="preserve">
-    <value>灯光模式</value>
-  </data>
   <data name="Load History" xml:space="preserve">
     <value>加载历史记录</value>
   </data>
@@ -262,9 +259,6 @@ GitHub：</value>
   </data>
   <data name="Save History" xml:space="preserve">
     <value>保存历史记录</value>
-  </data>
-  <data name="Select your Theme" xml:space="preserve">
-    <value>选择您的主题</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>设置</value>

@@ -19,7 +19,7 @@ namespace Advanced_Lock.Translations {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class fa {
@@ -343,15 +343,6 @@ namespace Advanced_Lock.Translations {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to حالت روز.
-        /// </summary>
-        internal static string Light_Mode {
-            get {
-                return ResourceManager.GetString("Light Mode", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to بارگذاری تاریخچه.
         /// </summary>
         internal static string Load_History {
@@ -492,15 +483,6 @@ namespace Advanced_Lock.Translations {
         internal static string Save_History {
             get {
                 return ResourceManager.GetString("Save History", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to تم مورد نظر خود را انتخاب کنید.
-        /// </summary>
-        internal static string Select_your_Theme {
-            get {
-                return ResourceManager.GetString("Select your Theme", resourceCulture);
             }
         }
         

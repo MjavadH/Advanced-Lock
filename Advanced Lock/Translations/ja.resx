@@ -212,9 +212,6 @@ GitHub:</value>
   <data name="Information" xml:space="preserve">
     <value>情報</value>
   </data>
-  <data name="Light Mode" xml:space="preserve">
-    <value>ライトモード</value>
-  </data>
   <data name="Load History" xml:space="preserve">
     <value>履歴のロード</value>
   </data>
@@ -262,9 +259,6 @@ GitHub:</value>
   </data>
   <data name="Save History" xml:space="preserve">
     <value>履歴の保存</value>
-  </data>
-  <data name="Select your Theme" xml:space="preserve">
-    <value>テーマを選択してください</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>設定</value>

@@ -31,11 +31,11 @@ namespace Advanced_Lock
                     if (windowsLanguage == languages)
                     {
                         Settings.Default.languages = windowsLanguage;
-                        Settings.Default.Save();
                         break;
                     }
                 }
                 if(string.IsNullOrEmpty(Settings.Default.languages)) Settings.Default.languages = "en";
+                Settings.Default.Save();
             }
             /*Open ED.cs Form if user open .alo and .alf file or click Encryption in contextmenu*/
             if (Environment.GetCommandLineArgs().Length >= 2)

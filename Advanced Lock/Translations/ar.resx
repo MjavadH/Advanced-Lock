@@ -212,9 +212,6 @@ GitHub:</value>
   <data name="Information" xml:space="preserve">
     <value>معلومة</value>
   </data>
-  <data name="Light Mode" xml:space="preserve">
-    <value>وضع الضوء</value>
-  </data>
   <data name="Load History" xml:space="preserve">
     <value>تاريخ التحميل</value>
   </data>
@@ -262,9 +259,6 @@ GitHub:</value>
   </data>
   <data name="Save History" xml:space="preserve">
     <value>حفظ التاريخ</value>
-  </data>
-  <data name="Select your Theme" xml:space="preserve">
-    <value>حدد الموضوع الخاص بك</value>
   </data>
   <data name="Settings" xml:space="preserve">
     <value>إعدادات</value>
