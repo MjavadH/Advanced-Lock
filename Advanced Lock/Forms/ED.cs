@@ -249,7 +249,10 @@ namespace Advanced_Lock
         private void Background_EFile_DoWork(object sender, DoWorkEventArgs e)
         {
             string Arg = e.Argument.ToString();
-            backgroundProgress.RunWorkerAsync();
+            if (!backgroundProgress.IsBusy)
+            {
+                backgroundProgress.RunWorkerAsync();
+            }
             switch (Arg)
             {
                 case "Decrypt_File":
