@@ -303,6 +303,8 @@ namespace Advanced_Lock
                     }
                     break;
             }
+            progressBar.Maximum = 0;
+            Result_Work = "";
         }
         private void Password_User_IconRightClick(object sender, EventArgs e)
         {
