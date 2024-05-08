@@ -52,6 +52,7 @@ namespace Advanced_Lock
             this.progressBar.BorderRadius = 5;
             resources.ApplyResources(this.progressBar, "progressBar");
             this.progressBar.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.progressBar.Maximum = 0;
             this.progressBar.Name = "progressBar";
             this.progressBar.ShadowDecoration.Parent = this.progressBar;
             this.progressBar.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;

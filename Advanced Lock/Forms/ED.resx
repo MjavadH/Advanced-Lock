@@ -3305,9 +3305,6 @@
         RERERERERERERERERGLk/wPsNDvneFBU/gAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>500, 434</value>
   </data>

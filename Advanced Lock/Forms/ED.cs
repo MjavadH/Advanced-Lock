@@ -56,7 +56,7 @@ namespace Advanced_Lock
         Advanced advanced = new Advanced();
         private void SendToHistory()
         {
-            if (action == enmAction.TextE || action== enmAction.TextD)
+            if (action == enmAction.TextE || action == enmAction.TextD)
             {
                 advanced.historyadd(UserSelected.Text, Password_User.Text, Result_ED_Text.Text);
             }
@@ -125,10 +125,12 @@ namespace Advanced_Lock
                 case "EncryptFolder":
                     action = enmAction.EncryptFolder;
                     this.Text = text.Encryption_Folder;
+                    this.Icon = Resources.Folder_Icon;
                     break;
                 case "DecryptFolder":
                     action = enmAction.DecryptFolder;
                     this.Text = text.Decryption_Folder;
+                    this.Icon = Resources.Folder_Icon;
                     break;
                 case "TextE":
                     action = enmAction.TextE;
@@ -229,10 +231,6 @@ namespace Advanced_Lock
         private void WaitForResult_DoWork(object sender, DoWorkEventArgs e)
         {
             Progress_status.Cancel_Progress();
-            while (string.IsNullOrEmpty(Result_Work))
-            {
-                if (!string.IsNullOrEmpty(Result_Work)) break;
-            }
         }
         /*copy to clipboard*/
         private void Result_ED_Text_IconRightClick(object sender, EventArgs e)
