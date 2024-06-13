@@ -252,7 +252,7 @@
   <data name="image_AppIcon.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAFxZJREFUeF7tnQl4VPW5xkmitZu1dte2Tzd7r7feR7G1kGSWEBIIgbbuFam1VL1W
+        wgAADsIBFShKgAAAFxZJREFUeF7tnQl4VPW5xkmitZu1dte2Tzd7r7feR7G1kGSWEBIIgbbuFam1VL1W
         EQG14lZZ6lVAb6sPaNUAXluugGxB2QPZE7KwQ1iCgYQkZIUkrEmA8N3v/c8ZCPEECJkkM877e57fM8mc
         M2eb877nfyYJ9CKEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEII
         IYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGEEEII
@@ -378,66 +378,6 @@
   <data name="&gt;&gt;image_AppIcon.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label_inIran.Name" xml:space="preserve">
-    <value>label_inIran</value>
-  </data>
-  <data name="&gt;&gt;label_inIran.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_inIran.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;label_inIran.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Name" xml:space="preserve">
-    <value>label_Heart</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;label_Heart.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;button_OK.Name" xml:space="preserve">
-    <value>button_OK</value>
-  </data>
-  <data name="&gt;&gt;button_OK.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;button_OK.Parent" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 246</value>
-  </data>
-  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 15</value>
-  </data>
-  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>437, 51</value>
-  </data>
-  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
-    <value>panel_Bottom</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="label_inIran.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -530,6 +470,30 @@
   </data>
   <data name="&gt;&gt;button_OK.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <data name="panel_Bottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 246</value>
+  </data>
+  <data name="panel_Bottom.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 15</value>
+  </data>
+  <data name="panel_Bottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>437, 51</value>
+  </data>
+  <data name="panel_Bottom.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Name" xml:space="preserve">
+    <value>panel_Bottom</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_Bottom.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="label_E_and_D.Font" type="System.Drawing.Font, System.Drawing">
     <value>Vazir, 12pt, style=Bold</value>
