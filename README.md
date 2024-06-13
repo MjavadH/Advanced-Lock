@@ -35,7 +35,7 @@ Encrypt and decrypt anything
 - .NET Framework 4.7 ([Download](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net47))
 - Requires a 64-bit processor and operating system
 - OS: Windows 7 and later
-- RAM: 2GB
+- Minimum RAM: 64MB
 
 [MainPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/MainPage.jpg "MainPage"
 [EDPage]: https://github.com/MjavadH/Advanced-Lock/blob/master/Screenshot/EDPage.jpg "EDPage"
