@@ -1,4 +1,4 @@
-## Advanced Lock application open source <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
+## Advanced Lock <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
 Encrypt and decrypt anything
 
 > [!WARNING]

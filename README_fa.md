@@ -1,8 +1,8 @@
-## نرم‌افزار متن باز AdvancedLock <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
+## Advanced Lock <img style="vertical-align: middle; width:50px; height:50px;" src="https://raw.githubusercontent.com/MjavadH/Advanced-Lock/master/Advanced%20Lock/Icon.ico" />
 
 رمزنگاری و رمزگشایی هرچیزی
 > [!WARNING]
-> این نرم‌افزار در نسخه آزمایشی می‌باشد، الگوریتم رمزنگاری ممکن است تغییر کند، از رمزنگاری فایل های مهم خود خودداری کنید.
+> الگوریتم رمزگذاری ممکن است دارای اشکال باشد. از رمزگذاری فایل های مهم خود اجتناب کنید.
 
 
 ### ویژگی ها :
@@ -27,7 +27,7 @@
 - دات نت فریم ورک 4.7 ([دانلود](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net47))
 - پردازنده و سیستم عامل ۶۴بیتی
 - سیستم عامل: ویندوز ۷ و بالاتر
-- رم: ۲گیگابایت
+- حداقل رم:۶۴ مگابایت
 
 
 
